@@ -176,7 +176,6 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" }
-	attach = { "loc1" = "NewEternalCrusader2"}
 	
 	scale = 0.6
 }

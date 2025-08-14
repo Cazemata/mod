@@ -1026,7 +1026,7 @@ pc_daemons = {
 }
 
 pc_darke = {
-	entity = "dweb_planet"
+	entity = "dweb_planet_01_entity"
 	picture = pc_darkweb
 	tile_set = pc_darke
 	entity_scale = @planet_standard_scale

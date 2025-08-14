@@ -82,6 +82,7 @@ deldar_system_start_01 = {
                         add_district = district_slave_workers
                         add_district = district_slave_workers
                         add_district = district_deldar_pleasure_ring
+		}
 		init_effect = {
 			generate_empire_home_planet = yes
 		}
