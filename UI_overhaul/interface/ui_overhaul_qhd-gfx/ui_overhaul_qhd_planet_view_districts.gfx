@@ -1,0 +1,216 @@
+spriteTypes = {
+	# Planet_view district backgrounds
+	# City backgrouds
+	corneredTileSpriteType = {
+		name = "GFX_district_city_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_city_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_rw_city_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_city_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_nexus_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_city_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_nexus_secondary_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_housing_secondary_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_rw_nexus_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_city_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_hive_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_city_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_hive_secondary_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_housing_secondary_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_rw_hive_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_city_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_crashed_slaver_ship_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_crashed_slaver_ship_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_resort_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_resort_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_resort_secondary_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_resort_secondary_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	# Farming backgrouds
+	corneredTileSpriteType = {
+		name = "GFX_district_farming_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_farming_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_rw_farming_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_farming_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	# Generator backgrouds
+	corneredTileSpriteType = {
+		name = "GFX_district_generator_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_generator_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_hab_energy_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_generator_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_rw_generator_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_generator_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	# Mining backgrouds
+	corneredTileSpriteType = {
+		name = "GFX_district_mining_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_mining_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_hab_mining_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_mining_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	# Arcology backgrouds Long
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_housing_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_housing_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	# Arcology backgrouds Short
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_mixed_industry_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_industry.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_arms_industry_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_industry.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_civilian_industry_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_industry.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_research_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_research.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_research_physics_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_research.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_research_society_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_research.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_research_engineering_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_research.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_administrative_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_administrative.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_spiritualist_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_administrative.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_organic_housing_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_administrative.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_fortress_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_fortress.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_trade_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_trade.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_leisure_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_housing_secondary_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_arcology_housing_secondary_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_arcology_housing_secondary_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	# Habitat backgrouds
+	corneredTileSpriteType = {
+		name = "GFX_district_hab_housing_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_hab_housing_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_hab_science_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_hab_science_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	# Wilderness Districts
+	corneredTileSpriteType = {
+		name = "GFX_district_craglands_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_craglands_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_metallic_dew_plains_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_metallic_dew_plains_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_photosynthesis_fields_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_photosynthesis_fields_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_hollow_mountains_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_hollow_mountains_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_orchard_forests_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_orchard_forests_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_orders_demesne_bg"
+		textureFile = "gfx/interface/planetview/district_backgrounds/district_hab_housing_bg.dds"
+		borderSize = { x = 1 y = 1 }
+	}
+}

@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_regiment_world"
+		texturefile = "gfx/event_pictures/regiment_world.dds"
+		alwaystransparent = yes
+	}
+	
+}

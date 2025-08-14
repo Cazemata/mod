@@ -1,0 +1,410 @@
+# T88 Cycler Cannon
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "terrancannon_cycler_s"
+	color = { 0.6 	0.6 	0.6 	1.0 }
+	hit_entity = "terrancannons_small_hit_entity"
+	shield_hit_entity = "terrancannons_small_shield_hit_entity"
+	muzzle_flash_entity = "terrancannons_small_muzzle_entity"
+	
+	#beam specific data
+	width = 0.3
+	texture_scroll_speed = 50.5
+	texture_tiling = 12.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	texture = "gfx/models/combat_items/terrancannon_diffuse.dds"
+	
+	shield_impact = {
+		size = small
+		loop_duration = 2.0
+		delay = 0.0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "terrancannon_cycler_m"
+	color = { 0.6 	0.6 	0.6 	1.0 }
+	hit_entity = "terrancannons_medium_hit_entity"
+	shield_hit_entity = "terrancannons_medium_shield_hit_entity"
+	muzzle_flash_entity = "terrancannons_medium_muzzle_entity"
+	
+	#beam specific data
+	width = 0.5
+	texture_scroll_speed = 50.5
+	texture_tiling = 10.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	texture = "gfx/models/combat_items/terrancannon_diffuse.dds"
+	
+	shield_impact = {
+		size = small
+		loop_duration = 2.0
+		delay = 0.0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "terrancannon_cycler_l"
+	color = { 0.6 	0.6 	0.6 	1.0 }
+	hit_entity = "terrancannons_large_hit_entity"
+	shield_hit_entity = "terrancannons_large_shield_hit_entity"
+	muzzle_flash_entity = "terrancannons_large_muzzle_entity"
+	
+	#beam specific data
+	width = 0.7
+	texture_scroll_speed = 50.5
+	texture_tiling = 12.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	texture = "gfx/models/combat_items/terrancannon_diffuse.dds"
+	
+	shield_impact = {
+		size = medium
+		loop_duration = 2.0
+		delay = 0.0
+	}
+}
+
+# tac-13 Cycler
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "terrancannon_tac_s"
+	color = { 0.6 	0.6 	0.6 	1.0 }
+	hit_entity = "terrancannons_tac_small_hit_entity"
+	shield_hit_entity = "terrancannons_tac_small_shield_hit_entity"
+	muzzle_flash_entity = "terrancannons_tac_small_muzzle_entity"
+	
+	#beam specific data
+	width = 0.3
+	texture_scroll_speed = 50.5
+	texture_tiling = 12.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	texture = "gfx/models/combat_items/terrancannon_diffuse.dds"
+	
+	shield_impact = {
+		size = small
+		loop_duration = 2.0
+		delay = 0.0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "terrancannon_tac_m"
+	color = { 0.6 	0.6 	0.6 	1.0 }
+	hit_entity = "terrancannons_tac_medium_hit_entity"
+	shield_hit_entity = "terrancannons_tac_medium_shield_hit_entity"
+	muzzle_flash_entity = "terrancannons_tac_medium_muzzle_entity"
+	
+	#beam specific data
+	width = 0.5
+	texture_scroll_speed = 50.5
+	texture_tiling = 10.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	texture = "gfx/models/combat_items/terrancannon_diffuse.dds"
+	
+	shield_impact = {
+		size = medium
+		loop_duration = 2.0
+		delay = 0.0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "terrancannon_tac_l"
+	color = { 0.6 	0.6 	0.6 	1.0 }
+	hit_entity = "terrancannons_tac_large_hit_entity"
+	shield_hit_entity = "terrancannons_tac_large_shield_hit_entity"
+	muzzle_flash_entity = "terrancannons_tac_large_muzzle_entity"
+	
+	#beam specific data
+	width = 0.7
+	texture_scroll_speed = 50.5
+	texture_tiling = 12.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	texture = "gfx/models/combat_items/terrancannon_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		loop_duration = 2.0
+		delay = 0.0
+	}
+}
+
+# torac-9
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "terrancannon_torac_s"
+	color = { 0.6 	0.6 	0.6 	1.0 }
+	hit_entity = "terrancannons_torac_small_hit_entity"
+	shield_hit_entity = "terrancannons_torac_small_shield_hit_entity"
+	muzzle_flash_entity = "terrancannons_torac_small_muzzle_entity"
+	
+	#beam specific data
+	width = 0.3
+	texture_scroll_speed = 50.5
+	texture_tiling = 12.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	texture = "gfx/models/combat_items/terrancannon_diffuse.dds"
+	
+	shield_impact = {
+		size = small
+		loop_duration = 2.0
+		delay = 0.0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "terrancannon_torac_m"
+	color = { 0.6 	0.6 	0.6 	1.0 }
+	hit_entity = "terrancannons_torac_medium_hit_entity"
+	shield_hit_entity = "terrancannons_torac_medium_shield_hit_entity"
+	muzzle_flash_entity = "terrancannons_torac_medium_muzzle_entity"
+	
+	#beam specific data
+	width = 0.5
+	texture_scroll_speed = 50.5
+	texture_tiling = 10.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	texture = "gfx/models/combat_items/terrancannon_diffuse.dds"
+	
+	shield_impact = {
+		size = medium
+		loop_duration = 2.0
+		delay = 0.0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "terrancannon_torac_l"
+	color = { 0.6 	0.6 	0.6 	1.0 }
+	hit_entity = "terrancannons_torac_large_hit_entity"
+	shield_hit_entity = "terrancannons_torac_large_shield_hit_entity"
+	muzzle_flash_entity = "terrancannons_torac_large_muzzle_entity"
+	
+	#beam specific data
+	width = 0.7
+	texture_scroll_speed = 50.5
+	texture_tiling = 12.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 2.0
+	}
+	texture = "gfx/models/combat_items/terrancannon_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		loop_duration = 2.0
+		delay = 0.0
+	}
+}
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "nctitan_1_s"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "nctitan_1_hit_entity"
+	shield_hit_entity = "nctitan_1_shield_hit_entity"
+	muzzle_flash_entity = "nctitan_1_muzzle_entity"
+	
+	#ballistic specific
+	entity = "nctitan_1_s_entity"
+	speed = 800.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "nctitan_1_m"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "nctitan_1_hit_entity"
+	shield_hit_entity = "nctitan_1_shield_hit_entity"
+	muzzle_flash_entity = "nctitan_1_muzzle_entity"
+	
+	#ballistic specific
+	entity = "nctitan_1_m_entity"
+	speed = 800.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "nctitan_1_l"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "nctitan_1_hit_entity"
+	shield_hit_entity = "nctitan_1_shield_hit_entity"
+	muzzle_flash_entity = "nctitan_1_muzzle_entity"
+	
+	#ballistic specific
+	entity = "nctitan_1_l_entity"
+	speed = 800.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}

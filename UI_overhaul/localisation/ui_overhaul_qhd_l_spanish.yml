@@ -1,0 +1,64 @@
+﻿l_spanish:
+ ###################################
+ ### main menu
+ UI_OVERHAUL_TITLE: "UI Overhaul Dynamic"
+ UI_OVERHAUL_VERSION: "4.0"
+ UI_OVERHAUL_BETA: " Open Beta"
+ UI_OVERHAUL_INFO: "Opens up the information window for the mod"
+ UI_OVERHAUL_DONATE: "If you've enjoyed my mod, please consider donating! £energy£"
+ UI_OVERHAUL_STEAM: "Steam Workshop"
+ UI_OVERHAUL_STEAM_TOOLTIP: "Opens the Steam Workshop page for the mod"
+ UI_OVERHAUL_DISCORD: "Discord Server"
+ UI_OVERHAUL_DISCORD_TOOLTIP: "Opens the Discord server for the mod"
+ UI_OVERHAUL_TEXT_TOP: "This mod is currently updated for version §H$UI_OVERHAUL_VERSION$§! of Stellaris. It should work with any future bugfixing patches, unless stated otherwise."
+ UI_OVERHAUL_TEXT_CENTER: "Any bugs, critiques or questions can be shared on my Discord server. I'm open to suggestions regarding changes to the user interface."
+ UI_OVERHAUL_TEXT_BOTTOM: "If you're using §HGigastructural Engineering§!, make sure to use the compatibility patch, otherwise you won't be able to use EHOF.\nYou can find the patch on the Steam Workshop page."
+ ###################################
+ ### tech tree
+ UI_OVERHAUL_TECHTREE: "Tech Tree"
+ UI_OVERHAUL_TECHTREE_TOOLTIP: "§H$UI_OVERHAUL_TECHTREE$§!\n§GClick to open up an external tech tree.§!"
+ UI_OVERHAUL_TECHTREE_TOOLTIP_DELAYED: "This tech tree is not affiliated, associated, endorsed by, or in any way officially connected with §HParadox Interactive§!.\nIt is merely a fan project, maintained by §HBloodStainedCrow§! on GitHub."
+ ####################################
+ ### uncategorized
+ UIO_ETHICS_ATTRACTION: "Ethics Attraction"
+ UIO_MOVE_TO_TOP: "§HTop§!\nMove to the very top of the list"
+ UIO_MOVE_TO_BOTTOM: "§HBottom§!\nMove to the very bottom of the list"
+ UIO_MOVEABLE_WINDOW: "§HThis Window is Moveable§!\nClick and hold the left mouse button £mouse1£ to move it."
+ ###################################
+ ### Entries below are for formatting entries with styling. Only edit if necessary.
+ ###################################
+ STELLARIS_VERSION: "Stellaris 4.0 'Phoenix'"
+ ###################################
+ ### formatting
+ UI_OVERHAUL_VERSION_PREFIX: "v$UI_OVERHAUL_VERSION$"
+ UI_OVERHAUL_TOOLTIP: "§H$UI_OVERHAUL_TITLE$§!\n§G$UI_OVERHAUL_INFO$§!\n\n$UI_OVERHAUL_DONATE$"
+ UI_OVERHAUL_STEAM_TOOLTIP_FORMAT: "§H$UI_OVERHAUL_STEAM$§!\n§G$UI_OVERHAUL_STEAM_TOOLTIP$§!"
+ UI_OVERHAUL_DISCORD_TOOLTIP_FORMAT: "§H$UI_OVERHAUL_DISCORD$§!\n§G$UI_OVERHAUL_DISCORD_TOOLTIP$§!"
+ ####################################
+ ### tooltip fixes
+ RENAME_STARBASE_TOOLTIP: "§H$RENAME$ $station_generic_01$§!\n§G$RENAME_OBJECT_DESC$§!"
+ RENAME_SECTOR_TOOLTIP: "§H$SECTOR_RENAME$§!\n§G$RENAME_OBJECT_DESC$§!"
+ RENAME_FLEET_TOOLTIP: "§H$RENAME_FLEET_TITLE$§!\n§G$RENAME_OBJECT_DESC$§!"
+ UIO_CARAVANEERS_LABEL_TOOLTIP: "§H$CARAVANEERS_LABEL$§!\n$CARAVANEERS_LABEL_TOOLTIP$"
+ UIO_LGATE_LABEL_TOOLTIP: "§H$LGATE_LABEL$§!\n$LGATE_LABEL_TOOLTIP$"
+ UIO_XENO_COMPATIBILITY_LABEL_TOOLTIP: "§H$XENO_COMPATIBILITY_LABEL$§!\n$XENO_COMPATIBILITY_LABEL_TOOLTIP$"
+ ###################################
+ ### headers
+ UIO_DISTRICT_GENERATOR_TITLE: "£energy£ $DISTRICTS$"
+ UIO_DISTRICT_MINING_TITLE: "£minerals£ $DISTRICTS$"
+ UIO_DISTRICT_FARMING_TITLE: "£food£ $DISTRICTS$"
+ UIO_SECTOR_TYPE_TITLE: "£sector_type£ $TYPE$"
+ UIO_GOVERNOR_TITLE: "£leader£ $governor$"
+ UIO_OUTPUT_TITLE: "£economy£ $OUTPUT$"
+ UIO_POPS_TITLE: "£pops£ $POPS$"
+ UIO_DISTRICTS_TITLE: "£district£ $DISTRICTS$"
+ UIO_APPROVAL_TITLE: "£approval£ $APPROVAL$"
+ UIO_SIZE_TITLE: "£size£ $SIZE$"
+ UIO_SUPPORT_TITLE: "£support£ $FACTION_SUPPORT$"
+ UIO_ISSUES_TITLE: "£issues£ $POP_FACTIONS_COLUMN_DEMANDS$"
+ UIO_EFFECTS_TITLE: "£effects£ $POP_FACTIONS_COLUMN_SUPPORT_EFFECTS$"
+ UIO_TRAITS_TITLE: "£traits£ $SPECIES_VIEW_TRAITS$"
+ UIO_RIGHTS_TITLE: "£rights£ $SPECIES_VIEW_RIGHTS$"
+ UIO_FAVORS_TITLE: "£favor£ $TRADE_CATEGORY_FAVORS$"
+ UIO_DIPLO_WEIGHT_TITLE: "£diplo_weight£ $diplomatic_weight$"
+ UIO_FEDERATION_TITLE: "£federation£ $GALAXY_VIEW_EMPIRE_ALLIANCE_FEDERATION$"

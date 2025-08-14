@@ -1,0 +1,312 @@
+tech_wraithbone = {
+	cost = 2000
+	area = society
+	tier = 3
+	category = { military_theory }
+	weight = 40
+
+	prerequisites = { "tech_bone_singing" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	potential = {
+	has_country_flag = eldar_empire
+        }
+}
+
+tech_avatar = {
+	cost = 4000
+	area = society
+	tier = 4
+	category = { military_theory }
+	prerequisites = { "tech_bone_singing" }
+	weight = 30
+
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	potential = {
+	has_country_flag = eldar_empire
+        }
+}
+
+tech_aspect_of_banshee = {
+	cost = 1000
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = 50
+
+	prerequisites = { "tech_bone_singing" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	potential = {
+	has_country_flag = eldar_empire
+        }
+}
+
+tech_battle_equipment = {
+	cost = 1000
+	area = engineering
+	tier = 2
+	category = { weapon }
+	prerequisites = { "tech_bone_singing" }
+	weight = 50
+
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	potential = {
+	has_country_flag = eldar_empire
+        }
+}
+tech_energy_field = {
+	cost = 1000
+	area = physics
+	tier = 2
+	category = { field_manipulation }
+	weight = 50
+
+	prerequisites = { "tech_bone_singing" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_FALCON_TITLE"
+			desc = "TECH_UNLOCK_FALCON_DESC"
+		}
+	}
+
+	potential = {
+	has_country_flag = eldar_empire
+        }
+}
+
+tech_pathfinder_gear = {
+	cost = 1000
+	area = society
+	tier = 2
+	category = { military_theory }
+	prerequisites = { "tech_bone_singing" }
+	weight = 50
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+	}
+
+	potential = {
+	has_country_flag = eldar_empire
+        }
+}
+
+tech_shuriken_cannon_wraithguard = {
+    cost = 2000
+    area = engineering
+    tier = 3
+    category = { weapon }
+    weight = 40
+
+    prerequisites = { "tech_battle_equipment" }
+
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    potential = {
+	has_country_flag = eldar_empire
+        }
+}
+
+tech_twin_death_spinner_common = {
+    cost = 2000
+    area = engineering
+    tier = 3
+    category = { weapon }
+    weight = 40
+
+    prerequisites = { "tech_battle_equipment" }
+
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    potential = {
+	has_country_flag = eldar_empire
+        }
+}
+
+tech_warlock = {
+    cost = 4000
+    area = society
+    tier = 4
+    category = { military_theory }
+    weight = 30
+
+    prerequisites = { "tech_pathfinder_gear" }
+
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    potential = {
+	has_country_flag = eldar_empire
+        }
+}
+
+tech_wraithbone_wraithguard = {
+    cost = 2000
+    area = society
+    tier = 3
+    category = { military_theory }
+    weight = 40
+
+    prerequisites = { "tech_battle_equipment" }
+
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    potential = {
+	has_country_flag = eldar_empire
+        }
+}
+
+tech_warp_spiders = {
+    cost = 2000
+    area = society
+    tier = 2
+    category = { military_theory }
+    weight = 50
+
+    prerequisites = { "tech_aspect_of_banshee" }
+
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            always = yes
+        }
+    }
+
+    potential = {
+	has_country_flag = eldar_empire
+        }
+}

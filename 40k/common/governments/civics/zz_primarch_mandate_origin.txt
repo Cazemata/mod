@@ -1,0 +1,36 @@
+origin_primarch_mandate = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_imp.dds"   # pick any existing icon path you like
+    picture = GFX_origin_gcs_imperium
+    max_once_global = yes
+
+    potential = { always = yes }
+
+    # Gate to Loyal Legion authority (use the mod's style: authority = { OR = { value = ... } })
+    possible = {
+        authority = {
+            OR = {
+                value = auth_loyal_legion
+            }
+        }
+        # Block machines (same pattern other origins use)
+        NOT = { has_species_class = MACHINE }
+    }
+
+    # Permanent empire effects (apply instantly; no events required)
+    modifier = {
+        country_naval_cap_add = 20             # Strong fleet organisation (Chaos ~50)
+        ship_fire_rate_mult = 0.05             # Well-drilled crews
+        ship_build_speed_mult = 0.05           # Efficient yards
+        army_damage_mult = 0.05                # Disciplined troops
+        planet_jobs_unity_produces_mult = 0.05 # Cohesion and loyalty
+        pop_government_ethic_attraction = 0.10 # Strong Imperial ideals
+        council_agenda_speed = 0.10            # Quick execution of strategic plans
+    }
+    # This is how this mod shows the tooltip: via a description key (not custom_tooltip)
+    description = "auth_loyal_legion_desc"
+
+    # match other origins in the mod
+    flags = { "custom_start_screen" }
+    random_weight = { base = 0 }
+}

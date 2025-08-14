@@ -1,0 +1,65 @@
+﻿# Credits: TheDuplex
+l_german:
+ ###################################
+ ### main menu
+ UI_OVERHAUL_TITLE: "UI Overhaul Dynamic"
+ UI_OVERHAUL_VERSION: "4.0"
+ UI_OVERHAUL_BETA: "Offene Beta"
+ UI_OVERHAUL_INFO: "Öffnet das Informationsfenster für die Mod"
+ UI_OVERHAUL_DONATE: "Wenn dir meine Mod gefallen hat, ziehe bitte eine Spende in Betracht! £energy£"
+ UI_OVERHAUL_STEAM: "Steam Workshop"
+ UI_OVERHAUL_STEAM_TOOLTIP: "Öffnet die Steam-Workshop-Seite der Mod"
+ UI_OVERHAUL_DISCORD: "Discord-Server"
+ UI_OVERHAUL_DISCORD_TOOLTIP: "Öffnet den Discord-Server der Mod"
+ UI_OVERHAUL_TEXT_TOP: "Diese Mod ist derzeit für Version §H$UI_OVERHAUL_VERSION$§! von Stellaris aktualisiert. Sie sollte auch mit zukünftigen Bugfix-Patches funktionieren, sofern nicht anders angegeben."
+ UI_OVERHAUL_TEXT_CENTER: "Alle Bugs, Kritik oder Fragen können auf meinem Discord-Server geteilt werden. Ich bin offen für Vorschläge bezüglich Änderungen an der Benutzeroberfläche."
+ UI_OVERHAUL_TEXT_BOTTOM: "Wenn du §HGigastructural Engineering§! verwendest, stelle sicher, dass du den Kompatibilitätspatch nutzt, da du sonst EHOF nicht verwenden kannst.\nDu findest den Patch auf der Steam-Workshop-Seite."
+ ###################################
+ ### tech tree
+ UI_OVERHAUL_TECHTREE: "Technologiebaum"
+ UI_OVERHAUL_TECHTREE_TOOLTIP: "§H$UI_OVERHAUL_TECHTREE$§!\n§GKlicke, um einen externen Technologiebaum zu öffnen.§!"
+ UI_OVERHAUL_TECHTREE_TOOLTIP_DELAYED: "Dieser Technologiebaum ist weder verbunden, noch assoziiert, gesponsert oder in irgendeiner Weise offiziell mit §HParadox Interactive§! verknüpft.\nEs handelt sich lediglich um ein Fanprojekt, gepflegt von §HBloodStainedCrow§! auf GitHub."
+ ####################################
+ ### uncategorized
+ UIO_ETHICS_ATTRACTION: "Ethikanziehung"
+ UIO_MOVE_TO_TOP: "§HOberste Position§!\nAn den Anfang der Liste verschieben"
+ UIO_MOVE_TO_BOTTOM: "§HUnterste Position§!\nAn das Ende der Liste verschieben"
+ UIO_MOVEABLE_WINDOW: "§HDieses Fenster ist beweglich§!\nKlicke und halte die linke Maustaste £mouse1£, um es zu verschieben."
+ ###################################
+ ### Entries below are for formatting entries with styling. Only edit if necessary.
+ ###################################
+ STELLARIS_VERSION: "Stellaris 4.0 'Phoenix'"
+ ###################################
+ ### formatting
+ UI_OVERHAUL_VERSION_PREFIX: "v$UI_OVERHAUL_VERSION$"
+ UI_OVERHAUL_TOOLTIP: "§H$UI_OVERHAUL_TITLE$§!\n§G$UI_OVERHAUL_INFO$§!\n\n$UI_OVERHAUL_DONATE$"
+ UI_OVERHAUL_STEAM_TOOLTIP_FORMAT: "§H$UI_OVERHAUL_STEAM$§!\n§G$UI_OVERHAUL_STEAM_TOOLTIP$§!"
+ UI_OVERHAUL_DISCORD_TOOLTIP_FORMAT: "§H$UI_OVERHAUL_DISCORD$§!\n§G$UI_OVERHAUL_DISCORD_TOOLTIP$§!"
+ ####################################
+ ### tooltip fixes
+ RENAME_STARBASE_TOOLTIP: "§H$RENAME$ $station_generic_01$§!\n§G$RENAME_OBJECT_DESC$§!"
+ RENAME_SECTOR_TOOLTIP: "§H$SECTOR_RENAME$§!\n§G$RENAME_OBJECT_DESC$§!"
+ RENAME_FLEET_TOOLTIP: "§H$RENAME_FLEET_TITLE$§!\n§G$RENAME_OBJECT_DESC$§!"
+ UIO_CARAVANEERS_LABEL_TOOLTIP: "§H$CARAVANEERS_LABEL$§!\n$CARAVANEERS_LABEL_TOOLTIP$"
+ UIO_LGATE_LABEL_TOOLTIP: "§H$LGATE_LABEL$§!\n$LGATE_LABEL_TOOLTIP$"
+ UIO_XENO_COMPATIBILITY_LABEL_TOOLTIP: "§H$XENO_COMPATIBILITY_LABEL$§!\n$XENO_COMPATIBILITY_LABEL_TOOLTIP$"
+ ###################################
+ ### headers
+ UIO_DISTRICT_GENERATOR_TITLE: "£energy£ $DISTRICTS$"
+ UIO_DISTRICT_MINING_TITLE: "£minerals£ $DISTRICTS$"
+ UIO_DISTRICT_FARMING_TITLE: "£food£ $DISTRICTS$"
+ UIO_SECTOR_TYPE_TITLE: "£sector_type£ $TYPE$"
+ UIO_GOVERNOR_TITLE: "£leader£ $governor$"
+ UIO_OUTPUT_TITLE: "£economy£ $OUTPUT$"
+ UIO_POPS_TITLE: "£pops£ $POPS$"
+ UIO_DISTRICTS_TITLE: "£district£ $DISTRICTS$"
+ UIO_APPROVAL_TITLE: "£approval£ $APPROVAL$"
+ UIO_SIZE_TITLE: "£size£ $SIZE$"
+ UIO_SUPPORT_TITLE: "£support£ $FACTION_SUPPORT$"
+ UIO_ISSUES_TITLE: "£issues£ $POP_FACTIONS_COLUMN_DEMANDS$"
+ UIO_EFFECTS_TITLE: "£effects£ $POP_FACTIONS_COLUMN_SUPPORT_EFFECTS$"
+ UIO_TRAITS_TITLE: "£traits£ $SPECIES_VIEW_TRAITS$"
+ UIO_RIGHTS_TITLE: "£rights£ $SPECIES_VIEW_RIGHTS$"
+ UIO_FAVORS_TITLE: "£favor£ $TRADE_CATEGORY_FAVORS$"
+ UIO_DIPLO_WEIGHT_TITLE: "£diplo_weight£ $diplomatic_weight$"
+ UIO_FEDERATION_TITLE: "£federation£ $GALAXY_VIEW_EMPIRE_ALLIANCE_FEDERATION$"

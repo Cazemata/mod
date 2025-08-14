@@ -1,0 +1,10 @@
+tyranid_crisis = {
+    type = crisis
+    playability = crisis_only
+    graphical_culture = biological_01
+    name = "TYRANID_HIVE"
+    ship_prefix = "Hive"
+    is_crisis = yes
+    spawn_enabled = no
+    ai = yes
+}

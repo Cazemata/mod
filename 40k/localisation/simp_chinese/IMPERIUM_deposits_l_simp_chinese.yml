@@ -1,0 +1,50 @@
+﻿l_simp_chinese:
+#################################
+d_iom_imperial_palace:0 "§H帝国皇宫§!"
+d_iom_imperial_palace_desc:0 "帝国皇宫是泰拉内政部的所在地，也是帝国在其王座世界泰拉上的权力和行政中心"
+d_iom_city_ruined:0 "城市废墟"
+d_iom_city_ruined_desc:0 "大型巢都的遗迹"
+d_iom_eternity_gate:0 "§H永恒之门§!"
+d_iom_eternity_gate_desc:0 "永恒之门是通往圣所的最终入口，圣所内安置着黄金王座和帝皇本人。"
+d_iom_forbidden_fortress:0 "§H禁忌要塞§!"
+d_iom_forbidden_fortress_desc:0 "禁忌要塞是星炬厅的基地，包含星炬室和星炬本身。"
+d_terra_hive_karelia_sprawl:0 "卡累里亚巢都"
+d_terra_hive_karelia_sprawl_desc:0 "一个包含黑暗技术时代知识的图书馆的所在地。该图书馆遭到泛太平洋帝国支持者的轰炸，原计划拆除，直到豪瑟尔成功地从一个被认为毫无价值的数据档案中恢复了7000多条文本。"
+d_terra_hive_tashkent_sprawl:0 "塔什干巢都"
+d_terra_hive_tashkent_sprawl_desc:0 "一座位于亚洲大陆的巢都城市。"
+d_terra_hive_salvator_sprawl:0 "萨尔瓦托巢都"
+d_terra_hive_salvator_sprawl_desc:0 "泰拉的巢都城市"
+d_terra_hive_malliax_sprawl:0 "马利亚克斯巢都"
+d_terra_hive_malliax_sprawl_desc:0 "泰拉的巢都城市"
+d_terra_hive_novion_primus_sprawl:0 "诺维恩首巢"
+d_terra_hive_novion_primus_sprawl_desc:0 "泰拉的巢都城市"
+d_terra_hive_xericho_sprawl:0 "泽里科巢都"
+d_terra_hive_xericho_sprawl_desc:0 "泰拉的巢都城市"
+d_terra_hive_ababa_sprawl:0 "亚的斯亚贝巴巢都"
+d_terra_hive_ababa_sprawl_desc:0 "泰拉的巢都城市"
+d_terra_hive_skhallax_sprawl:0 "斯卡哈拉克斯巢都"
+d_terra_hive_skhallax_sprawl_desc:0 "泰拉上的机械神教飞地，是泰拉上仅次于帝国皇宫和国教宫殿的第三大建筑。"
+d_iom_wyverns_gate_spaceport:0 "飞龙之门太空港"
+d_iom_wyverns_gate_spaceport_desc:0 "飞龙之门太空港"
+d_iom_lion_gate_spaceport:0 "狮门太空港"
+d_iom_lion_gate_spaceport_desc:0 "狮门太空港"
+d_iom_damocles_spaceport:0 "达摩克利斯太空港"
+d_iom_damocles_spaceport_desc:0 "达摩克利斯太空港"
+d_iom_khangba_marwu_prison:0 "康巴玛乌监狱"
+d_iom_khangba_marwu_prison_desc:0 "康巴玛乌监狱位于喜玛拉雅山脉的拉卡波希峰之下，专门用来囚禁那些能力强大的灵能者。自统一战争时期，康巴·马鲁便被用于安置帝国之敌，包括那些古泰拉上的科技蛮族军阀。在荷鲁斯之乱开始后，多恩在这里为荷鲁斯专门空出了最坚固的牢房。"
+
+
+############################font color code
+##§W Wwhite
+##§R R red
+##§L L Dark Gold
+##§S S Naturals
+##§H HGolden
+##§Y Y yellow
+##§G G green
+##§E E Cyan
+##§B B dark blue
+##§M M Purple
+##§g g grey
+##§! Finish
+############################font color code

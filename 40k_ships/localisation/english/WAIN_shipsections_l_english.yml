@@ -1,0 +1,18 @@
+﻿l_english:
+
+BATTLECRUISER_BOW_P4H3: "Jovian Bow"
+BATTLECRUISER_BOW_P2M4H2: "Dictator Bow"
+BATTLECRUISER_BOW_S6M8H1: "Lunar Bow"
+DESTROYER_BOW_M3: "Turbulent Heavy Bow"
+TECH_UNLOCK_WAIN_TURBULENT_DESTROYER_TITLE:0 "§HUnlocks Section Type:§! Turbulent Heavy Bow"
+TECH_UNLOCK_WAIN_TURBULENT_DESTROYER_DESC:0 "§HHeavy Destroyer§!\nLarge Batteries on a small frame help to pack a punch against armoured foes."
+TECH_UNLOCK_WAIN_LIGHT_CARRIERS_TITLE:0 "§HUnlocks Section Type:§! Dictator Bow & Jovian Bow"
+TECH_UNLOCK_WAIN_LIGHT_CARRIERS_DESC:0 "§HDictator and Jovian Carriers§!\nNew carrier sections allows for greater fighter capacities"
+TECH_UNLOCK_WAIN_LUNAR_BATTLECRUISER_TITLE:0 "§HUnlocks Section Type:§! Lunar Bow"
+TECH_UNLOCK_WAIN_LUNAR_BATTLECRUISER_DESC:0 "§HLunar Cruiser§!\nThe true jack of all trades of the Imperial Navy"
+tech_gothic_01_turbulent_destroyer:0 "Turbulent-class Heavy Frigate (Destroyer)"
+tech_gothic_01_turbulent_destroyer_desc:0 "Heavily armoured small scouting vessels.Large Batteries on a small frame help to pack a punch against armoured foes."
+tech_gothic_01_light_carriers:0 "Light Carrier Bows"
+tech_gothic_01_light_carriers_desc:0 "Based on the standard cruiser hull, new carrier sections allows for greater fighter capacities"
+tech_gothic_01_lunar_battlecruiser:0 "Lunar-class Cruiser (Battlecruiser)"
+tech_gothic_01_lunar_battlecruiser_desc:0 "Equipped with ferocious heavy-hitting arnament, the Lunar is the true jack of all trades of the Imperial Navy"

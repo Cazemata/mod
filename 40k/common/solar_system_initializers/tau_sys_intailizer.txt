@@ -1,0 +1,88 @@
+tau_system_start_01 = {
+	name = "NAME_T'au"
+	class = "sc_g"
+	radius = 180  # Increased radius to fit outer planets
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 145
+	}
+
+	flags = { tau_start1 }
+	usage = origin
+
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+
+	#  STAR MUST BE FIRST 
+	planet = {
+		name = "Tau"
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = "T'au"
+		class = "pc_tropical"
+		orbit_distance = 100
+		orbit_angle = 45
+		home_planet = yes
+		orbit_target = "Tau"
+		size = { min = 20 max = 30 }
+		deposit_blockers = none 
+		init_effect = {
+			prevent_anomaly = yes
+			auto_generate_districts = no
+			add_district = district_city
+			add_district = district_mining
+			add_district = district_mining
+			add_district = district_mining
+			add_district = district_mining
+			add_district = district_generator
+			add_district = district_generator
+			add_district = district_generator
+			add_district = district_generator
+			add_district = district_farming
+			add_district = district_farming
+			add_district = district_farming 
+		}
+	}
+
+	planet = {
+		count = { min = 2 max = 4 }
+		class = random_non_colonizable
+		orbit_distance = 130
+		orbit_angle = { min = 90 max = 270 }
+		orbit_target = "Tau"
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		class = pc_gas_giant
+		orbit_distance = 140  # Adjusted from 160 to ensure it spawns
+		orbit_angle = { min = 90 max = 270 }
+		orbit_target = "Tau"
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+}

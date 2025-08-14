@@ -1,0 +1,25 @@
+﻿l_english:
+#################################
+ #councilor_research:0 "Fabricator-General"
+ #councilor_research_female:0 "$councilor_research$"
+ #councilor_research_desc:0 "The $TITLE$ is in charge of all technology research."
+ #councilor_defense:0 "Lord High Admiral"
+ #councilor_defense_female:0 "$councilor_defense$"
+ #councilor_defense_desc:0 "The $TITLE$ is in charge of military administration."
+ #councilor_state:0 "Head of the Administratum"
+ #councilor_state_female:0 "$councilor_state$"
+ #councilor_state_desc:0 "The $TITLE$ is in charge of diplomatic affairs and Administratum logistics."
+############################font color code
+##§W Wwhite
+##§R R red
+##§L L Dark Gold
+##§S S Naturals
+##§H HGolden
+##§Y Y yellow
+##§G G green
+##§E E Cyan
+##§B B dark blue
+##§M M Purple
+##§g g grey
+##§! Finish
+############################font color code

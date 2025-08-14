@@ -1,0 +1,137 @@
+########### Agri District ##########
+
+district_algaefood_farming = {
+	base_buildtime = 600
+	icon = district_agri_farming
+	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_food
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = 40kagri_world
+	}
+
+	potential = {
+		uses_district_set = 40kagri_world
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			exotic_gases = 50
+		}
+		upkeep = {
+			energy = 5
+			exotic_gases = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 400
+                job_farmer_add = 800
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+				is_anglers_empire = no
+			}
+		}
+		text = job_farmer_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		text = job_farmer_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = no
+				is_anglers_empire = yes
+			}
+		}
+		text = job_farmer_effect_desc
+	}
+}
+
+district_planet_agri = {
+        icon = district_rw_farming
+	base_buildtime = 340
+	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_food
+	}
+	
+        show_on_uncolonized = {
+         uses_district_set = 40kagri_world
+	}
+
+	potential = {
+         uses_district_set = 40kagri_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_farming_uncapped
+	}
+    
+        conversion_ratio = 0
+	convert_to = {
+		district_industrial_city
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 600
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 400
+                job_farmer_add = 800
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_farmer_effect_desc
+	}
+
+	prerequisites = {
+		tech_industrial_farming
+	}
+
+}

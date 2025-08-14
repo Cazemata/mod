@@ -1,0 +1,80 @@
+##################################################
+############ WAIN NSC2 SPECIFIC TECH #############
+##################################################
+
+##########################################
+############# START TECH #################
+##########################################
+
+tech_gothic_01_turbulent_destroyer = {
+	cost = 0
+	area = engineering
+	tier = 0
+	
+	is_rare = yes
+	is_dangerous = no
+	 
+	category = { voidcraft }	
+	prerequisites = { "tech_destroyers" }					
+	weight = 0
+	is_reverse_engineerable = no	
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_WAIN_TURBULENT_DESTROYER_TITLE"			
+			desc = "TECH_UNLOCK_WAIN_TURBULENT_DESTROYER_DESC"			
+		}
+	}
+	
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 0 }
+}
+
+tech_gothic_01_light_carriers = {
+	cost = 0
+	area = engineering
+	tier = 0
+	
+	is_rare = yes
+	is_dangerous = no 
+	 
+	category = { voidcraft }	
+	prerequisites = { "tech_escortcarrier_1" }					
+	weight = 0
+	is_reverse_engineerable = no	
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_WAIN_LIGHT_CARRIERS_TITLE"			
+			desc = "TECH_UNLOCK_WAIN_LIGHT_CARRIERS_DESC"			
+		}
+	}
+	
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 0 }
+}
+
+tech_gothic_01_lunar_battlecruiser = {
+	cost = 0
+	area = engineering
+	tier = 0
+	
+	is_rare = yes
+	is_dangerous = no 
+	 
+	category = { voidcraft }	
+	prerequisites = { "tech_Battlecruiser_1" }					
+	weight = 0
+	is_reverse_engineerable = no	
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_WAIN_LUNAR_BATTLECRUISER_TITLE"			
+			desc = "TECH_UNLOCK_WAIN_LUNAR_BATTLECRUISER_DESC"			
+		}
+	}
+	
+	weight_modifier = { factor = 0 }
+	ai_weight = { factor = 0 }
+}
+

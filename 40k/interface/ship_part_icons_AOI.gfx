@@ -1,0 +1,35 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ship_part_iom_warp_drive_1"
+		texturefile = "gfx/interface/icons/ship_parts/warp_drive_1.dds"
+	}
+		
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_MACROCANNONS"
+		texturefile = "gfx/interface/icons/ship_parts/macrocannons_1.dds"
+	}
+		
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_LANCE_BATTERIES"
+		texturefile = "gfx/interface/icons/ship_parts/lance_batteries.dds"
+	}
+		
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_NOVA_CANNON"
+		texturefile = "gfx/interface/icons/ship_parts/novacannon_1.dds"
+	}
+		
+}

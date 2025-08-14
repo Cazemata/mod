@@ -1,0 +1,8 @@
+
+on_tech_increased = {
+	events = {
+		gothic.100
+		gothic.102
+		gothic.104
+	}
+}

@@ -1,0 +1,466 @@
+######
+# AUTOCANNON
+######
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "terrancannons_small_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "auto_cannons_small_muzzle_particle" keep_particle = yes sound = { soundeffect = terrancannon_fire} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_fire" } }
+	}
+}
+
+entity = {
+	name = "terrancannons_medium_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "auto_cannons_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = terrancannon_fire} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_fire" } }
+	}
+}
+
+entity = {
+	name = "terrancannons_large_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "auto_cannons_large_muzzle_particle" keep_particle = yes sound = { soundeffect = terrancannon_fire} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_fire" } }
+	}
+}
+
+entity = {
+	name = "terrancannons_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "auto_cannons_small_hit_effect" sound = { soundeffect = terrancannon_hit_small } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "auto_cannons_medium_hit_effect" sound = { soundeffect = terrancannon_hit_medium } }
+		event = { sound = { soundeffect = "distance_terrancannon_hit_medium" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "auto_cannons_large_hit_effect" sound = { soundeffect = terrancannon_hit_large } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_large" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "auto_cannons_small_hit_effect" sound = { soundeffect = terrancannon_hit_small } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "auto_cannons_medium_hit_effect" sound = { soundeffect = terrancannon_hit_medium } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_medium" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "auto_cannons_large_hit_effect" sound = { soundeffect = terrancannon_hit_large } }
+		event = { sound = { soundeffect = "distance_terrancannon_hit_large" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+######
+# RIPPER AUTOCANNON
+######
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "terrancannons_tac_small_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ripper_auto_cannons_small_muzzle_particle" keep_particle = yes sound = { soundeffect = terrancannon_fire_2} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_fire" } }
+	}
+}
+
+entity = {
+	name = "terrancannons_tac_medium_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ripper_auto_cannons_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = terrancannon_fire_2} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_fire" } }
+	}
+}
+
+entity = {
+	name = "terrancannons_tac_large_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ripper_auto_cannons_large_muzzle_particle" keep_particle = yes sound = { soundeffect = terrancannon_fire_2} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_fire" } }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "terrancannons_tac_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "ripper_auto_cannons_small_hit_effect" sound = { soundeffect = terrancannon_hit_small } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_tac_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "ripper_auto_cannons_medium_hit_effect" sound = { soundeffect = terrancannon_hit_medium } }
+		event = { sound = { soundeffect = "distance_terrancannon_hit_medium" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_tac_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "ripper_auto_cannons_large_hit_effect" sound = { soundeffect = terrancannon_hit_large } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_large" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_tac_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "ripper_auto_cannons_small_hit_effect" sound = { soundeffect = terrancannon_hit_small } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_tac_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "ripper_auto_cannons_medium_hit_effect" sound = { soundeffect = terrancannon_hit_medium } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_medium" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_tac_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "ripper_auto_cannons_large_hit_effect" sound = { soundeffect = terrancannon_hit_large } }
+		event = { sound = { soundeffect = "distance_terrancannon_hit_large" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+######
+# STORMFIRE AUTOCANNON
+######
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "terrancannons_torac_small_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "stormfire_auto_cannons_small_muzzle_particle" keep_particle = yes sound = { soundeffect = terrancannon_fire_3} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_fire" } }
+	}
+}
+
+entity = {
+	name = "terrancannons_torac_medium_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "stormfire_auto_cannons_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = terrancannon_fire_3} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_fire" } }
+	}
+}
+
+entity = {
+	name = "terrancannons_torac_large_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "stormfire_auto_cannons_large_muzzle_particle" keep_particle = yes sound = { soundeffect = terrancannon_fire_3} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_fire" } }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "terrancannons_torac_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "stormfire_auto_cannons_small_hit_effect" sound = { soundeffect = terrancannon_hit_small } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_torac_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "stormfire_auto_cannons_medium_hit_effect" sound = { soundeffect = terrancannon_hit_medium } }
+		event = { sound = { soundeffect = "distance_terrancannon_hit_medium" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_torac_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "stormfire_auto_cannons_large_hit_effect" sound = { soundeffect = terrancannon_hit_large } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_large" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_torac_small_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "stormfire_auto_cannons_small_hit_effect" sound = { soundeffect = terrancannon_hit_small } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { trigger_once = yes sound = { soundeffect = "distance_terrancannon_hit_small" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_torac_medium_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "stormfire_auto_cannons_medium_hit_effect" sound = { soundeffect = terrancannon_hit_medium } }
+		
+		event = { sound = { soundeffect = "distance_terrancannon_hit_medium" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "terrancannons_torac_large_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 node = "root" particle = "stormfire_auto_cannons_large_hit_effect" sound = { soundeffect = terrancannon_hit_large } }
+		event = { sound = { soundeffect = "distance_terrancannon_hit_large" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+######
+# NC TITAN 305mm
+######
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "nctitan_1_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "kinetic_artillery_muzzle_particle" keep_particle = yes sound = { soundeffect = nctitan_fire} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_nctitan_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "nctitan_1_s_entity"
+	pdxmesh = "kinetic_artillery_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "kinetic_artillery_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 0.5
+}
+entity = {
+	name = "nctitan_1_m_entity"
+	pdxmesh = "kinetic_artillery_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "kinetic_artillery_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 1
+}
+
+entity = {
+	name = "nctitan_1_l_entity"
+	pdxmesh = "kinetic_artillery_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "kinetic_artillery_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 2
+}
+
+
+#HIT
+entity = {
+	name = "nctitan_1_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5.0 looping = no
+		event = { time = 0.0 node = "root" particle = "kinetic_artillery_hit_effect" sound = { soundeffect = nctitan_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_nctitan_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "nctitan_1_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 node = "root" particle = "kinetic_artillery_hit_effect" }
+		event = { time = 0.0 node = "root" particle = "projectile_medium_shield_hit_effect" }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}

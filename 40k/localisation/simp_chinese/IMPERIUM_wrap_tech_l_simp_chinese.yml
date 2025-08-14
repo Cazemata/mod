@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+IOM_WARP_DRIVE_1: "亚空间引擎"
+IOM_WARP_DRIVE_1_DESC: "亚空间引擎是整合于星舰的跃迁装置，允许智慧种族进入由纯粹灵能构成的亚空间维度——该维度与物质界的四维现实空间相互映射并深层关联。"
+tech_iom_warp_drive_1: "亚空间引擎技术"
+tech_iom_warp_drive_1_desc: "通过逆向解析STC（标准建造模板）碎片重组而成。"
+ #
+ TECH_UNLOCK_WARP_JUMPDRIVE_1_TITLE:1 "§解锁组件:§!亚空间引擎"
+ TECH_UNLOCK_WARP_JUMPDRIVE_1_DESC:1 "§亚空间引擎§!\n$tech_warp_jump_drive$"
+ #TECH_UNLOCK_HELM_OF_COMMAND_TITLE:1 ""
+ #TECH_UNLOCK_HELM_OF_COMMAND_DESC:1 ""
+ #TECH_UNLOCK_SALVAGED_WEAPONRY_TITLE:1 ""# FINISH BONUS
+ #TECH_UNLOCK_SALVAGED_WEAPONRY_DESC:1 ""
+ #TECH_UNLOCK_ADEPTUS_ASTARTES_TITLE:1 ""
+ #TECH_UNLOCK_ADEPTUS_ASTARTES_DESC:1 ""

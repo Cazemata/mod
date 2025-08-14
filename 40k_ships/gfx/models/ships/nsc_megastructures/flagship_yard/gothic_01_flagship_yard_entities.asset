@@ -1,0 +1,19 @@
+@Flagship_scale = 10.0
+
+entity = {
+	name = "gothic_01_flagship_construction_yard_entity"
+	pdxmesh = "humanoid_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+
+
+
+
+

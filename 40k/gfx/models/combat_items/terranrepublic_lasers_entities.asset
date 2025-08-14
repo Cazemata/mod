@@ -1,0 +1,109 @@
+#######
+# VANU
+#######
+
+# VANUlaser
+
+entity = {
+	name = "vanulaser_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "gamma_laser_large_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "vanulaser_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "gamma_laser_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = vanulaser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_vanulaser_fire" } }
+	}
+}
+
+entity = {
+	name = "vanulaser_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "gamma_laser_small_muzzle_particle" keep_particle = yes sound = { soundeffect = vanulaser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_vanulaser_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "vanulaser_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = gamma_laser_small_hit_effect sound = { soundeffect = vanulaser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_vanulaser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "vanulaser_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = gamma_laser_medium_hit_effect sound = { soundeffect = vanulaser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_vanulaser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "vanulaser_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = gamma_laser_large_hit_effect sound = { soundeffect = vanulaser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_vanulaser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "vanulaser_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = gamma_laser_small_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_small_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "vanulaser_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = gamma_laser_medium_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "vanulaser_large_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = gamma_laser_large_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_large_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}

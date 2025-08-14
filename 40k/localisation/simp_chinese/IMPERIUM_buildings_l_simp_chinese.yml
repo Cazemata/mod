@@ -1,0 +1,601 @@
+﻿l_simp_chinese:
+#################################
+#Imperium Buildings#
+building_fortress_iom: "帝国民兵基地"
+building_fortress_iom_desc: "为防御帝国免受异形威胁而设立的训练，驻扎及武装的设施。"
+building_promethium_refinery: "钷素精炼厂"
+building_promethium_refinery_desc: "钷素是帝国军队广泛应用于装甲及航飞载具的标准载具燃料。因其可在太空与水下燃烧而极具价值。" #待改：航天器——space craft
+building_librarium: "典籍馆"
+building_librarium_desc: "纷争时代的惨烈战争中无数知识失传，保存现存典籍成为内政部与机械修会共同的神圣职责。在发达帝国世界的大城市中，威严的典籍馆收藏成千上万书籍记录，供有权限的帝国公仆查阅。"
+building_manufactorium: "制造厂"
+building_manufactorium_desc: "尽管纷争时代遗失大量科技，但帝国技术仍不可小觑。遍布银河的工业复合体生产着从衣物到等离子炸弹的亿万物资。这些设施皆由行政部与机械修会严密管控，工人常常不知产品最后的样貌和去向。占领或摧毁制造厂可切断敌军珍贵的资源供给。"
+building_factorum: "工厂"
+building_factorum_desc: "为帝国公民生产消费品的工厂。"
+building_mausoleum: "陵墓"
+building_mausoleum_desc: "对于绝大部分帝国公民来说，死亡绝非其侍奉帝皇的终点。他们的遗体将会被转化为食品原料，肥料以及其他物资，继续投身于人类的伟大事业；除却内政部书记员外，没有人会继续铭记他们曾经存在的痕迹。其中功绩显赫者或许得以享受葬入帝国陵墓的尊荣，民众可在此瞻仰其事迹。历代英烈长眠之地激发着当地守军狂热的殉道意志，陵墓一旦颠覆，将对守军的士气施以毁灭性打击。"
+building_administratum: "内政部"
+building_administratum_desc: "帝国内政部以其庞大臃肿的机构统御着全帝国境内数以百万计的宜居世界，行星政府/档案局/税务中心等万千设施皆由其管控，正门常以帝国天鹰徽作饰。诸多浴血猛攻与决死固守皆发生于行星政府建筑内外——因其天然是战略中心。内政部的陷落往往标志着整座城市的覆灭，故而此处常常成为进攻者的首要目标。"
+building_arbitratorum: "法务部"
+building_arbitratorum_desc: "此处乃是帝国最大的暴力机关之一，囊括了囚牢，军械所以及官僚系统，令巢都黑帮为之胆寒。屋顶设有反重力载具悬停机坪，可瞬息化身为火力平台。凭借堪比行星防卫军的防御力量，执法总部不仅可以镇压帮派叛乱，更能抵御正规军级的入侵力量。"
+building_generatorum: "发电厂"
+building_generatorum_desc: "每日凌晨，帝国公民们都聚集于欧姆弥赛亚的设施中劳作，驱动起帝国经济的运转。发电厂是其中最为常见的设施，反应堆可为附近的巢都大楼供电。而当巢都世界遇袭时，这些设施亦可以为坦克乃至泰坦提供急需能源。"
+building_cellarion: "仓储站"
+building_cellarion_desc: "帝国境内没有任何一个世界是孤立的；各个世界从帝国的其他世界获取物资的同时，也要向其他世界交付代价。依据他们的自身资源，这些世界或提供食品原料，或提供器械矿藏，亦或是其他万千物资。鲜有巢度不设立这样的巨型仓储复合体，那些货物于此往来集中，准备运往其他地区，世界，亦或是堆积外来货物以待其分发至辖区"
+building_residence: "高级居所"
+building_residence_desc: "发电厂主管，高阶官僚，安全主管构成了上层阶级，此等显贵方能负担并栖居于这些悬于巢都毒瘴层之上的奢华寓所。"
+building_legionary_statue: "军团雕像"
+building_legionary_statue_desc: "在古老的时代，战争英雄受铭牌/纪念碑或冠名地景纪念。虽历数千年，此传统仍存,催生传奇英雄的战争亦然。" 
+building_machine_cult: "机械教廷"
+building_machine_cult_desc: "机械教廷是传奇机械修会的巨型建筑，屋顶高悬其徽记。内部数十伺服奴工在技术神甫指导下劳作。结构的主体焊接完成时，技术神甫执行机器唤醒仪式，以祷言召引机魂。最终载具可服役于星际战士。"
+building_plasma_generatorum: "等离子发电厂"
+building_plasma_generatorum_desc: "使用多芯屏蔽势等离子反应堆的高级发电厂"
+building_gene_seed_repository:0"基因种子储存库"
+building_gene_seed_repository_desc:0"基因种子储存库用于储存星际战士基因种子以及制造其的古老科技。 "
+building_chapel_barracks:0 "修道院兵营"
+building_chapel_barracks_desc:0 "星际战士自轨道战斗驳船转运至此兵营，避免误降敌阵或坠毁。此建筑是主要生产中心，须不惜代价保护。无此设施则无法招募星际战士。"
+building_navy_recruitment:0 "星界军征募中心"
+building_navy_recruitment_desc:0 "星界军提供了一个激动人心，挑战重重且回报丰厚的职业生涯！为帝国青年开启了个人发展与职位晋升的万千机遇，亦或是部署于战区的头几个小时内即化为尘沙一捧……"
+building_promethium_forge:0"钷素熔炉"
+building_promethium_forge_desc:0"钷素熔炉是机械教才智的奇迹，藉由只有火星技术神甫通晓的知识——以等离子感应，中子轰击以及神圣的净化仪式，将原始钷素转化为高密度合金与精金。这些材料对帝国的战争机器，星舰及要塞世界的建设至关重要。"
+
+
+#Eldar Buildings#
+building_paradisaic_complex:0 "天堂枢纽"
+building_paradisaic_complex_desc:0 "一座展示艾达灵族建筑全部优雅之美的巨型建筑群。"
+building_asuryani_center:0 "阿苏焉中心"
+building_asuryani_center_desc:0 "方舟世界上一片广阔区域，遍布着包含无数档案柜的官僚机构。"
+building_eldar_workshop:0 "灵族工坊"
+building_eldar_workshop_desc:0 "灵族高效战略的核心在于可畅行于复杂地形，快速突袭敌军的高机动载具。工艺工坊为指挥官提供了多种规格，数量庞大的载具。此外，经验可向上追溯数百年的匠师们一直在持续的跟进钻研，以提升其武器的效能与可靠性。"
+building_craftworld_fabricator:0 "方舟世界制造厂"
+building_craftworld_fabricator_desc:0 "此建筑运用难以理解的维度科技，穿隧至其他现实并汲取其宝贵资源。"
+building_holy_foundry:0 "方舟世界铸造厂"
+building_holy_foundry_desc:0 "方舟世界的铸造厂以超凡效率将原材料转化为先进的合金。"
+building_forbidden_library:0 "禁忌图书馆"
+building_forbidden_library_desc:0 "在灵族因色孽诞生而衰落后，艾达灵族的方舟世界成为其关于巫术与混沌毁灭之力的古老知识的，现存的，唯一来源。"
+building_spiritspire_dharquese:0 "幽魂尖塔达'哈奎斯"
+building_spiritspire_dharquese_desc:0 "距此尖塔不远处训练着新的灵族战士，同时也提升了本地防御部队的征募指标。"
+
+#Dark Eldar Buildings#
+ building_hall_of_blood:0 "鲜血之厅"
+ building_hall_of_blood_desc:0 "一座展现黑暗灵族建筑全部扭曲之美的巨型建筑群。"
+ building_dark_factory:0 "黑暗工厂"
+ building_dark_factory_desc:0 "黑暗灵族高效战略的核心在于可畅行于复杂地形，快速突袭敌军的高机动载具。黑暗工坊为指挥官提供了多种规格，数目庞大的载具。此外，经验可向上追溯数百年的匠师们一直在持续的跟进钻研，以提升其武器的效能与可靠性。"
+ building_slave_chamber:0 "奴隶囚牢"
+ building_slave_chamber_desc:0 "此囚笼为取悦混沌之神色孽而筑，囚禁万千奴隶以供黑暗灵族权贵驱使享乐。此灵魂精粹收割场提供了大量的奴隶用以驱使，从痛苦中萃取的灵能得以催化技术突破，部队增援速度，因囚禁其中的不幸灵魂的哀嚎会刺激突击部队施以更甚的虐行。最终，拷问者可以牺牲一个奴仆，来释放由纯粹痛苦驱动的精神力量。"
+ building_soul_cage:0 " 奴隶灵魂囚笼"
+ building_soul_cage_desc:0 "此囚笼测试奴隶灵魂，判定其是否值得为取悦主人而承受痛苦。"
+ building_plasma_generator:0 "等离子发生器"
+ building_plasma_generator_desc:0 "历经漫长岁月，约束场仍保持稳定。无人知晓其理。"
+ building_thermo_plasma_forge:0 "热等离子熔炉"
+ building_thermo_plasma_forge_desc:0 "热等离子熔炉以超凡效率将原材料转化为先进的合金。"
+ building_haemonculus_laboratory:0 "血伶人实验室"
+ building_haemonculus_laboratory_desc:0 "在被混沌邪神色孽奴役前，黑暗灵族曾是宇宙最具有文化和学识的文明之一。此学术传统在血伶人实验室中延续，虽方式更为扭曲。在此，阴险巫术与痛苦，苦难及死亡的运用被用于研究提升部队战力。实验室建成后，指挥官可解锁小队长选项及特殊单位。"
+ building_wych_cult_arena:0 "巫灵教派竞技场"
+ building_wych_cult_arena_desc:0 "对将残忍视为艺术，灵魂作为生命养料的种族而言，巫灵教派竞技场是其文化的核心体现。在竞技场死亡游戏中，巫灵教派训练近战技巧，使巫灵小队得以部署。此外，扭曲的导师们研究利用阵亡者受折磨的灵魂作为突袭武器。"
+ building_kabal_fortress:0 "阴谋团要塞"
+ building_kabal_fortress_desc:0 "阴谋团要塞是黑暗灵族建立的建筑。受折磨者的尖叫在此阴森要塞无尽厅堂中回响，黑暗灵族基础部队由此部署。此外，黑暗灵族执政官的秘会从其暗室中研究新的部署和能力选项。"
+ building_tower_of_loathing:0 "憎恶之塔"
+ building_tower_of_loathing_desc:0 "对敌方指挥官最沮丧的景象莫过于憎恶之塔矗立于被占战略点或圣物处。这些丑陋塔楼在新占领地充当基础防御工事，在援军抵达前提供保护。"
+ 
+#Necron Buildings#
+ building_ancient_monolith:0 "远古方尖碑"
+ building_ancient_monolith_desc:0 "与其说是载具，不如说是移动建筑。远古方尖碑保留其静止时的生产能力，但却能亲临战场：它缓慢飘入战场，向胆敢靠近的敌军单位发射强大的高斯电弧与撼地粒子鞭。当然，它无需等待敌人靠近：可直接传送至战场开始灭绝生灵。"
+ building_engaged_monolith:0 "被激活的方尖碑"
+ building_engaged_monolith_desc:0 "与其说是载具，不如说是移动建筑。被激活的方尖碑保留其静止时的生产能力，但却能亲临战场：它缓慢飘入战场，向胆敢靠近的敌军单位发射强大的高斯电弧与撼地粒子鞭。当然，它无需等待敌人靠近：可直接传送至战场开始灭绝生灵。"
+ building_obelisk:0 "方尖碑"
+ building_obelisk_desc:0 "太空死灵征召高阶士兵与武器的能力不受限，但即使以其强大科技，从深处调集部队装备仍属难事。在战略点与圣物处建造方尖碑，可更易聚焦其埋藏军团所需组件，更轻松快速地掘出。"
+ building_dormant_monolith:0 "休眠方尖碑"
+ building_dormant_monolith_desc:0 "休眠方尖碑初现时几乎不会露出地面，如冰山般大部分质量隐于地下。随着死灵扩张，方尖碑将拔地而起，生产愈发强大的毁灭工具用于对抗生灵。"
+ building_energy_core:0 "能量核心"
+ building_energy_core_desc:0 "此结构内存放最先进的死灵计算机，确保最强死灵武器与装备得以正确复苏。经适当增强后，甚至能导引星神之力。其算力足以在方尖碑缺席时维持整个死灵基础设施，最终使远古方尖碑能离开基地参战。"
+ building_plasma_monolith:0 "等离子方尖碑"
+ building_plasma_monolith_desc:0 "整个死灵军团皆由其神秘活体金属构成，但塑形与充能此物质需巨量能量。其主要来源是其看似简单的等离子方尖碑。然而随发电网络扩大，整合新发生器愈发复杂，需投入更多能量与时间建立必要连接。"
+ building_thermo_plasma_monolith:0 "热等离子方尖碑"
+ building_thermo_plasma_monolith_desc:0 "太空死灵可以建造一个热等离子方尖碑,利用矿渣堆的粗原料。矿渣可如他族般用作燃料,但由于太空死灵的特殊性质,其利用效率极低。"
+ building_forbidden_archive:0 "禁忌档案馆"
+ building_forbidden_archive_desc:0 "禁忌档案馆是死灵圣物库，存有死灵领主可用的最强工具。因从墓穴深处妥善提取此装备极难，单场战役中仅能掘出有限数量的圣物。"
+ building_summoning_core:0 "召唤核心"
+ building_summoning_core_desc:0 "召唤核心构成无形死灵传送网络的枢纽，使多数步兵单位可传送至战场任意固定死灵据点，并为复活高阶死灵士兵提供必要焦点。死灵武士与墓穴幽灵亦能通过此网络导引能量大幅增强自身力量。"
+ building_greater_summoning_core:0 "大型召唤核心"
+ building_greater_summoning_core_desc:0 "更强大的部队需更强大的枢纽无损复活，故需高等召唤核心。"
+ building_gauss_turret:0 "高斯炮塔"
+ building_gauss_turret_desc:0 "此简易结构充当死灵能量聚焦机构，向过于靠近的敌军单位引导威力惊人的爆破。通过增加聚焦板，可改进爆破以穿透重装甲。"
+
+ #Tau Buildings#
+ building_civilian_factory:0 "民用工厂"
+ building_civilian_factory_desc:0 "一般钛族消费品在此工厂制造。."
+ building_vehicle_beacon:0 "载具信标"
+ building_vehicle_beacon_desc:0 "载具信标提供小型电子装配线，使我们能组装钛族载具。"
+ building_shaping_center:0 "塑形中心"
+ building_shaping_center_desc:0 "如果你想为钛族军队制造军需品，则需此建筑。"
+ building_plasma_chamber:0 "等离子体室"
+ building_plasma_chamber_desc:0 "等离子室是获取能量资源的主要手段之一。"
+ building_thermo_plasma_chamber:0 "热等离子体室"
+ building_thermo_plasma_chamber_desc:0 "热等离子体室运作类似普通等离子体室，但须直接建于矿渣堆上。建成后，此结构可大幅提升其他资源积累速率，然与其等离子体室同类，其极不稳定。"
+ building_path_to_enlightenment:0 "启蒙之路"
+ building_path_to_enlightenment_desc:0 "钛族主要研究建筑，启蒙之径承担多项重要职能。建成后，此结构将允许你升级步兵与载具能力，同时提升人口增长与国家规模上限。"
+ building_coalition_center:0 "联盟中心"
+ building_coalition_center_desc:0 "建造此结构进一步推动钛族追求上上善道。联盟中心提供更舒适的居住空间。"
+ building_listening_post:0 "监听哨站"
+ building_listening_post_desc:0 "监听哨站可建于任何被占战略点或圣物遗址。建成后，此结构将提升该点补给资源积累速率，并增加敌军夺取难度。"
+
+# TYR
+ building_tyranid_hive:0 "泰伦虫巢"
+ building_tyranid_hive_desc:0 "泰伦虫族的枢纽建筑.繁殖子个体，治疗附近的个体并允许虫群增援"
+ building_nutritional_converter:0 "营养转化器" #待改 需要翻看图标确定是器官/机械
+ building_nutritional_converter_desc:0 "将任何生物质转化为泰伦虫群可消化的养分。"
+ building_mineral_extractor:0 "矿物萃取器" #待改 需要翻看图标确定是器官/机械
+ building_mineral_extractor_desc:0 "处理行星地壳矿物以供虫巢使用"
+ building_energy_producer:0 "能量生产器" #待改 需要翻看图标确定是器官/机械
+ building_energy_producer_desc:0 "一个将有机物高效转化为能量的设施"
+ building_chitinous_producer:0 "几丁质生产器" #待改 需要翻看图标确定是池子/器官/机械
+ building_chitinous_producer_desc:0 "将矿物加工为特殊几丁质酶体"
+ building_hive_researcher:0 "虫巢研究中枢"
+ building_hive_researcher_desc:0 "从其他二十五个虫巢处收集的知识大概都储藏在这里，但想要操作其复杂的数据检索系统极为困难。"
+ building_brood_nest:0 "育巢"
+ building_brood_nest_desc:0 "育巢是泰伦虫巢母体的筑巢地,由虫巢凝胶,一种工蜂分泌的胶质聚合物构筑而成" #待改 hive resin，树脂一词指向性过强，易产生谬误，因此筛选出几个替换方案：1，虫巢胶质，2，虫巢胶质聚合物；3，虫巢凝胶；4，虫巢胶脂
+ building_hive_cocoons:0 "虫巢茧囊"
+ building_hive_cocoons_desc:0 "由泰伦口腔分泌物制成的茧囊，用来限制宿主迫使其靠近虫卵，或将宿主逐渐转化成虫卵。"
+ building_hive_noder:0 "虫巢节点"
+ building_hive_noder_desc:0 "行星防御结构，伤害所有目标并压制步兵单位。"
+ building_hive_post:0 "哨位节点"
+ building_hive_post_desc:0 "这些哨站可供巡逻子个体时刻扫描集体意识并搜寻反常与故障的迹象"
+ building_hive_pool:0 "孵化池"
+ building_hive_pool_desc:0 "在工蜂悉心照料下，此池刺激虫卵加速生长。"
+ building_hive_brain:0 "虫巢大脑" #待改 脑虫？
+ building_hive_brain_desc:0 "一个巨型生物脑，可以执行极为复杂的运算，进而提升整个行星的科研产出。"
+ building_processing_node:0 "处理节点"
+ building_processing_node_desc:0 "集中处理全行星资源与生产的巨型设施。"
+ building_reprocessing_node:0 "再处理节点"
+ building_reprocessing_node_desc:0 "将生物与工业废料转化成可循环使用的清洁能源与矿物。"
+ building_capillary_node:0 "毛细节点"
+ building_capillary_node_desc:0 "泰伦虫族最近遗留下的可破坏地形。向外放出基本突触与毛细突触" #待改 Crushable terrain bearing testament to a recent Tyranoform. Emits Basic Synapse and Capillary Synapse.不像人话
+ building_ravener_tunnel:0 "蛇虫隧道"
+ building_ravener_tunnel_desc:0 "蛇虫隧道为行动和储藏提供了额外空间。"
+
+# ORK
+ building_irontoff_bastion:0 "铁顶堡垒"
+ building_irontoff_bastion_desc:0 "铁顶堡垒是一个锈迹斑斑的高耸建筑，到处都塞满了装甲板，火力点，梯子和隔墙板。一切都非常waaaagh！到处都是额外的柱子，板子和头骨！！有些时候它是防线中的据点，但更多时候它是一个独立的要塞，里面塞满了绿皮战帮（当然还有较小的屁精和奴隶），用以威慑附近。"
+ building_kustom_workshop:0 "改装作坊" #kustom workshop。 推测为custom的谐音。
+ building_kustom_workshop_desc:0 "绿皮改装作坊,是他们为突击进行最后准备工作时树立起来的。焊枪火星彻夜闪烁，绞盘锁链终日吵闹,全新的致命机器由此诞生！这里能够很轻易地为每一位喜欢开车创飞敌人的，坠牛逼的大头头儿创造出足够waaaaagh的车！"
+ building_smack_bar:0 "猛击酒吧"
+ building_smack_bar_desc:0 "猛击酒吧是每一个绿皮聚落的关键！不然你寻思小子们从waaaagh里回来时要去哪里？这里有很多足够waaaagh的东西等待着小子们——烤肉，菌酒！当然，还有必不可少的，最waaaagh的，能够扔到其他绿哥们儿脑袋上的桌子跟板凳！！！！"
+ building_minelayer_craft:0 "布雷艇"
+ building_minelayer_craft_desc:0 "能动的下巴！好几门大炮！更别提还有添加其他火炮的额外空间了！这台超waaaagh的野兽完全可以跟其他超大号的步行玩意儿比划比划！"
+ building_dakka_bunker:0 "吵吵地堡"
+ building_dakka_bunker_desc:0 "粗糙但效果非常waaaagh的，由金属和混凝土构成了具有超厚的墙和装甲顶棚的绿皮地堡，为从窗口开枪的小子们提供了无敌的防护。当然还有最waaaagh的——金属板上用螺栓装满了尖刺！"
+ building_ork_quarters:0 "绿皮营房"
+ building_ork_quarters_desc:0 "营房拥有极佳的视野，为小子们提供了充足的空间用来摆放战利品，啃咬宠物和打盹儿。它本身就很容易形成一座堡垒，里面塞满了火炮，好几层顶棚可以当作临时射击点，还插上了足够waaaaagh的尖刺。每当他们成功发动了一场waaagh，小子们都会用掠夺来的材料加固每一堵墙。"
+ building_eavy_metal_stage:0 "噪音舞台"
+ building_eavy_metal_stage_desc:0 "小子们喜欢噪音！更多的噪音！酋长也一样！因此他们雇佣了超级waaaagh的重金属乐队来参加waaaagh! 地精技工们在几分钟内搭建起临时舞台并架设巨型喇叭与强力功放器。在绿色射灯的不停闪烁之下，乐队的演奏震耳欲聋，吵得敌军心神不宁，也使得小子们躁动起来，将整个前线变成了一场盛大的死亡对对碰。"
+ building_ork_barrack:0 "绿皮兵营"
+ building_ork_barrack_desc:0 "绿皮兵营是最常见的速成建筑，从外围到中心，遍布整个据点。这些足够waaaaagh的建筑同时也是射击平台，配备了哨塔和便于登上的屋顶. 内部空间宽敞到能塞进好几十个小子，是集结战帮的核心建筑。"
+ building_troop_transmitta:0 "部队传送器"
+ building_troop_transmitta_desc:0 "大技霸'斯卡格鲁克'的重磅发明,用于迅速突袭敌人或是收集废料。传送门waaaagh到足以通过绿皮战车或是其他什么吵闹的巨兽。仅需数个小时就能投送一整支部队！"
+ building_sentry_post:0 "瞭望桩"
+ building_sentry_post_desc:0 "审美独特的地精建造者'菲波'以金属和混凝土打造的粗糙建筑，兼具瞭望与火力功能,遍布整个绿皮营地。"
+ building_skull_trophy_rack:0 "骨巨圾" #待改 原文skull trophy rack
+ building_skull_trophy_rack_desc:0 "在绿皮营地中很常见，用于堆放从waaaagh中收集来的战利品——成堆的脑袋，颅骨以及头盔，埋了巴汰的旧铁棍上挂着破烂的横幅，横幅上还挂满了从对方的车上扯下来的徽章。一个氏族和他们的战争头目够不够waaagh？当然要先看看这些战利品！"
+ building_mechboss_site_totem:0 "技霸指引图腾"
+ building_mechboss_site_totem_desc:0 "这些配有明显的技霸符号的图腾安装在高高的脚手架上，指引那些参与waaagh的小子们前往能够维修皮卡，补充弹药，为假肢上油的野外作坊。"
+ building_boss_skull_tower:0 "头目颅骨塔" #待改 Boss Skull Tower 屁精们：头儿，骨头，塔！
+ building_boss_skull_tower_desc:0 "这是个很waaagh的多功能建筑。最初战争头目'斯卡古特'下达了一条同时修建搞毛神像和哨塔的命令。屁精们苦于材料不足的问题，又不敢触怒斯卡古特，因此聪明的屁精先是修建了一座图腾塔，而后在这座塔的四周分别立了四根瞭望桩。"
+ building_dedard_dakka_tower:0 "吵强防御塔" #待改 dedard dakka tower
+ building_dedard_dakka_tower_desc:0 "令人生畏的，由多层厚金属板粗暴焊接成的绿皮脑袋。兼具图腾和供火力小组寻求庇护的装甲哨所之能。一连串的弹幕从神像眯起的眼中射出，覆盖整片战场，又吵又强！"
+ building_freak_tower:0 "怪胎碉楼"
+ building_freak_tower_desc:0 "这些立在铜柱上的小屋建立在绿皮聚落的边缘，一些拥有危险灵能的兽人被囚禁或是居住于此，享受着与世隔绝的生活。但当氏族发动了一场waaagh的时候，他们就会被关进金属囚笼中，用吊车强制拖到前线上充当活体灵能武器。"
+ building_watch_tower:0 "瞭望塔"
+ building_watch_tower_desc:0 "审美独特的地精建造者'菲波'以金属和混凝土打造的粗糙建筑，兼具瞭望与火力功能,遍布整个绿皮营地。"
+ building_dakka_platform:0 "吵吵炮台"
+ building_dakka_platform_desc:0 "绿皮们最重的武器在战场上移动不便，还需要很宽的射界才能发挥出最大威力。而最狡猾的战争头目会下令在前线修建吵吵炮台来为火炮小子们提供最waaagh的射击位置，他们居高临下，向整片战场狂轰滥炸。专业的屁精小队则一刻不停地在下面铲除那些堆积如山的弹壳。"
+
+ #混沌
+ 
+ building_chaos_tower:0 "混沌塔楼"
+ building_chaos_tower_desc:0 "一座巨大的亵渎之塔，为祭奠混沌诸神而修建，是叛乱世界的行政中心。"
+ building_chaos_workshop:0 "混沌工坊"
+ building_chaos_workshop_desc:0 "此类地狱熔炉常见于恐惧之眼，由附魔大师与次元铁匠所监管，专职创造附魔战士与混沌兵器。"
+ building_daemon_quarry:0 "次元矿坑"
+ building_daemon_quarry_desc:0 "可以开采几乎所有已知矿物资源，用以将混沌腐蚀散播至银河各处"
+ building_slaanesh_palace:0 "奢念殿堂" #待改 slaanesh palace
+ building_slaanesh_palace_desc:0 "借助欢愉之火的力量，这座殿堂得以用的惊人效率将粗鄙的原料转化为奢靡合金。"
+ building_nurgle_castle:0 "腐臭瘟床" #待改 nurgle castle
+ building_nurgle_castle_desc:0 "这座散发着刺鼻腐臭的阴森城堡中充斥着凡人所能想象到的任何疫病。或许对凡尘生灵来说这是一片贫瘠荒野，但对于那些往往象征着死亡的灾疫而言却是无上天堂。"
+ building_tzeentch_complex:0 "万变之所" #待改 tzeentch complex
+ building_tzeentch_complex_desc:0 "这些形态时刻都在发生着改变的水晶建筑坐落于一片散发着奇异炫光的高地，奸奇巫师们蛰伏在建筑中心汲取着纯净的亚空间能量收为己用。"
+ building_khorne_fortress:0 "血怒要塞" #待改 khorne fortress
+ building_khorne_fortress_desc:0 "在血怒要塞外围坐落着一圈喷涌的火山，名为血神之怒，其间无尽的沸腾之血互相交织，汇聚成河。而在这狂暴景象当中又坐落着一排排归属于黄铜王座的次元锻炉，其中一刻不停地生产着满腔怒火的恶魔引擎。"
+ building_chaos_hut:0 "混沌棚屋"
+ building_chaos_hut_desc:0 "邪教徒用石材，木材或是任何可用材料搭建的原始居所。"
+ building_daemon_pit:0 "恶魔献坑"
+ building_daemon_pit_desc:0 "巨型献祭法阵，可以召唤更加强大的亚空间恶魔来帮助混沌军团作战。"
+ building_khorne_shrine:0 "恐虐混沌神殿"
+ building_khorne_shrine_desc:0 "从血神领域汲取战争之力的巨型建筑"
+ building_tzeentch_shrine:0 "奸奇混沌神殿"
+ building_tzeentch_shrine_desc:0 "从万变魔域汲取无尽学识的巨型建筑"
+ building_slaanesh_shrine:0 "色孽混沌神殿" 
+ building_slaanesh_shrine_desc:0 "从色孽魔域汲取欢愉之力的巨型建筑"
+ building_nurgle_shrine:0 "纳垢混沌神殿"
+ building_nurgle_shrine_desc:0 "从慈父花园汲取生机之力的巨型建筑"
+ building_desecrated_strong_hold:0 "亵渎者据点"
+ building_desecrated_strong_hold_desc:0 "混沌基地的基础指挥中心"
+ building_dark_armoury:0 "黑暗武备所"
+ building_dark_armoury_desc:0 "叛变星际战士制造储存武备的中枢"
+ building_chaos_temple:0 "混沌圣殿"
+ building_chaos_temple_desc:0 "将混沌星际战士从轨道战斗驳船运输到这座兵营，以防他们坠毁在前线或是其他什么地方，这是叛变军团和战帮实施增援的主要途径。"
+ building_machine_pit:0 "机械深坑"
+ building_machine_pit_desc:0 "顶部悬挂着黑暗机械教标志的巨型设施，数十名机仆在技术神甫的指挥下作业；构件焊接完毕后，神甫们会通过机魂唤醒仪式来使其苏醒，最终使载具为混沌星际战士效命。"
+ building_chaos_relay:0 "混沌中继器"
+ building_chaos_relay_desc:0 "实现与轨道舰队的精确通讯能力"
+ 
+#################################
+####### Districts
+#################################
+
+district_forge_plasma_generator: "铸造等离子反应堆"
+district_forge_plasma_generator_plural: "等离子反应堆"
+district_forge_plasma_generator_desc: "嗡嗡作响的等离子反应堆为铸造世界的生产与居住提供了必要的动力 §R警告：这些数据将会叠加，而且并不平衡§!."
+
+district_industrial_forge: "消费品工厂" 
+district_industrial_forge_plural: "工厂"
+district_industrial_forge_desc: "生产民用商品和其他杂项产品的工厂，由行星总督和机械神教共同管理。"
+
+district_material_processing: "矿物处理中心"
+district_material_processing_plural: "矿物处理中心"
+district_material_processing_desc: "成排的机器和工人对矿物和原材料进行筛选，以便在熔炼之前就使产能得到最大优化。 §R警告：这些数据将会叠加，而且并不平衡§!"
+
+district_forge_lines: "铸造生产线"
+district_forge_lines_plural: "铸造生产线"
+district_forge_lines_desc: "铸造生产线永不停歇的生产着战争机器，农用载具，军备以及合金。"
+
+district_starship_forge:0 "星舰铸造厂"
+district_starship_forge_plural:0 "星舰铸造厂"
+district_starship_forge_desc:0 "为制造复杂的星舰部件设立的铸造设施，部件在轨道完成组装 §R警告：这些数据将会叠加，而且并不平衡§!"
+
+district_skitarii_capital:0 "帝国智控机械铸造厂"
+district_skitarii_capital_plural:0 "帝国智控机械铸造厂"
+district_skitarii_capital_desc:0 "机械修会的铸造厂依照其逻辑堆栈的核心记忆体中的古老蓝图生产了很多智控机械，其中最杰出的莫过于卡斯特兰智控机兵" 
+
+district_algaefood_farming:0 "藻类作物种植区"
+district_algaefood_farming_plural:0 "藻类作物种植区"
+district_algaefood_farming_desc:0 "由工人运作的藻类种植区，将藻类加工为口粮块之后，运送至星界军或是需要大量粮食的行星。"
+
+district_defence_laser:0 "激光防御阵列"
+district_defence_laser_plural:0 "激光防御阵列"
+district_defence_laser_desc:0 "一个由行星防卫部队部署的巨型静态反舰激光武器阵列，体量与能耗过于庞大，因此无法搭载于标准地面载具上。"
+
+district_planetary_fortress:0 "行星要塞"
+district_planetary_fortress_plural:0 "行星要塞"
+district_planetary_fortress_desc:0 "由高墙与防御炮塔包围，包含扩展营房，训练场，物资仓库，载具维护间，着陆区以及居住区在内的巨型要塞复合体"
+
+district_hive_housing:0 "巢都"
+district_hive_housing_plural:0 "巢都"
+district_hive_housing_desc:0 "数以十亿计的人口挤在巢都里，为滋生那些犯罪和阴暗交易创造了完美的温床"
+
+district_hive_ministorum:0 "国教辖区"
+district_hive_ministorum_plural:0 "国教辖区"
+district_hive_ministorum_desc:0 "国教辖区深入巢都内部，确保所有公民都能够进入教堂或是进行其那些“被允许”的娱乐活动"
+
+district_hive_administratum:0 "内政部辖区"
+district_hive_administratum_plural:0 "内政部辖区"
+district_hive_administratum_desc:0 "包括官僚，贵族与仲裁官在内的巢都上层阶级的居所，兼具保护权贵与维持底层秩序之责"
+
+district_hive_departmento_munitorum:0 "军务部辖区"
+district_hive_departmento_munitorum_plural:0 "军务部辖区"
+district_hive_departmento_munitorum_desc:0 "军务部辖区专注于保持物资的流通，并为行星总督谋取利益。"
+
+district_hive_industrial:0 "巢都工业复合体"
+district_hive_industrial_plural:0 "巢度工业复合体"
+district_hive_industrial_desc:0 "巢都为帝国生产精炼金属与商品以供使用。尽管产能不如铸造世界，但巢都工业区依然是帝国经济流通最主要的一环。"
+
+#Industrial & Forge World Districts					
+district_industrial_city:0 "工业城市" #(待改)不确定这些是不是区划
+district_industrial_city_plural:0 "工业城市"
+district_industrial_city_desc:0 "以简陋建筑，煤灰与污垢为特征的城市。仅满足基本功能以驱使工人日复一日往返矿场与发电厂。"
+district_industrial_generator:0 "工业发电厂"
+district_industrial_generator_plural:0 "工业发电厂"
+district_industrial_generator_desc:0 "主要为工业世界城市与工厂供电的发电厂集群。"
+district_industrial_mining:0 "工业露天矿场"
+district_industrial_mining_plural:0 "工业露天矿场"
+district_industrial_mining_desc:0 "行星地表的大片区域被这些巨型采矿工程所吞噬。"
+district_forge_housing:0 "居住区"
+district_forge_housing_plural:0 "居住区"
+district_forge_housing_desc:0 "围绕机械神教工人基本需求建造的居住区块。"
+district_forge_geothermal:0 "地热采矿区"
+district_forge_geothermal_plural:0 "地热采矿区"
+district_forge_geothermal_desc:0 "当露天采矿耗尽工业世界地表资源后，唯一选择是向深处挖掘。此举同时提供了现成的地热能源。"
+district_forge_archeotech_admin:0 "古科技管理区"
+district_forge_archeotech_admin_plural:0 "古科技管理区"
+district_forge_archeotech_admin_desc:0 "当机械教舰队寻回失落古物时，少数铸造大师获授权在此研究其失落的潜能。"
+district_forge_armory:0 "工坊要塞"
+district_forge_armory_plural:0 "工坊要塞"
+district_forge_armory_desc:0 "建造帝国军队巨型战争机器与舰队的要塞化铸造厂，常驻一支护教军来抵御窥探。"
+
+district_gas_refineries:0 "钷素气体精炼厂"
+district_gas_refineries_plural:0 "钷素气体精炼厂"
+district_gas_refineries_desc:0 "专用于生产储存钷素气体的巨型精炼设施。"
+district_multi_refinery:0 "巨型机械精炼厂"
+district_multi_refinery_plural:0 "巨型机械精炼厂"
+district_multi_refinery_desc:0 "精炼帝国舰队与世界所需的稀有材料与气体的超大型设施。"
+district_chemical_refinery:0 "化学精炼厂" 
+district_chemical_refinery_plural:0 "化学精炼厂"
+district_chemical_refinery_desc:0 "通过测试混合生产军用或建筑用的完美成分材料。"
+district_crystal_refinery:0 "水晶加工精炼厂"
+district_crystal_refinery_plural:0 "水晶加工精炼厂"
+district_crystal_refinery_desc:0 "精炼开发罗蕾莱等晶体矿物的大型区域"
+
+district_refinery_housing:0 "精炼城市"
+district_refinery_housing_plural:0 "精炼城市"
+district_refinery_housing_desc:0 "工人的住房"
+
+#Misc Districts					
+district_40k_city:0 "小型城市"
+district_40k_city_plural:0 "小型城市"
+district_40k_city_desc:0 "较不发达世界的典型城市"
+district_underdeveloped_power:0 "不发达的电网"
+district_underdeveloped_power_plural:0 "不发达的电网"
+district_underdeveloped_power_desc:0 "缺乏铸造世界或巢都世界常见加固措施的电网。"
+district_basic_infrastructure:0 "基础建设"
+district_basic_infrastructure_plural:0 "基础建设"
+district_basic_infrastructure_desc:0 "仅维持行星基本运转的基建，几乎没有出口余量。"
+district_planet_agri:0 "农业区" #(待改)不确定是不是区划
+district_planet_agri_plural:0 "农业区" #(待改)不确定是不是区划
+district_planet_agri_desc:0 "专用于农耕，畜牧等食物生产的大片土地。"  #(待改)不确定是不是区划
+district_agri:0 "农业区"  #(待改)不确定是不是区划
+district_agri_plural:0 "农业区"  #(待改)不确定是不是区划
+district_agri_desc:0 "专用于农耕，畜牧等食物生产的大片土地。"  #(待改)不确定是不是区划
+district_shrine_hive:0 "圣地世界巢都"
+district_shrine_hive_plural:0 "圣地世界巢都"
+district_shrine_hive_desc:0 "由巢都改造的圣地世界，现容纳数十亿帝国朝圣者。"
+district_cathedral:0 "大教堂建筑群" #（待改）Cathedral Complexes
+district_cathedral_plural:0 "大教堂建筑群" #（待改）Cathedral Complexes
+district_cathedral_desc:0 "圣地世界的核心建筑，常建于对国教具有重要意义的地点，但在任何圣地世界中都很常见。"
+district_armoury_storage:0 "武备仓库"
+district_armoury_storage_plural:0 "武备仓库"
+district_armoury_storage_desc:0 "安全储存巨量资源的大型资源筒仓与存储设施。"
+
+district_laser_point:0 "激光防御网"
+district_laser_point_plural:0 "激光防御网"
+district_laser_point_desc:0 "帝国行星防御军固定式反舰激光网，因能耗与重量无法安装在地面载具上。"
+
+district_militarium_barracks:0 "军营区" #(待改)原文Militarium Barracks Sector
+district_militarium_barracks_plural:0 "军营区" #(待改)原文Militarium Barracks Sector
+district_militarium_barracks_desc:0 "容纳劳工或帝国士兵的军事建筑堡垒群。"
+
+district_penal_habs_housing:0 "惩戒牢房" #(待改)原文Penal Habitation Cells 牢房感觉怪怪的
+district_penal_habs_housing_plural:0 "惩戒牢房" #(待改)原文Penal Habitation Cells
+district_penal_habs_housing_desc:0 "关押帝国弃民的监区，其唯一价值是在矿场从事苦役。"
+
+district_penal_mining_infrastructure:0 "惩戒采矿设施"
+district_penal_mining_infrastructure_plural:0 "采矿区"
+district_penal_mining_infrastructure_desc:0 "囚犯通过采矿劳动赎罪的作业区。"
+
+district_hellforge_housing:0"地狱熔炉住房" #(待改)原文Hell Forge Housing
+district_hellforge_housing_plural:0"地狱熔炉住房" #(待改)原文Hell Forge Housing
+district_hellforge_housing_desc:0""
+
+district_hellforges:0"地狱熔炉"
+district_hellforges_plural:0"地狱熔炉"
+district_hellforges_desc:0""
+
+district_khorne_realm:0 "恐虐魔域"
+district_khorne_realm_plural:0 "恐虐魔域"
+district_khorne_realm_desc:0 "恐虐乃血神，怒主，颅骨收割者。他是狂怒化身，永无止境的毁灭欲实体。其唯一夙愿是以血潮淹没银河，屠尽众生只余碎骨血海。"
+
+district_nurgle_realm:0 "纳垢魔域"
+district_nurgle_realm_plural:0 "纳垢魔域"
+district_nurgle_realm_desc:0 "纳垢乃腐朽之王，疫病主宰。宇宙万物纵使坚不可摧，终将腐化消亡。"
+
+district_tzeentch_realm:0 "奸奇魔域"
+district_tzeentch_realm_plural:0 "奸奇魔域"
+district_tzeentch_realm_desc:0 "奸奇有万千尊号，命运编织者，大阴谋家，命途建筑师。其意识聆听全宇宙生灵的祈愿。"
+
+district_slannesh_realm:0 "色孽魔域"
+district_slannesh_realm_plural:0 "色孽魔域"
+district_slannesh_realm_desc:0 "色孽乃欢愉之主，沉溺俗世快感，颠覆礼义廉耻。他是痴迷之神，纵欲无度之主，贪饕色欲妄念皆归其辖。"
+ 
+district_webway_housing:0"近地网道住宅" #(待改)什么叫行星网道
+district_webway_housing_plural:0"近地网道住宅"  #(待改)
+district_webway_housing_desc:0"用以连接该星球与科摩罗的网道住宅" #(待改)连接科摩罗的网道住宅？
+
+district_deldar_pleasure_ring:0"欢愉竞技场区"
+district_deldar_pleasure_ring_plural:0"欢愉竞技场区"
+district_deldar_pleasure_ring_desc:0"角斗场与猎杀区遍布此域，奴隶被迫搏杀取悦黑暗灵族观众。 "
+
+district_slave_workers:0"奴隶劳工围栏"
+district_slave_workers_plural:0"奴隶劳工围栏"
+district_slave_workers_desc:0"奴隶被关押在矿井与其他工作中劳作，其主则沉浸于奴隶的苦痛中。"
+
+district_spire_web:0"尖塔"
+district_spire_web_plural:0"尖塔"
+district_spire_web_desc:0"权贵居所，也收藏着一些黑暗灵族知识碎片及通晓此道的血伶人。 "
+
+district_haemonculi_coven_lab:0"血伶人实验室"
+district_haemonculi_coven_lab_plural:0"血伶人实验室" 
+district_haemonculi_coven_lab_desc:0" 血伶人在此实验俘虏，创造怪诞生物，并为权贵黑暗灵族逆转死亡。"
+
+district_primitive_shack:0 "原始棚屋"
+district_primitive_shack_plural:0 "原始棚屋"
+district_primitive_shack_desc:0 "由废料，石块等可用材料搭建的原始居所。"
+district_open_mine:0 "露天矿坑"
+district_open_mine_plural:0 "露天矿坑"
+district_open_mine_desc:0 "深入行星地幔开采矿藏的矿区和资源开采中心。"
+district_scrap_yard:0 "废料场"
+district_scrap_yard_plural:0 "废料场"
+district_scrap_yard_desc:0 "拆解载具舰船等旧机器并回收可用零件的废料处理场"
+district_hunting_ground:0 "狩猎场"
+district_hunting_ground_plural:0 "狩猎场"
+district_hunting_ground_desc:0 "兽人捕猎野兽获取食物的区域。"
+
+#################################
+####### Planet classes
+#################################
+
+pc_mechanicus_forge:0 "机械神教铸造世界"
+pc_mechanicus_forge_desc:0 "由机械神教统治的真正的铸造世界，仅由技术神甫，机仆，大贤者及相关人员驻守。地表完全被横跨地平线的巨型工厂覆盖，生态系统彻底毁灭。空气饱含毒气，河流通红流淌着工业废料。"
+mechanicus_forge_planet:0 "铸造世界"
+mechanicus_forge_planet_desc:0 "由机械神教管理的真正的铸造世界，仅由技术神甫，机仆，大贤者及相关人员管理。"
+
+pc_relic_iom:0 "§H废墟世界§!"
+pc_relic_iom_desc:0 "废墟遍布..."
+pc_city_iom:0 "§H帝国王座世界§!"
+pc_city_iom_desc:0 "文明之珠..."
+
+pc_armoury:0 "武备世界"
+pc_armoury_desc:0 "军务部用以储存巨量武器弹药与战争机器的重防世界，可随时调运或组建军队。"
+armoury_planet:0 "武备世界"
+armoury_planet_desc:0 "军务部用以储存巨量武器弹药与战争机器的重防世界，可随时调运或组建军队。"
+
+pc_forge:0 "铸造世界"
+pc_forge_desc:0 "完全被巨型精炼厂与工厂覆盖的世界。"
+forge_planet:0 "铸造世界"
+forge_planet_desc:0 "铸造世界如同巨型工厂，工业建筑耸入云霄，矿井深入地壳。"
+
+pc_refinery:0 "精炼世界"
+pc_refinery_desc:0 "专精化学材料精炼，存储与分配的世界。"
+refinery_planet:0 "精炼世界"
+refinery_planet_desc:0 "精炼世界布满各类精炼设施，以满足大型太空舰队的不同材料需求。"
+
+pc_forgeee:0 "军械世界"
+pc_forgeee_desc:0 "完全被巨型仓库覆盖的世界，剩余工业仅用于装备大型舰队和军队。"
+forgeee_planet:0 "军械世界"
+forgeee_planet_desc:0 "军械世界是储存巨量武器弹药与战争机器的重防世界。"
+
+pc_industrial:0 "工业世界"
+pc_industrial_desc:0 "地表完全用于制造或重型采矿与精炼活动，产品主要外销的世界。"
+industrial_planet:0 "工业世界"
+industrial_planet_desc:0 "地表完全用于制造或重型采矿与精炼活动的世界。"
+
+pc_agri:0 "农业世界"
+pc_agri_desc:0 "完全用于生产食物以供应其他世界的世界。所有农业世界面貌雷同。平坦，被风吹过的高产作物平原，向空旷的地平线摇曳。行走数日不见地标。"
+agri_planet:0 "农业世界"
+agri_planet_desc:0 "完全用于生产食物以供应其他世界的世界。"
+
+pc_shrine:0 "圣地世界"
+pc_shrine_desc:0 "遍布大教堂，寺庙与圣坛的世界。"
+shrine_planet:0 "圣地世界"
+shrine_planet_desc:0 "遍布大教堂，寺庙与圣坛的世界。"
+
+pc_hive_medium:0 "巢都世界"
+pc_hive_medium_desc:0 "覆盖整个世界的巨型城市，重要的原料与制成品产地，同时为星界军输送大量兵员。"
+hive_planet:0 "巢都世界"
+hive_planet_desc:0 "覆盖整个世界的巨型城市。"
+
+pc_penal:0 "刑罚世界"
+pc_penal_desc:0 "作为军事监狱运作的世界。"
+penal_planet:0 "刑罚世界"
+penal_planet_desc:0 "作为军事监狱运作的世界。"
+
+pc_fortress:0 "要塞世界"
+pc_fortress_desc:0 "地表遍布堡垒的极端重防世界。"
+fortress_planet:0 "要塞世界"
+fortress_planet_desc:0 "地表遍布堡垒的极端重防世界。"
+ 					
+pc_tomb:0 "墓穴世界"
+pc_tomb_desc:0 "六千万年前，被称为太空死灵的可怖远古异形在其特制的墓穴世界中沉眠。"
+tomb_planet:0 "墓穴世界"
+tomb_planet_desc:0 "六千万年前，被称为太空死灵的可怖远古异形在其特制的墓穴世界中沉眠。"
+ 					
+pc_hive_arid:0 "小型干旱巢都世界"
+pc_hive_arid_desc:0 "拥有巨型城市的世界。"
+hive_arid_planet:0 "小型干旱巢都世界"
+hive_arid_planet_desc:0 "拥有巨型城市的世界。"
+ 					
+pc_hive_continental_01:0 "小型陆地巢都世界"
+pc_hive_continental_01_desc:0 "拥有巨型城市但产出价值较低的世界，宏观层面仍有价值。"
+hive_continental_01_planet:0 "小型陆地巢都世界"
+hive_continental_01_planet_desc:0 "拥有巨型城市的世界。"
+ 					
+pc_hive_continental_02:0 "小型陆地巢都世界"
+pc_hive_continental_02_desc:0 "拥有巨型城市的世界，顺从居民随时可投入工作或送往战区。"
+hive_continental_02_planet:0 "小型陆地巢都世界"
+hive_continental_02_planet_desc:0 "拥有巨型城市的世界。"
+ 					
+pc_hive_ocean:0 "小型海洋巢都世界"
+pc_hive_ocean_desc:0 "拥有巨型城市的世界。"
+hive_ocean_planet:0 "小型海洋巢都世界"
+hive_ocean_planet_desc:0 "拥有巨型城市的世界。"
+ 					
+pc_hive_tundra:0 "小型苔原巢都世界"
+pc_hive_tundra_desc:0 "拥有巨型城市的世界。"
+hive_tundra_planet:0 "小型苔原巢都世界"
+hive_tundra_planet_desc:0 "拥有巨型城市的世界。"
+ 					
+pc_super_hive:0 "大型巢都世界"
+pc_super_hive_desc:0 "建筑穿云而上的巨型城市世界，庞大人口可在帝国需要时输出巨量资源或组建军队。"
+super_hive_planet:0 "大型巢都世界"
+super_hive_planet_desc:0 "建筑穿云而上的巨型城市世界。"
+ 					
+pc_mega_hive:0 "巨型巢都世界"
+pc_mega_hive_desc:0 "布满巨型城市与环绕行星的太空船坞的世界。 "
+mega_hive_planet:0 "巨型巢都世界"
+mega_hive_planet_desc:0 "布满巨型城市与环绕行星的太空船坞的世界。"
+					
+pc_forge_ring:0 "钢铁环带机械神教铸造世界"
+pc_forge_ring_desc:0 "布满巨型工厂与太空船坞的世界。"
+forge_ring_planet:0 "铸造世界"
+forge_ring_planet_desc:0 "工业建筑耸入云霄，矿井深入地壳的巨型工厂世界。"
+					
+pc_forge_ring2:0 "钢铁环带精炼世界"
+pc_forge_ring2_desc:0 "专精战争物资精炼、存储与分配的世界。铁环结构将大部分工业移入太空，便于舰队整补。"
+forge_ring2_planet:0 "精炼世界"
+forge_ring2_planet_desc:0 "精炼世界布满各类精炼设施，以满足大型太空舰队的不同材料需求。"	
+				 
+pc_forge_ring3:0 "钢铁环带军械世界"
+pc_forge_ring3_desc:0 "完全被巨型仓库覆盖的世界，剩余工业仅用于装备大型军队。"
+forge_ring3_planet:0 "军械世界"
+forge_ring3_planet_desc:0 "重防世界，用于储存巨量武器弹药与战争机器。"
+					
+pc_advancecity:0 "小型巢都世界"
+pc_advancecity_desc:0 "拥有巨型城市的世界。"
+advancecity_planet:0 "小型巢都世界"
+advancecity_desc:0 "拥有巨型城市的世界。"
+ 					
+pc_hive_industrial:0 "工业巢都世界"
+pc_hive_industrial_desc:0 "覆盖整个世界的巨型城市。"
+hive_industrial_planet:0 "工业巢都世界"
+hive_industrial_planet_desc:0 "覆盖整个世界的生产型城市，地表设备专精消费品生产，兼具少量合金产能。"
+
+pc_advancexenocity_tile:0 "钛族城市世界"
+pc_advancexenocity_tile_desc:0 "此世界得益于持续的科技发展。耕地上布满高效集体农场，城市拔地而起，白色大理石覆盖其表面，中心坐落重兵防御的堡垒，以太议会。"
+pc_advancexenocity:0 "钛族城市世界"
+pc_advancexenocity_desc:0 "此世界得益于持续的科技发展。耕地上布满高效集体农场，城市拔地而起，白色大理石覆盖其表面，中心坐落重兵防御的堡垒，以太议会。"
+
+pc_advancexenocityy_tile:0 "钛族行政世界"
+pc_advancexenocityy_tile_desc:0 "被改造为管理多世界，舰队与贸易的完美行政枢纽。"
+pc_advancexenocityy:0 "钛族行政世界"
+pc_advancexenocityy_desc:0 "被改造为管理多世界，舰队与贸易的完美行政枢纽。"
+
+pc_advancexenocityyy_tile:0 "钛族休闲世界"
+pc_advancexenocityyy_tile_desc:0 "此世界得益于持续的科技发展。大地上遍布着拔地而起，以白色大理石覆盖的城市，中心坐落重兵防御的堡垒，以太议会。"
+pc_advancexenocityyy:0 "钛族休闲世界"
+pc_advancexenocityyy_desc:0 "此世界得益于持续的科技发展。耕地上布满高效集体农场，城市拔地而起，白色大理石覆盖其表面，中心坐落重兵防御的堡垒，以太议会。"
+ 
+pc_orkworld:0"兽人世界"
+pc_orkworld_desc:0"此世界已被兽人彻底占领。他们灭绝或奴役了所有拥有感知能力或反抗的种族，并将所有看似有价值的东西夷地。如今以百万计的兽人在地表游荡，寻找其他小子来互相战斗，打个痛快！"
+
+pc_hell_forge:0"地狱熔炉"
+pc_hell_forge_desc:0"曾经的机械神教铸造世界，现被黑暗机械神教占据。这个帝国铸造世界已沦为恶魔锻造厂，以及为叛变军团生产所需一切的一般锻造厂，包括用于叛变泰坦的基础设施。"
+
+pc_daemons:0"色孽世界"
+pc_daemons_desc:0"被亚空间笼罩的色孽世界，生灵在此挑战欲望极限的极乐之境。"
+
+pc_daemont:0"奸奇世界"
+pc_daemont_desc:0""
+
+pc_daemonn:0"纳垢世界"
+pc_daemonn_desc:0"被亚空间吞噬，完全被纳垢占据和腐化的世界，地表上遍布着蛆虫，污泥和成群的病菌。虽遭腐化，但生命却在此诡异繁荣。"
+
+pc_daemon:0"恐虐恶魔世界"
+pc_daemon_desc:0"亚空间扭曲的永恒血战之境，血河奔涌地表，恶魔与信徒永续厮杀。恐虐不关心血源自何处，唯求血流成河。"
+
+pc_darke:0"黑暗网道世界""
+pc_darke_desc:0"仍运作的网道门户世界，黑暗灵族借此从科摩罗突袭扩张至实体宇宙。"
+
+ ####################################
+ # Initializers
+ ####################################
+ 
+ deldar_system_start_01_NAME:0"黑暗网道起点"
+ deldar_system_start_01_DESC:0"从围绕黑洞运行的黑暗网道世界开始"
+ 

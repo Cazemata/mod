@@ -1,0 +1,345 @@
+guiTypes = {
+	containerWindowType = {
+		name = "megastructure_selection_window"
+		size = { width = 800 height = 930 }
+		if_scaled_resolution = {
+			min_height = 1200
+			size = { width = 800 height = 1050 }
+		}
+		if_scaled_resolution = {
+			min_height = 1400
+			size = { width = 800 height = 1290 }
+		}
+		position = { x = 80 y = 0 }
+		if_scaled_resolution = {
+			min_width = 2560
+			position = { x = 0 y = 0 }
+		}
+		orientation = center
+		origo = center
+		moveable = yes
+		click_to_front = yes
+		background = {
+			name = "megastructure_selection_window_background"
+			spriteType = "GFX_tile_large_center_bg"
+		}
+		iconType = {
+			name = "hex_bg_left"
+			spriteType = "GFX_hex_center_bg"
+			position = { x = -79 y = 22 }
+			orientation = center_up
+			centerPosition = yes
+			alwaysTransparent = yes
+		}
+		iconType = {
+			name = "hex_bg_right"
+			spriteType = "GFX_hex_center_bg"
+			position = { x = 79 y = 22 }
+			orientation = center_up
+			centerPosition = yes
+			alwaysTransparent = yes
+		}
+		iconType = {
+			name = "header_line"
+			spriteType = "GFX_line_center"
+			position = { x = 0 y = 42 }
+			orientation = center_up
+			centerPosition = yes
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {
+			name = "title"
+			font = "font_header_20"
+			text = "MEGASTRUCTURE_SELECTION_PICK_TYPE"
+			position = { x = -200 y = 9 }
+			orientation = center_up
+			maxWidth = 400
+			maxHeight = 24
+			format = center
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		buttonType = {
+			name = "close"
+			quadTextureSprite = "GFX_close_button_galaxy"
+			position = { x = -45 y = 16 }
+			orientation = upper_right
+			shortcut = "ESCAPE"
+			pdx_tooltip = "CLOSE_TITLE"
+			clicksound = "back_click"
+			actionShortcut = "cancel"
+		}
+		containerWindowType = {
+			name = "leader_frame_box"
+			size = { width = -10 height = -10 }
+			position = { x = 10 y = 60 }
+			background = {
+				name = "leader_frame"
+				spriteType = "GFX_dark_area_cut_light"
+				alwaysTransparent = yes
+			}
+		}
+		smoothListboxType = {
+			name = "entries"
+			position = { x = 20 y = 70 }
+			size = { x = 760 y = 840 }
+			if_scaled_resolution = {
+				min_height = 1200
+				size = { x = 760 y = 960 }
+			}
+			if_scaled_resolution = {
+				min_height = 1400
+				size = { x = 760 y = 1200 }
+			}
+			borderSize = { x = 0 y = 0 }			scrollbarType = "standardlistbox_slider_thick"
+			spacing = 3
+			offset = { x = -3 y = 0 }
+			autohide_scrollbar = yes
+		}
+	}
+	containerWindowType = {
+		name = "megastructure_selection_window_entry"
+		size = { width = 760 height = 95 }
+		background = {
+			name = "megastructure_selection_window_entry_background"
+			spriteType = "GFX_invisible"
+			clicksound = "confirmation"
+		}
+		containerWindowType = {
+			name = "entry_bg_gradient"
+			size = { width = -1 height = -1 }
+			position = { x = 56 y = 30 }
+			background = {
+				name = "background"
+				spriteType = "GFX_tiles_light_area_cut_8"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "selected"
+			size = { width = 100% height = 100% }
+			background = {
+				name = "selected_bg"
+				spriteType = "GFX_glow_tile_orange_no_padding"
+				alwaysTransparent = yes
+			}
+		}
+		buttonType = {
+			name = "button"
+			quadTextureSprite = "GFX_ui_button_cyan"
+			#position = { x = 59 y = 25 }
+			#size = { x = 705 y = 74 }
+			position = { x = -5 y = -5 }
+			size = { x = 770 y = 105 }
+			clicksound = "confirmation"
+		}
+		containerWindowType = {
+			name = "icon_frame_box"
+			size = { width = 64 height = 64 }
+			position = { x = 1 y = 30 }
+			margin = { top = 1 right = 1 bottom = 1 left = 1 }
+			background = {
+				name = "icon_frame"
+				spriteType = "GFX_plain_green_frame_tile"
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "icon"
+				spriteType = "GFX_technology_unknown"
+				position = { x = 0 y = 0 }
+				orientation = center
+				centerPosition = yes
+				scale = 1.2
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "name"
+			size = { width = -1 height = 29 }
+			position = { x = 1 y = 1 }
+			background = {
+				name = "background"
+				spriteType = "GFX_dark_area_cut_light"
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "name"
+				font = "font_header_20"
+				position = { x = 0 y = 0 }
+				maxWidth = 760
+				maxHeight = 29
+				fixedSize = yes
+				format = center
+				vertical_alignment = center
+				text_color_code = "H"
+				alwaysTransparent = yes
+			}
+		}
+		instantTextBoxType = {
+			name = "details"
+			font = "font_text_16"
+			position = { x = 70 y = 34 }
+			maxWidth = 684
+			maxHeight = 56
+			format = left
+			scrollbarType = "standardlistbox_slider_thick_verysmall"
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {
+			name = "cost"
+			font = "font_text_14"
+			position = { x = -266 y = 34 }
+			orientation = upper_right
+			maxWidth = 260
+			maxHeight = 56
+			fixedSize = yes
+			format = right
+			vertical_alignment = bottom
+			alwaysTransparent = yes
+		}
+		iconType = {
+			name = "upgrade_icon"
+			spriteType = "GFX_megastructure_upgrade_icon"
+			position = { x = -25 y = 5 }
+			orientation = upper_right
+		}
+	}
+	containerWindowType = {
+		name = "design_selection_window"
+		size = { width = 600 height = 600 }
+		position = { x = 0 y = 0 }
+		moveable = yes
+		background = {
+			name = "megastructure_selection_window_background"
+			spriteType = "GFX_ui_tile_large_bg_plain"
+		}
+		iconType = {
+			name = "header_hex_bg"
+			spriteType = "GFX_hex_center_bg"
+			position = { x = 0 y = 26 }
+			orientation = center_up
+			centerPosition = yes
+			alwaysTransparent = yes
+		}
+		iconType = {
+			name = "header_line"
+			spriteType = "GFX_line_center_short"
+			position = { x = 0 y = 40 }
+			orientation = center_up
+			centerPosition = yes
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {
+			name = "title"
+			font = "font_header_20"
+			text = "MEGASTRUCTURE_SELECTION_PICK_DESIGN"
+			position = { x = -190 y = 10 }
+			orientation = center_up
+			maxWidth = 380
+			maxHeight = 24
+			fixedSize = yes
+			format = center
+		}
+		buttonType = {
+			name = "close"
+			quadTextureSprite = "GFX_close_button_galaxy"
+			position = { x = -45 y = 7 }
+			orientation = upper_right
+			shortcut = "ESCAPE"
+			clicksound = "back_click"
+			pdx_tooltip = "CLOSE_TITLE"
+		}
+		containerWindowType = {
+			name = "entries_background"
+			position = { x = 10 y = 55 }
+			size = { width = -10 height = -10 }
+			background = {
+				name = "entries_background"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaysTransparent = yes
+			}
+		}
+		smoothListboxType = {
+			name = "entries"
+			position = { x = 20 y = 65 }
+			size = { x = 560 y = 515 }
+			scrollbarType = "standardlistbox_slider_thick"
+			spacing = 4
+			offset = { x = -3 y = 0 }
+			autohide_scrollbar = yes
+		}
+	}
+	containerWindowType = {
+		name = "design_selection_entry"
+		size = { width = 560 height = 160 }
+		background = {
+			name = "megastructure_selection_window_entry_background"
+			spriteType = "GFX_no_highlight_tile"
+		}
+		containerWindowType = {
+			name = "entry_bg_gradient"
+			size = { width = -1 height = -1 }
+			position = { x = 1 y = 30 }
+			background = {
+				name = "background"
+				spriteType = "GFX_diplomacy_textbox_positive"
+			}
+			background = {
+				name = "background"
+				spriteType = "GFX_dark_area_cut"
+				alwaysTransparent = yes
+			}
+			background = {
+				name = "background"
+				spriteType = "GFX_dark_area_cut"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "name"
+			size = { width = 100% height = 30 }
+			background = {
+				name = "background"
+				spriteType = "GFX_tiles_frame"
+			}
+			instantTextBoxType = {
+				name = "name"
+				font = "font_text_16"
+				position = { x = 10 y = 0 }
+				maxWidth = 540
+				maxHeight = 30
+				fixedSize = yes
+				format = left
+				vertical_alignment = center
+				text_color_code = "H"
+				alwaysTransparent = yes
+			}
+		}
+		buttonType = {
+			name = "render_target"
+			quadTextureSprite = "GFX_dummy_3d_design_entry"
+			position = { x = 1 y = 30 }
+			size = { x = 558 y = 130 }
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {
+			name = "cost"
+			font = "font_text_14"
+			position = { x = 10 y = -70 }
+			orientation = lower_left
+			maxWidth = 200
+			maxHeight = 60
+			fixedSize = yes
+			format = left
+			vertical_alignment = bottom
+			alwaysTransparent = yes
+		}
+		buttonType = {
+			name = "button"
+			quadTextureSprite = "GFX_button_light"
+			position = { x = -1 y = -1 }
+			clicksound = "confirmation"
+			size = { x = 562 y = 162 }
+		}
+	}
+}

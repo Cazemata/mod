@@ -1,0 +1,414 @@
+﻿l_simp_chinese:
+#################################
+ job_iom_militarum:0 "星界军"
+ job_iom_militarum_plural:0 "星界军"
+ job_iom_militarum_desc:0 "以帝皇之名奋战至死。"
+ mod_job_iom_militarum_add:0 "星界军岗位"
+ mod_job_iom_militarum_per_pop:0 "§G+1§! $job_iom_militarum$ 岗位每 $VALUE$ 人口"
+ mod_job_iom_militarum_per_pop_short:0 "\n§G+1§! £mod_job_iom_militarum_add£ 每 $VALUE$ £pop£"
+ 
+ 
+ job_magos:0 "机械贤者"          #Magos
+ job_magos_plural:0"机械贤者"
+ job_magos_desc:0""
+ mod_job_magos_add:0"£job_magos£ 机械贤者岗位"
+ mod_job_magos_plural:0"机械贤者"
+ mod_job_magos_desc:0 ""
+ mod_job_magos_effect_desc:0 "
+ 
+ job_enginseers:0 "技术神甫工造士"          #Enginseers
+ job_enginseers_plural:0"技术神甫工造士"
+ job_enginseers_desc:0""
+ mod_job_enginseers_add:0"£job_enginseers£ 技术神甫工造士岗位"
+ mod_job_enginseers_plural:0"技术神甫工造士"
+ mod_job_enginseers_desc:0 ""
+ mod_job_enginseers_effect_desc:0 "
+ 
+ job_servitor:0 "机仆"          #Servitor
+ job_servitor_plural:0"机仆"
+ job_servitor_desc:0""
+ mod_job_servitor_add:0"£job_servitor£ 机仆岗位"
+ mod_job_servitor_plural:0"机仆"
+ mod_job_servitor_desc:0 ""
+ mod_job_servitor_effect_desc:0 "
+ 
+ job_logis:0 "逻辑士"          #Logi
+ job_logis_plural:0"逻辑士"
+ job_logis_desc:0""
+ mod_job_logis_add:0"£job_logis£ 逻辑士岗位"
+ mod_job_logis_plural:0"逻辑士"
+ mod_job_logis_desc:0 ""
+ mod_job_logis_effect_desc:0 "
+ 
+ job_iom_skitarii:0 "护教军" #Skitarii
+ job_iom_skitarii_plural:0"护教军"
+ job_iom_skitarii_desc:0""
+ mod_job_iom_skitarii_add:0"£job_iom_skitarii£ 护教军岗位"
+ mod_job_iom_skitarii_plural:0"护教军"
+ mod_job_iom_skitarii_desc:0 ""
+ mod_job_iom_skitarii_effect_desc:0 "
+ 
+ job_arch_magos:0 "大贤者" #Arch Magos
+ job_arch_magos_plural:0"大贤者"
+ job_arch_magos_desc:0""
+ mod_job_arch_magos_add:0 "£job_arch_magos£ 大贤者岗位"
+ mod_job_arch_magos_plural:0 "大贤者"
+ mod_job_arch_magos_desc:0 ""
+ mod_job_arch_magos_effect_desc:0 ""
+ 
+ job_gene_tech:0"基因士" #Gene tech Job
+ job_gene_tech_plural:0"基因士"
+ job_gene_tech_desc:0"基因士本质上是遗传学家，是研究所有遗传与生物事务的机械神教学者，有时称为生物贤者。他们对有机物的兴趣不仅限于人类形态，还包括异形生命研究。异形遗传学研究旨在更好理解并消灭它们，由被称为异形生物学家的基因士分支负责。"
+ mod_job_gene_tech_add:0"£job_gene_tech£ 基因士岗位"
+ mod_job_gene_tech_add_per_pop:""
+ mod_job_gene_tech_add_per_pop_short:""
+ 
+ job_promethium_miner:0 "钷素矿工"
+ job_promethium_miner_plural:0 "钷素矿工"
+ job_promethium_miner_desc:1 "专业矿工受雇从事钷素燃料的精细开采与提炼。"
+ job_promethium_miner_effect_desc:0 "£job_promethium_miner£ $job_promethium_miner_plural$ 生产 £promethium£ §Y$promethium$§!"
+ mod_job_promethium_miner_add:0 "$job_promethium_miner$ 岗位"
+ mod_job_promethium_miner_per_pop:0 "§G+1§! $job_promethium_miner$ 岗位每 $VALUE$ 人口"
+ mod_job_promethium_miner_per_pop_short:0 "\n§G+1§! £mod_job_promethium_miner_add£ 每 $VALUE$ £pop£"
+ 
+ job_promethium_transfuser:0 "钷素精炼工"
+ job_promethium_transfuser_plural:0 "钷素精炼工"
+ job_promethium_transfuser_desc:1 "使用专门的精炼室用于将钷素燃料精细转化为合金与金属。"
+ job_promethium_transfuser_effect_desc:0 "£job_promethium_transfuser£ $job_promethium_transfuser_plural$ 生产 £promethium£ §Y$promethium$§!"
+ mod_job_promethium_transfuser_add:0 "$job_promethium_transfuser$ 岗位"
+ mod_job_promethium_transfuser_per_pop:0 "§G+1§! $job_promethium_transfuser$ 岗位每 $VALUE$ 人口"
+ mod_job_promethium_transfuser_per_pop_short:0 "\n§G+1§! £mod_job_promethium_transfuser_add£ 每 $VALUE$ £pop£"
+ 
+ job_electronics_manufacturer_tau:0 "电子元件制造者" #（待改）
+ job_electronics_manufacturer_tau_plural:0 "电子元件制造者" #（待改）
+ job_electronics_manufacturer_tau_desc:0 "制造者们使用塑料与合金生产先进设备的部件" #（待改）
+ job_electronics_manufacturer_tau_effect_desc:0 "£job_electronics_manufacturer£ $job_electronics_manufacturer_plural$ 将 £alloys£ §Y$alloys$§! 转化为 £electronics£ §Y$electronics$§!"
+ mod_job_electronics_manufacturer_tau_per_pop:0 "§G+1§! $job_electronics_manufacturer$ 岗位每 $VALUE$ 人口"
+ mod_job_electronics_manufacturer_tau_per_pop_short:0 "\n§G+1§! £mod_job_electronics_manufacturer_add£ 每 $VALUE$ £pop£"
+ mod_job_electronics_manufacturer_tau_add:0 "电子元件制造者岗位"
+ 
+ job_electronics_manufacturer_chaos:0 "电子元件制造者" #（待改）
+ job_electronics_manufacturer_chaos_plural:0 "电子元件制造者" #（待改）
+ job_electronics_manufacturer_chaos_desc:0 "制造者们使用塑料与合金生产先进设备的部件" #（待改）
+ job_electronics_manufacturer_chaos_effect_desc:0 "£job_electronics_manufacturer£ $job_electronics_manufacturer_plural$ 将 £alloys£ §Y$alloys$§! 转化为 £electronics£ §Y$electronics$§!"
+ mod_job_electronics_manufacturer_chaos_per_pop:0 "§G+1§! $job_electronics_manufacturer$ 岗位每 $VALUE$ 人口"
+ mod_job_electronics_manufacturer_chaos_per_pop_short:0 "\n§G+1§! £mod_job_electronics_manufacturer_add£ 每 $VALUE$ £pop£"
+ mod_job_electronics_manufacturer_chaos_add:0"电子元件制造者岗位"
+ 
+ job_electronics_manufacturer:0 "电子元件制造者" #（待改）
+ job_electronics_manufacturer_plural:0 "电子元件制造者" #（待改）
+ job_electronics_manufacturer_desc:0 "制造者们使用塑料与合金来生产先进设备的部件" #（待改）
+ job_electronics_manufacturer_effect_desc:0 "£job_electronics_manufacturer£ $job_electronics_manufacturer_plural$ 将 £alloys£ §Y$alloys$§! 和 £promethium£ §Y$promethium$§! 转化为 £electronics£ §Y$electronics$§!"
+ mod_job_electronics_manufacturer_per_pop:0 "§G+1§! $job_electronics_manufacturer$ 岗位每 $VALUE$ 人口"
+ mod_job_electronics_manufacturer_per_pop_short:0 "\n§G+1§! £mod_job_electronics_manufacturer_add£ 每 $VALUE$ £pop£"
+ mod_job_electronics_manufacturer_add: "电子元件制造者岗位"
+ 
+
+ job_military_artisan:0 "军工铸造士"
+ job_military_artisan_plural:0 "军工铸造士"
+ job_military_artisan_desc:0 "制造各类武器与军需品的熟练工匠。"
+ job_military_artisan_effect_desc:1 "£job_military_artisan£ $job_military_artisan_plural$ 将 £alloys£ §Y$alloys$§! 转化为 £military_goods£ §Y$military_goods$§!"
+ mod_job_military_artisan_add:0 "$job_military_artisan$ 岗位"
+ mod_job_military_artisan_per_pop:0 "§G+1§! $job_military_artisan$ 岗位每 $VALUE$ 人口"
+ mod_job_military_artisan_per_pop_short:0 "\n§G+1§! £mod_job_military_artisan_add£ 每 $VALUE$ £pop£"
+ 
+ job_chaos_priest:0 "混沌牧师" #（待改）Chaos Priest
+ job_chaos_priest_plural:0 "混沌牧师" #（待改）Chaos Priest
+ job_chaos_priest_desc:0 "外表与普通神甫无异，但衣袍下的皮肤刻满令信徒目刺的混沌印记。" #（待改）At first glance they are indistinguishable from normal priest, but under their clothes, the flesh is tattooed and branded with sigils that hurt the eyes of any faithful who look upon them.
+ job_chaos_priest_effect_desc:1 "£job_chaos_priest£ $job_chaos_priest_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 转化为 £gods_favor£ §Y$gods_favor$§!, £unity£ §Y$unity$§!, £society£ §Y$society_research$§! 和 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+ mod_job_chaos_priest_add:0 "$job_chaos_priest$ 岗位"
+ mod_job_chaos_priest_per_pop:0 "§G+1§! $job_chaos_priest$ 岗位每 $VALUE$ 人口"
+ mod_job_chaos_priest_per_pop_short:0 "\n§G+1§! £mod_job_chaos_priest_add£ 每 $VALUE$ £pop£"
+ 
+ job_hunter:0 "猎人" #（待改）Hunter
+ job_hunter_plural:0 "猎人" #（待改）Hunter
+ job_hunter_desc:0 "这些半游牧原始人依靠采集狩猎为生，已出现早期工具使用迹象。"
+ job_hunter_effect_desc:0 "£job_hunter£ $job_hunter_plural$ 生产 £food£ §Y$food$§!"
+ mod_job_hunter_add:0 "$job_hunter$ 岗位"
+ mod_job_hunter_per_pop:0 "§G+1§! $job_hunter$ 岗位每 $VALUE$ 人口"
+ mod_job_hunter_per_pop_short:0 "\n§G+1§! £mod_job_hunter_add£ 每 $VALUE$ £pop£"
+
+ job_scraploota:0 "废料小子" #（待改）Scraploota
+ job_scraploota_plural:0 "废料小子" #（待改）Scraploota
+ job_scraploota_desc:0 "俺们抢过最牛最带劲的玩意儿是啥？啊？到底是啥？！"
+ job_scraploota_effect_desc:0 "£job_scraploota£ $job_scraploota_plural$ 生产 £scrap£ §Y$scrap$§!"
+ mod_job_scraploota_add:0 "$job_scraploota$ 岗位"
+ mod_job_scraploota_per_pop:0 "§G+1§! $job_scraploota$ 岗位每 $VALUE$ 人口"
+ mod_job_scraploota_per_pop_short:0 "\n§G+1§! £mod_job_scraploota_add£ 每 $VALUE$ £pop£"
+
+ job_berserk:0 "狂战士"
+ job_berserk_plural:0 "狂战士"
+ job_berserk_desc:0 "他们拒用大多数远程武器，专精近战搏杀，尤其钟爱链锯斧，因斧是恐虐的象征武器。"
+ job_berserk_effect_desc:0 "£job_berserk£ $job_berserk_plural$ 生产 £gods_favor£ §Y$gods_favor$§! 和 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, 增加 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! 并生成 £defense_army£ §Y防御部队§!"
+ mod_job_berserk_add:0 "$job_berserk$ 岗位"
+ mod_job_berserk_per_pop:0 "§G+1§! $job_berserk$ 岗位每 $VALUE$ 人口"
+ mod_job_berserk_per_pop_short:0 "\n§G+1§! £mod_job_berserk_add£ 每 $VALUE$ £pop£"
+ 
+ job_rot_gatherer:0 "腐烂采集者" #（待改）Rot Gatherer
+ job_rot_gatherer_plural:0 "腐烂采集者" #（待改）Rot Gatherer
+ job_rot_gatherer_desc:0 "纳垢花园并非荒原，而是死亡瘟疫的诡异天堂，但即便在此也能觅得可食之物。"
+ job_rot_gatherer_effect_desc:0 "£job_rot_gatherer£ $job_rot_gatherer_plural$ 在纳垢花园中采集 £food£ §Y$food$§!"
+ mod_job_rot_gatherer_add:0 "$job_rot_gatherer$ 岗位"
+ mod_job_rot_gatherer_per_pop:0 "§G+1§! $job_rot_gatherer$ 岗位每 $VALUE$ 人口"
+ mod_job_rot_gatherer_per_pop_short:0 "\n§G+1§! £mod_job_rot_gatherer_add£ 每 $VALUE$ £pop£"
+ 
+ job_sorcerer:0 "巫师"
+ job_sorcerer_plural:0 "巫师"
+ job_sorcerer_desc:0 "职能等同于智库与合法灵能者，但强大者可视为受混沌赐福的灵能冠军。"
+ job_sorcerer_effect_desc:0 "£job_sorcerer£ $job_sorcerer_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 转化为 £gods_favor£ §Y$gods_favor$§! 和 £physics£ £society£ £engineering£ §Y研究点数§! 用于新科技研究"
+ mod_job_sorcerer_add:0 "$job_sorcerer$ 岗位"
+ mod_job_sorcerer_per_pop:0 "§G+1§! $job_sorcerer$ 岗位每 $VALUE$ 人口"
+ mod_job_sorcerer_per_pop_short:0 "\n§G+1§! £mod_job_sorcerer_add£ 每 $VALUE$ £pop£"
+
+ job_daemonette:0 "欲魔"
+ job_daemonette_plural:0 "欲魔"
+ job_daemonette_desc:1 "欲魔可以给予受害者极其痛苦的爱抚和最细腻温柔的致命一击。"
+ job_daemonette_effect_desc:0 "£job_daemonette£ $job_daemonette_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 转化为 £gods_favor£ §Y$gods_favor$§!, £unity£ §Y$unity$§! 和 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+ mod_job_daemonette_add:0 "$job_daemonette$ 岗位"
+ mod_job_daemonette_per_pop:0 "§G+1§! $job_daemonette$ 岗位每 $VALUE$ 人口"
+ mod_job_daemonette_per_pop_short:0 "\n§G+1§! £mod_job_daemonette_add£ 每 $VALUE$ £pop£"
+
+ job_seer:0 "先知"
+ job_seer_plural:0 "先知"
+ job_seer_desc:1 "方舟灵族成员，行走先知之道，专精开发运用超越种族天赋的灵能力量。"
+ job_seer_effect_desc:0 "£job_seer£ $job_seer_plural$ 将 £energy£ §Y$energy$§! 转化为 £spirit_stones£ §Y$spirit_stones$§! 用于垂死的灵族."
+ mod_job_seer_add:0 "$job_seer$ 岗位"
+ mod_job_seer_per_pop:0 "§G+1§! $job_seer$ 岗位每 $VALUE$ 人口"
+ mod_job_seer_per_pop_short:0 "\n§G+1§! £mod_job_seer_add£ 每 $VALUE$ £pop£"
+
+ job_ghost_warrior:0 "幽冥卫士"
+ job_ghost_warrior_plural:0 "幽冥卫士"
+ job_ghost_warrior_desc:1 "灵族危急时启用的灵骨构造体。对灵族而言，死亡并非战争的终结，种族存续高于个体灵魂。"
+ job_ghost_warrior_effect_desc:0 "£job_ghost_warrior£ $job_ghost_warrior_plural$ 增加 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! 并生成 £defense_army£ §Y防御部队§!"
+ mod_job_ghost_warrior_add:0 "$job_ghost_warrior$ 岗位"
+ mod_job_ghost_warrior_per_pop:0 "§G+1§! $job_ghost_warrior$ 岗位每 $VALUE$ 人口"
+ mod_job_ghost_warrior_per_pop_short:0 "\n§G+1§! £mod_job_ghost_warrior_add£ 每 $VALUE$ £pop£"
+
+ job_necron_warrior:0 "太空死灵战士"
+ job_necron_warrior_plural:0 "太空死灵战士"
+ job_necron_warrior_desc:1 "这些无魂不朽的机械造物是太空死灵军团的核心步兵部队。"
+ job_necron_warrior_effect_desc:0 "£job_necron_warrior£ $job_necron_warrior_plural$ 增加 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! 并生成 £defense_army£ §Y防御部队§!"
+ mod_job_necron_warrior_add:0 "$job_necron_warrior$ 岗位"
+ mod_job_necron_warrior_per_pop:0 "§G+1§! $job_necron_warrior$ 岗位每 $VALUE$ 人口"
+ mod_job_necron_warrior_per_pop_short:0 "\n§G+1§! £mod_job_necron_warrior_add£ 每 $VALUE$ £pop£"
+
+ job_canoptek:0 "冥工构造体" #（待改）
+ job_canoptek_plural:0 "冥工构造体" #（待改）
+ job_canoptek_desc:1 "这些无魂不朽的机械造物是太空死灵的基础工人。"
+ job_canoptek_effect_desc:0 "£job_canoptek£ $job_canoptek_plural$ 生产 £minerals£ §Y$minerals$§!"
+ mod_job_canoptek_add:0 "$job_canoptek$ 岗位"
+ mod_job_canoptek_per_pop:0 "§G+1§! $job_canoptek$ 岗位每 $VALUE$ 人口"
+ mod_job_canoptek_per_pop_short:0 "\n§G+1§! £mod_job_canoptek_add£ 每 $VALUE$ £pop£"
+
+ job_cryptek:0 "墓穴技师"
+ job_cryptek_plural:0 "墓穴技师"
+ job_cryptek_desc:1 "墓穴技师是太空死灵的技术专家与工程师，负责研究并维护王朝的古老技术。"
+ job_cryptek_effect_desc:0 "£job_cryptek£ $job_cryptek_plural$ 将 £minerals£ §Y$minerals$§! 转化为 £living_metal£ §Y$living_metal$§!"
+ mod_job_cryptek_add:0 "$job_cryptek$ 岗位"
+ mod_job_cryptek_per_pop:0 "§G+1§! $job_cryptek$ 岗位每 $VALUE$ 人口"
+ mod_job_cryptek_per_pop_short:0 "\n§G+1§! £mod_job_cryptek_add£ 每 $VALUE$ £pop£"
+
+ job_nemesor:0 "戴冠将军"
+ job_nemesor_plural:0 "戴冠将军"
+ job_nemesor_desc:1 "戴冠将军是死灵高阶军事头衔，等同于人类军队的将军或海军上将军衔。"
+ job_nemesor_effect_desc:0 "£job_nemesor£ $job_nemesor_plural$ 将 £energy£ §Y$energy$§! 转化为 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! 和 £mod_country_admin_cap_add£ §Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!"
+ mod_job_nemesor_add:0 "$job_nemesor$ 岗位"
+ mod_job_nemesor_per_pop:0 "§G+1§! $job_nemesor$ 岗位每 $VALUE$ 人口"
+ mod_job_nemesor_per_pop_short:0 "\n§G+1§! £mod_job_nemesor_add£ 每 $VALUE$ £pop£"
+
+ job_kabalite_warrior:0 "阴谋团武士"
+ job_kabalite_warrior_plural:0 "阴谋团武士"
+ job_kabalite_warrior_desc:1 "黑暗灵族阴谋团的基础步兵，是袭击现实空间时的部队的主力。"
+ job_kabalite_warrior_effect_desc:0 "£job_kabalite_warrior£ $job_kabalite_warrior_plural$ 增加 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! 并生成 £defense_army£ §Y防御部队§!"
+ mod_job_kabalite_warrior_add:0 "$job_kabalite_warrior$ 岗位"
+ mod_job_kabalite_warrior_per_pop:0 "§G+1§! $job_kabalite_warrior$ 岗位每 $VALUE$ 人口"
+ mod_job_kabalite_warrior_per_pop_short:0 "\n§G+1§! £mod_job_kabalite_warrior_add£ 每 $VALUE$ £pop£"
+
+ job_haemonculus:0 "血伶人"
+ job_haemonculus_plural:0 "血伶人"
+ job_haemonculus_desc:1 "这些可怖的黑暗灵族肉体雕刻师在科摩罗深处已存在数千年。"
+ job_haemonculus_effect_desc:0 "£job_haemonculus£ $job_haemonculus_plural$ 将 £slaves£ §Y$slaves$§! 转化为 £mod_country_pop_enslaved_mult£ §Y奴役与改造工人§! 有一定的成功率。"
+ mod_job_haemonculus_add:0 "$job_haemonculus$ 岗位"
+ mod_job_haemonculus_per_pop:0 "§G+1§! $job_haemonculus$ 岗位每 $VALUE$ 人口"
+ mod_job_haemonculus_per_pop_short:0 "\n§G+1§! £mod_job_haemonculus_add£ 每 $VALUE$ £pop£"
+
+ job_tyranid_guardian:0 "泰伦虫族守卫"
+ job_tyranid_guardian_plural:0 "泰伦虫族守卫"
+ job_tyranid_guardian_desc:1 "这些重甲生物与共生生物武器融合，守卫监视猎物星球的虫巢，直至入侵者进入其致命射程。"
+ job_tyranid_guardian_effect_desc:0 "£job_tyranid_guardian£ $job_tyranid_guardian_plural$ 增加 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! 并生成 £defense_army£ §Y防御部队§!"
+ mod_job_tyranid_guardian_add:0 "$job_tyranid_guardian$ 岗位"
+ mod_job_tyranid_guardian_per_pop:0 "§G+1§! $job_tyranid_guardian$ 岗位每 $VALUE$ 人口"
+ mod_job_tyranid_guardian_per_pop_short:0 "\n§G+1§! £mod_job_tyranid_guardian_add£ 每 $VALUE$ £pop£"
+
+ job_ork_nob:0 "老大"
+ job_ork_nob_plural:0 "老大"
+ job_ork_nob_desc:1 "兽人老大比普通小子更庞大凶残，以残暴为乐。"
+ job_ork_nob_effect_desc:0 "£job_ork_nob£ $job_ork_nob_plural$ 增加 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! 并生成 £defense_army£ §Y防御部队§!"
+ mod_job_ork_nob_add:0 "$job_ork_nob$ 岗位"
+ mod_job_ork_nob_per_pop:0 "§G+1§! $job_ork_nob$ 岗位每 $VALUE$ 人口"
+ mod_job_ork_nob_per_pop_short:0 "§G+1§! £mod_job_ork_nob_add£ 每 $VALUE$ £pop£"
+ 
+ job_ork_boy:0 "小子"
+ job_ork_boy_plural:0 "小子"
+ job_ork_boy_desc:1 "小子是兽人军队的基础，在狂暴绿潮中以坚韧意志撕碎敌人。"
+ job_ork_boy_effect_desc:0 "£job_ork_boy£ $job_ork_boy_plural$ 增加 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! 并生成 £defense_army£ §Y防御部队§!"
+ mod_job_ork_boy_add:0 "$job_ork_boy$ 岗位"
+ mod_job_ork_boy_per_pop:0 "§G+1§! $job_ork_boy$ 岗位每 $VALUE$ 人口"
+ mod_job_ork_boy_per_pop_short:0 "§G+1§! £mod_job_ork_boy_add£ 每 $VALUE$ £pop£"
+ 
+ job_mekboy:0 "技霸小子"
+ job_mekboy_plural:0 "技霸小子"
+ job_mekboy_desc:1 "绿皮怪才，负责建造兽人所有的武器载具与科技造物。"
+ job_mekboy_effect_desc:0 "£job_mekboy£ $job_mekboy_plural$ 将 £scrap£ §Y$scrap$§! 转化为 £consumer_goods£ §Y$consumer_goods$§!"
+ mod_job_mekboy_add:0 "$job_mekboy$ 岗位"
+ mod_job_mekboy_per_pop:0 "§G+1§! $job_mekboy$ 岗位每 $VALUE$ 人口"
+ mod_job_mekboy_per_pop_short:0 "§G+1§! £mod_job_mekboy_add£ 每 $VALUE$ £pop£"
+  
+ job_techboy:0 "技工小子" #（待改）lex里没有怀疑是作者造出来的
+ job_techboy_plural:0 "技工小子" #（待改）techboyz
+ job_techboy_desc:1 "一种维护高级组件的技工小子" #（待改）It also known as a Techniak, is a type of Ork Oddboy who maintaun advanced staff used by the Boyz.
+ job_techboy_effect_desc:0 "£job_techboy£ $job_techboy_plural$ 生产 £energy£ §Y$energy$§!"
+ mod_job_techboy_add:0 "$job_techboy$ 岗位"
+ mod_job_techboy_per_pop:0 "§G+1§! $job_techboy$ 岗位每 $VALUE$ 人口"
+ mod_job_techboy_per_pop_short:0 "§G+1§! £mod_job_techboy_add£ 每 $VALUE$ £pop£"
+
+ job_brewboy:0 "酿造小子"
+ job_brewboy_plural:0 "酿造小子"
+ job_brewboy_desc:1 "厨师，兽人文化中的重要后勤角色。"
+ job_brewboy_effect_desc:0 "£job_brewboy£ $job_brewboy_plural$ 将 £food£ §Y$food$§! 转化为 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! 和 £mod_pop_growth_speed£ §Y$MOD_POP_GROWTH_SPEED$§! "
+ mod_job_brewboy_add:0 "$job_brewboy$ 岗位"
+ mod_job_brewboy_per_pop:0 "§G+1§! $job_brewboy$ 岗位每 $VALUE$ 人口"
+ mod_job_brewboy_per_pop_short:0 "§G+1§! £mod_job_brewboy_add£ 每 $VALUE$ £pop£"
+ 
+ job_yeller:0 "嘶吼者" #（待改）二版里面的lex甚至没有介绍
+ job_yeller_plural:0 "嘶吼者" #（待改）专门崇拜搞毛二哥Yellerz
+ job_yeller_desc:1 "搞哥与毛哥的兽人牧师。" #（待改）Ork priests of Gork and Mork.
+ job_yeller_effect_desc:0 "£job_yeller£ $job_yeller_plural$ 生产 £unity£ §Y$unity$§! 和 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+ mod_job_yeller_add:0 "$job_yeller$ 岗位"
+ mod_job_yeller_per_pop:0 "§G+1§! $job_yeller$ 岗位每 $VALUE$ 人口"
+ mod_job_yeller_per_pop_short:0 "§G+1§! £mod_job_yeller_add£ 每 $VALUE$ £pop£"
+ 	
+ job_muzboy:0 "音乐小子" #（待改）Muzboy
+ job_muzboy_plural:0 "音乐小子" #（待改）我觉得这个也是造的
+ job_muzboy_desc:1 "演奏乐器的绿皮音乐家。" #（待改）Greenskin musicians who play musical instruments.
+ job_muzboy_effect_desc:0 "£job_muzboy£ $job_muzboy_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 转化为 £unity£ §Y$unity$§! 和 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+ mod_job_muzboy_add:0 "$job_muzboy$ 岗位"
+ mod_job_muzboy_per_pop:0 "§G+1§! $job_muzboy$ 岗位每 $VALUE$ 人口"
+ mod_job_muzboy_per_pop_short:0 "§G+1§! £mod_job_muzboy_add£ 每 $VALUE$ £pop£"
+ 
+ job_smithboy:0 "铁匠小子" #（待改）Smithboy
+ job_smithboy_plural:0 "铁匠小子" #（待改）还是造的
+ job_smithboy_desc:1 "擅长用特定材料制造物品的绿皮。" #（待改）Greenskin who skilled in creating something with a specified materials.
+ job_smithboy_effect_desc:0 "£job_smithboy£ $job_smithboy_plural$ 将 £minerals£ §Y$minerals$§! 转化为 £alloys£ §Y$alloys$§!"
+ mod_job_smithboy_add:0 "$job_smithboy$ 岗位"
+ mod_job_smithboy_per_pop:0 "§G+1§! $job_smithboy$ 岗位每 $VALUE$ 人口"
+ mod_job_smithboy_per_pop_short:0 "§G+1§! £mod_job_smithboy_add£ 每 $VALUE$ £pop£"
+ 
+ job_sumboy:0 "会计小子" #（待改）还是二版的lex没有介绍 sumboyz
+ job_sumboy_plural:0 "会计小子" #（待改）兽人银行有意思
+ job_sumboy_desc:1 "绿皮会计师们为绿皮提供计算与贷款的服务" #（待改）
+ job_sumboy_effect_desc:0 "£job_sumboy£ $job_sumboy_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 转化为 £mod_country_admin_cap_add£ §Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!"
+ mod_job_sumboy_add:0 "$job_sumboy$ 岗位"
+ mod_job_sumboy_per_pop:0 "§G+1§! $job_sumboy$ 岗位每 $VALUE$ 人口"
+ mod_job_sumboy_per_pop_short:0 "§G+1§! £mod_job_sumboy_add£ 每 $VALUE$ £pop£"
+ 
+ job_librarian:0 "智库"
+ job_librarian_plural:0 "智库"
+ job_librarian_desc:1 "所有数据碎片必须严格依照初代智库设立的古老仪式进行归档编目。"
+ job_librarian_effect_desc:0 "£job_librarian£ $job_librarian_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 转化为 £physics£ £society£ £engineering£ §Y研究点数§! 用于新科技研究"
+ mod_job_librarian_add:0 "$job_librarian$ 岗位"
+ mod_job_librarian_per_pop:0 "§G+1§! $job_librarian$ 岗位每 $VALUE$ 人口"
+ mod_job_librarian_per_pop_short:0 "§G+1§! £mod_job_librarian_add£ 每 $VALUE$ £pop£"
+ 
+ job_noble_warlock:0 "战巫"
+ job_noble_warlock_plural:0 "战巫"
+ job_noble_warlock_desc:1 "战巫是灵族先知或灵能者，曾作为支派武士行走于战士之道，现以灵能帮助领导战争军团。"
+ job_noble_warlock_effect_desc:0 "£job_noble_warlock£ $job_noble_warlock_plural$ 生产 £unity£ §Y$unity$§! 和 £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§! 并减少 £crime£ §Y$PLANET_CRIME_TITLE$§!"
+ mod_job_noble_warlock_add:0 "$job_noble_warlock$ 岗位"
+ mod_job_noble_warlock_per_pop:0 "§G+1§! $job_noble_warlock$ 岗位每 $VALUE$ 人口"
+ mod_job_noble_warlock_per_pop_short:0 "§G+1§! £mod_job_noble_warlock_add£ 每 $VALUE$ £pop£"
+ 
+ job_wych:0 "巫灵"
+ job_wych_plural:0 "巫灵"
+ job_wych_desc:1 "黑暗灵族的角斗战士，隶属巫灵教派。未袭击现实空间时，在竞技场与俘虏，野兽或同族搏杀取乐牟利。"
+ job_wych_effect_desc:0 "£job_wych£ $job_wych_plural$ 将 £alloys£ §Y$alloys$§! 转化为 £unity£ §Y$unity$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! 和 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+ mod_job_wych_add:0 "$job_wych$ 岗位"
+ mod_job_wych_per_pop:0 "§G+1§! $job_wych$ 岗位每 $VALUE$ 人口"
+ mod_job_wych_per_pop_short:0 "§G+1§! £mod_job_wych_add£ 每 $VALUE$ £pop£"
+ 
+ job_haemacolyte:0 "血伶人学徒" #（待改）血伶人学徒？
+ job_haemacolyte_plural:0 "血伶人学徒" #（待改）自愿？想不出来
+ job_haemacolyte_desc:1 "自愿效忠血伶人的黑暗灵族，其躯体经缝合改造如同怪物。" #（待改）It what happens when you have a bundle of bodies stitched together like Frankenstein. In probably the most squick-tastic way ever imaginable, becoming a Wrack is mostly voluntary which means that they are Dark Eldar who decide to dedicate themselves to serving a Haemonculus as a servant.
+ job_haemacolyte_effect_desc:0 "£job_haemacolyte£ $job_haemacolyte_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 转化为 £physics£ £society£ £engineering£ §Y研究点数§! 用于新科技研究"
+ mod_job_haemacolyte_add:0 "$job_haemacolyte$ 岗位"
+ mod_job_haemacolyte_per_pop:0 "§G+1§! $job_haemacolyte$ 岗位每 $VALUE$ 人口"
+ mod_job_haemacolyte_per_pop_short:0 "§G+1§! £mod_job_haemacolyte_add£ 每 $VALUE$ £pop£"
+ 
+ job_triarch:0 "三圣禁卫"
+ job_triarch_plural:0 "三圣禁卫"
+ job_triarch_desc:1 "太空死灵的特殊阶层，负责审判与执行远古惧亡者律法。"
+ job_triarch_effect_desc:0 "£job_triarch£ $job_triarch_plural$ 减少 £crime£ §Y$PLANET_CRIME_TITLE$§! 并生成 £defense_army£ §Y防御部队§!"
+ mod_job_triarch_add:0 "$job_triarch$ 岗位"
+ mod_job_triarch_per_pop:0 "§G+1§! $job_triarch$ 岗位每 $VALUE$ 人口"
+ mod_job_triarch_per_pop_short:0 "§G+1§! £mod_job_triarch_add£ 每 $VALUE$ £pop£"
+
+ job_incubus:0 "梦魇"
+ job_incubus_plural:0 "梦魇"
+ job_incubus_desc:1 "黑暗灵族精英战士，常作为执政官的扈从参战，战斗外会担任全天候贴身护卫。"
+ job_incubus_effect_desc:0 "£job_incubus£ $job_incubus_plural$ 生产 £unity£ §Y$unity$§! 和 £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!, 增加 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! 并生成 £defense_army£ §Y防御部队§!"
+ mod_job_incubus_add:0 "$job_incubus$ 岗位"
+ mod_job_incubus_per_pop:0 "§G+1§! $job_incubus$ 岗位每 $VALUE$ 人口"
+ mod_job_incubus_per_pop_short:0 "§G+1§! £mod_job_incubus_add£ 每 $VALUE$ £pop£"
+
+ job_executioner:0 "行刑官" #（待改）帝国的处决人员叫什么来着
+ job_executioner_plural:0 "行刑官" #（待改）行刑官？刽子手？执行者
+ job_executioner_desc:1 "执行罪犯死刑判决的帝国要员。"
+ job_executioner_effect_desc:0 "£job_executioner£ $job_executioner_plural$ 将 £alloys£ §Y$alloys$§! 转化为 £unity£ §Y$unity$§! 和 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+ mod_job_executioner_add:0 "$job_executioner$ 岗位"
+ mod_job_executioner_per_pop:0 "§G+1§! $job_executioner$ 岗位每 $VALUE$ 人口"
+ mod_job_executioner_per_pop_short:0 "§G+1§! £mod_job_executioner_add£ 每 $VALUE$ £pop£"
+
+ job_truth_preacher:0 "帝国真理宣道者"
+ job_truth_preacher_plural:0 "帝国真理宣道者"
+ job_truth_preacher_desc:1 "传播由帝皇钦定的，消除宗教信仰和迷信思想的帝国真理的传道者。" #(待改)感觉有点不通顺
+ job_truth_preacher_effect_desc:0 "£job_truth_preacher£ $job_truth_preacher_plural$ 生产 £unity£ §Y$unity$§! 和 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+ mod_job_truth_preacher_add:0 "$job_truth_preacher$ 岗位"
+ mod_job_truth_preacher_per_pop:0 "§G+1§! $job_truth_preacher$ 岗位每 $VALUE$ 人口"
+ mod_job_truth_preacher_per_pop_short:0 "§G+1§! £mod_job_truth_preacher_add£ 每 $VALUE$ £pop£"
+
+ job_inquisitor:0 "审判官"
+ job_inquisitor_plural:0 "审判官"
+ job_inquisitor_desc:1 "帝国审判庭最高阶秘密特工，执行秘密警察与情报任务。" #(待改)感觉有点不通顺
+ job_inquisitor_effect_desc:0 "£job_inquisitor£ $job_inquisitor_plural$ 生产 £unity£ §Y$unity$§! 和 £society£ §Y$society_research$§!, 并提供 £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!"
+ mod_job_inquisitor_add:0 "$job_inquisitor$ 岗位"
+ mod_job_inquisitor_per_pop:0 "§G+1§! $job_inquisitor$ 岗位每 $VALUE$ 人口"
+ mod_job_inquisitor_per_pop_short:0 "§G+1§! £mod_job_inquisitor_add£ 每 $VALUE$ £pop£"
+ 
+ job_breeder_slave:0"育种奴隶" #(待改)Slave Breeder
+ job_breeder_slave_plural:0"育种奴隶" #(待改)Slave Breeder
+ job_breeder_slave_desc:1 ""
+ job_breeder_slave_effect_desc:0 ""
+ mod_job_breeder_slave_add:0 "育种奴隶岗位" #(待改)Slave Breeder Jobs
+ mod_job_breeder_slave_per_pop:0 "§G+1§! $Slave Breeders$ 岗位每 $VALUE$ 人口"
+ mod_job_breeder_slave_per_pop_short:0 "§G+1§! £mod_job_breeder_slave_add£ 每 $VALUE$ £pop£"
+
+ # Categories
+ planet_military_artisans:0 "军工岗位" #(待改)Military Crtisan Crtisan是啥 L留言：猜测为artisan和craftsman的组合词，不知道是不是新西兰方言，又或者单纯拼写错误
+ planet_electronics_manufacturers:0 "电子元件制造者岗位" #(待改)Electronics Manufacturer一点也不40k L留言：还行，反正都是厂狗，电子厂和钢厂没啥区别，唯一的区别只有钢厂容易死
+ planet_truth_preachers:0 "真理宣道者岗位"
+ planet_seers:0 "先知岗位"
+
+############################font color code
+##§W Wwhite
+##§R R red
+##§L L Dark Gold
+##§S S Naturals
+##§H HGolden
+##§Y Y yellow
+##§G G green
+##§E E Cyan
+##§B B dark blue
+##§M M Purple
+##§g g grey
+##§! Finish
+############################font color code

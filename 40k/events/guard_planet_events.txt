@@ -1,0 +1,213 @@
+namespace = imp_army_home_selector
+
+# Initial event
+event = {
+    id = imp_army_home_selector.1
+    title = "Choose Militarum Regiment World"
+    desc = "Select which Imperial Guard Regiment to designate this planet to."
+
+    picture = GFX_regiment_world
+    show_sound = event_colony_established
+    location = from
+
+    trigger = {
+        has_owner = yes
+        owner = { has_country_flag = imperium }
+        is_colony = yes
+    }
+
+    option = {
+        name = "Catachan"
+        trigger = { NOT = { has_planet_flag = catachan_planet } }
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = vostroya_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = catachan_planet
+    }
+
+    option = {
+        name = "Cadia"
+        trigger = { NOT = { has_planet_flag = cadia_planet } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = vostroya_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = cadia_planet
+    }
+
+    option = {
+        name = "Armageddon"
+        trigger = { NOT = { has_planet_flag = armageddon_planet } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = vostroya_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = armageddon_planet
+    }
+
+    option = {
+        name = "Krieg"
+        trigger = { NOT = { has_planet_flag = kriegplanett } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = vostroya_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = kriegplanett
+    }
+
+    option = {
+        name = "Mordian"
+        trigger = { NOT = { has_planet_flag = mordian_planet } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = vostroya_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = mordian_planet
+    }
+
+    option = {
+        name = "More Options"
+        trigger = { always = yes }
+        custom_tooltip = more_options_tt
+        planet_event = { id = imp_army_home_selector.2 }
+    }
+}
+
+# More options
+event = {
+    id = imp_army_home_selector.2
+    title = "Choose Militarum Regiment World"
+    desc = "Select which remaining world type to designate."
+
+    picture = GFX_regiment_world
+    show_sound = event_colony_established
+    location = root
+    is_triggered_only = yes
+
+    option = {
+        name = "Scintilla"
+        trigger = { NOT = { has_planet_flag = scintilla_planet } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = vostroya_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = scintilla_planet
+    }
+
+    option = {
+        name = "Praetoria"
+        trigger = { NOT = { has_planet_flag = praetoria_planet } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = vostroya_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = praetoria_planet
+    }
+
+    option = {
+        name = "Valhalla"
+        trigger = { NOT = { has_planet_flag = valhalla_planet } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = vostroya_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = valhalla_planet
+    }
+
+    option = {
+        name = "Tallarn"
+        trigger = { NOT = { has_planet_flag = tallarn_planet } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = vostroya_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = tallarn_planet
+    }
+
+    option = {
+        name = "Vostroya"
+        trigger = { NOT = { has_planet_flag = vostroya_planet } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = elysia_planet
+        set_planet_flag = vostroya_planet
+    }
+
+    option = {
+        name = "Elysia"
+        trigger = { NOT = { has_planet_flag = elysia_planet } }
+        remove_planet_flag = catachan_planet
+        remove_planet_flag = cadia_planet
+        remove_planet_flag = armageddon_planet
+        remove_planet_flag = kriegplanett
+        remove_planet_flag = mordian_planet
+        remove_planet_flag = scintilla_planet
+        remove_planet_flag = praetoria_planet
+        remove_planet_flag = valhalla_planet
+        remove_planet_flag = tallarn_planet
+        remove_planet_flag = vostroya_planet
+        set_planet_flag = elysia_planet
+    }
+}

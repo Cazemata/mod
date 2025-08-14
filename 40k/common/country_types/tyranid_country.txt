@@ -1,0 +1,12 @@
+tyranid_crisis_country = {
+    playable = no
+    is_crisis = yes
+    ai = yes
+    use_ai_personality = yes
+    ai_personality = tyranid_ai
+    type = default
+    colonizable = no
+    name_list = HIVE
+    graphical_culture = hive
+    species_class = LITHOID
+}

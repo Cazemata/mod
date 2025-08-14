@@ -1,0 +1,145 @@
+guiTypes = {
+	containerWindowType = {
+		name = "focus_completed_window"
+		size = { width = 388 height = 790 }
+		position = { x = 1230 y = 59 }
+		if_scaled_resolution = {
+			min_width = 2560
+			position = { x = 1257 y = 59 }
+		}
+		moveable = yes
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_plain_bg_tile"
+		}
+		instantTextBoxType = {
+			name = "title"
+			font = "font_header_20"
+			text = "FOCUS_COMPLETED_TITLE"
+			position = { x = 16 y = 8 }
+			maxWidth = 260
+			maxHeight = 24
+			fixedSize = yes
+			format = left
+		}
+		# Close Button
+		buttonType = {
+			name = "close"
+			spriteType = "GFX_close_button"
+			position = { x = -46 y = 3 }
+			orientation = upper_right
+			shortcut = "ESCAPE"
+			pdx_tooltip = "CLOSE_TITLE"
+			clicksound = "back_click"
+		}
+		containerWindowType = {
+			name = "buttons_grid_container"
+			position = { x = 12 y = 42 }
+			size = { width = -12 height = 34 }
+			gridBoxType = {
+				name = "buttons_grid_box"
+				position = { x = 2 y = 0 }
+				slotsize = { width = 124 height = 34 }
+				max_slots_horizontal = 3
+			}
+		}
+		containerWindowType = {
+			name = "frame_container"
+			position = { x = 8 y = 77 }
+			size = { width = -8 height = -10 }
+			background = {
+				name = "frame"
+				spriteType = "GFX_clean_frame_area"
+			}
+		}
+		containerWindowType = {
+			name = "items_grid_container"
+			position = { x = 13 y = 82 }
+			size = { width = -10 height = -16 }
+			verticalScrollbar = "right_vertical_slider_thick"
+			smooth_scrolling = yes
+			# Invisible background to enable scrolling with mouse.
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_invisible"
+				position = { x = 0 y = 0 }
+			}
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_timelines_progress_background"
+				position = { x = -10 y = 0 }
+				alwaysTransparent = yes # Transparent to disable on mouse hover highligthing.
+			}
+			gridBoxType = {
+				name = "items_grid_box"
+				position = { x = 8 y = 5 }
+				format = "UPPER_LEFT"
+				slotsize = { width = 346 height = 52 }
+				max_slots_horizontal = 1
+			}
+		}
+	}
+	### FOCUS CARD ITEM
+	containerWindowType = {
+		name = "focus_card_completed_item"
+		position = { x = -4 y = 0 }
+		size = { width = 354 height = 45 }
+		background = {
+			name = "background"
+			spriteType = "GFX_planet_bg_tile_2"
+		}
+		iconType = {
+			name = "tier_icon"
+			spriteType = "GFX_completed_focus_card_tier"
+			position = { x = 5 y = 13 }
+		}
+		instantTextBoxType = {
+			name = "name"
+			font = "font_text_14"
+			text = "FOCUS_CARD_NAME"
+			position = { x = 31 y = 0 }
+			maxWidth = 200
+			maxHeight = 45
+			fixedSize = yes
+			vertical_alignment = center
+			multiline = no
+		}
+		containerWindowType = {
+			name = "reward_container"
+			orientation = upper_left
+			position = { x = 341 y = 4 }
+			size = { width = 81 height = 40 }
+			gridBoxType = {
+				name = "reward_grid_box"
+				position = { x = 0 y = -1 }
+				slotSize = { width = 27 height = 40 }
+				max_slots_horizontal = 3
+				format = "UPPER_RIGHT"
+				padding = { left = 0 top = 0 }
+			}
+		}
+	}
+	### FOCUS CATEGORY BUTTON ITEM
+	containerWindowType = {
+		name = "focus_card_category_button_item"
+		size = { width = 120 height = 346 }
+		containerWindowType = {
+			name = "selection_highlight"
+			position = { x = 59 y = -1 }
+			size = { width = 118 height = 36 }
+			background = {
+				name = "selected_bg"
+				spriteType = "GFX_tiling_selection_dimmed_down"
+				alwaysTransparent = yes
+			}
+		}
+		buttonType = {
+			name = "button"
+			position = { x = 48 y = -12 }
+			spriteType = "GFX_standard_button_116_34"
+			buttonFont = "font_text_14"
+			buttonText = "FOCUS_CARD_TYPE_CONQUEST"
+			oversound = "mouse_over"
+		}
+	}
+}

@@ -1,0 +1,415 @@
+@sub_window_pos_y = -125
+@sub_window_pos_y_1440 = -250
+@sub_window_height = 650
+@sub_window_height_1440 = 850
+@sub_window_width = 1030
+@sub_window_width_large = 1370
+@sub_window_width_mega = 1800
+@sub_window_pos_x_1650 = 50
+@sub_window_pos_x_1650_large = 110
+guiTypes = {
+	containerWindowType = {
+		name = "ship_gfx_culture_browser_editor"
+		position = { x = @sub_window_pos_x_1650_large y = @sub_window_pos_y }
+		size = { width = @sub_window_width_large height = @sub_window_height }
+		if_scaled_resolution = {
+			min_width = 1920
+			position = { x = 0 y = @sub_window_pos_y }
+			if_scaled_resolution = {
+				min_height = 1440
+				position = { x = 0 y = @sub_window_pos_y_1440 }
+				size = { width = @sub_window_width_large height = @sub_window_height_1440 }
+			}
+		}
+		if_scaled_resolution = {
+			min_width = 2560
+			size = { width = @sub_window_width_mega height = @sub_window_height }
+			if_scaled_resolution = {
+				min_height = 1440
+				position = { x = 0 y = @sub_window_pos_y_1440 }
+				size = { width = @sub_window_width_mega height = @sub_window_height_1440 }
+			}
+		}
+		orientation = center
+		origo = center_up
+		background = {
+			name = "background"
+			spriteType = "GFX_subwindow_tile_plain_solid"
+		}
+		containerWindowType = {
+			name = "header_box"
+			size = { width = 100% height = 50 }
+			iconType = {
+				name = "hex_bg"
+				spriteType = "GFX_hex_center_bg"
+				position = { x = -273 y = -11 }
+				orientation = center_up
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "header_line"
+				spriteType = "GFX_line_center"
+				position = { x = -256 y = 26 }
+				orientation = center_up
+			}
+			instantTextBoxType = {
+				name = "headline_label"
+				font = "font_header_20"
+				text = "SHIP_GRAPHICS"
+				position = { x = -250 y = 7 }
+				orientation = center_up
+				maxWidth = 500
+				maxHeight = 24
+				format = center
+			}
+		}
+		containerWindowType = {
+			name = "ship_gfx_background"
+			position = { x = 0 y = 45 }
+			size = { width = 100%% height = -65 }
+			background = {
+				name = "ship_gfx_background"
+				quadTextureSprite = "GFX_planet_bg_tile_frame"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "3d_view_window"
+			size = { width = -6 height = 100% }
+			position = { x = 6 y = 51 }
+			clipping = yes
+			buttonType = {
+				name = "3d_view"
+				quadTextureSprite = "GFX_dummy_3d_ship_view"
+				position = { x = 0 y = 0 }
+				oversound = "no_sound"
+			}
+		}
+		iconType = {
+			name = "dlc_overlay"
+			spriteType = "GFX_ship_browser_dlc_overlay"
+			position = { x = 6 y = 51 }
+			spriteType = "GFX_ship_browser_dlc_overlay_1920"
+			if_scaled_resolution = {
+				min_width = 2560
+				spriteType = "GFX_ship_browser_dlc_overlay_2560"
+				if_scaled_resolution = {
+					min_height = 1440
+					spriteType = "GFX_ship_browser_dlc_overlay_2560_1440"
+				}
+			}
+			alwaysTransparent = yes
+		}
+		containerWindowType = {
+			name = "shipset_browser_container"
+			size = { width = 250 height = -75 }
+			position = { x = 10 y = 55 }
+			background = {
+				name = "shipbrowser_menu_bg"
+				spriteType = "GFX_subwindow_tile_plain_solid"
+			}
+			instantTextBoxType = {
+				name = "shipset_label"
+				font = "font_header_20"
+				text = "SHIPSETS_LABEL"
+				position = { x = 8 y = 7 }
+				maxWidth = 216
+				maxHeight = 110
+				format = left
+				alwaysTransparent = yes
+			}
+			smoothListboxType = {
+				name = "shipset_listbox"
+				position = { x = 8 y = 38 }
+				size = { x = 225 y = 475 }
+				if_scaled_resolution = {
+					min_height = 1440
+					size = { x = 225 y = 675 }
+				}
+				offset = { x = 0 y = 0 }
+				scrollbarType = "standardlistbox_slider_thick"
+			}
+		}
+		containerWindowType = {
+			name = "ship_type_browser_container"
+			size = { width = 310 height = 378 }
+			position = { x = -10 y = -75 }
+			orientation = lower_right
+			origo = lower_right
+			background = {
+				name = "shipbrowser_menu_bg"
+				spriteType = "GFX_subwindow_tile_plain_solid"
+			}
+			instantTextBoxType = {
+				name = "shipset_name"
+				font = "font_header_20"
+				text = "MISSING_TEXT"
+				position = { x = 14 y = 10 }
+				maxWidth = 240
+				maxHeight = 30
+				fixedSize = yes
+				format = left
+				vertical_alignment = center
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "ship_index_text"
+				font = "font_text_18"
+				text =	"X / X"
+				position = { x = -74 y = 10 }
+				orientation = upper_right
+				maxWidth = 60
+				maxHeight = 30
+				fixedSize = yes
+				format = right
+				vertical_alignment = center
+				alwaysTransparent = yes
+			}
+			containerWindowType = {
+				name = "spinner_container"
+				size = { width = 290 height = 38 }
+				position = { x = 10 y = 50 }
+				background = {
+					name = "spinner_container"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+				instantTextBoxType = {
+					name = "ship_preview_label_text"
+					font = "font_text_16"
+					text = "SHIP_GRAPHICS_PREVIEW"
+					position = { x = -100 y = 0 }
+					orientation = center_up
+					maxWidth = 200
+					maxHeight = 38
+					fixedSize = yes
+					format = center
+					vertical_alignment = center
+					#alwaysTransparent = yes
+				}
+				spinnerType = {
+					name = "ship_type_spinner"
+					leftbutton = "spinner_left_button"
+					rightbutton = "spinner_right_button"
+					size = { x = 290 y = 30 }
+					position = { x = 0 y = 0 }
+					priority = 100
+					borderSize = { x = 16 y = 16 }
+					horizontal = 1
+					maxValue = 0
+					startValue = 0
+					guiButtonType = {
+						name = "spinner_left_button"
+						spriteType = "GFX_button_left"
+						clicksound = "decrement_click"
+					}
+					guiButtonType = {
+						name = "spinner_right_button"
+						spriteType = "GFX_button_right"
+						clicksound = "increment_click"
+					}
+				}
+			}
+			containerWindowType = {
+				name = "shipset_description_bg"
+				size = { width = 290 height = 130 }
+				position = { x = 10 y = 98 }
+				background = {
+					name = "shipset_description_bg"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+			}
+			instantTextBoxType = {
+				name = "shipset_label_text"
+				font = "font_text_18"
+				text = "SHIPSETS_DESCRIPTION_LABEL"
+				position = { x = 20 y = 108 }
+				maxWidth = 230
+				maxHeight = 30
+				fixedSize = yes
+				vertical_alignment = center
+				text_color_code = "H"
+			}
+			instantTextBoxType = {
+				name = "shipset_description_text"
+				font = "font_text_14"
+				text = "MISSING_TEXT"
+				position = { x = 20 y = 138 }
+				maxWidth = 270
+				maxHeight = 80
+				scrollbarType = "standardlistbox_slider_thick_small"
+				text_color_code = "L"
+			}
+			gridBoxType = {
+				name = "culture_dlc_box"
+				position = { x = 218 y = 100 }
+				size = { width = 80 height = 30 }
+				slotSize = { width = 40 height = 40 }
+				format = UPPER_RIGHT
+			}
+			containerWindowType = {
+				name = "ship_type_description_bg"
+				size = { width = 290 height = 130 }
+				position = { x = 10 y = -10 }
+				orientation = lower_left
+				origo = lower_left
+				background = {
+					name = "ship_type_description_bg"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+			}
+			instantTextBoxType = {
+				name = "ship_type_label_text"
+				font = "font_text_18"
+				text = "MISSING_TEXT"
+				position = { x = 20 y = -130 }
+				orientation = lower_left
+				maxWidth = 230
+				maxHeight = 30
+				fixedSize = yes
+				vertical_alignment = center
+				text_color_code = "H"
+			}
+			instantTextBoxType = {				
+				name = "ship_type_description_text"
+				font = "font_text_14"
+				text = "MISSING_TEXT"
+				position = { x = 20 y = -100 }
+				orientation = lower_left
+				maxWidth = 270
+				maxHeight = 80
+				scrollbarType = "standardlistbox_slider_thick_small"
+				text_color_code = "L"
+			}
+			gridBoxType = {
+				name = "ship_type_dlc_box"
+				position = { x = 218 y = -138 }
+				orientation = lower_left
+				size = { width = 80 height = 30 }
+				slotSize = { width = 40 height = 40 }
+				format = UPPER_RIGHT
+			}
+		}
+		iconType = {
+			name = "camera_transform_hint"
+			position = { x = -48 y = 57 }
+			orientation = upper_right
+			spriteType = "GFX_camera_transform"
+			pdx_tooltip = "SHIP_GRAPHICS_CAMERA_TRANSFORM_TOOLTIP"
+		}
+		buttonType = {
+			name = "back"
+			font = "font_text_14"
+			spriteType = "GFX_standard_button_240_34_button"
+			buttonText = "BACK"
+			position = { x = 0 y = -60 }
+			orientation = lower_left
+			shortcut = "BACKSPACE"
+			clicksound = "back_click"
+		}
+		buttonType = {
+			name = "apply_and_close"
+			font = "font_text_14"
+			spriteType = "GFX_standard_button_240_34_button"
+			buttonText = "NEXT"
+			position = { x = -264 y = -60 }
+			orientation = lower_right
+			#shortcut = "RETURN"
+			clicksound = "confirm_click"
+		}
+	}
+	###
+	containerWindowType = {
+		name = "ship_browser_shipset_entry"
+		size = { width = 225 height = 36 }
+		background = {
+			name = "bg"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_tiles_light_area"
+		}
+		instantTextBoxType = {
+			name = "shipset_label"
+			font = "font_header_20"
+			text = "MISSING_TEXT"
+			position = { x = 20 y = 5 }
+			maxWidth = 300
+			format = left
+			alwaysTransparent = yes
+		}
+	}
+	###
+	containerWindowType = {
+		name = "ship_browser_culture_entry"
+		size = { width = 216 height = 100 }
+		containerWindowType = {
+			name = "frame_with_offset"
+			position = { x = 0 y = 0 }
+			size = { width = 224 height = 100 }
+			background = {
+				name ="background"
+				spriteType = "gfx_message_bg"
+			}
+		}
+		containerWindowType = {
+			name = "selected"
+			position = { x = 0 y = 0 }
+			size = { width = 224 height = 100 }
+			background = {
+				name = "background"
+				spriteType = "GFX_glow_tile_orange"
+				alwaysTransparent = yes
+			}
+		}
+		buttonType = {
+			name = "choose_ship_culture_button"
+			position = { x = 8 y = 8 }
+			size = { x = 206 y = 82 }
+			quadTextureSprite = "GFX_dummy_3d_size_entry"
+			oversound = "mouse_over"
+			clicksound = "select_click"
+		}
+		buttonType = {
+			name = "missing_dlc_overlay"
+			spriteType = "GFX_standard_button_214_90_dlc_overlay"
+			size = { x = 224 y = 100 }
+			position = { x = -6 y = -5 }
+			clicksound = "click_outliner"
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {
+			name = "ship_category_entry_name"
+			font = "font_text_14"
+			text = "MISSING_TEXT"
+			position = { x = 20 y = 15 }
+			maxWidth = 140
+			format = left
+			alwaysTransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "ship_browser_dlc_list_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 26 height = 26 }
+		buttonType = {
+			name = "dlc_button"
+			position = { x = -1 y = 1 }
+			quadTextureSprite = "GFX_invisible"
+			format = center
+			pdx_tooltip = "DLC_START"
+			alwaysTransparent = no
+		}
+		iconType = {
+			name = "dlc_frame"
+			quadTextureSprite = "GFX_invisible"
+			position = { x = -1 y = 1 }
+			pdx_tooltip = "DLC_START"
+			alwaysTransparent = yes
+		}
+		iconType = {
+			name = "dlc_checkmark"
+			quadTextureSprite = "GFX_checkmark_icon"
+			position = { x = 0 y = 0 }
+			orientation = lower_right
+			alwaysTransparent = yes
+		}
+	}
+}

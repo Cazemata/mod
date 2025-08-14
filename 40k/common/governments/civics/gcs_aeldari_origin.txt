@@ -1,0 +1,36 @@
+origin_craftworld_aeldari = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_eldar.dds"
+	picture = origin_craftworld_aeldari
+	initializers = { void_dweller_system custom_starting_init_06 }
+	starting_colony = pc_habitat
+	habitability_preference = pc_habitat # pc_continental
+	# max_once_global = yes
+	preferred_planet_class_neighbor = no
+	playable = {
+		# has_humanoids = yes
+		has_utopia = yes
+	}
+	possible = {
+		ethics = {
+			OR = { value = ethic_fanatic_spiritualist value = ethic_spiritualist }
+		}
+	}
+	modifier = {
+		pop_growth_speed = -0.5
+		planet_colony_development_speed_mult = -0.65
+		planet_jobs_specialist_produces_mult = 0.05 
+		leader_skill_levels = 1
+		leader_lifespan_add = 1000  # 200
+	}
+	# traits = {
+	# 	trait = trait_eldar TODO
+	# 	# trait = trait_latent_psionic
+	# 	# trait = trait_void_dweller_1
+	# }
+	description = "origin_tooltip_Aeldari_effects"
+	flags = { "custom_start_screen" "eldar_empire" }
+	}
+	advanced_start = yes
+	random_weight = { base = 0.5 }
+}

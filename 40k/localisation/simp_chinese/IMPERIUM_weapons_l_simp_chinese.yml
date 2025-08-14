@@ -1,0 +1,96 @@
+﻿l_simp_chinese:
+#################################
+TERRANCANNON_1: "I级宏炮"
+TERRANCANNON_1_DESC:"宏炮武器的的MarkI型号"
+SMALL_TERRANCANNON_1: "小型I级宏炮"
+MEDIUM_TERRANCANNON_1: "中型I级宏炮"
+LARGE_TERRANCANNON_1: "大型I级宏炮"
+
+TERRANCANNON_2: "II级宏炮"
+TERRANCANNON_2_DESC:"宏炮武器的MarkII型号"
+SMALL_TERRANCANNON_2: "小型II级宏炮"
+MEDIUM_TERRANCANNON_2: "中型II级宏炮"
+LARGE_TERRANCANNON_2: "大型II级宏炮"
+
+TERRANCANNON_3: "III级宏炮"
+TERRANCANNON_3_DESC:"宏炮武器的MarkIII型号"
+SMALL_TERRANCANNON_3: "小型III级宏炮"
+MEDIUM_TERRANCANNON_3: "中型III级宏炮"
+LARGE_TERRANCANNON_3: "大型III级宏炮"
+
+TERRANCANNON_4: "IV级宏炮"
+TERRANCANNON_4_DESC:"宏炮武器的MarkIV型号"
+SMALL_TERRANCANNON_4: "小型IV级宏炮"
+MEDIUM_TERRANCANNON_4: "中型IV级宏炮"
+LARGE_TERRANCANNON_4: "大型IV级宏炮"
+
+TERRANCANNON_5: "V级宏炮"
+TERRANCANNON_5_DESC:"宏炮武器的MarkV型号"
+SMALL_TERRANCANNON_5: "小型V级宏炮"
+MEDIUM_TERRANCANNON_5: "中型V级宏炮"
+LARGE_TERRANCANNON_5: "大型V级宏炮"
+
+NCTITAN_1: "I级新星炮"
+NCTITAN_1_DESC:""
+EXTRA_LARGE_NCTITAN_1: "I级新星炮"
+
+NCTITAN_2: "II级新星炮"
+NCTITAN_2_DESC:""
+EXTRA_LARGE_NCTITAN_2: "II级新星炮"
+
+NCTITAN_3: "III级新星炮"
+NCTITAN_3_DESC:""
+EXTRA_LARGE_NCTITAN_3: "III级新星炮"
+
+VANULASER_1: "I级光矛阵列"
+VANULASER_1_DESC:0""
+SMALL_VANULASER_1: "I级光矛阵列"
+MEDIUM_VANULASER_1: "I级光矛阵列"
+LARGE_VANULASER_1: "I级光矛阵列"
+
+VANULASER_2: "II级光矛阵列"
+VANULASER_2_DESC:0""
+SMALL_VANULASER_2: "II级光矛阵列"
+MEDIUM_VANULASER_2: "II级光矛阵列"
+LARGE_VANULASER_2: "II级光矛阵列"
+
+VANULASER_3: "III级光矛阵列"
+VANULASER_3_DESC:0""
+SMALL_VANULASER_3: "III级光矛阵列"
+MEDIUM_VANULASER_3: "III级光矛阵列"
+LARGE_VANULASER_3: "III级光矛阵列"
+
+VANULASER_4: "IV级光矛阵列"
+VANULASER_4_DESC:0""
+SMALL_VANULASER_4: "IV级光矛阵列"
+MEDIUM_VANULASER_4: "IV级光矛阵列"
+LARGE_VANULASER_4: "IV级光矛阵列"
+
+VANULASER_5: "V级光矛阵列"
+VANULASER_5_DESC:0""
+SMALL_VANULASER_5: "V级光矛阵列"
+MEDIUM_VANULASER_5: "V级光矛阵列"
+LARGE_VANULASER_5: "V级光矛阵列"
+
+VANULASER_6: "VI级光矛阵列"
+VANULASER_6_DESC:0""
+SMALL_VANULASER_6: "VI级光矛阵列"
+MEDIUM_VANULASER_6: "VI级光矛阵列"
+LARGE_VANULASER_6: "VI级光矛阵列"
+
+
+
+############################font color code
+##§W Wwhite
+##§R R red
+##§L L Dark Gold
+##§S S Naturals
+##§H HGolden
+##§Y Y yellow
+##§G G green
+##§E E Cyan
+##§B B dark blue
+##§M M Purple
+##§g g grey
+##§! Finish
+############################font color code

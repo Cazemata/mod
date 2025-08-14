@@ -1,0 +1,14 @@
+﻿l_english:
+IOM_WARP_DRIVE_1: "Warp Drive"
+IOM_WARP_DRIVE_1_DESC: "The Warp-Drive, or Warp Engines, are devices integrated into spacecraft used by many intelligent races to actually enter the Warp, an alternate dimension of purely psychic energy that echoes and underlies the familiar four dimensions of realspace."
+tech_iom_warp_drive_1: "Warp Drive Technology"
+tech_iom_warp_drive_1_desc: "Reassembled from fragments of the STC"
+ #
+ TECH_UNLOCK_WARP_JUMPDRIVE_1_TITLE:1 "§HUnlocks Component:§! Warp Drive"
+ TECH_UNLOCK_WARP_JUMPDRIVE_1_DESC:1 "§HJump Drive§!\n$tech_warp_jump_drive$"
+ #TECH_UNLOCK_HELM_OF_COMMAND_TITLE:1 ""
+ #TECH_UNLOCK_HELM_OF_COMMAND_DESC:1 ""
+ #TECH_UNLOCK_SALVAGED_WEAPONRY_TITLE:1 ""# FINISH BONUS
+ #TECH_UNLOCK_SALVAGED_WEAPONRY_DESC:1 ""
+ #TECH_UNLOCK_ADEPTUS_ASTARTES_TITLE:1 ""
+ #TECH_UNLOCK_ADEPTUS_ASTARTES_DESC:1 ""

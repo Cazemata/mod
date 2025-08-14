@@ -1,0 +1,702 @@
+######
+# AUTO CANNONS
+######
+
+# MUZZLE FLASH
+
+entity = {
+	name = "ac2_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "mass_driver_small_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_ac2_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } } 
+	}
+}
+
+entity = {
+	name = "ac5_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "mass_driver_small_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_ac5_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } } 
+	}
+}
+
+entity = {
+	name = "ac10_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "mass_driver_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_ac10_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } }
+	}
+}
+
+entity = {
+	name = "ac20_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "mass_driver_large_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_ac20_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "ac2_tracer_round_entity"
+	pdxmesh = "mass_driver_tracer_round_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 0.2
+}
+
+entity = {
+	name = "ac5_tracer_round_entity"
+	pdxmesh = "mass_driver_tracer_round_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 0.5
+}
+
+entity = {
+	name = "ac10_tracer_round_entity"
+	pdxmesh = "mass_driver_tracer_round_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 1
+}
+
+entity = {
+	name = "ac20_tracer_round_entity"
+	pdxmesh = "mass_driver_tracer_round_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 2
+}
+
+entity = {
+	name = "machinegun_tracer_round_entity"
+	pdxmesh = "mass_driver_tracer_round_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 0.2
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "ac2_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "mass_driver_small_hit_effect" sound = { soundeffect = bt_light_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_hit" } } 
+	}
+	#state = { name = "explode_med_hp" state_time = 5 looping = no
+	#	event = { time = 0.0 particle = "projectile_small_shield_hit_effect" }
+	#}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ac5_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "mass_driver_small_hit_effect" sound = { soundeffect = bt_small_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_hit" } } 
+	}
+	#state = { name = "explode_med_hp" state_time = 5 looping = no
+	#	event = { time = 0.0 particle = "projectile_small_shield_hit_effect" }
+	#}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ac10_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "mass_driver_medium_hit_effect" sound = { soundeffect = bt_medium_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_hit" } } 
+	}
+	#state = { name = "explode_med_hp" state_time = 5 looping = no
+	#	event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" }
+	#}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "ac20_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "mass_driver_large_hit_effect" sound = { soundeffect = bt_large_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_hit" } } 
+	}
+	#state = { name = "explode_med_hp" state_time = 5 looping = no
+	#	event = { time = 0.0 particle = "projectile_large_shield_hit_effect" }
+	#}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+######
+# LBX AUTO CANNONS
+######
+
+# MUZZLE FLASH
+
+entity = {
+	name = "lbx5_ac_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "mass_driver_small_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_lbx5ac_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } } 
+	}
+}
+
+entity = {
+	name = "lbx10_ac_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "mass_driver_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_lbx10ac_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } }
+	}
+}
+
+entity = {
+	name = "lbx20_ac_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "mass_driver_large_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_lbx20ac_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "lbx5_ac_tracer_round_entity"
+	pdxmesh = "kinetic_artillery_tracer_round"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 0.5
+}
+
+entity = {
+	name = "lbx10_ac_tracer_round_entity"
+	pdxmesh = "kinetic_artillery_tracer_round"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 1
+}
+
+entity = {
+	name = "lbx20_ac_tracer_round_entity"
+	pdxmesh = "kinetic_artillery_tracer_round"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 2
+}
+
+entity = {
+	name = "lbx2_tracer_round_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = no }			 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.2
+	
+	
+	attach = { missile_01 = "lbx_projectile_entity" }
+	attach = { missile_02 = "lbx_projectile_entity" }
+	attach = { missile_03 = "lbx_projectile_entity" }
+	attach = { missile_04 = "lbx_projectile_entity" }
+	attach = { missile_05 = "lbx_projectile_entity" }
+	attach = { missile_06 = "lbx_projectile_entity" }
+	attach = { missile_07 = "lbx_projectile_entity" }
+	attach = { missile_08 = "lbx_projectile_entity" }
+}
+
+entity = {
+	name = "lbx5_tracer_round_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = no }			 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "lbx_projectile_entity" }
+	attach = { missile_02 = "lbx_projectile_entity" }
+	attach = { missile_03 = "lbx_projectile_entity" }
+	attach = { missile_04 = "lbx_projectile_entity" }
+	attach = { missile_05 = "lbx_projectile_entity" }
+	attach = { missile_06 = "lbx_projectile_entity" }
+	attach = { missile_07 = "lbx_projectile_entity" }
+	attach = { missile_08 = "lbx_projectile_entity" }
+}
+
+entity = {
+	name = "lbx10_tracer_round_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = no }			 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 1
+	
+	
+	attach = { missile_01 = "lbx_projectile_entity" }
+	attach = { missile_02 = "lbx_projectile_entity" }
+	attach = { missile_03 = "lbx_projectile_entity" }
+	attach = { missile_04 = "lbx_projectile_entity" }
+	attach = { missile_05 = "lbx_projectile_entity" }
+	attach = { missile_06 = "lbx_projectile_entity" }
+	attach = { missile_07 = "lbx_projectile_entity" }
+	attach = { missile_08 = "lbx_projectile_entity" }
+}
+
+entity = {
+	name = "lbx20_tracer_round_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = no }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = no }			 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = no trigger_once = yes }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 2
+	
+	
+	attach = { missile_01 = "lbx_projectile_entity" }
+	attach = { missile_02 = "lbx_projectile_entity" }
+	attach = { missile_03 = "lbx_projectile_entity" }
+	attach = { missile_04 = "lbx_projectile_entity" }
+	attach = { missile_05 = "lbx_projectile_entity" }
+	attach = { missile_06 = "lbx_projectile_entity" }
+	attach = { missile_07 = "lbx_projectile_entity" }
+	attach = { missile_08 = "lbx_projectile_entity" }
+}
+
+######
+# ROTARY AUTO CANNONS
+######
+
+# MUZZLE FLASH
+
+entity = {
+	name = "rac2_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "mass_driver_small_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_rac2_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } } 
+	}
+}
+
+entity = {
+	name = "rac5_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "mass_driver_small_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_rac5_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } } 
+	}
+}
+
+######
+# GAUSS RILFES
+######
+
+# MUZZLE FLASH
+
+entity = {
+	name = "light_gauss_rifle_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "gauss_cannon_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_gauss_rifle_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "bt_distance_gauss_fire" } }
+	}
+}
+
+entity = {
+	name = "gauss_rifle_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "gauss_cannon_large_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_gauss_rifle_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "bt_distance_gauss_fire" } }
+	}
+}
+
+entity = {
+	name = "heavy_gauss_rifle_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "railgun_large_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_heavy_gauss_rifle_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "bt_distance_gauss_fire" } } 
+	}
+}
+
+entity = {
+	name = "hyper_assault_gauss_rifle_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "gauss_cannon_small_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_gauss_rifle_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "bt_distance_gauss_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "light_gauss_rifle_tracer_round_entity"
+	pdxmesh = "gauss_cannon_tracer_round_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 0.5
+}
+
+entity = {
+	name = "gauss_rifle_tracer_round_entity"
+	pdxmesh = "gauss_cannon_tracer_round_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 1
+}
+
+entity = {
+	name = "heavy_gauss_rifle_tracer_round_entity"
+	pdxmesh = "railgun_tracer_round_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" }
+	
+	scale = 2
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "light_gauss_rifle_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "gauss_cannon_medium_hit_effect" sound = { soundeffect = bt_gauss_hit } }
+		event = { sound = { soundeffect = "distance_railgun_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "gauss_rifle_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "gauss_cannon_large_hit_effect" sound = { soundeffect = bt_gauss_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_railgun_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "heavy_gauss_rifle_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "railgun_large_hit_effect" sound = { soundeffect = bt_gauss_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_hit" } }
+	}
+	#state = { name = "explode_med_hp" state_time = 5 looping = no
+	#	event = { time = 0.0 particle = "projectile_large_shield_hit_effect" }
+	#}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "hyper_assault_gauss_rifle_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "gauss_cannon_small_hit_effect" sound = { soundeffect = bt_gauss_hit } }
+		event = { sound = { soundeffect = "distance_railgun_hit" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+######
+# MACHINEGUNS
+######
+
+
+# MUZZLE FLASH
+
+entity = {
+	name = "machinegun_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "auto_cannons_small_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_machinegun_fire} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_auto_cannon_fire" } }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "machinegun_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.2 looping = no
+		event = { time = 0.0 particle = "auto_cannons_small_hit_effect" sound = { soundeffect = bt_machinegun_hit } }
+		
+		event = { sound = { soundeffect = "distance_auto_cannon_hit_small" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { trigger_once = yes sound = { soundeffect = "distance_auto_cannon_hit_small" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+
+
+
+
+
+######
+# LONGTOM
+######
+
+# MUZZLE FLASH
+
+entity = {
+	name = "longtom_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "kinetic_artillery_muzzle_particle" keep_particle = yes sound = { soundeffect = bt_longtom_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "bt_distance_longtom_fire" } }
+	}
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "longtom_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5.0 looping = no
+		event = { time = 0.0 particle = "kinetic_artillery_hit_effect" sound = { soundeffect = bt_large_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_kinectic_artillery_hit" } }
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+# PROJECTILE
+
+entity = {
+	name = "longtom_artillery_entity"
+	pdxmesh = "kinetic_artillery_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "kinetic_artillery_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 3
+}
+
+entity = {
+	name = "sniper_artillery_entity"
+	pdxmesh = "kinetic_artillery_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "kinetic_artillery_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 2
+}
+
+entity = {
+	name = "thumper_artillery_entity"
+	pdxmesh = "kinetic_artillery_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "kinetic_artillery_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 1
+}

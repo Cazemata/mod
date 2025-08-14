@@ -1,0 +1,8 @@
+spriteTypes = {
+	# fleet_manager.gui
+	corneredTileSpriteType = {
+		name = "GFX_ui_fleet_manager_warships_bg"
+		textureFile = "gfx/ui_overhaul_qhd/fleet_manager/fleet_manager_warships.dds"
+		borderSize = { x = 0 y = 0 }
+	}
+}

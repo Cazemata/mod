@@ -1,0 +1,489 @@
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+# collateral_damage was not part of old file so set to vanilla values
+# war_exhaustion was not part of old file so set to 0.0, this is WARHAMMER 40K and losing a few milion souls don't matter ;)
+
+wraithguard = {
+	damage = 11.0
+	health = 12.0
+	morale = 10.5
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 1000
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 1000
+			spirit_stones = 150
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+	
+	prerequisites = { "tech_wraithbone_wraithguard" }
+	
+	allow = {
+		has_building = building_spiritspire_dharquese
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "wraithguard_count" 
+					value = 5
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "wraithguard_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "wraithguard_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+wraithlord = {
+	damage = 8.0
+	health = 10.0
+	morale = 10.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 550
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 2500
+			spirit_stones = 250
+		}
+
+		upkeep = {
+			energy = 9
+		}
+	}
+	
+	prerequisites = { "tech_wraithbone" }
+	
+	allow = {
+		has_building = building_spiritspire_dharquese
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "wraithlord_count" 
+					value = 5
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "wraithlord_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "wraithlord_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+wraithknight = {
+	damage = 7.0
+	health = 7.0
+	morale = 6.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 500
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 3500
+			spirit_stones = 300
+		}
+
+		upkeep = {
+			energy = 8
+		}
+	}
+	
+	prerequisites = { "tech_shuriken_cannon_wraithguard" }
+	
+	allow = {
+		has_building = building_spiritspire_dharquese
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "wraithknight_count" 
+					value = 15
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "wraithknight_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "wraithknight_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+avatar = {
+	damage = 12.0
+	health = 15.0
+	morale = 10.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 600
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			energy = 10000
+		}
+
+		upkeep = {
+			energy = 75
+		}
+	}
+	
+	prerequisites = { "tech_avatar" }
+
+	allow = {
+		has_building = building_spiritspire_dharquese
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "avatar_count" 
+					value = 10
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "avatar_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "avatar_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+cobra = {
+	damage = 2.00
+	health = 3.60
+	morale = 1.80
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 150
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 150
+		}
+
+		upkeep = {
+			energy = 3.8
+		}
+	}
+	
+	prerequisites = { "tech_energy_field"  }
+	
+	allow = {
+		has_building = building_spiritspire_dharquese
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+falcon = {
+	damage = 2.5
+	health = 3.5
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 170
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 200
+		}
+
+		upkeep = {
+			energy = 4
+		}
+	}
+	
+	prerequisites = { "tech_twin_death_spinner_common" "tech_energy_field" }
+	
+	allow = {
+		has_building = building_spiritspire_dharquese
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+warp_spiders = {
+	damage = 2.50
+	health = 3.10
+	morale = 2.00
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 130
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 160
+		}
+
+		upkeep = {
+			energy = 3.9
+		}
+	}
+	
+	prerequisites = { "tech_warp_spiders" }
+	
+	allow = {
+		has_building = building_spiritspire_dharquese
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+guardian_squad = {
+	damage = 1.55
+	health = 3.15
+	morale = 1.35
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 90
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 70
+		}
+
+		upkeep = {
+			energy = 3.3
+		}
+	}
+	
+	prerequisites = { "tech_battle_equipment" }
+	
+	allow = {
+		has_building = building_spiritspire_dharquese
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+ranger_squad = {
+	damage = 1.35
+	health = 3.0
+	morale = 1.15
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 90
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 50
+		}
+
+		upkeep = {
+			energy = 3.2
+		}
+	}
+	
+	prerequisites = { "tech_pathfinder_gear"  }
+	
+	allow = {
+		has_building = building_spiritspire_dharquese
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+howling_banshee = {
+	damage = 1.80
+	health = 3.35
+	morale = 1.55
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 110
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 100
+		}
+
+		upkeep = {
+			energy = 3.5
+		}
+	}
+	
+	prerequisites = { "tech_aspect_of_banshee" }
+	
+	allow = {
+		has_building = building_spiritspire_dharquese
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}
+
+warlock = {
+	damage = 1.90
+	health = 5.65
+	morale = 3.55
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 110
+	
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 100
+		}
+		produces = {
+			unity = 1
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	prerequisites = { "tech_warlock" }
+
+	allow = {
+		has_building = building_spiritspire_dharquese
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "warlock_count" 
+					value = 5
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "warlock_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "warlock_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = eldar_empire }
+	}
+}

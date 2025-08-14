@@ -1,0 +1,294 @@
+########### Forge World District Set ###########
+district_forge_housing = {
+	base_buildtime = 600
+        icon = forgeworldworkerhabicon
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	zone_slots = {
+		slot_city_government
+		slot_city_01
+		slot_city_02
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = mechanicus_forge_world
+	}
+
+	potential = {
+		uses_district_set = mechanicus_forge_world
+	}
+
+        conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+		district_mindlink
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 1500
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 300
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 300
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+
+		modifier = {
+			planet_housing_add = 300
+	        }
+        }
+}
+
+district_forge_plasma_generator = {
+	base_buildtime = 240
+	icon = forgeworldgenicon
+	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_energy
+	}
+
+	show_on_uncolonized = {
+		exists = from
+		from = {
+			is_wilderness_empire = no
+		}
+		uses_district_set = mechanicus_forge_world
+		NOT = { has_modifier = resort_colony }
+	}
+
+	potential = {
+		uses_district_set = mechanicus_forge_world
+		OR = {
+			NOT = { exists = owner }
+			AND = {
+				exists = owner
+				owner = { is_wilderness_empire = no }
+			}
+		}
+		NOT = { has_modifier = resort_colony }
+	}
+
+        conversion_ratio = 1
+	convert_to = {
+		district_generator
+		district_rw_generator
+		district_srw_commercial
+		district_rw_urban_1
+		district_photosynthesis_fields
+		district_photosynthesis_fields_uncapped         
+	}
+
+	resources = {
+		category = planet_districts_generator
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 200
+                job_enginseers_add = 500
+                job_technician_add = 500                
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 300
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			planet_housing_add = 100
+		}
+	}
+
+}
+
+district_material_processing = {
+	base_buildtime = 240
+	icon = forgeworldmaterialprocessingicon
+	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_minerals
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = mechanicus_forge_world			
+	}
+
+	potential = {
+		uses_district_set = mechanicus_forge_world                        
+	}
+
+        conversion_ratio = 1
+	convert_to = {
+		district_mining
+		district_rw_urban_2
+		district_hollow_mountains
+		district_hollow_mountains_uncapped                
+	}
+
+	resources = {
+		category = planet_districts_mining
+		cost = {
+			minerals = 1200
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	inline_script = {
+		script = jobs/miners_add
+		AMOUNT = 500
+	}
+
+	planet_modifier = {
+		planet_housing_add = 200
+                
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 300
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_modifier = metal_planet
+		}
+		modifier = {
+			planet_housing_add = 500
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+		mult = owner.value:scripted_modifier_add|MODIFIER|mining_district_housing_add|
+	}
+}
+
+district_forge_lines = {
+        icon = forgeworldalloylinesicon
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_city_government
+		slot_city_01
+		slot_city_02
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = mechanicus_forge_world
+	}
+
+	potential = {
+		uses_district_set = mechanicus_forge_world
+	}
+
+        conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+		district_craglands
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1500
+			volatile_motes = 25
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = industrial_maintenance
+				}
+			}
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+
+	inline_script = {
+		script = jobs/industrial_districts_foundry_add
+		AMOUNT = 800
+	}
+}

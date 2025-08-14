@@ -1,0 +1,222 @@
+auth_stagnated_imperium = {
+	valid_for_released_vassal = no
+	localization_postfix = auth_stagnated_imperium
+	has_agendas = yes
+	ruler_council_position = councilor_ruler_imperial
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+				value = ethic_egalitarian
+				value = ethic_spiritualist
+				value = ethic_xenophile
+				value = ethic_fanatic_egalitarian
+				value = ethic_fanatic_spiritualist
+				value = ethic_fanatic_xenophile
+			}
+		}
+		origin = {	value = origin_gcs_imperium	}
+
+	}	
+	icon = "gfx/interface/icons/governments/authorities/auth_stagnated_imperium.dds"
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	country_modifier = {
+	    country_base_influence_produces_add = 5
+		country_power_projection_influence_produces_add = 3
+		envoys_add = 5
+		intel_decryption_add = 2
+		intel_encryption_add = 2
+		pop_factions_produces_mult = 0.05
+		pop_ethic_spiritualist_attraction_mult = -1
+		pop_ethic_materialist_attraction_mult = 1
+		pop_growth_speed = 0.1
+		planet_crime_mult = -0.25
+		planet_amenities_mult = 0.25
+	}
+}
+
+auth_chaos = {
+	valid_for_released_vassal = no
+	localization_postfix = auth_chaos
+	has_agendas = yes
+	ruler_council_position = councilor_ruler_imperial
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}	
+	icon = "gfx/interface/icons/governments/authorities/auth_chaos.dds"
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	country_modifier = {
+	    country_base_influence_produces_add = 5
+		country_power_projection_influence_produces_add = 2
+		envoys_add = 2
+		country_edict_cap_add = 3
+		pop_growth_speed_reduction = 0.35
+	}
+}
+
+auth_eldar = {
+	valid_for_released_vassal = no
+	localization_postfix = auth_eldar
+	has_agendas = yes
+	ruler_council_position = councilor_ruler_imperial
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}	
+	icon = "gfx/interface/icons/governments/authorities/auth_eldar.dds"
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	country_modifier = {
+	    country_base_influence_produces_add = 5
+		country_power_projection_influence_produces_add = 3
+		envoys_add = 6
+		country_megastructure_build_cap_add = 2
+		country_edict_cap_add = 3
+		pop_growth_speed_reduction = 0.75
+		empire_size_penalty_mult = -5.0
+
+	}
+}
+
+auth_darkeldar = {
+	valid_for_released_vassal = no
+	localization_postfix = auth_darkeldar
+	has_agendas = yes
+	ruler_council_position = councilor_ruler_imperial
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}	
+	icon = "gfx/interface/icons/governments/authorities/auth_darkeldar.dds"
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	country_modifier = {
+	    country_base_influence_produces_add = 5
+		country_power_projection_influence_produces_add = 3
+		country_megastructure_build_cap_add = 2
+		pop_growth_speed_reduction = 0.75
+		empire_size_penalty_mult = -2.5
+	}
+}
+
+auth_ork = {
+	valid_for_released_vassal = no
+	localization_postfix = auth_ork
+	has_agendas = yes
+	ruler_council_position = councilor_ruler_imperial
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}	
+	icon = "gfx/interface/icons/governments/authorities/auth_ork.dds"
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	country_modifier = {
+	    country_base_influence_produces_add = 5
+		country_power_projection_influence_produces_add = 1
+		envoys_add = 1
+		pop_growth_speed = 0.5
+		empire_size_penalty_mult = 2.0
+                army_morale = 2.0
+
+		
+	}
+}
+
+auth_tau = {
+	valid_for_released_vassal = no
+	localization_postfix = auth_tau
+	has_agendas = yes
+	ruler_council_position = councilor_ruler_imperial
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+                origin = { value = origin_tau  }
+	}	
+	icon = "gfx/interface/icons/governments/authorities/auth_tau.dds"
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	country_modifier = {
+	    country_base_influence_produces_add = 5
+		country_power_projection_influence_produces_add = 1
+		envoys_add = 5
+		intel_encryption_add = 3
+		pop_ethic_materialist_attraction_mult = 1
+		pop_growth_speed = 0.4
+		planet_crime_mult = -0.25
+		planet_amenities_mult = 0.25
+                empire_size_penalty_mult = 1.0
+	}
+}
+
+auth_necron_dynasty = {
+        valid_for_released_vassal = no
+	localization_postfix = auth_necron_dynasty
+	has_agendas = yes
+	ruler_council_position = councilor_ruler_imperial
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+                origin = { value = origin_necron_rising }
+	}	
+	icon = "gfx/interface/icons/governments/authorities/auth_necron_dynasty.dds"
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	country_modifier = {
+	    country_base_influence_produces_add = 5
+		country_power_projection_influence_produces_add = 5
+		intel_decryption_add = 5
+		intel_encryption_add = 5
+		country_megastructure_build_cap_add = 2
+		country_edict_cap_add = 3
+	}
+}

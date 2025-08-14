@@ -1,0 +1,680 @@
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "srm_muzzle_flash_entity"
+	cull_radius = 0.01
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "missile_small_muzzle_flash_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_srm_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "bt_distance_srm_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "mrm_muzzle_flash_entity"
+	cull_radius = 0.01
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "missile_medium_muzzle_flash_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_mrm_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "bt_distance_mrm_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "lrm_muzzle_flash_entity"
+	cull_radius = 0.01
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "missile_large_muzzle_flash_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_lrm_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "bt_distance_lrm_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "rl_muzzle_flash_entity"
+	cull_radius = 0.01
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "missile_large_muzzle_flash_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_rl_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "bt_distance_rl_fire" } }
+		
+	}
+}
+
+# MISSILES
+
+entity = {
+	name = "srm2_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 1
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "srm4_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 1
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "srm6_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 1
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+	attach = { missile_05 = "arthropoid_01_missle_entity" }
+	attach = { missile_06 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "lrm5_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "lrm10_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "lrm15_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+	attach = { missile_05 = "arthropoid_01_missle_entity" }
+	attach = { missile_06 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "lrm20_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+	attach = { missile_05 = "arthropoid_01_missle_entity" }
+	attach = { missile_06 = "arthropoid_01_missle_entity" }
+	attach = { missile_07 = "arthropoid_01_missle_entity" }
+	attach = { missile_08 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "mrm10_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "mrm20_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "mrm30_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+	attach = { missile_05 = "arthropoid_01_missle_entity" }
+	attach = { missile_06 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "mrm40_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+	attach = { missile_05 = "arthropoid_01_missle_entity" }
+	attach = { missile_06 = "arthropoid_01_missle_entity" }
+	attach = { missile_07 = "arthropoid_01_missle_entity" }
+	attach = { missile_08 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "rl10_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "rl15_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+	attach = { missile_05 = "arthropoid_01_missle_entity" }
+	attach = { missile_06 = "arthropoid_01_missle_entity" }
+}
+
+entity = {
+	name = "rl20_missiles_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	
+	state = { name = "explode" animation = "fly" 
+		animation_speed = 1000
+		looping = no
+	}
+	
+	scale = 0.5
+	
+	
+	attach = { missile_01 = "arthropoid_01_missle_entity" }
+	attach = { missile_02 = "arthropoid_01_missle_entity" }
+	attach = { missile_03 = "arthropoid_01_missle_entity" }
+	attach = { missile_04 = "arthropoid_01_missle_entity" }
+	attach = { missile_05 = "arthropoid_01_missle_entity" }
+	attach = { missile_06 = "arthropoid_01_missle_entity" }
+	attach = { missile_07 = "arthropoid_01_missle_entity" }
+	attach = { missile_08 = "arthropoid_01_missle_entity" }
+}
+
+# HIT EFFECTS
+
+entity = {
+	name = "missile_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "missile_medium_hit_effect" sound = { soundeffect = bt_missile_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_swarmer_missle_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "thunderbolt_missile_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	scale = 1.5
+}
+
+entity = {
+	name = "tlrm5_missile_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	scale = 0.5
+}
+
+entity = {
+	name = "tlrm10_missile_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "tlrm20_missile_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	scale = 2.0
+}
+
+entity = {
+	name = "arrowiv_artillary_entity"
+	pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "bt_missile_loop" } }
+	}
+	scale = 4
+}

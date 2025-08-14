@@ -1,0 +1,221 @@
+######### Terran Cannons ##############################################################################
+tech_macrocannons_1 = {
+	cost = 3000
+	area = engineering
+	tier = 1
+	is_rare = no
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { materials }
+	weight = @tier1weight2
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_macrocannons_2 = {
+	cost = 3500
+	area = engineering
+	tier = 2
+	is_rare = no
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { materials }
+	prerequisites = { "tech_macrocannons_1" }
+	weight = @tier2weight1
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_macrocannons_3 = {
+	cost = 5000
+	area = engineering
+	tier = 2
+	is_rare = no
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { materials }
+	prerequisites = { "tech_macrocannons_2" }
+	weight = @tier2weight1
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+tech_macrocannons_4 = {
+	cost = 10000
+	area = engineering
+	tier = 3
+	is_rare = no
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { materials }
+	prerequisites = { "tech_macrocannons_3" }
+	weight = @tier2weight1
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_macrocannons_5 = {
+	cost = 20000
+	area = engineering
+	tier = 4
+	is_rare = no
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { materials }
+	prerequisites = { "tech_macrocannons_4" }
+	weight = @tier2weight3
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+################# PULSE ##########################################################################
+tech_lance_batteries_1 = {
+	cost = 2000
+	area = physics
+	tier = 2
+	is_rare = no
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { particles }
+	weight = @tier2weight2
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_lance_batteries_2 = {
+	cost = 3000
+	area = physics
+	tier = 2
+	is_rare = no
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { particles }
+	prerequisites = { "tech_lance_batteries_1" }
+	weight = @tier3weight2
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+
+tech_lance_batteries_3 = {
+	cost = 6000
+	area = physics
+	tier = 3
+	is_rare = no
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { particles }
+	prerequisites = { "tech_lance_batteries_2" }
+	weight = @tier3weight2
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+
+tech_lance_batteries_4 = {
+	cost = 12500
+	area = physics
+	tier = 4
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { particles }
+	prerequisites = { "tech_lance_batteries_3" }
+	weight = @tier4weight1
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_lance_batteries_5 = {
+	cost = 25000
+	area = physics
+	tier = 5
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { particles }
+	prerequisites = { "tech_lance_batteries_4" }
+	weight = @tier5weight1
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+######### Nova Cannons ##############################################################################
+tech_novacannon_1 = {
+	cost = 20000
+	area = engineering
+	tier = 3
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { materials }
+	weight = @tier3weight1
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_novacannon_2 = {
+	cost = 25000
+	area = engineering
+	tier = 4
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { materials }
+	prerequisites = { "tech_novacannon_1" }
+	weight = @tier4weight4
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_novacannon_3 = {
+	cost = 30000
+	area = engineering
+	tier = 5
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	ai_update_type = military
+	category = { materials }
+	prerequisites = { "tech_novacannon_2" }
+	weight = @tier5weight3
+
+	potential = {
+		has_country_flag = imperium 
+	}
+}

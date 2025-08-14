@@ -1,0 +1,66 @@
+# Hell Forge Project 
+decision_hellforge_corrupting_project = {
+	owned_planets_only = yes
+	icon = decision_forge_project
+	sound = event_air_raid_siren
+	
+	enactment_time = 900
+	resources = {
+		category = decisions
+		cost = {
+			unity = 100
+			energy = 10000
+			gods_favor = 5000
+		}
+	}
+	
+	prerequisites = { "tech_corrupting_project" }
+
+	potential = {
+		OR = {
+			is_planet_class = pc_mechanicus_forge
+		}
+		habitable_structure = no
+		exists = owner
+		owner = { has_country_flag = chaos_empire }
+	}
+
+	effect = {
+		# Make city-planet
+		remove_modifier = 40kforge_planet
+		add_modifier = { modifier = "40khellforge_planet" days = -1 }
+		hidden_effect = {
+			set_industrial_focus_flags = no
+			change_pc = pc_hell_forge
+			change_planet_size = 0
+
+			# Fixed naming inconsistency: relic_world_conversion_effet -> relic_world_conversion_effect
+			relic_world_conversion_effect = {
+				DISTRICT = district_arcology_housing
+				VARIABLE = num_housing_districts
+			}
+			relic_world_conversion_effect = {
+				DISTRICT = district_arcology_arms_industry
+				VARIABLE = num_industrial_districts
+			}
+			set_ecu_industrial_districts_effect = no
+			set_planet_entity = {
+				entity = "iom_city_planet_entity"
+				graphical_culture = owner
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 80
+		modifier = {
+			factor = 100
+			is_gestalt = no
+			exists = owner
+			OR = {
+				num_pops >= 70
+				is_capital = no
+			}
+		}
+	}
+}

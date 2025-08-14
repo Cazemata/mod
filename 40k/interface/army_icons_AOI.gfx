@@ -1,0 +1,148 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_40k_army_icons"
+		textureFile = "gfx/interface/planetview/40k_army_icons.dds"
+		noOfFrames = 163
+	}
+
+	spriteType = {
+		name = "GFX_tac_spacemarines"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 120
+	}
+	spriteType = {
+		name = "GFX_scout_spacemarines"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 112
+	}
+	spriteType = {
+		name = "GFX_tech_spacemarines"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 121
+	}
+	spriteType = {
+		name = "GFX_apoth_spacemarines"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 118
+	}
+	spriteType = {
+		name = "GFX_vendread_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 114
+	}
+	spriteType = {
+		name = "GFX_dread_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 113
+	}
+	spriteType = {
+		name = "GFX_term_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 117
+	}
+	spriteType = {
+		name = "GFX_pred_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 116
+	}
+	spriteType = {
+		name = "GFX_razor_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 115
+	}
+	spriteType = {
+		name = "GFX_librarian_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 156
+	}
+	spriteType = {
+		name = "GFX_raider_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 155
+	}
+	spriteType = {
+		name = "GFX_assualt_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 119
+	}
+	spriteType = {
+		name = "GFX_inceptor_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 119
+	}
+	spriteType = {
+		name = "GFX_devastator_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 126
+	}
+	spriteType = {
+		name = "GFX_hellblaster_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 126
+	}
+	spriteType = {
+		name = "GFX_suppressor_spacemarine"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 161
+	}
+	spriteType = {
+		name = "GFX_reiver_space_marines"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 160
+	}
+	spriteType = {
+		name = "GFX_sentinel"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 152
+	}
+	spriteType = {
+		name = "GFX_manticore"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 150
+	}
+	spriteType = {
+		name = "GFX_chimera"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 147
+	}
+	spriteType = {
+		name = "GFX_banewolf"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 146
+	}
+	spriteType = {
+		name = "GFX_baneblade"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 145
+	}
+	spriteType = {
+		name = "GFX_leman"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 149
+	}
+	spriteType = {
+		name = "GFX_ogryn_squad"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 151
+	}
+	spriteType = {
+		name = "GFX_imperial_guard_big"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 132
+	}
+	spriteType = {
+		name = "GFX_imperial_guard_medium"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 122
+	}
+	spriteType = {
+		name = "GFX_imperial_guard_small"
+		sprite_sheet_sprite_type = "GFX_40k_army_icons"
+		default_frame = 127
+	}
+	spriteType = {
+		name = ""
+		texturefile = ""
+		alwaystransparent = yes
+	}
+}

@@ -1,0 +1,116 @@
+
+##################
+####   NOX    ####
+##################
+
+component_set = {
+	key = "VANULASER_1"
+	
+	icon = "GFX_LANCE_BATTERIES"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "VANULASER_2"
+	
+	icon = "GFX_LANCE_BATTERIES"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "VANULASER_3"
+	
+	icon = "GFX_LANCE_BATTERIES"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "VANULASER_4"
+	
+	icon = "GFX_LANCE_BATTERIES"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "VANULASER_5"
+	
+	icon = "GFX_LANCE_BATTERIES"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "TERRANCANNON_1"
+	
+	icon = "GFX_MACROCANNONS"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "TERRANCANNON_2"
+	
+	icon = "GFX_MACROCANNONS"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "TERRANCANNON_3"
+	
+	icon = "GFX_MACROCANNONS"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "TERRANCANNON_4"
+	
+	icon = "GFX_MACROCANNONS"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "TERRANCANNON_5"
+	
+	icon = "GFX_MACROCANNONS"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXTRA_LARGE_NCTITAN_1"
+	
+	icon = "GFX_NOVA_CANNON"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXTRA_LARGE_NCTITAN_2"
+	
+	icon = "GFX_NOVA_CANNON"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXTRA_LARGE_NCTITAN_3"
+	
+	icon = "GFX_NOVA_CANNON"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "NCTITAN_1"
+	
+	icon = "GFX_NOVA_CANNON"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "NCTITAN_2"
+	
+	icon = "GFX_NOVA_CANNON"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "NCTITAN_3"
+	
+	icon = "GFX_NOVA_CANNON"
+	icon_frame = 1	
+}

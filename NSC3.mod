@@ -1,0 +1,10 @@
+name="NSC3"
+path="mod/NSC3"
+tags={
+	"Spaceships"
+	"Gameplay"
+	"Technologies"
+}
+picture="thumbnail.png"
+supported_version="v4.0.*"
+remote_file_id="683230077"

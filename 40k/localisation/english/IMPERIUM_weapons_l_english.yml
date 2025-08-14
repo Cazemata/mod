@@ -1,0 +1,96 @@
+﻿l_english:
+#################################
+TERRANCANNON_1: "Macrocannon I"
+TERRANCANNON_1_DESC:"Mark I of the Macrocannon weapon line"
+SMALL_TERRANCANNON_1: "Small Macrocannon I"
+MEDIUM_TERRANCANNON_1: "Medium Macrocannon I"
+LARGE_TERRANCANNON_1: "Large Macrocannon I"
+
+TERRANCANNON_2: "Macrocannon II"
+TERRANCANNON_2_DESC:"Mark II of the Macrocannon weapon line"
+SMALL_TERRANCANNON_2: "Small Macrocannon II"
+MEDIUM_TERRANCANNON_2: "Medium Macrocannon II"
+LARGE_TERRANCANNON_2: "Large Macrocannon II"
+
+TERRANCANNON_3: "Macrocannon III"
+TERRANCANNON_3_DESC:"Mark III of the Macrocannon weapon line"
+SMALL_TERRANCANNON_3: "Small Macrocannon III"
+MEDIUM_TERRANCANNON_3: "Medium Macrocannon III"
+LARGE_TERRANCANNON_3: "Large Macrocannon III"
+
+TERRANCANNON_4: "Macrocannon IV"
+TERRANCANNON_4_DESC:"Mark IV of the Macrocannon weapon line"
+SMALL_TERRANCANNON_4: "Small Macrocannon IV"
+MEDIUM_TERRANCANNON_4: "Medium Macrocannon IV"
+LARGE_TERRANCANNON_4: "Large Macrocannon IV"
+
+TERRANCANNON_5: "Macrocannon V"
+TERRANCANNON_5_DESC:"Mark V of the Macrocannon weapon line"
+SMALL_TERRANCANNON_5: "Small Macrocannon V"
+MEDIUM_TERRANCANNON_5: "Medium Macrocannon V"
+LARGE_TERRANCANNON_5: "Large Macrocannon V"
+
+NCTITAN_1: "Nova Cannon I"
+NCTITAN_1_DESC:""
+EXTRA_LARGE_NCTITAN_1: "Nova Cannon I"
+
+NCTITAN_2: "Nova Cannon II"
+NCTITAN_2_DESC:""
+EXTRA_LARGE_NCTITAN_2: "Nova Cannon II"
+
+NCTITAN_3: "Nova Cannon III"
+NCTITAN_3_DESC:""
+EXTRA_LARGE_NCTITAN_3: "Nova Cannon III"
+
+VANULASER_1: "Lance Batteries I"
+VANULASER_1_DESC:0""
+SMALL_VANULASER_1: "Lance Batteries I"
+MEDIUM_VANULASER_1: "Lance Batteries I"
+LARGE_VANULASER_1: "Lance Batteries I"
+
+VANULASER_2: "Lance Batteries II"
+VANULASER_2_DESC:0""
+SMALL_VANULASER_2: "Lance Batteries II"
+MEDIUM_VANULASER_2: "Lance Batteries II"
+LARGE_VANULASER_2: "Lance Batteries II"
+
+VANULASER_3: "Lance Batteries III"
+VANULASER_3_DESC:0""
+SMALL_VANULASER_3: "Lance Batteries III"
+MEDIUM_VANULASER_3: "Lance Batteries III"
+LARGE_VANULASER_3: "Lance Batteries III"
+
+VANULASER_4: "Lance Batteries IV"
+VANULASER_4_DESC:0""
+SMALL_VANULASER_4: "Lance Batteries IV"
+MEDIUM_VANULASER_4: "Lance Batteries IV"
+LARGE_VANULASER_4: "Lance Batteries IV"
+
+VANULASER_5: "Lance Batteries V"
+VANULASER_5_DESC:0""
+SMALL_VANULASER_5: "Lance Batteries V"
+MEDIUM_VANULASER_5: "Lance Batteries V"
+LARGE_VANULASER_5: "Lance Batteries V"
+
+VANULASER_6: "Lance Batteries VI"
+VANULASER_6_DESC:0""
+SMALL_VANULASER_6: "Lance Batteries VI"
+MEDIUM_VANULASER_6: "Lance Batteries VI"
+LARGE_VANULASER_6: "Lance Batteries VI"
+
+
+
+############################font color code
+##§W Wwhite
+##§R R red
+##§L L Dark Gold
+##§S S Naturals
+##§H HGolden
+##§Y Y yellow
+##§G G green
+##§E E Cyan
+##§B B dark blue
+##§M M Purple
+##§g g grey
+##§! Finish
+############################font color code

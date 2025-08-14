@@ -1,0 +1,350 @@
+building_paradisaic_complex = {
+	can_build = yes
+	base_buildtime = 480
+	can_demolish = yes
+	can_be_ruined = yes
+	empire_limit = 1
+
+	category = government
+
+	building_sets = {
+		government
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_country_flag = eldar_empire }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = eldar_empire } }
+	}
+
+	prerequisites = { "tech_advanced_bone_singing" }
+
+	planet_modifier = {
+		planet_housing_add = 4000
+		planet_amenities_add = 3000
+		job_noble_warlock_add = 300
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			alloys = 100
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	triggered_desc = {
+		text = job_noble_warlock_effect_desc
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+building_eldar_workshop = {
+	base_buildtime = 480
+
+	category = manufacturing
+
+	building_sets = {
+		industrial
+		foundry
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_country_flag = eldar_empire }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = eldar_empire } }
+	}
+
+	prerequisites = { "tech_advanced_bone_singing" }
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { NAND = { has_deficit = minerals has_deficit = energy } }
+			}
+			consumer_goods = 50
+		}
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			minerals = 25
+			energy = 10
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value < 50
+				}
+			}
+		}
+	}
+
+	ai_resource_production = {
+		consumer_goods = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_craftworld_fabricator = {
+	base_buildtime = 580
+
+	category = resource
+
+	building_sets = {
+		mining
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_country_flag = eldar_empire }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = eldar_empire } }
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { NOT = { has_deficit = energy } }
+			}
+			minerals = 100
+		}
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 50
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value < 100
+				}
+			}
+		}
+	}
+
+	ai_resource_production = {
+		minerals = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_holy_foundry = {
+	base_buildtime = 360
+
+	category = manufacturing
+
+	building_sets = {
+		industrial
+		foundry
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_country_flag = eldar_empire }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = eldar_empire } }
+	}
+
+	planet_modifier = {
+		job_foundry_add = 300
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { NAND = { has_deficit = minerals has_deficit = energy } }
+			}
+			alloys = 10
+		}
+		cost = {
+			minerals = 800
+		}
+		upkeep = {
+			minerals = 50
+			energy = 10
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 25
+				}
+			}
+		}
+	}
+
+	ai_resource_production = {
+		alloys = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_spiritspire_dharquese = {
+	base_buildtime = 580
+
+	category = army
+
+	building_sets = {
+		fortress
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_country_flag = eldar_empire }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = eldar_empire } }
+	}
+
+	prerequisites = { "tech_bone_singing" }
+
+	planet_modifier = {
+		planet_housing_add = 2000
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_seer_add = 250
+			job_ghost_warrior_add = 400
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			has_building = building_spiritspire_dharquese
+		}
+	}
+}
+
+building_forbidden_library = {
+	base_buildtime = 480
+
+	category = research
+
+	building_sets = {
+		research
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_country_flag = eldar_empire }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = eldar_empire } }
+	}
+
+	planet_modifier = {
+		job_librarian_add = 400
+	}
+
+	resources = {
+		category = planet_buildings
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { NOT = { has_deficit = energy } }
+			}
+			physics_research = 100
+			society_research = 100
+			engineering_research = 100
+		}
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 50
+		}
+	}
+
+	triggered_desc = {
+		text = job_librarian_effect_desc
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			has_building = building_forbidden_library
+		}
+	}
+
+	ai_resource_production = {
+		physics_research = 1
+		society_research = 1
+		engineering_research = 1
+		trigger = {
+			always = yes
+		}
+	}
+}

@@ -1,0 +1,43 @@
+origin_tau = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_tau.dds"
+	picture = origin_tau
+        initializers = { tau_system_start_01 }
+	playable = { has_utopia = yes }
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_fanatic_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_xenophile
+				value = ethic_xenophile
+			}
+			OR = {
+				value = ethic_fanatic_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_xenophile
+				value = ethic_xenophile
+			}
+		}
+	}
+	starting_colony = pc_gaia
+	habitability_preference = pc_tropical
+	preferred_planet_class_neighbor = no
+	modifier = {
+		country_leader_pool_size = -3
+		country_subject_technology_sharing_mult = 0.75
+		force_disparity_fire_rate_mult = 0.5
+		country_unity_produces_mult = 0.1
+		diplo_weight_mult = 0.10
+		diplomacy_upkeep_mult = 0.3
+		pop_government_ethic_attraction = 0.25
+		country_border_friction_mult = -1
+		trade_value_mult = 0.02
+		country_trade_fee = -0.01
+	}
+
+	description = "origin_tooltip_tau_effects"
+	flags = { "custom_start_screen" "humanoid" "tau_empire" }
+	advanced_start = no
+	random_weight = { base = 0.5 }
+}

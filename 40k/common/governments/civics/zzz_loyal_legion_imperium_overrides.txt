@@ -1,0 +1,169 @@
+### Loyal Legion merged overrides — full definitions with preserved modifiers
+
+civic_adeptus_mechanicus_research = {
+    pickable_at_start = yes
+    modification = yes
+    icon = "gfx/interface/icons/governments/civics/civic_adeptus_mechanicus_tech.dds"
+    potential = {
+        authority = {
+            OR = {
+                value = auth_dictatorial
+                value = auth_imperial
+                value = auth_stagnated_imperium
+                value = auth_loyal_legion
+            }
+        }
+    }
+    random_weight = { base = 0 }
+    modifier = {
+        num_tech_alternatives_add = 1
+        all_technology_research_speed = 0.10
+        science_ship_survey_speed = 0.20
+        ship_sensor_range_add = 2
+        ship_hyperlane_range_add = 2
+        ship_anomaly_research_speed_mult = 0.20
+        ship_emergency_ftl_mult = -0.10
+        ship_disengage_chance_mult = 0.25
+        ship_ftl_jumpdrive_range_mult = 0.20
+        ship_anomaly_generation_chance_mult = 0.20
+    }
+    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
+    ai_weight = { factor = 0 }
+}
+
+civic_solar_auxilia = {
+    pickable_at_start = yes
+    modification = yes
+    icon = "gfx/interface/icons/governments/civics/civic_solar_auxilia.dds"
+    potential = {
+        authority = {
+            OR = {
+                value = auth_dictatorial
+                value = auth_imperial
+                value = auth_stagnated_imperium
+                value = auth_loyal_legion
+            }
+        }
+    }
+    random_weight = { base = 0 }
+    modifier = {
+        army_attack_damage_mult = 0.05
+        army_attack_morale_mult = 0.05
+        army_damage_mult = 0.05
+        army_morale = 0.25
+        army_health = 0.25
+        army_defense_damage_mult = 0.5
+        army_defense_health_mult = 0.5
+        armies_upkeep_mult = 0.4
+        armies_cost_mult = 0.4
+        planet_army_build_speed_mult = 0.04
+    }
+    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
+    ai_weight = { factor = 0 }
+}
+
+civic_senatorum_imperialis = {
+    possible = { OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion } }
+    modifier = {
+        country_admin_cap_mult = 3
+        country_naval_cap_mult = 1
+        starbases_upkeep_mult = -0.8
+        starbase_module_capacity_add = 10
+        country_leader_pool_size = 5
+        country_starbase_influence_cost_mult = -0.5
+        piracy_growth_mult = -3
+    }
+    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
+    ai_weight = { factor = 0 }
+}
+
+civic_machine_cult = {
+    possible = {
+        authority = {
+            OR = {
+                value = auth_stagnated_imperium
+                value = auth_oligarchic
+                value = auth_loyal_legion
+            }
+        }
+    }
+    modifier = {
+        pop_ethic_spiritualist_attraction_mult = 2
+        pop_ethic_materialist_attraction_mult = 3
+        pop_ethic_militarist_attraction_mult = 1
+        ship_science_alloys_cost_mult = -0.8
+        species_leader_exp_gain = 1.5
+        all_technology_research_speed = 0.5
+    }
+    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
+    ai_weight = { factor = 0 }
+}
+
+civic_imperium_secundus = {
+    possible = { OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion } }
+    modifier = {
+        pop_ethic_xenophobe_attraction_mult = 2
+        pop_ethic_spiritualist_attraction_mult = 2
+        starbases_upkeep_mult = -0.5
+        starbase_module_capacity_add = 5
+        country_leader_pool_size = 4
+        country_starbase_influence_cost_mult = -0.3
+    }
+    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
+    ai_weight = { factor = 0 }
+}
+
+civic_blacksmith_culture = {
+    possible = { OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion } }
+    modifier = {
+        country_engineering_tech_research_speed = 0.5
+        country_physics_tech_research_speed = 0.5
+        army_attack_morale_mult = 1
+    }
+    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
+    ai_weight = { factor = 0 }
+}
+
+civic_production_guilds = {
+    possible = { OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion } }
+    modifier = {
+        country_minerals_produces_mult = 0.3
+        ship_orbital_bombardment_mult = 0.2
+    }
+    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
+    ai_weight = { factor = 0 }
+}
+
+civic_chivalric_traditions = {
+    possible = { OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion } }
+    modifier = {
+        ship_orbital_bombardment_mult = -0.1
+        army_collateral_damage_mult = -1
+        army_experience_gain_mult = 1
+        army_damage_mult = -0.1
+    }
+    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
+    ai_weight = { factor = 0 }
+}
+
+# base + your extras merged here
+civic_chosen_by_the_emperor = {
+    possible = { OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion } }
+    modifier = {
+        # Original:
+        country_war_exhaustion_mult = -0.5
+        starbase_defense_platform_capacity_add = 20
+        starbase_upgrade_cost_mult = -0.3
+        starbase_upgrade_time_mult = -0.5
+        # Extras:
+        ship_fire_rate_mult = 0.05
+        army_damage_mult = 0.10
+        starbase_build_speed_mult = 0.10
+        defense_platform_build_speed_mult = 0.15
+        planet_jobs_unity_produces_mult = 0.05
+        pop_government_ethic_attraction = 0.10
+        edict_fund_add = 10
+    }
+    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
+    ai_weight = { factor = 0 }
+}

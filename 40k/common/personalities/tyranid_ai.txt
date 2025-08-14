@@ -1,0 +1,12 @@
+tyranid_ai = {
+    aggression = 1.0
+    behavior = {
+        conqueror = yes
+        exterminator = yes
+        dominator = yes
+        purger = yes
+    }
+    modifiers = {
+        country_hostility = 100
+    }
+}

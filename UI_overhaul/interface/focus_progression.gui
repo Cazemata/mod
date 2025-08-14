@@ -1,0 +1,322 @@
+guiTypes = {
+	containerWindowType = {
+		name = "focus_progression_window"
+		size = { width = 388 height = 790 }
+		position = { x = 1230 y = 59 }
+		if_scaled_resolution = {
+			min_width = 2560
+			position = { x = 1257 y = 59 }
+		}
+		moveable = yes
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_plain_bg_tile"
+		}
+		instantTextBoxType = {
+			name = "title"
+			font = "font_header_20"
+			text = "FOCUS_PROGRESSION_TITLE"
+			position = { x = 16 y = 8 }
+			maxWidth = 260
+			maxHeight = 24
+			fixedSize = yes
+			format = left
+		}
+		# Close Button
+		buttonType = {
+			name = "close"
+			spriteType = "GFX_close_button"
+			position = { x = -46 y = 3 }
+			orientation = upper_right
+			shortcut = "ESCAPE"
+			pdx_tooltip = "CLOSE_TITLE"
+			clicksound = "back_click"
+		}
+		containerWindowType = {
+			name = "buttons_grid_container"
+			position = { x = 12 y = 42 }
+			size = { width = -12 height = 34 }
+			gridBoxType = {
+				name = "buttons_grid_box"
+				position = { x = 2 y = 0 }
+				slotsize = { width = 124 height = 34 }
+				max_slots_horizontal = 3
+			}
+		}
+		containerWindowType = {
+			name = "frame_container"
+			position = { x = 8 y = 77 }
+			size = { width = -8 height = -10 }
+			background = {
+				name = "frame"
+				spriteType = "GFX_clean_frame_area"
+			}
+		}
+		containerWindowType = {
+			name = "items_grid_container"
+			position = { x = 13 y = 82 }
+			size = { width = -10 height = -16 }
+			verticalScrollbar = "right_vertical_slider_thick"
+			smooth_scrolling = yes
+			# Invisible background to enable scrolling with mouse.
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_invisible"
+				position = { x = 0 y = 0 }
+			}
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_timelines_progress_background"
+				position = { x = -10 y = 0 }
+				alwaysTransparent = yes # Transparent to disable on mouse hover highligthing.
+			}
+			gridBoxType = {
+				name = "items_grid_box"
+				position = { x = 6 y = 5 }
+				format = "UPPER_LEFT"
+				slotsize = { width = 346 height = 60 }
+				max_slots_horizontal = 1
+			}
+		}
+	}
+	### FOCUS PROGRESSION ITEMS
+	containerWindowType = {
+		name = "focus_progression_item_root"
+		size = { width = 46 height = 46 }
+		clipping = no
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+		containerWindowType = {
+			name = "background_container"
+			position = { x = 150 y = 0 }
+			size = { width = 46 height = 46 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_root"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "background_container_completed"
+			position = { x = 150 y = 0 }
+			size = { width = 46 height = 46 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_root_completed"
+				alwaysTransparent = yes
+			}
+		}
+	}
+	containerWindowType = {
+		name = "focus_progression_item_right"
+		position = { x = 0 y = -14 }
+		size = { width = 346 height = 60 }
+		clipping = no
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+		containerWindowType = {
+			name = "background_container"
+			position = { x = 166 y = 0 }
+			size = { width = 180 height = 60 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_right"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "background_container_completed"
+			position = { x = 166 y = 0 }
+			size = { width = 180 height = 60 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_right_completed"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "progress_bar"
+			position = { x = 171 y = -23 }
+			size = { width = 4 height = 46 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_progress_tile"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "text_container"
+			position = { x = 196 y = 0 }
+			size = { width = 150 height = 60 }
+			instantTextBoxType = {
+				name = "type"
+				font = "font_text_14"
+				text = "FOCUS_PROGRESSION_REWARD_TYPE"
+				position = { x = 5 y = 5 }
+				maxWidth = 140
+				format = center
+				multiline = no
+			}
+			containerWindowType = {
+				name = "reward_container"
+				orientation = upper_left
+				position = { x = 5 y = 25 }
+				size = { width = 140 height = 40 }
+				clipping = yes
+				instantTextBoxType = {
+					name = "reward"
+					font = "font_text_14"
+					text = "FOCUS_PROGRESSION_REWARD"
+					position = { x = 0 y = 0 }
+					maxWidth = 140
+					multiline = yes
+					format = center
+				}
+			}
+		}
+	}
+	containerWindowType = {
+		name = "focus_progression_item_left"
+		position = { x = 0 y = -14 }
+		size = { width = 346 height = 60 }
+		clipping = no
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+		containerWindowType = {
+			name = "background_container"
+			position = { x = 0 y = 0 }
+			size = { width = 180 height = 60 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_left"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "background_container_completed"
+			position = { x = 0 y = 0 }
+			size = { width = 180 height = 60 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_left_completed"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "progress_bar"
+			position = { x = 171 y = -23 }
+			size = { width = 4 height = 46 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_progress_tile"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "text_container"
+			position = { x = 0 y = 0 }
+			size = { width = 150 height = 60 }
+			instantTextBoxType = {
+				name = "type"
+				font = "font_text_14"
+				text = "FOCUS_PROGRESSION_REWARD_TYPE"
+				position = { x = 5 y = 5 }
+				maxWidth = 140
+				format = center
+				multiline = no
+			}
+			containerWindowType = {
+				name = "reward_container"
+				orientation = upper_left
+				position = { x = 5 y = 25 }
+				size = { width = 140 height = 40 }
+				clipping = yes
+				instantTextBoxType = {
+					name = "reward"
+					font = "font_text_14"
+					text = "FOCUS_PROGRESSION_REWARD"
+					position = { x = 0 y = 0 }
+					maxWidth = 140
+					multiline = yes
+					format = center
+				}
+			}
+		}
+	}
+	containerWindowType = {
+		name = "focus_progression_item_end"
+		position = { x = 0 y = -14 }
+		size = { width = 346 height = 86 }
+		clipping = no
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+		containerWindowType = {
+			name = "background_container"
+			position = { x = 98 y = 0 }
+			size = { width = 180 height = 86 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_end"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "background_container_completed"
+			position = { x = 98 y = 0 }
+			size = { width = 180 height = 86 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_end_completed"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "progress_bar"
+			position = { x = 171 y = -23 }
+			size = { width = 4 height = 49 }
+			background = {
+				name = "background"
+				spriteType = "GFX_focus_progression_progress_tile"
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "text_container"
+			position = { x = 98 y = 26 }
+			size = { width = 150 height = 60 }
+			instantTextBoxType = {
+				name = "type"
+				font = "font_text_14"
+				text = "FOCUS_PROGRESSION_REWARD_TYPE"
+				position = { x = 5 y = 5 }
+				maxWidth = 140
+				format = center
+				multiline = no
+			}
+			containerWindowType = {
+				name = "reward_container"
+				orientation = upper_left
+				position = { x = 5 y = 25 }
+				size = { width = 140 height = 40 }
+				clipping = yes
+				instantTextBoxType = {
+					name = "reward"
+					font = "font_text_14"
+					text = "FOCUS_PROGRESSION_REWARD"
+					position = { x = 0 y = 0 }
+					maxWidth = 140
+					multiline = yes
+					format = center
+				}
+			}
+		}
+	}
+}

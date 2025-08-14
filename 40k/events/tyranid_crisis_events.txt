@@ -1,0 +1,400 @@
+namespace = tyranid_crisis
+
+# WITHIN TESTING PHASE, DONT START THIS
+event = {
+    id = tyranid_crisis.1
+    title = "The Hive Fleets Approach!"
+    desc = "A vast swarm of bio-ships has entered the galaxy. Planets go dark. Signals cease. The stars themselves seem to tremble. The Tyranids are here."
+    picture = GFX_evt_research_lab
+    show_sound = event_vo_research_complete
+
+    hide_window = no
+    is_triggered_only = yes
+
+    immediate = {
+        set_global_flag = tyranids_coming
+    }
+
+    option = {
+        name = "Oh boy..."
+    }
+}
+
+country_event = {
+	id = tyranid_crisis.3
+	hide_window = yes
+	fire_only_once = yes
+        is_triggered_only = no
+        
+        trigger = {
+	        has_global_flag = tyranids_coming
+
+	}
+
+        mean_time_to_happen = {
+	        days = 10
+        }
+
+	immediate = {
+                set_global_flag = tyranid_crisis_started
+		random_rim_system = {
+			random_system_planet = {
+				create_species = {
+					name = "NAME_Tyranid"
+					class = SWARM
+					namelist = Prethoryn
+					portrait = random
+					traits = random
+					immortal = yes
+
+					effect = { save_event_target_as = tyranid_species }
+				}
+				create_country = {
+					name = "NAME_Tyranid_Hive"
+					type = "swarm"
+					species = event_target:tyranid_species
+					name_list = "Prethoryn"
+					flag = {
+						icon= {
+							category = "special"
+							file = "the_swarm.dds"
+						}
+						background= {
+							category = "backgrounds"
+							file = "new_dawn.dds"
+						}
+						colors={
+							"orange"
+							"grey"
+							"null"
+							"null"
+						}
+					}
+					effect = {
+						save_event_target_as = tyranid
+						create_ship_design = { design = "NAME_Swarm_Transport" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Swarm_Colonizer" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Swarm_Constructor" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Swarm_Starbase" }
+						add_ship_design = last_created_design
+					}
+				}
+				solar_system = {
+					if = {
+						limit = {
+							any_fleet_in_system = {
+								is_ship_class = shipclass_starbase
+							}
+						}
+						random_fleet_in_system = {
+							limit = {
+								any_controlled_ship = {
+									is_ship_class = shipclass_starbase
+								}
+							}
+							destroy_fleet = this
+						}
+					}
+					create_starbase = {
+						size = starbase_swarm
+						owner = event_target:tyranid
+					}
+					star = {
+						create_ambient_object = {
+							type = "swarm_1"
+							location = this
+						}
+						last_created_ambient_object = {
+							set_ambient_object_flag = swarm_system_effect
+							set_location = {
+								target = prev
+								distance = 0
+								angle = random
+							}
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_country_type = default
+							is_country_type = fallen_empire
+							is_country_type = awakened_fallen_empire
+						}
+					}
+					add_opinion_modifier = {
+						who = event_target:tyranid
+						modifier = opinion_swarm
+					}
+					event_target:tyranid = {
+						add_opinion_modifier = {
+							who = PREV
+							modifier = opinion_prey
+						}
+					}
+					if = {
+						limit = { has_technology = tech_gravity_wells }
+						country_event = {
+							id = grand_archive.7220
+							days = 30
+						}
+					}
+				}
+				event_target:tyranid = {
+
+					### FIRST SYSTEM
+
+					swarm_vanguard = yes
+					swarm_vanguard = yes
+					swarm_vanguard = yes
+
+					# Constructor
+					create_fleet = {
+						name = "NAME_Hive_Constructor"
+						effect = {
+							set_owner = event_target:tyranid
+							create_ship = {
+								name = random
+								design = "NAME_Swarm_Constructor"
+								graphical_culture = "tyranid_01"
+							}
+							set_location = {
+								target = PREVPREV
+								distance = 10
+								angle = random
+							}
+						}
+					}
+				}
+			}
+
+			### SECOND SYSTEM
+			random_system = {
+				limit = {
+					distance = {
+						source = PREV
+						max_distance <= 60
+						min_distance >= 5
+					}
+				}
+				set_star_flag = swarm_invasion_target_2
+				solar_system = {
+					if = {
+						limit = {
+							any_fleet_in_system = {
+								is_ship_class = shipclass_starbase
+							}
+						}
+						random_fleet_in_system = {
+							limit = {
+								any_controlled_ship = {
+									is_ship_class = shipclass_starbase
+								}
+							}
+							destroy_fleet = this
+						}
+					}
+					create_starbase = {
+						size = starbase_swarm
+						owner = event_target:tyranid
+					}
+					star = {
+						create_ambient_object = {
+							type = "swarm_1"
+							location = this
+						}
+						last_created_ambient_object = {
+							set_ambient_object_flag = swarm_system_effect
+							set_location = {
+								target = prev
+								distance = 0
+								angle = random
+							}
+						}
+					}
+				}
+			        event_target:tyranid = {
+
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+
+						# Constructor
+						create_fleet = {
+							name = "NAME_Hive_Constructor"
+							effect = {
+								set_owner = event_target:tyranid
+								create_ship = {
+									name = random
+									design = "NAME_Swarm_Constructor"
+									graphical_culture = "tyranid_01"
+								}
+								set_location = {
+									target = PREVPREV
+									distance = 10
+									angle = random
+								}
+							}
+						}
+					}
+				}
+			}
+
+			### THIRD SYSTEM
+			random_system = {
+				limit = {
+					distance = {
+						source = PREV
+						max_distance <= 60
+						min_distance >= 5
+					}
+					NOR = {
+						has_star_flag = swarm_invasion_target_1
+						has_star_flag = swarm_invasion_target_2
+					}
+				}
+				set_star_flag = swarm_invasion_target_3
+				solar_system = {
+					if = {
+						limit = {
+							any_fleet_in_system = {
+								is_ship_class = shipclass_starbase
+							}
+						}
+						random_fleet_in_system = {
+							limit = {
+								any_controlled_ship = {
+									is_ship_class = shipclass_starbase
+								}
+							}
+							destroy_fleet = this
+						}
+					}
+					create_starbase = {
+						size = starbase_swarm
+						owner = event_target:tyranid
+					}
+					star = {
+						create_ambient_object = {
+							type = "swarm_1"
+							location = this
+						}
+						last_created_ambient_object = {
+							set_ambient_object_flag = swarm_system_effect
+							set_location = {
+								target = prev
+								distance = 0
+								angle = random
+							}
+						}
+					}
+				}
+				event_target:tyranid = {
+
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+
+						# Constructor
+						create_fleet = {
+							name = "NAME_Hive_Constructor"
+							effect = {
+								set_owner = event_target:tyranid
+								create_ship = {
+									name = random
+									design = "NAME_Swarm_Constructor"
+									graphical_culture = "tyranid_01"
+								}
+								set_location = {
+									target = PREVPREV
+									distance = 10
+									angle = random
+								}
+							}
+						}
+					}
+				}
+			}
+
+			### FOURTH SYSTEM
+			random_system = {
+				limit = {
+					distance = {
+						source = PREV
+						max_distance <= 60
+						min_distance >= 5
+					}
+					NOR = {
+						has_star_flag = swarm_invasion_target_1
+						has_star_flag = swarm_invasion_target_2
+						has_star_flag = swarm_invasion_target_3
+					}
+				}
+				set_star_flag = swarm_invasion_target_4
+				solar_system = {
+					if = {
+						limit = {
+							any_fleet_in_system = {
+								is_ship_class = shipclass_starbase
+							}
+						}
+						random_fleet_in_system = {
+							limit = {
+								any_controlled_ship = {
+									is_ship_class = shipclass_starbase
+								}
+							}
+							destroy_fleet = this
+						}
+					}
+					create_starbase = {
+						size = starbase_swarm
+						owner = event_target:tyranid
+					}
+					star = {
+						create_ambient_object = {
+							type = "swarm_1"
+							location = this
+						}
+						last_created_ambient_object = {
+							set_ambient_object_flag = swarm_system_effect
+							set_location = {
+								target = prev
+								distance = 0
+								angle = random
+							}
+						}
+					}
+				}
+				event_target:tyranid = {
+
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+
+						# Constructor
+						create_fleet = {
+							name = "NAME_Hive_Constructor"
+							effect = {
+								set_owner = event_target:tyranid
+								create_ship = {
+									name = random
+									design = "NAME_Swarm_Constructor"
+									graphical_culture = "tyranid_01"
+								}
+								set_location = {
+									target = PREVPREV
+									distance = 10
+									angle = random
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

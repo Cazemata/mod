@@ -1,0 +1,50 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_origin_gcs_imperium"
+		texturefile = "gfx/event_pictures/origins/origin_gcs_imperium.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "origin_necron_rising"
+		texturefile = "gfx/event_pictures/origins/origin_necron_rising.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "origin_tau"
+		texturefile = "gfx/event_pictures/origins/origin_tau.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "origin_great_devourer"
+		texturefile = "gfx/event_pictures/origins/origin_great_devourer.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "origin_chaos_undivided"
+		texturefile = "gfx/event_pictures/origins/origin_chaos_undivided.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_origin_commorragh_eldar"
+		texturefile = "gfx/event_pictures/origins/origin_commorragh_eldar.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "origin_craftworld_aeldari"
+		texturefile = "gfx/event_pictures/origins/origin_craftworld_aeldari.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "origin_orkwaaagh"
+		texturefile = "gfx/event_pictures/origins/origin_orkwaaagh.dds"
+		alwaystransparent = yes
+	}
+}

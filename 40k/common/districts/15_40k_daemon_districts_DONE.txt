@@ -1,0 +1,266 @@
+district_khorne_realm = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_city_government
+		slot_city_01
+		slot_city_02
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = daemonk_world
+	}
+
+	potential = {
+		uses_district_set = daemonk_world
+		exists = owner
+		owner = { has_country_flag = chaos_empire }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		} 
+	}
+
+	planet_modifier = {
+		planet_housing_add = 500
+		job_berserk_add = 500
+	}
+
+	triggered_desc = {
+		text = job_berserk_effect_desc
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = khorne }
+		}
+		modifier = {
+			planet_army_build_speed_mult = 0.05
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			free_housing < 10
+		}
+		modifier = {
+			weight = 1
+			free_jobs < 1
+			owner = { used_naval_capacity_percent > 0.9	}
+		}
+		modifier = {
+			weight = 100
+			owner = { used_naval_capacity_percent > 0.8	}
+		}
+	}
+	
+	ai_resource_production = {
+		gods_favor = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+district_tzeentch_realm = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_city_government
+		slot_city_01
+		slot_city_02
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = daemont_world
+	}
+
+	potential = {
+		uses_district_set = daemont_world
+		exists = owner
+		owner = { has_country_flag = chaos_empire }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 500
+		job_sorcerer_add = 500
+	}
+
+	triggered_desc = {
+		text = job_sorcerer_effect_desc
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = tzeentch }
+		}
+		modifier = {
+			planet_jobs_physics_research_produces_mult = 0.05
+			planet_jobs_engineering_research_produces_mult = 0.05
+			planet_jobs_society_research_produces_mult = 0.05
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 250
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 100
+				}
+			}
+		}
+	}
+	
+	ai_resource_production = {
+		gods_favor = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+district_slannesh_realm = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_city_government
+		slot_city_01
+		slot_city_02
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = daemons_world
+	}
+
+	potential = {
+		uses_district_set = daemons_world
+		exists = owner
+		owner = { has_country_flag = chaos_empire }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 500
+		job_daemonette_add = 500
+	}
+
+	triggered_desc = {
+		text = job_daemonette_effect_desc
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = slaanesh }
+		}
+		modifier = {
+			pop_citizen_happiness = 0.05
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 250
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 200
+				}
+			}
+		}
+	}
+	
+	ai_resource_production = {
+		gods_favor = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+district_nurgle_realm = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_city_government
+		slot_city_01
+		slot_city_02
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = daemonn_world
+	}
+
+	potential = {
+		uses_district_set = daemonn_world
+		exists = owner
+		owner = { has_country_flag = chaos_empire }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 200
+		job_rot_gatherer_add = 500
+	}
+
+	triggered_desc = {
+		text = job_rot_gatherer_effect_desc
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = nurgle }
+		}
+		modifier = {
+			planet_jobs_food_produces_mult = 0.05
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			owner = {
+				country_uses_food = yes
+				has_monthly_income = {
+					resource = food
+					value < 100
+				}
+			}
+	}
+}

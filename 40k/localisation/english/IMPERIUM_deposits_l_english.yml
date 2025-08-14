@@ -1,0 +1,50 @@
+﻿l_english:
+#################################
+d_iom_imperial_palace:0 "§HImperial Palace§!"
+d_iom_imperial_palace_desc:0 "The Imperial Palace is the seat of the Adeptus Terra and the centre of Imperial power and administrative authority on its Throneworld of Terra."
+d_iom_city_ruined:0 "City Ruins"
+d_iom_city_ruined_desc:0 "Remains of large hive cities"
+d_iom_eternity_gate:0 "§HEternity Gate§!"
+d_iom_eternity_gate_desc:0 "The Eternity Gate is the Imperial Palace's final gateway to the Sanctum Imperialis which holds the Golden Throne and the Emperor himself."
+d_iom_forbidden_fortress:0 "§HForbidden Fortress§!"
+d_iom_forbidden_fortress_desc:0 "The Forbidden Fortress, also known as the Fortress of the Astronomican or the Hollow Mountain is the base of the Adeptus Astronomica, incorporating the Chamber of the Astronomican and the Astronomican itself."
+d_terra_hive_karelia_sprawl:0 "Hive Karelia"
+d_terra_hive_karelia_sprawl_desc:0 "Home to a library containing knowledge of the Dark Age of Technology. The library was bombed by Pro-Panpacifists and had been scheduled for demolition until Hawser succeeded in recovering over 7,000 texts from a data archive deemed worthless"
+d_terra_hive_tashkent_sprawl:0 "Hive Tashkent"
+d_terra_hive_tashkent_sprawl_desc:0 "A Hive-City based in Asia continent."
+d_terra_hive_salvator_sprawl:0 "Hive Salvator"
+d_terra_hive_salvator_sprawl_desc:0 "A Hive-City of Terra"
+d_terra_hive_malliax_sprawl:0 "Hive Malliax"
+d_terra_hive_malliax_sprawl_desc:0 "A Hive-City of Terra"
+d_terra_hive_novion_primus_sprawl:0 "Hive Novion Primus"
+d_terra_hive_novion_primus_sprawl_desc:0 "A Hive-City of Terra"
+d_terra_hive_xericho_sprawl:0 "Hive Xericho"
+d_terra_hive_xericho_sprawl_desc:0 "A Hive-City of Terra"
+d_terra_hive_ababa_sprawl:0 "Hive Ababa"
+d_terra_hive_ababa_sprawl_desc:0 "A hive-City of Terra"
+d_terra_hive_skhallax_sprawl:0 "Hive Skhallax"
+d_terra_hive_skhallax_sprawl_desc:0 "Skhallax City is a enormous Hive city and manufacturing center on Terra."
+d_iom_wyverns_gate_spaceport:0 "Wyvern's Gate Spaceport"
+d_iom_wyverns_gate_spaceport_desc:0 "Wyvern's Gate Spaceport"
+d_iom_lion_gate_spaceport:0 "The Lion's Gate Spaceport"
+d_iom_lion_gate_spaceport_desc:0 "The Lion's Gate Spaceport"
+d_iom_damocles_spaceport:0 "Damocles Space Port"
+d_iom_damocles_spaceport_desc:0 "Damocles Space Port"
+d_iom_khangba_marwu_prison:0 "Khangba Marwu Prison"
+d_iom_khangba_marwu_prison_desc:0 "Khangba Marwu, also known as The Vault, was a vast prison complex located in the Himalazia Mountains, under the mountain known as Rakaposhi. Sections of the prison were designed specifically to house powerful psykers."
+
+
+############################font color code
+##§W Wwhite
+##§R R red
+##§L L Dark Gold
+##§S S Naturals
+##§H HGolden
+##§Y Y yellow
+##§G G green
+##§E E Cyan
+##§B B dark blue
+##§M M Purple
+##§g g grey
+##§! Finish
+############################font color code

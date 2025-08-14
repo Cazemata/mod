@@ -1,0 +1,26 @@
+#EldarPhantomLance = {
+#	area = physics
+#	cost = 5000
+#	tier = 2
+#	category = { particles }
+#	prerequisites = { "tech_plasma_1" }
+#	ai_update_type = military
+#	weight = 55
+#	is_reverse_engineerable = no
+#	
+#	start_tech = no
+#	potential = {
+#		has_civic = "civic_eldar"
+#	}
+#	
+#	weight_modifier = {
+#		
+#		modifier = {
+#			factor = 2
+#			research_leader = {
+#				area = physics
+#				has_trait = "leader_trait_spark_of_genius"
+#			}
+#		}
+#	}
+#}

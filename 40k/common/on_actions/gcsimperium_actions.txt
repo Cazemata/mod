@@ -1,0 +1,8 @@
+on_press_begin = {
+	events = {
+		GCSE.1 # Imperium
+		origin_init_events.1 # Tau
+		origin_init_events.2 # Necron
+		origin_init_events.3 # Chaos
+	}
+}

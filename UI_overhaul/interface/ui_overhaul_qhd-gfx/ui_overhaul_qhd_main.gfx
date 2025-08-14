@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ui_uiod_logo"
+		textureFile = "gfx/ui_overhaul_qhd/Ω/uiod_logo.dds"
+	}
+}
