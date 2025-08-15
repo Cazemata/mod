@@ -55,7 +55,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "fade_top"
-			spriteType = "GFX_faded_border_top"			size = { x = 301 y = 18 }
+			spriteType = "GFX_faded_border_top"
+			size = { x = 301 y = 18 }
 			position = { x = 0 y = 32 }
 			alwaysTransparent = yes
 		}
@@ -113,10 +114,6 @@ guiTypes = {
 			if_scaled_resolution = {
 				min_width = 1920
 				position = { x = 198 y = 400 }
-				if_scaled_resolution = {
-					min_height = 1440
-					position = { x = 198 y = 275 }
-				}
 			}
 		}
 		buttonType = {
@@ -140,10 +137,6 @@ guiTypes = {
 			if_scaled_resolution = {
 				min_width = 1920
 				position = { x = 198 y = 400 }
-				if_scaled_resolution = {
-					min_height = 1440
-					position = { x = 198 y = 275 }
-				}
 			}
 		}
 		buttonType = {
@@ -466,7 +459,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "spawn_setting"
-			spriteType = "GFX_button_empire_spawn_setting"			position = { x = -51 y = -38 }
+			spriteType = "GFX_button_empire_spawn_setting"
+			position = { x = -51 y = -38 }
 			orientation = lower_right
 			tooltip_mode_enabled = yes
 			scale = 0.8

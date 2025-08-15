@@ -1,17 +1,18 @@
 ###########################
 ### Warhammer Resources ###
 ###########################
-
 # Promethium
 promethium = {
 	tradable = no
-        category = rare
-        max = 15000
-	prerequisites = { "tech_promethium_mining" }
-	
-	visibility_prerequisite = { always = yes }
+	category = rare
+	max = 15000
+	prerequisites = {
+		"tech_promethium_mining"
+	}
+	visibility_prerequisite = {
+		always = yes
+	}
 	deficit_modifier = promethium_deficit
-
 	ai_weight = {
 		weight = 100
 	}
@@ -19,12 +20,12 @@ promethium = {
 
 electronics = {
 	tradable = no
-        category = rare
+	category = rare
 	max = 15000
-
-	visibility_prerequisite = { always = yes }
+	visibility_prerequisite = {
+		always = yes
+	}
 	deficit_modifier = electronics_deficit
-	
 	ai_weight = {
 		weight = 100
 	}
@@ -32,12 +33,12 @@ electronics = {
 
 military_goods = {
 	tradable = no
-        category = rare
+	category = rare
 	max = 15000
-
-	visibility_prerequisite = { always = yes }
+	visibility_prerequisite = {
+		always = yes
+	}
 	deficit_modifier = military_goods_deficit
-	
 	ai_weight = {
 		weight = 100
 	}
@@ -45,12 +46,12 @@ military_goods = {
 
 spirit_stones = {
 	tradable = no
-        category = rare
+	category = rare
 	max = 15000
-
-	visibility_prerequisite = { always = yes }
+	visibility_prerequisite = {
+		always = yes
+	}
 	deficit_modifier = spirit_stones_deficit
-	
 	ai_weight = {
 		weight = 100
 	}
@@ -59,10 +60,10 @@ spirit_stones = {
 scrap = {
 	tradable = no
 	max = 15000
-
-	visibility_prerequisite = { always = yes }
+	visibility_prerequisite = {
+		always = yes
+	}
 	deficit_modifier = scrap_deficit
-	
 	ai_weight = {
 		weight = 100
 	}
@@ -71,10 +72,10 @@ scrap = {
 gene_seed = {
 	tradable = no
 	max = 15000
-
-	visibility_prerequisite = { always = yes }
+	visibility_prerequisite = {
+		always = yes
+	}
 	deficit_modifier = gene_seed_deficit
-	
 	ai_weight = {
 		weight = 100
 	}
@@ -83,10 +84,10 @@ gene_seed = {
 slaves = {
 	tradable = no
 	max = 15000
-
-	visibility_prerequisite = { always = yes }
+	visibility_prerequisite = {
+		always = yes
+	}
 	deficit_modifier = slaves_deficit
-	
 	ai_weight = {
 		weight = 100
 	}
@@ -95,12 +96,11 @@ slaves = {
 gods_favor = {
 	tradable = no
 	max = 15000
-
-	visibility_prerequisite = { always = yes }
+	visibility_prerequisite = {
+		always = yes
+	}
 	deficit_modifier = gods_favor_deficit
-	
 	ai_weight = {
 		weight = 100
 	}
 }
-

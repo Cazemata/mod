@@ -180,22 +180,6 @@ guiTypes = {
 			min_width = 1920
 			position = { x = -4 y = -2 }
 		}
-		if_scaled_resolution = {
-			min_width = 2560
-			position = { x = -1 y = -3 }
-		}
-	}
-	positionType = {
-		name = "utilities_mask_offset"
-		position = { x = -4 y = -6 }
-		if_scaled_resolution = {
-			min_width = 1920
-			position = { x = -4 y = -5 }
-		}
-		if_scaled_resolution = {
-			min_width = 2560
-			position = { x = -1 y = -6 }
-		}
 	}
 	containerWindowType = {
 		name = "ship_designer"
@@ -213,39 +197,15 @@ guiTypes = {
 		if_scaled_resolution = {
 			min_width = 1680
 			size = { width = @main_width_1680 height = @main_height }
-			if_scaled_resolution = {
-				min_height = 1080
-				size = { width = @main_width_1680 height = @main_height }
-			}
-			if_scaled_resolution = {
-				min_height = 1200
-				size = { width = @main_width_1680 height = @main_height_1200 }
-			}
 		}
 		if_scaled_resolution = {
 			min_width = 1920
 			size = { width = @main_width_1920 height = @main_height }
-			if_scaled_resolution = {
-				min_height = 1200
-				size = { width = @main_width_1920 height = @main_height_1200 }
-			}
-			if_scaled_resolution = {
-				min_height = 1440
-				size = { width = @main_width_1920 height = @main_height_1440 }
-			}
 		}
 		if_scaled_resolution = {
 			min_width = 2560
 			show_position = { x = 55 y = 50 }
 			size = { width = @main_width_2560 height = @main_height }
-			if_scaled_resolution = {
-				min_height = 1200
-				size = { width = @main_width_2560 height = @main_height_1200 }
-			}
-			if_scaled_resolution = {
-				min_height = 1440
-				size = { width = @main_width_2560 height = @main_height_1440 }
-			}
 		}
 		animation_time = 200
 		animation_type = decelerated
@@ -1340,7 +1300,8 @@ guiTypes = {
 		buttonType = {
 			name = "background"
 			quadTextureSprite = "GFX_ship_designer_item_bg"
-			position = { x = 0 y = 0 }		}
+			position = { x = 0 y = 0 }
+		}
 		iconType = {
 			name = "icon_bg"
 			spriteType = "GFX_ship_part_background"
@@ -2048,7 +2009,8 @@ guiTypes = {
 		checkboxType = {
 			name = "filter_slot_size"
 			quadTextureSprite = "GFX_checkbox_20_20_01"
-			position = { x = 5 y = 120 }		}
+			position = { x = 5 y = 120 }
+		}
 		instantTextBoxType = {
 			name = "filter_slot_size_label"
 			font = "font_text_14"
@@ -2056,13 +2018,15 @@ guiTypes = {
 			position = { x = 35 y = 120 }
 			maxWidth = 220
 			maxHeight = 30
-			fixedSize = yes			format = left
+			fixedSize = yes
+			format = left
 			vertical_alignment = center
 		}
 		checkboxType = {
 			name = "filter_obsolete"
 			quadTextureSprite = "GFX_checkbox_20_20_01"
-			position = { x = 5 y = 90 }		}
+			position = { x = 5 y = 90 }
+		}
 		instantTextBoxType = {
 			name = "filter_obsolete_label"
 			font = "font_text_14"
@@ -2070,7 +2034,8 @@ guiTypes = {
 			position = { x = 35 y = 90 }
 			maxWidth = 220
 			maxHeight = 30
-			fixedSize = yes			format = left
+			fixedSize = yes
+			format = left
 			vertical_alignment = center
 		}
 		smoothListBoxType = {
@@ -2259,26 +2224,10 @@ guiTypes = {
 		if_scaled_resolution = {
 			min_width = 1920
 			size = { width = 251 height = @section_height_1080 }
-			if_scaled_resolution = {
-				min_height = 1200
-				size = { width = 251 height = @section_height_1200 }
-			}
-			if_scaled_resolution = {
-				min_height = 1440
-				size = { width = 251 height = @section_height_1440 }
-			}
 		}
 		if_scaled_resolution = {
 			min_width = 2560
 			size = { width = 286 height = @section_height_1080 }
-			if_scaled_resolution = {
-				min_height = 1200
-				size = { width = 286 height = @section_height_1200 }
-			}
-			if_scaled_resolution = {
-				min_height = 1440
-				size = { width = 286 height = @section_height_1440 }
-			}
 		}
 		buttonType = {
 			name = "change_size_button"
@@ -2343,19 +2292,6 @@ guiTypes = {
 			slotSize = { width = 44 height = 44 }
 			format = "UPPER_LEFT"
 			max_slots_horizontal = 5
-			if_scaled_resolution = {
-				min_width = 1920
-				slotSize = { width = 49 height = 49 }
-			}
-			if_scaled_resolution = {
-				min_width = 2560
-				position = { x = 18 y = 55 }
-				if_scaled_resolution = {
-					min_height = 1440
-					position = { x = 4 y = 57 }
-					slotSize = { width = 56 height = 56 }
-				}
-			}
 		}
 		gridBoxType = {
 			name = "mutation_slots"
@@ -2365,19 +2301,6 @@ guiTypes = {
 			format = "LOWER_LEFT"
 			orientation = lower_left
 			max_slots_horizontal = 5
-			if_scaled_resolution = {
-				min_width = 1920
-				slotSize = { width = 49 height = 49 }
-			}
-			if_scaled_resolution = {
-				min_width = 2560
-				position = { x = 18 y = -5 }
-				if_scaled_resolution = {
-					min_height = 1440
-					position = { x = 4 y = -5 }
-					slotSize = { width = 56 height = 56 }
-				}
-			}
 		}
 	}
 	containerWindowType = {

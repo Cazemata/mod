@@ -2,7 +2,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "trade_routes_view"
 		size = { width = 400 height = 780 }
-		hide_position = { x = -100% y = 200 } # Changed in code to center the window vertically
+		hide_position = { x = -100 y = 200 } # Changed in code to center the window vertically
 		show_position = { x = 35 y = 200 } # Changed in code to center the window vertically
 		if_scaled_resolution = {
 			min_height = 1200
@@ -30,7 +30,8 @@ guiTypes = {
 			maxWidth = 300
 			maxHeight = 24
 			fixedSize = yes
-			format = center		}
+			format = center
+		}
 		buttonType = {
 			name = "close"
 			quadTextureSprite = "GFX_close"
@@ -67,7 +68,8 @@ guiTypes = {
 				fixedSize = yes
 				format = center
 				vertical_alignment = center
-				text_color_code = "G"				alwaysTransparent = yes
+				text_color_code = "G"
+				alwaysTransparent = yes
 			}
 		}
 		containerWindowType = {
@@ -182,7 +184,8 @@ guiTypes = {
 			maxHeight = @item_height
 			fixedSize = yes
 			format = right
-			vertical_alignment = center		}
+			vertical_alignment = center
+		}
 	}
 	containerWindowType = {
 		name = "trade_route_path_item"
@@ -204,7 +207,8 @@ guiTypes = {
 			maxWidth = 200
 			maxHeight = @item_height
 			fixedSize = yes
-			vertical_alignment = center		}
+			vertical_alignment = center
+		}
 		iconType = {
 			name = "piracy_icon"
 			position = { x = 250 y = 16 }

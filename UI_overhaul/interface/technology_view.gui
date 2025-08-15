@@ -12,7 +12,7 @@ guiTypes = {
 			min_width = 2560
 			show_position = { x = 55 y = 50 }
 		}
-		hide_position = { x = -100% y = 50 }
+		hide_position = { x = 0 y = 50 }
 		animation_time = 200
 		animation_type = decelerated
 		clipping = no
@@ -49,10 +49,6 @@ guiTypes = {
 			font = "font_header_20"
 			text = "TECHNOLOGY"
 			position = { x = 35 y = 2 }
-			if_scaled_resolution = {
-				min_width = 2560
-				position = { x = 25 y = 2 }
-			}
 			maxWidth = 300
 			maxHeight = 30
 			fixedSize = yes
@@ -75,7 +71,8 @@ guiTypes = {
 			size = { width = 550 height = 650 }
 			position = { x = 0 y = -10 }
 			orientation = center_down
-			origo = center_down			clipping = yes # no
+			origo = center_down
+			clipping = yes # no
 			verticalScrollbar = "right_vertical_slider_thick"
 			smooth_scrolling = yes
 			background = {
@@ -121,7 +118,8 @@ guiTypes = {
 			name = "select_window"
 			size = { width = 565 height = 455 }
 			position = { x = 5 y = 0 }
-			orientation = upper_right			containerWindowType = {
+			orientation = upper_right
+			containerWindowType = {
 				name = "reserached_tech_bg_box"
 				size = { width = 100% height = 145 }
 				background = {
@@ -207,7 +205,8 @@ guiTypes = {
 				size = { width = 565 height = 1300 }
 			}
 			position = { x = 5 y = 0 }
-			orientation = upper_right			background = {
+			orientation = upper_right
+			background = {
 				name = "background"
 				quadTextureSprite = "GFX_ui_tile_large_bg_plain"
 			}
@@ -347,7 +346,8 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "technology_view_area_window"
-		size = { width = 550 height = 210 }		clipping = yes
+		size = { width = 550 height = 210 }
+		clipping = yes
 		background = {
 			name = "background"
 			quadTextureSprite = "GFX_tiles_dark_area_cut_8"
@@ -426,7 +426,8 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_411_58_animated"
 				position = { x = 0 y = 0 }
 				buttonText = "TECH_VIEW_RESEARCH_NEW_SELECT"
-				buttonFont = "font_text_20"				clicksound = "ui_click_research_tab"
+				buttonFont = "font_text_20"
+				clicksound = "ui_click_research_tab"
 			}
 		}
 		containerWindowType = {
@@ -452,7 +453,8 @@ guiTypes = {
 			iconType = {
 				name = "icon"
 				spriteType = "GFX_technology_unknown"
-				position = { x = 14 y = 69 }				alwaysTransparent = yes
+				position = { x = 14 y = 69 }
+				alwaysTransparent = yes
 			}
 			containerWindowType = {
 				name = "icon_frame_box"
@@ -542,7 +544,8 @@ guiTypes = {
 			iconType = {
 				name = "risk_icon"
 				spriteType = "GFX_failure_risk_icon"
-				position = { x = 11 y = 97 }			}
+				position = { x = 11 y = 97 }
+			}
 			buttonType = {
 				name = "cancel_research"
 				quadTextureSprite = "GFX_button_update"
@@ -664,7 +667,8 @@ guiTypes = {
 		iconType = {
 			name = "tech_option_bg"
 			spriteType = "GFX_tech_entry_physics_bg"
-			position = { x = 4 y = 5 }		}
+			position = { x = 4 y = 5 }
+		}
 		containerWindowType = {
 			name = "background"
 			size = { width = 465 height = 100%% }
@@ -679,7 +683,8 @@ guiTypes = {
 			name = "icon"
 			spriteType = "GFX_technology_unknown"
 			position = { x = 8 y = 33 }
-			alwaysTransparent = yes		}
+			alwaysTransparent = yes
+		}
 		containerWindowType = {
 			name = "icon_frame_box"
 			size = { width = 54 height = 54 }
@@ -941,7 +946,8 @@ guiTypes = {
 		iconType = {
 			name = "tech_option_bg"
 			spriteType = "GFX_tech_entry_physics_bg"
-			position = { x = 30 y = 79 }			alwaysTransparent = yes
+			position = { x = 30 y = 79 }
+			alwaysTransparent = yes
 		}
 		iconType = {
 			name = "icon"

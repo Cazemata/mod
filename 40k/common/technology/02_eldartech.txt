@@ -1,83 +1,83 @@
 tech_bone_singing = {
-    cost = @tier1cost1
-    area = engineering
-    tier = 1
-    category = { industry }
-    weight = @tier1weight3
-
-    prerequisites = { "tech_ancient_bureaucracy" }
-
-    weight_modifier = {
-        modifier = {
-            factor = 1.25
-            research_leader = {
-                area = society
-                has_trait = "leader_trait_expertise_statecraft"
-            }
-        }
-    }
-
-    ai_weight = {
-        modifier = {
-            factor = 1.25
-            research_leader = {
-                area = society
-                has_trait = "leader_trait_expertise_statecraft"
-            }
-        }
-    }
-
-    potential = {
-        has_country_flag = eldar_empire 
-    }
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = {
+		industry
+	}
+	weight = @tier1weight3
+	prerequisites = {
+		"tech_ancient_bureaucracy"
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	potential = {
+		has_country_flag = eldar_empire
+	}
 }
 
 tech_advanced_bone_singing = {
-    cost = @tier2cost2
-    area = engineering
-    tier = 2
-    category = { industry }
-    weight = @tier3weight3
-
-    prerequisites = { "tech_bone_singing" }
-
-    weight_modifier = {
-        modifier = {
-            factor = 1.25
-            research_leader = {
-                area = society
-                has_trait = "leader_trait_expertise_statecraft"
-            }
-        }
-    }
-
-    ai_weight = {
-        modifier = {
-            factor = 1.25
-            research_leader = {
-                area = society
-                has_trait = "leader_trait_expertise_statecraft"
-            }
-        }
-    }
-
-    potential = {
-        has_country_flag = eldar_empire 
-    }
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = {
+		industry
+	}
+	weight = @tier3weight3
+	prerequisites = {
+		"tech_bone_singing"
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	potential = {
+		has_country_flag = eldar_empire
+	}
 }
 
 tech_additional_equipment = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		engineering
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_health_mult = 0.1
 		army_defense_health_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -87,7 +87,6 @@ tech_additional_equipment = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -97,9 +96,8 @@ tech_additional_equipment = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -107,14 +105,14 @@ tech_advance_scan = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { computing }
+	category = {
+		computing
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_anomaly_generation_chance_mult = 0.3
 		ship_anomaly_research_speed_mult = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -124,7 +122,6 @@ tech_advance_scan = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -134,9 +131,8 @@ tech_advance_scan = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -144,13 +140,13 @@ tech_advanced_strikes = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_fire_rate_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -160,7 +156,6 @@ tech_advanced_strikes = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -170,9 +165,8 @@ tech_advanced_strikes = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -180,13 +174,13 @@ tech_ancient_bureaucracy = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_admin_cap_add = 150
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -196,7 +190,6 @@ tech_ancient_bureaucracy = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -206,9 +199,8 @@ tech_ancient_bureaucracy = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -216,14 +208,14 @@ tech_ancient_knowledge_1 = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		all_technology_research_speed = 0.05
 		num_tech_alternatives_add = 1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -233,7 +225,6 @@ tech_ancient_knowledge_1 = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -243,9 +234,8 @@ tech_ancient_knowledge_1 = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -253,16 +243,17 @@ tech_ancient_knowledge_2 = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_ancient_knowledge_1" }
-	
+	prerequisites = {
+		"tech_ancient_knowledge_1"
+	}
 	modifier = {
-		all_technology_research_speed = 0.10
+		all_technology_research_speed = 0.1
 		num_tech_alternatives_add = 1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -272,7 +263,6 @@ tech_ancient_knowledge_2 = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -282,9 +272,8 @@ tech_ancient_knowledge_2 = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -292,13 +281,13 @@ tech_ancient_runes = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier2weight3
-	
 	modifier = {
 		planet_building_build_speed_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -308,7 +297,6 @@ tech_ancient_runes = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -318,9 +306,8 @@ tech_ancient_runes = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -328,14 +315,14 @@ tech_arm_farse_aegis_of_ages = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		engineering
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_health_mult = 0.1
 		army_defense_health_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -345,7 +332,6 @@ tech_arm_farse_aegis_of_ages = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -355,9 +341,8 @@ tech_arm_farse_aegis_of_ages = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -365,16 +350,17 @@ tech_arm_farse_armour_of_fortune = {
 	cost = @tier2cost1
 	area = engineering
 	tier = 2
-	category = { engineering }
+	category = {
+		engineering
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_arm_farse_aegis_of_ages" }
-	
+	prerequisites = {
+		"tech_arm_farse_aegis_of_ages"
+	}
 	modifier = {
 		army_attack_health_mult = 0.1
 		army_defense_health_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -384,7 +370,6 @@ tech_arm_farse_armour_of_fortune = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -394,9 +379,8 @@ tech_arm_farse_armour_of_fortune = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -404,16 +388,17 @@ tech_arm_farse_rune_armour = {
 	cost = @tier3cost1
 	area = engineering
 	tier = 3
-	category = { engineering }
+	category = {
+		engineering
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_arm_farse_armour_of_fortune" }
-	
+	prerequisites = {
+		"tech_arm_farse_armour_of_fortune"
+	}
 	modifier = {
 		army_attack_health_mult = 0.1
 		army_defense_health_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -423,7 +408,6 @@ tech_arm_farse_rune_armour = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -433,9 +417,8 @@ tech_arm_farse_rune_armour = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -443,13 +426,13 @@ tech_assail_strategy = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -459,7 +442,6 @@ tech_assail_strategy = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -469,9 +451,8 @@ tech_assail_strategy = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -479,14 +460,14 @@ tech_asuryan_doctrine = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_morale_mult = 0.05
 		army_defense_morale_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -496,7 +477,6 @@ tech_asuryan_doctrine = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -506,9 +486,8 @@ tech_asuryan_doctrine = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -516,13 +495,13 @@ tech_bio_simulation = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_farmers_food_produces_mult = 0.3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -532,7 +511,6 @@ tech_bio_simulation = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -542,9 +520,8 @@ tech_bio_simulation = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -552,14 +529,14 @@ tech_channeling = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.05
 		army_disengage_chance_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -569,7 +546,6 @@ tech_channeling = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -579,9 +555,8 @@ tech_channeling = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -589,13 +564,13 @@ tech_craftworld_hide_shield = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_orbital_bombardment_damage = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -605,7 +580,6 @@ tech_craftworld_hide_shield = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -615,9 +589,8 @@ tech_craftworld_hide_shield = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -625,13 +598,13 @@ tech_eldar_grace = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_evasion_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -641,7 +614,6 @@ tech_eldar_grace = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -651,9 +623,8 @@ tech_eldar_grace = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -661,13 +632,13 @@ tech_eldritch_storm = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_disengage_chance_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -677,7 +648,6 @@ tech_eldritch_storm = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -687,9 +657,8 @@ tech_eldritch_storm = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -697,13 +666,13 @@ tech_embolden = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_growth_speed = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -713,7 +682,6 @@ tech_embolden = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -723,9 +691,8 @@ tech_embolden = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -733,14 +700,14 @@ tech_enlightenment = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_crime_mult = -0.15
 		planet_amenities_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -750,7 +717,6 @@ tech_enlightenment = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -760,9 +726,8 @@ tech_enlightenment = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -770,13 +735,13 @@ tech_escalate_engagement_research = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_piracy_suppression_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -786,7 +751,6 @@ tech_escalate_engagement_research = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -796,9 +760,8 @@ tech_escalate_engagement_research = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -806,13 +769,13 @@ tech_farse_spirit_stones = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_seers_produces_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -822,7 +785,6 @@ tech_farse_spirit_stones = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -832,9 +794,8 @@ tech_farse_spirit_stones = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -842,13 +803,13 @@ tech_fast_interception = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_base_speed_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -858,7 +819,6 @@ tech_fast_interception = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -868,9 +828,8 @@ tech_fast_interception = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -878,13 +837,13 @@ tech_focus_fire = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_morale_damage_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -894,7 +853,6 @@ tech_focus_fire = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -904,9 +862,8 @@ tech_focus_fire = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -914,13 +871,13 @@ tech_foresight = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_tracking_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -930,7 +887,6 @@ tech_foresight = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -940,9 +896,8 @@ tech_foresight = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -950,13 +905,13 @@ tech_fortune = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		leader_skill_levels = 2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -966,7 +921,6 @@ tech_fortune = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -976,9 +930,8 @@ tech_fortune = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -986,13 +939,13 @@ tech_holo_field = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_collateral_damage_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1002,7 +955,6 @@ tech_holo_field = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1012,9 +964,8 @@ tech_holo_field = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1022,13 +973,13 @@ tech_khaine_wrath = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_hull_damage_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1038,7 +989,6 @@ tech_khaine_wrath = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1048,9 +998,8 @@ tech_khaine_wrath = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1058,13 +1007,13 @@ tech_longevity_elixir = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		leader_lifespan_add = 500
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1074,7 +1023,6 @@ tech_longevity_elixir = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1084,9 +1032,8 @@ tech_longevity_elixir = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1094,14 +1041,14 @@ tech_mind_war = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_edict_cap_add = 1
 		edicts_cost_mult = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1111,7 +1058,6 @@ tech_mind_war = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1121,9 +1067,8 @@ tech_mind_war = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1131,13 +1076,13 @@ tech_mineral_extration = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
-	weight = @tier1weight3
-	
-	modifier = {
-		station_gatherers_produces_mult = 0.30
+	category = {
+		industry
 	}
-	
+	weight = @tier1weight3
+	modifier = {
+		station_gatherers_produces_mult = 0.3
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1147,7 +1092,6 @@ tech_mineral_extration = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1157,9 +1101,8 @@ tech_mineral_extration = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1167,13 +1110,13 @@ tech_mysticism = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		all_technology_research_speed = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1183,7 +1126,6 @@ tech_mysticism = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1193,9 +1135,8 @@ tech_mysticism = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1203,14 +1144,14 @@ tech_powergrid = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { particles }
+	category = {
+		particles
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		# removed deprecated modifier: ship_windup_mult
 		ship_sensor_range_add = 2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1220,7 +1161,6 @@ tech_powergrid = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1230,9 +1170,8 @@ tech_powergrid = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1240,13 +1179,13 @@ tech_practical_fights = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_army_build_speed_mult = 0.3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1256,7 +1195,6 @@ tech_practical_fights = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1266,9 +1204,8 @@ tech_practical_fights = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1276,13 +1213,13 @@ tech_psychic_storm = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_shield_penetration_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1292,7 +1229,6 @@ tech_psychic_storm = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1302,9 +1238,8 @@ tech_psychic_storm = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1312,13 +1247,13 @@ tech_relocation_matrix = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_orbit_upkeep_mult = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1328,7 +1263,6 @@ tech_relocation_matrix = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1338,9 +1272,8 @@ tech_relocation_matrix = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1348,15 +1281,16 @@ tech_shimmer_orb = {
 	cost = @tier2cost1
 	area = engineering
 	tier = 2
-	category = { voidcraft }
+	category = {
+		voidcraft
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_wargear_eld_shimmer_orb" }
-	
+	prerequisites = {
+		"tech_wargear_eld_shimmer_orb"
+	}
 	modifier = {
 		ship_shield_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1366,7 +1300,6 @@ tech_shimmer_orb = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1376,9 +1309,8 @@ tech_shimmer_orb = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1386,13 +1318,13 @@ tech_ship_reflection = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_shield_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1402,7 +1334,6 @@ tech_ship_reflection = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1412,9 +1343,8 @@ tech_ship_reflection = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1422,13 +1352,13 @@ tech_special_training = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_starting_experience_add = 200
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1438,7 +1368,6 @@ tech_special_training = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1448,9 +1377,8 @@ tech_special_training = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1458,14 +1386,14 @@ tech_spiritual_rites = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		society
+	}
 	weight = @tier1weight3
-	
 	modifier = {
-		biological_pop_happiness = 0.20
+		biological_pop_happiness = 0.2
 		planet_amenities_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1475,7 +1403,6 @@ tech_spiritual_rites = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1485,9 +1412,8 @@ tech_spiritual_rites = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1495,13 +1421,13 @@ tech_teleportations = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_landing_time_mult = -0.3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1511,7 +1437,6 @@ tech_teleportations = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1521,9 +1446,8 @@ tech_teleportations = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1531,13 +1455,13 @@ tech_time_field = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_evasion_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1547,7 +1471,6 @@ tech_time_field = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1557,9 +1480,8 @@ tech_time_field = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1567,13 +1489,13 @@ tech_total_control = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		command_limit_add = 100
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1583,7 +1505,6 @@ tech_total_control = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1593,9 +1514,8 @@ tech_total_control = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1603,13 +1523,13 @@ tech_wailing_doom = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_interstellar_speed_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1619,7 +1539,6 @@ tech_wailing_doom = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1629,9 +1548,8 @@ tech_wailing_doom = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1639,14 +1557,14 @@ tech_wargear_eld_anti-grav_grenade = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		engineering
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_defense_damage_mult = 0.05
 		army_disengage_chance_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1656,7 +1574,6 @@ tech_wargear_eld_anti-grav_grenade = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1666,9 +1583,8 @@ tech_wargear_eld_anti-grav_grenade = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1676,14 +1592,14 @@ tech_wargear_eld_heavy_gauge_ds = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		engineering
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_disengage_chance_mult = 0.15
 		army_defense_health_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1693,7 +1609,6 @@ tech_wargear_eld_heavy_gauge_ds = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1703,9 +1618,8 @@ tech_wargear_eld_heavy_gauge_ds = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1713,16 +1627,17 @@ tech_wargear_eld_improved_warp_generator = {
 	cost = @tier4cost1
 	area = engineering
 	tier = 4
-	category = { engineering }
+	category = {
+		engineering
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_arm_farse_rune_armour" }
-	
+	prerequisites = {
+		"tech_arm_farse_rune_armour"
+	}
 	modifier = {
 		army_attack_health_mult = 0.1
 		army_defense_health_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1732,7 +1647,6 @@ tech_wargear_eld_improved_warp_generator = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1742,9 +1656,8 @@ tech_wargear_eld_improved_warp_generator = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1752,14 +1665,14 @@ tech_wargear_eld_shimmer_orb = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		engineering
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_health_mult = 0.1
 		army_defense_health_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1769,7 +1682,6 @@ tech_wargear_eld_shimmer_orb = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1779,9 +1691,8 @@ tech_wargear_eld_shimmer_orb = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1820,7 +1731,6 @@ tech_wargear_eld_shimmer_orb = {
 #		has_country_flag = eldar_empire 
 #	}
 #}
-
 #tech_webway_gate = {
 #	cost = @tier1cost1
 #	area = society
@@ -1857,18 +1767,17 @@ tech_wargear_eld_shimmer_orb = {
 #		has_country_flag = eldar_empire 
 #	}
 #}
-
 tech_webway_map = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_home_territory_fire_rate_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1878,7 +1787,6 @@ tech_webway_map = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1888,9 +1796,8 @@ tech_webway_map = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1898,14 +1805,14 @@ tech_wraith_doctrine = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_defense_damage_mult = 0.2
 		army_defense_health_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1915,7 +1822,6 @@ tech_wraith_doctrine = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1925,9 +1831,8 @@ tech_wraith_doctrine = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1935,13 +1840,13 @@ tech_wraithbone_armor = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_armor_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1951,7 +1856,6 @@ tech_wraithbone_armor = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1961,9 +1865,8 @@ tech_wraithbone_armor = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
 
@@ -1971,14 +1874,14 @@ tech_wraithtomb = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		starbase_buildings_cost_mult = -0.1
 		starbase_modules_cost_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1988,7 +1891,6 @@ tech_wraithtomb = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1998,9 +1900,7 @@ tech_wraithtomb = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = eldar_empire 
+		has_country_flag = eldar_empire
 	}
 }
-

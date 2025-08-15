@@ -2,9 +2,10 @@ tech_promethium = {
 	cost = @tier1cost3
 	area = engineering
 	tier = 1
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-		
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -14,9 +15,8 @@ tech_promethium = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -24,11 +24,13 @@ tech_power_gen = {
 	cost = @tier2cost1
 	area = physics
 	tier = 2
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_promethium" }
-	
+	prerequisites = {
+		"tech_promethium"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -38,7 +40,6 @@ tech_power_gen = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -48,9 +49,8 @@ tech_power_gen = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -58,11 +58,13 @@ tech_power_gen2 = {
 	cost = @tier2cost1
 	area = physics
 	tier = 3
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_power_gen" }
-	
+	prerequisites = {
+		"tech_power_gen"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -72,7 +74,6 @@ tech_power_gen2 = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -82,9 +83,8 @@ tech_power_gen2 = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -92,11 +92,13 @@ tech_promethium_mining = {
 	cost = @tier2cost1
 	area = engineering
 	tier = 2
-	category = { materials }	
+	category = {
+		materials
+	}
 	weight = @tier2weight1
-	
-	prerequisites = { "tech_promethium" }
-	
+	prerequisites = {
+		"tech_promethium"
+	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -106,7 +108,6 @@ tech_promethium_mining = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -116,9 +117,10 @@ tech_imperium_statues = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -128,7 +130,6 @@ tech_imperium_statues = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -138,9 +139,8 @@ tech_imperium_statues = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -148,18 +148,19 @@ tech_warp_jump_drive = {
 	cost = @tier5cost1
 	area = physics
 	tier = 5
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	ai_update_type = all
 	is_rare = yes
 	is_dangerous = yes
 	weight = @tier5weight1
-	
-	prerequisites = { "tech_gellar_field" }
-
+	prerequisites = {
+		"tech_gellar_field"
+	}
 	feature_flags = {
 		jump_method
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 0.1
@@ -191,7 +192,9 @@ tech_warp_jump_drive = {
 			has_federation = yes
 			federation = {
 				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_warp_jump_drive }
+				any_member = {
+					has_technology = tech_warp_jump_drive
+				}
 			}
 		}
 		modifier = {
@@ -199,19 +202,17 @@ tech_warp_jump_drive = {
 			has_tradition = tr_discovery_adopt
 		}
 	}
-
-	ai_weight = { #FTL techs are good
+	ai_weight = {
+		#FTL techs are good
 	}
-
 	prereqfor_desc = {
 		component = {
 			title = "TECH_UNLOCK_WARP_JUMPDRIVE_1_TITLE"
 			desc = "TECH_UNLOCK_WARP_JUMPDRIVE_1_DESC"
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -219,13 +220,13 @@ tech_basic_construction = {
 	cost = @tier1cost3
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	modifier = {
 		planet_building_build_speed_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -235,7 +236,6 @@ tech_basic_construction = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -245,7 +245,6 @@ tech_basic_construction = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -255,15 +254,16 @@ tech_advanced_construction = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
-        prerequisites = { "tech_basic_construction" }
-
+	prerequisites = {
+		"tech_basic_construction"
+	}
 	modifier = {
 		planet_building_build_speed_mult = 0.3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -273,7 +273,6 @@ tech_advanced_construction = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -283,7 +282,6 @@ tech_advanced_construction = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -293,13 +291,13 @@ tech_advanced_cutters = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
-	weight = @tier1weight3
-
-	modifier = {
-		planet_artisans_produces_mult = 0.10
+	category = {
+		industry
 	}
-	
+	weight = @tier1weight3
+	modifier = {
+		planet_artisans_produces_mult = 0.1
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -309,7 +307,6 @@ tech_advanced_cutters = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -319,9 +316,8 @@ tech_advanced_cutters = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -329,13 +325,13 @@ tech_advanced_drills = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
-	weight = @tier1weight3
-
-	modifier = {
-		station_gatherers_produces_mult = 0.30
+	category = {
+		industry
 	}
-	
+	weight = @tier1weight3
+	modifier = {
+		station_gatherers_produces_mult = 0.3
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -345,7 +341,6 @@ tech_advanced_drills = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -355,7 +350,6 @@ tech_advanced_drills = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -365,14 +359,14 @@ tech_advanced_manipulators = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
-	weight = @tier1weight3
-
-	modifier = {
-                planet_artisans_produces_mult = 0.30
-		planet_military_artisans_produces_mult = 0.30
+	category = {
+		industry
 	}
-	
+	weight = @tier1weight3
+	modifier = {
+		planet_artisans_produces_mult = 0.3
+		planet_military_artisans_produces_mult = 0.3
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -382,7 +376,6 @@ tech_advanced_manipulators = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -392,7 +385,6 @@ tech_advanced_manipulators = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -402,15 +394,16 @@ tech_advanced_processing = {
 	cost = @tier1cost2
 	area = engineering
 	tier = 2
-	category = { industry }
-	weight = @tier1weight3
-
-        prerequisites = { "tech_promethium_mining" }  
-
-	modifier = {
-		planet_electronics_manufacturers_produces_mult = 0.30
+	category = {
+		industry
 	}
-	
+	weight = @tier1weight3
+	prerequisites = {
+		"tech_promethium_mining"
+	}
+	modifier = {
+		planet_electronics_manufacturers_produces_mult = 0.3
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -420,7 +413,6 @@ tech_advanced_processing = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -430,7 +422,6 @@ tech_advanced_processing = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -440,13 +431,13 @@ tech_advanced_smelters = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
-	weight = @tier1weight3
-
-	modifier = {
-		planet_metallurgists_produces_mult = 0.10
+	category = {
+		industry
 	}
-	
+	weight = @tier1weight3
+	modifier = {
+		planet_metallurgists_produces_mult = 0.1
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -456,7 +447,6 @@ tech_advanced_smelters = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -466,9 +456,8 @@ tech_advanced_smelters = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -476,13 +465,13 @@ tech_advanced_tools = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	modifier = {
 		planet_jobs_produces_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -492,7 +481,6 @@ tech_advanced_tools = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -502,9 +490,8 @@ tech_advanced_tools = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -512,13 +499,13 @@ tech_advanced_seeds = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-
 	modifier = {
 		planet_farmers_food_produces_mult = 0.2
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -528,7 +515,6 @@ tech_advanced_seeds = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -538,24 +524,23 @@ tech_advanced_seeds = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
 tech_advanced_scanning = {
 	area = physics
-	category = { computing }
+	category = {
+		computing
+	}
 	tier = 2
 	cost = @tier2cost1
 	weight = @tier2weight1
-
 	modifier = {
 		ship_anomaly_generation_chance_mult = 0.3
 		ship_anomaly_research_speed_mult = 0.25
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -565,7 +550,6 @@ tech_advanced_scanning = {
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -575,9 +559,8 @@ tech_advanced_scanning = {
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -586,9 +569,10 @@ tech_penal_project = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 0.25
@@ -615,7 +599,6 @@ tech_penal_project = {
 			num_owned_planets < 2
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -625,9 +608,8 @@ tech_penal_project = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -635,13 +617,13 @@ tech_darkage_knowledge = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier2weight3
-
 	modifier = {
 		all_technology_research_speed = 0.05
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -651,7 +633,6 @@ tech_darkage_knowledge = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -661,7 +642,6 @@ tech_darkage_knowledge = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -671,13 +651,13 @@ tech_education_reform = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-
 	modifier = {
 		leader_skill_levels = 1
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 0.5
@@ -703,7 +683,6 @@ tech_education_reform = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -713,9 +692,8 @@ tech_education_reform = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -723,13 +701,13 @@ tech_mining_guilds = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-
 	modifier = {
 		planet_miners_minerals_produces_add = 1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -739,7 +717,6 @@ tech_mining_guilds = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -749,9 +726,8 @@ tech_mining_guilds = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -759,13 +735,13 @@ tech_merchant_guilds = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier2weight3
-
 	modifier = {
 		country_trade_attractiveness = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -775,7 +751,6 @@ tech_merchant_guilds = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -785,9 +760,8 @@ tech_merchant_guilds = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -795,13 +769,13 @@ tech_mechanicus_guilds = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier2weight3
-
 	modifier = {
 		planet_jobs_produces_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -811,7 +785,6 @@ tech_mechanicus_guilds = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -821,9 +794,8 @@ tech_mechanicus_guilds = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -831,13 +803,13 @@ tech_mind_cleaning = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier2weight3
-
 	modifier = {
 		planet_crime_add = -15
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -847,7 +819,6 @@ tech_mind_cleaning = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -857,9 +828,8 @@ tech_mind_cleaning = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -931,7 +901,6 @@ tech_mind_cleaning = {
 #		has_country_flag = imperium
 #	}
 #}
-
 #tech_exterminatus_2 = {
 #	cost = @tier4cost1
 #	area = engineering
@@ -965,19 +934,18 @@ tech_mind_cleaning = {
 #		has_country_flag = imperium 
 #	}
 #}
-
 tech_improved_bionics = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { computing }
+	category = {
+		computing
+	}
 	weight = @tier2weight3
-
 	modifier = {
 		all_technology_research_speed = 0.05
 		num_tech_alternatives_add = 1
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -987,7 +955,6 @@ tech_improved_bionics = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -997,9 +964,8 @@ tech_improved_bionics = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -1007,13 +973,13 @@ tech_gellar_field = {
 	cost = @tier3cost3
 	area = physics
 	tier = 3
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier2weight2
-
 	modifier = {
 		ship_ftl_jumpdrive_range_mult = 0.05
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1023,7 +989,6 @@ tech_gellar_field = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1033,9 +998,8 @@ tech_gellar_field = {
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -1043,13 +1007,13 @@ tech_boost_plasma_drive = {
 	cost = @tier3cost1
 	area = engineering
 	tier = 3
-	category = { voidcraft }
+	category = {
+		voidcraft
+	}
 	weight = @tier3weight1
-
 	modifier = {
 		ship_interstellar_speed_mult = 0.15
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1059,7 +1023,6 @@ tech_boost_plasma_drive = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1069,9 +1032,8 @@ tech_boost_plasma_drive = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -1079,13 +1041,13 @@ tech_ship_armor = {
 	area = engineering
 	cost = @tier2cost1
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier2weight2
-	
 	modifier = {
 		ship_armor_mult = 0.25
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1095,7 +1057,6 @@ tech_ship_armor = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1105,7 +1066,6 @@ tech_ship_armor = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -1115,13 +1075,13 @@ tech_full_auto = {
 	area = physics
 	cost = @tier3cost1
 	tier = 3
-	category = { computing }
+	category = {
+		computing
+	}
 	weight = @tier3weight2
-	
 	modifier = {
 		ship_armor_damage_mult = 0.05
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1131,7 +1091,6 @@ tech_full_auto = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1141,9 +1100,8 @@ tech_full_auto = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -1151,13 +1109,13 @@ tech_auto_missile_barrage = {
 	area = physics
 	cost = @tier3cost1
 	tier = 3
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight2
-	
 	modifier = {
 		ship_shield_damage_mult = 0.05
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1167,7 +1125,6 @@ tech_auto_missile_barrage = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1177,9 +1134,8 @@ tech_auto_missile_barrage = {
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -1187,15 +1143,15 @@ tech_analyze_stc = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-
 	modifier = {
 		planet_building_build_speed_mult = 0.25
 		starbase_buildings_cost_mult = -0.1
 		starbase_modules_cost_mult = -0.1
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1205,7 +1161,6 @@ tech_analyze_stc = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1215,7 +1170,6 @@ tech_analyze_stc = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -1225,14 +1179,13 @@ tech_servo_skull = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-
 	modifier = {
 		planet_physicist_produces_mult = 0.05
-
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1242,7 +1195,6 @@ tech_servo_skull = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1252,7 +1204,6 @@ tech_servo_skull = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -1262,13 +1213,13 @@ tech_increased_ration = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-
 	modifier = {
 		planet_jobs_produces_mult = 0.2
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -1278,7 +1229,6 @@ tech_increased_ration = {
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -1288,7 +1238,6 @@ tech_increased_ration = {
 			}
 		}
 	}
-	
 	potential = {
 		has_country_flag = imperium
 	}
@@ -1345,7 +1294,6 @@ tech_increased_ration = {
 #		has_country_flag = imperium 
 #	}
 #}
-
 #tech_advanced_promethium_processing = {
 #	cost = @tier3cost2
 #	area = engineering

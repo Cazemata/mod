@@ -1,18 +1,17 @@
 ap_imperial_planet_designations = {
-        icon = GFX_ap_imperial_planet_designations
-        picture = GFX_ap_imperial_planet_designations
-        potential = {
+	potential = {
 		host_has_dlc = "Megacorp"
 		OR = {
 			is_regular_empire = yes
 			has_valid_civic = civic_machine_servitor
 		}
-		NOT = { has_valid_civic = civic_agrarian_idyll }
+		NOT = {
+			has_valid_civic = civic_agrarian_idyll
+		}
 		NOT = {
 			has_ascension_perk = ap_imperial_planet_designations
 		}
 	}
-
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_technology_housing_2"
@@ -23,14 +22,11 @@ ap_imperial_planet_designations = {
 			num_ascension_perks > 1
 		}
 	}
-
 	on_enabled = {
 		custom_tooltip = "decision_Pdesignation_project_effects"
-	}		
-	
-        ai_weight = {
-		
-        factor = 30
+	}
+	ai_weight = {
+		factor = 30
 		modifier = {
 			factor = 2
 			has_ethic = ethic_pacifist

@@ -76,7 +76,8 @@ guiTypes = {
 			iconType = {
 				name = "slave_icon"
 				quadTextureSprite = "GFX_species_right_slavery_type"
-				position = { x = 10 y = 5 }			}
+				position = { x = 10 y = 5 }
+			}
 			instantTextBoxType = {
 				name = "slave_amount"
 				position = { x = 40 y = 0 }
@@ -86,7 +87,8 @@ guiTypes = {
 				fixedSize = yes
 				format = left
 				vertical_alignment = center
-				text_color_code = "Y"			}
+				text_color_code = "Y"
+			}
 			instantTextBoxType = {
 				name = "selected_species"
 				font = "font_text_18"
@@ -113,7 +115,6 @@ guiTypes = {
 				hide_animation_type = accelerated
 				animation_time = 200
 				verticalScrollbar = "right_vertical_slider_thick"
-				smooth_scrolling = yes
 				background = {
 					name = "bg"
 					quadTextureSprite = "GFX_subwindow_tile_plain_solid"
@@ -151,7 +152,8 @@ guiTypes = {
 					size = { x = 430 y = 955 }
 				}
 				spacing = 1
-				scrollbarType = "standardlistbox_slider_thick"			}
+				scrollbarType = "standardlistbox_slider_thick"
+			}
 		}
 		containerWindowType = {
 			name = "summary_window"
@@ -190,7 +192,8 @@ guiTypes = {
 			spriteType = "GFX_outliner_header_bg"
 		}
 		instantTextBoxType = {
-			name = "species_info"			font = "font_text_14"
+			name = "species_info"
+			font = "font_text_14"
 			maxWidth = 444
 			maxHeight = 32
 			fixedSize = yes
@@ -208,7 +211,8 @@ guiTypes = {
 			clicksound = "outliner_click_tab"
 		}
 		iconType = {
-			name = "planet_class"			position = { x = 5 y = 6 }
+			name = "planet_class"
+			position = { x = 5 y = 6 }
 			quadTextureSprite = "GFX_planet_type"
 			scale = 0.65
 		}
@@ -222,7 +226,8 @@ guiTypes = {
 			format = left
 			vertical_alignment = center
 			text_color_code = "E"
-			alwaysTransparent = yes		}
+			alwaysTransparent = yes
+		}
 		iconType = {
 			name = "expand_icon"
 			quadTextureSprite = "GFX_entry_expand"
@@ -233,7 +238,8 @@ guiTypes = {
 			name = "slave_pool_list"
 			position = { x = 0 y = 40 }
 			size = { x = 440 y = 380 }
-			spacing = 4		}
+			spacing = 4
+		}
 	}
 	containerWindowType = {
 		name = "slave_pool_pop_entry"

@@ -4,8 +4,7 @@
 
 entity = {
 	name = "gothic_01_orbital_station_habitat_section_entity"  
-	pdxmesh = "mammalian_01_construction_ship_mesh"
-
+	pdxmesh = "gothic_01_habitat_core_mesh"
 	game_data = {
 		shader_type = ship
 		emissive_recolor_crunch = 5.0
@@ -15,8 +14,7 @@ entity = {
 
 entity = {
 	name = "gothic_01_habitat_phase_01_entity"
-	pdxmesh = "mammalian_01_construction_ship_mesh"
-	
+	pdxmesh = "gothic_01_habitat_core_mesh"	
 	game_data = {
 		shader_type = ship
 		emissive_recolor_crunch = 5.0
@@ -27,8 +25,7 @@ entity = {
 
 entity = {
 	name = 	"gothic_01_habitat_phase_02_entity"
-	pdxmesh = "mammalian_01_construction_ship_mesh"
-
+	pdxmesh = "gothic_01_habitat_core_mesh"
 	game_data = {
 		shader_type = ship
 		emissive_recolor_crunch = 5.0
@@ -39,8 +36,7 @@ entity = {
 
 entity = {
 	name = "gothic_01_habitat_phase_03_entity"
-	pdxmesh = "mammalian_01_construction_ship_mesh"
-
+	pdxmesh = "gothic_01_habitat_core_mesh"
 	game_data = {
 		shader_type = ship
 		emissive_recolor_crunch = 5.0

@@ -1,478 +1,493 @@
 building_dark_factory = {
-    base_buildtime = 240
-
-    category = manufacturing
-
-    building_sets = {
-	industrial
-	foundry
-    }
-
-    potential = {
-        exists = owner
-        owner = { has_country_flag = darkeldar_empire }
-    }
-
-    destroy_trigger = {
-        exists = owner
-        owner = { NOT = { has_country_flag = darkeldar_empire } }
-    }
-
-    planet_modifier = {
-        job_artisan_add = 400
-    }
-
-    resources = {
-        category = planet_buildings
-        produces = {
-            trigger = {
-                exists = owner
-                owner = { NAND = { has_deficit = minerals, has_deficit = energy } }
-            }
-            consumer_goods = 50
-        }
-        cost = {
-            minerals = 500
-        }
-        upkeep = {
-            minerals = 25
-            energy = 10
-        }
-    }
-
-    ai_weight = {
-        weight = 0
-        modifier = {
-            weight = 100
-            owner = {
-                has_monthly_income = {
-                    resource = consumer_goods
-                    value < 50
-                }
-            }
-        }
-    }
-
-    ai_resource_production = {
-        consumer_goods = 1
-        trigger = {
-            always = yes
-        }
-    }
+	base_buildtime = 240
+	category = manufacturing
+	building_sets = {
+		industrial
+		foundry
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = darkeldar_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_country_flag = darkeldar_empire
+			}
+		}
+	}
+	planet_modifier = {
+		job_artisan_add = 400
+	}
+	resources = {
+		category = planet_buildings
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					NAND = {
+						has_deficit = minerals
+						has_deficit = energy
+					}
+				}
+			}
+			consumer_goods = 50
+		}
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			minerals = 25
+			energy = 10
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value < 50
+				}
+			}
+		}
+	}
+	ai_resource_production = {
+		consumer_goods = 1
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 building_slave_chamber = {
-    base_buildtime = 240
-    base_cap_amount = 1
-
-    category = pop_assembly
-
-    building_sets = {
-	government
-	urban
-    }
-
-    potential = {
-        exists = owner
-        owner = { has_country_flag = darkeldar_empire }
-    }
-
-    destroy_trigger = {
-        exists = owner
-        owner = { NOT = { has_country_flag = darkeldar_empire } }
-    }
-
-    prerequisites = { "tech_slave_chamber" }
-
-    planet_modifier = {
-        job_breeder_slave_add = 200
-    }
-
-    army_modifier = {
-        army_defense_health_mult = 0.1
-        army_defense_damage_mult = 0.3
-    }
-
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = 300
-        }
-        upkeep = {
-            energy = 10
-        }
-    }
-
-    ai_weight = {
-        weight = 10
-        modifier = {
-            factor = 0
-            NOT = { any_owned_pop = { is_enslaved = yes } }
-        }
-    }
+	base_buildtime = 240
+	base_cap_amount = 1
+	category = pop_assembly
+	building_sets = {
+		government
+		urban
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = darkeldar_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_country_flag = darkeldar_empire
+			}
+		}
+	}
+	prerequisites = {
+		"tech_slave_chamber"
+	}
+	planet_modifier = {
+		job_breeder_slave_add = 200
+	}
+	army_modifier = {
+		army_defense_health_mult = 0.1
+		army_defense_damage_mult = 0.3
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_pop = {
+					is_enslaved = yes
+				}
+			}
+		}
+	}
 }
 
 building_soul_cage = {
-    base_buildtime = 240
-
-    category = resource
-
-    potential = {
-        exists = owner
-        owner = { has_country_flag = darkeldar_empire }
-    }
-
-    destroy_trigger = {
-        exists = owner
-        owner = { NOT = { has_country_flag = darkeldar_empire } }
-    }
-
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = 500
-        }
-        upkeep = {
-            energy = 50
-            slaves = 1
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = { NOT = { has_deficit = slaves } }
-        }
-        modifier = {
-            planet_amenities_add = 50
-            bio_pop_growth_speed = 0.25
-            planet_engineers_produces_mult = 0.25
-            planet_biologists_produces_mult = 0.25
-            planet_physicists_produces_mult = 0.25
-        }
-    }
-
-    ai_weight = {
-        weight = 0
-        modifier = {
-            weight = 100
-            owner = {
-                has_monthly_income = {
-                    resource = minerals
-                    value < 100
-                }
-            }
-        }
-    }
-
-    ai_resource_production = {
-        minerals = 1
-        trigger = {
-            always = yes
-        }
-    }
+	base_buildtime = 240
+	category = resource
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = darkeldar_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_country_flag = darkeldar_empire
+			}
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 50
+			slaves = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_deficit = slaves
+				}
+			}
+		}
+		modifier = {
+			planet_amenities_add = 50
+			BIOLOGICAL_pop_growth_speed = 0.25
+			planet_engineers_produces_mult = 0.25
+			planet_biologists_produces_mult = 0.25
+			planet_physicists_produces_mult = 0.25
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value < 100
+				}
+			}
+		}
+	}
+	ai_resource_production = {
+		minerals = 1
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 building_plasma_generator = {
-    base_buildtime = 240
-    base_cap_amount = 1
-
-    category = resource
-
-    building_sets = {
-	generator
-    }
-
-    potential = {
-        exists = owner
-        owner = { has_country_flag = darkeldar_empire }
-    }
-
-    destroy_trigger = {
-        exists = owner
-        owner = { NOT = { has_country_flag = darkeldar_empire } }
-    }
-
-    planet_modifier = {
-        job_technician_add = 450
-    }
-
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = 500
-        }
-        produces = {
-            energy = 50
-        }
-    }
-
-    ai_weight = {
-        weight = 0
-        modifier = {
-            weight = 100
-            owner = {
-                has_monthly_income = {
-                    resource = energy
-                    value < 250
-                }
-            }
-        }
-    }
-
-    ai_resource_production = {
-        energy = 1
-        trigger = {
-            always = yes
-        }
-    }
+	base_buildtime = 240
+	base_cap_amount = 1
+	category = resource
+	building_sets = {
+		generator
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = darkeldar_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_country_flag = darkeldar_empire
+			}
+		}
+	}
+	planet_modifier = {
+		job_technician_add = 450
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			energy = 50
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 250
+				}
+			}
+		}
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 building_thermo_plasma_forge = {
-    base_buildtime = 240
-
-    category = manufacturing
-
-    building_sets = {
-	foundry
-	industrial
-    }
-
-    potential = {
-        exists = owner
-        owner = { has_country_flag = darkeldar_empire }
-    }
-
-    destroy_trigger = {
-        exists = owner
-        owner = { NOT = { has_country_flag = darkeldar_empire } }
-    }
-
-    planet_modifier = {
-        job_foundry_add = 300
-    }
-
-    resources = {
-        category = planet_buildings
-        produces = {
-            trigger = {
-                exists = owner
-                owner = { NAND = { has_deficit = minerals, has_deficit = energy } }
-            }
-            alloys = 20
-        }
-        cost = {
-            minerals = 500
-        }
-        upkeep = {
-            minerals = 50
-            energy = 10
-        }
-    }
-
-    ai_weight = {
-        weight = 0
-        modifier = {
-            weight = 100
-            owner = {
-                has_monthly_income = {
-                    resource = alloys
-                    value < 25
-                }
-            }
-        }
-    }
-
-    ai_resource_production = {
-        alloys = 1
-        trigger = {
-            always = yes
-        }
-    }
+	base_buildtime = 240
+	category = manufacturing
+	building_sets = {
+		foundry
+		industrial
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = darkeldar_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_country_flag = darkeldar_empire
+			}
+		}
+	}
+	planet_modifier = {
+		job_foundry_add = 300
+	}
+	resources = {
+		category = planet_buildings
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					NAND = {
+						has_deficit = minerals
+						has_deficit = energy
+					}
+				}
+			}
+			alloys = 20
+		}
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			minerals = 50
+			energy = 10
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 25
+				}
+			}
+		}
+	}
+	ai_resource_production = {
+		alloys = 1
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 building_haemonculus_laboratory = {
-    base_buildtime = 240
-
-    category = research
-
-    building_sets = {
-	research
-    }
-
-    potential = {
-        exists = owner
-        owner = { has_country_flag = darkeldar_empire }
-    }
-
-    destroy_trigger = {
-        exists = owner
-        owner = { NOT = { has_country_flag = darkeldar_empire } }
-    }
-
-    planet_modifier = {
-        job_haemacolyte_add = 600
-    }
-
-    resources = {
-        category = planet_buildings
-        produces = {
-            trigger = {
-                exists = owner
-                owner = { NOT = { has_deficit = energy } }
-            }
-            physics_research = 50
-            society_research = 50
-            engineering_research = 50
-        }
-        cost = {
-            minerals = 400
-        }
-        upkeep = {
-            energy = 50
-        }
-    }
-
-    triggered_desc = {
-        text = job_haemacolyte_effect_desc
-    }
-
-    ai_weight = {
-        weight = 10
-        modifier = {
-            factor = 0
-            has_building = building_haemonculus_laboratory
-        }
-    }
-
-    ai_resource_production = {
-        physics_research = 1
-        society_research = 1
-        engineering_research = 1
-        trigger = {
-            always = yes
-        }
-    }
+	base_buildtime = 240
+	category = research
+	building_sets = {
+		research
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = darkeldar_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_country_flag = darkeldar_empire
+			}
+		}
+	}
+	planet_modifier = {
+		job_haemacolyte_add = 600
+	}
+	resources = {
+		category = planet_buildings
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					NOT = {
+						has_deficit = energy
+					}
+				}
+			}
+			physics_research = 50
+			society_research = 50
+			engineering_research = 50
+		}
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 50
+		}
+	}
+	triggered_desc = {
+		text = job_haemacolyte_effect_desc
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			has_building = building_haemonculus_laboratory
+		}
+	}
+	ai_resource_production = {
+		physics_research = 1
+		society_research = 1
+		engineering_research = 1
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 building_wych_cult_arena = {
-    base_buildtime = 240
-
-    category = unity
-
-    building_sets = {
-	government
-	unity
-    }
-
-    potential = {
-        exists = owner
-        owner = { has_country_flag = darkeldar_empire }
-    }
-
-    destroy_trigger = {
-        exists = owner
-        owner = { NOT = { has_country_flag = darkeldar_empire } }
-    }
-
-    prerequisites = { "tech_wych_cult_arena" }
-
-    planet_modifier = {
-        job_wych_add = 300
-    }
-
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = 500
-        }
-        upkeep = {
-            energy = 25
-            slaves = 1
-        }
-    }
-
-    triggered_desc = {
-        text = job_wych_effect_desc
-    }
-
-    ai_weight = {
-        weight = 0
-        modifier = {
-            weight = 50
-            free_amenities < 5
-            OR = {
-                free_jobs < 3
-                NOT = { has_building = building_wych_cult_arena }
-            }
-        }
-        modifier = {
-            factor = 0
-            OR = {
-                free_amenities > 20
-                has_building = building_wych_cult_arena
-                AND = {
-                    owner = {
-                        has_monthly_income = {
-                            resource = consumer_goods
-                            value < 0
-                        }
-                    }
-                }
-            }
-        }
-    }
+	base_buildtime = 240
+	category = unity
+	building_sets = {
+		government
+		unity
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = darkeldar_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_country_flag = darkeldar_empire
+			}
+		}
+	}
+	prerequisites = {
+		"tech_wych_cult_arena"
+	}
+	planet_modifier = {
+		job_wych_add = 300
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 25
+			slaves = 1
+		}
+	}
+	triggered_desc = {
+		text = job_wych_effect_desc
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 50
+			free_amenities < 5
+			OR = {
+				free_jobs < 3
+				NOT = {
+					has_building = building_wych_cult_arena
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				free_amenities > 20
+				has_building = building_wych_cult_arena
+				AND = {
+					owner = {
+						has_monthly_income = {
+							resource = consumer_goods
+							value < 0
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 building_kabal_fortress = {
-    base_buildtime = 240
-
-    category = amenity
-
-    building_sets = {
-	government
-	urban
-	entertainment
-	resort
-    }
-
-    potential = {
-        exists = owner
-        owner = { has_country_flag = darkeldar_empire }
-    }
-
-    destroy_trigger = {
-        exists = owner
-        owner = { NOT = { has_country_flag = darkeldar_empire } }
-    }
-
-    planet_modifier = {
-        planet_housing_add = 20
-        planet_amenities_add = 20
-    }
-
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = 400
-        }
-        upkeep = {
-            energy = 10
-        }
-    }
-
-    ai_weight = {
-        weight = 0
-        modifier = {
-            weight = 100
-            free_housing < 3
-            OR = {
-                free_jobs > 0
-                AND = {
-                    free_housing < 0
-                    NOT = { any_owned_pop = { is_unemployed = yes } }
-                }
-            }
-        }
-    }
+	base_buildtime = 240
+	category = amenity
+	building_sets = {
+		government
+		urban
+		entertainment
+		resort
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = darkeldar_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_country_flag = darkeldar_empire
+			}
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 20
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			free_housing < 3
+			OR = {
+				free_jobs > 0
+				AND = {
+					free_housing < 0
+					NOT = {
+						any_owned_pop = {
+							is_unemployed = yes
+						}
+					}
+				}
+			}
+		}
+	}
 }

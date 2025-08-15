@@ -1,20 +1,20 @@
 setup_scenario = {
 	name = "tiny"
-	priority = 5					#priority decides in which order the scenarios are listed
+	priority = 0					#priority decides in which order the scenarios are listed
 	num_stars = 200
 	radius = 200					#should be less than 500, preferably less than ~460
-	num_empires = { min = 0 max = 20 }	#limits player customization
-	num_empire_default = 3
-	fallen_empire_default = 1
-	fallen_empire_max = 5
-	marauder_empire_default = 1
-	marauder_empire_max = 20
-	advanced_empire_default = 0
+	num_empires = { min = 0 max = 30 }	#limits player customization
+	num_empire_default = 6
+	fallen_empire_default = 6
+	fallen_empire_max = 6
+	marauder_empire_default = 3
+	marauder_empire_max = 6
+	advanced_empire_default = 6
 	colonizable_planet_odds = 1.0
 	primitive_odds = 1.0
-	crisis_strength = 0.5
-	extra_crisis_strength = { 10 25 50 100}
-	
+	crisis_strength = 25
+	extra_crisis_strength = { 10 25 100 200 500 1000 }
+
 	cluster_count = {
 		method = one_every_x_empire
 		#method = constant
@@ -23,7 +23,7 @@ setup_scenario = {
 	}
 	cluster_radius = 90
 	cluster_distance_from_core = 120
-	
+
 	max_hyperlane_distance = 50
 
 	home_system_partitions = {
@@ -50,18 +50,21 @@ setup_scenario = {
 	nebula_size = 60
 	nebula_min_dist = 100
 
-	num_wormhole_pairs = { min = 0 max = 100 }
+	num_wormhole_pairs = { min = 0 max = 50 }
 	num_wormhole_pairs_default = 1
-	num_gateways = { min = 0 max = 100 }
+	num_gateways = { min = 0 max = 50 }
 	num_gateways_default = 1
-	num_hyperlanes = { min=0.5 max= 100 }
+	num_hyperlanes = { min=0.1 max= 3 }
 	num_hyperlanes_default = 1
-
 
 	supports_shape = elliptical
 	supports_shape = spiral_2
-	#supports_shape = spiral_4
+	supports_shape = spiral_3
+	supports_shape = spiral_4
+	supports_shape = spiral_6
 	supports_shape = ring
 	supports_shape = bar
-	
+	supports_shape = starburst
+	supports_shape = cartwheel
+	supports_shape = spoked
 }

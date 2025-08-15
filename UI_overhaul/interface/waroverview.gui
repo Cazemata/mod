@@ -45,7 +45,8 @@ guiTypes = {
 			spriteType = "GFX_ui_war_button"
 			position = { x = 0 y = 7 }
 			orientation = center
-			centerPosition = yes		}
+			centerPosition = yes
+		}
 		iconType = {
 			name = "war_status_icon"
 			quadTextureSprite = "GFX_diplomacy_status_war"
@@ -106,7 +107,6 @@ guiTypes = {
 			min_height = 1200
 			position = { x = 0 y = 0 }
 			orientation = center
-			origo = center
 		}
 		moveable = yes
 		background = {
@@ -1210,7 +1210,8 @@ guiTypes = {
 			position = { x = 286 y = 10 }
 			size = { x = 53 y = 36 }
 			spacing = 0
-			format = right		}
+			format = right
+		}
 		instantTextBoxType = {
 			name = "vs"
 			position = { x = 331 y = 3 }
@@ -1228,7 +1229,8 @@ guiTypes = {
 			position = { x = 354 y = 10 }
 			size = { x = 53 y = 36 }
 			spacing = 0
-			format = left		}
+			format = left
+		}
 		instantTextBoxType = {
 			name = "location"
 			position = { x = 430 y = 3 }

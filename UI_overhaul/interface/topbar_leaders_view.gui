@@ -6,7 +6,7 @@ guiTypes = {
 		size = { width = 880 height = 940 }
 		position = { x = -1253 y = 50 }
 		show_position = { x = 35 y = 50 }
-        hide_position = { x = -100% y = 50 }
+        hide_position = { x = 0 y = 50 }
 		if_scaled_resolution = {
 			min_height = 1200
 			size = { width = 880 height = 1060 }
@@ -48,10 +48,6 @@ guiTypes = {
 			font = "font_header_20"
 			text = "topbar_button_leaders_name"
 			position = { x = 35 y = 2 }
-			if_scaled_resolution = {
-				min_width = 2560
-				position = { x = 25 y = 2 }
-			}
 			maxWidth = 300
 			maxHeight = 30
 			fixedSize = yes
