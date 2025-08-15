@@ -1,11 +1,8 @@
 ####Planets####
-
 ###### Throne World #######
-
 entity = {
 	name = "iom_city_planet_01_entity"
 	pdxmesh = "planet_clouded_mesh"
-
 	#planet surface texture override	
 	meshsettings = {
 		name = "planet_geosphereShape"
@@ -14,7 +11,6 @@ entity = {
 		texture_specular = "iom_city_planet_01_specular.dds"
 		shader = "PdxMeshPlanetEmissive"
 	}
-	
 	##cloud texture override
 	meshsettings = {
 		name = "clouds_geosphereShape"
@@ -22,7 +18,6 @@ entity = {
 		texture_normal = "nonormal.dds"
 		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
 		name = "clouds_shadow_geosphereShape"
@@ -30,7 +25,6 @@ entity = {
 		texture_normal = "nonormal.dds"
 		texture_specular = "nospec.dds"
 	}
-		
 	##pole texture override
 	meshsettings = {
 		name = "polesShape"
@@ -38,22 +32,33 @@ entity = {
 		texture_normal = "nonormal.dds"
 		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
-	state = { name = "idle" animation = "idle" time_offset = { 0 100 } 
-		start_event = { trigger_once = yes sound = { soundeffect = "amb_city_planet" } }
-		start_event = { trigger_once = yes sound = { soundeffect = "amb_city_planet_flyby" } }
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_city_planet"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_city_planet_flyby"
+			}
+		}
 	}
-	
 }
 
-
 ###### Ruins World #######
-
 entity = {
 	name = "iom_relic_world_01_entity"
 	pdxmesh = "planet_clouded_mesh"
-
 	#planet surface texture override	
 	meshsettings = {
 		name = "planet_geosphereShape"
@@ -62,7 +67,6 @@ entity = {
 		texture_specular = "iom_relic_world_01_specular.dds"
 		shader = "PdxMeshPlanetEmissive"
 	}
-	
 	##cloud texture override
 	meshsettings = {
 		name = "clouds_geosphereShape"
@@ -70,7 +74,6 @@ entity = {
 		texture_normal = "clouds_medium_normal.dds"
 		texture_specular = "clouds_medium_specular.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
 		name = "clouds_shadow_geosphereShape"
@@ -78,7 +81,6 @@ entity = {
 		texture_normal = "nonormal.dds"
 		texture_specular = "nospec.dds"
 	}
-		
 	##pole texture override
 	meshsettings = {
 		name = "polesShape"
@@ -86,10 +88,19 @@ entity = {
 		texture_normal = "arctic_poles_01_normals.dds"
 		texture_specular = "arctic_poles__01_spec.dds"
 	}
-	
 	default_state = "idle"
-	state = { name = "idle" animation = "idle" time_offset = { 0 100 } 
-		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_world_relic" } }
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_world_relic"
+			}
+		}
 	}
 }
-
