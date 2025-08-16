@@ -9,9 +9,10 @@ tech_promethium = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
@@ -34,18 +35,20 @@ tech_power_gen = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
@@ -68,18 +71,20 @@ tech_power_gen2 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
@@ -102,9 +107,10 @@ tech_promethium_mining = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
@@ -124,18 +130,20 @@ tech_imperium_statues = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -165,21 +173,22 @@ tech_warp_jump_drive = {
 		modifier = {
 			factor = 0.1
 			NOR = {
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_field_manipulation"
+				any_owned_leader = {
+					leader_class = scientist
+					has_leader_flag = 40k_rf_physics
+					has_trait = leader_trait_expertise_field_manipulation
 				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_curator"
+				any_owned_leader = {
+					leader_class = scientist
+					has_trait = leader_trait_curator
 				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_spark_of_genius"
+				any_owned_leader = {
+					leader_class = scientist
+					has_trait = leader_trait_spark_of_genius
 				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_maniacal"
+				any_owned_leader = {
+					leader_class = scientist
+					has_trait = leader_trait_maniacal
 				}
 			}
 		}
@@ -230,18 +239,20 @@ tech_basic_construction = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
@@ -267,18 +278,20 @@ tech_advanced_construction = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
@@ -301,18 +314,20 @@ tech_advanced_cutters = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
@@ -335,23 +350,25 @@ tech_advanced_drills = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
-	}
-	potential = {
-		has_country_flag = imperium
+		potential = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -370,18 +387,20 @@ tech_advanced_manipulators = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
@@ -407,18 +426,20 @@ tech_advanced_processing = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
@@ -441,18 +462,20 @@ tech_advanced_smelters = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
@@ -475,18 +498,20 @@ tech_advanced_tools = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
@@ -509,18 +534,20 @@ tech_advanced_seeds = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
@@ -544,67 +571,20 @@ tech_advanced_scanning = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
-		}
-	}
-	potential = {
-		has_country_flag = imperium
-	}
-}
-
-tech_penal_project = {
-	icon = tech_penal_colonies
-	cost = @tier1cost1
-	area = society
-	tier = 1
-	category = {
-		statecraft
-	}
-	weight = @tier1weight3
-	weight_modifier = {
-		modifier = {
-			factor = 0.25
-			NOR = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_statecraft"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_curator"
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
 	}
@@ -627,18 +607,20 @@ tech_darkage_knowledge = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_lost_knowledge"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_lost_knowledge"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -677,18 +659,20 @@ tech_education_reform = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -711,18 +695,20 @@ tech_mining_guilds = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -745,18 +731,20 @@ tech_merchant_guilds = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -779,18 +767,20 @@ tech_mechanicus_guilds = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -813,18 +803,20 @@ tech_mind_cleaning = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
@@ -939,7 +931,7 @@ tech_improved_bionics = {
 	area = society
 	tier = 2
 	category = {
-		computing
+		biology
 	}
 	weight = @tier2weight3
 	modifier = {
@@ -949,18 +941,20 @@ tech_improved_bionics = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
@@ -983,18 +977,20 @@ tech_gellar_field = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
@@ -1017,18 +1013,18 @@ tech_boost_plasma_drive = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 	}
@@ -1051,18 +1047,20 @@ tech_ship_armor = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
@@ -1085,18 +1083,20 @@ tech_full_auto = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
 	}
@@ -1110,7 +1110,7 @@ tech_auto_missile_barrage = {
 	cost = @tier3cost1
 	tier = 3
 	category = {
-		military_theory
+		computing
 	}
 	weight = @tier2weight2
 	modifier = {
@@ -1119,18 +1119,20 @@ tech_auto_missile_barrage = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
 	}
@@ -1155,18 +1157,20 @@ tech_analyze_stc = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_lost_knowledge"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_lost_knowledge"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -1189,18 +1193,20 @@ tech_servo_skull = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_lost_knowledge"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_lost_knowledge"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
@@ -1223,18 +1229,20 @@ tech_increased_ration = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}

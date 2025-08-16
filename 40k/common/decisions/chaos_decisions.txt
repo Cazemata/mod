@@ -1,6 +1,5 @@
 decision_corrupting_project = {
 	owned_planets_only = yes
-
 	enactment_time = 900
 	resources = {
 		category = decisions
@@ -10,9 +9,9 @@ decision_corrupting_project = {
 			gods_favor = 5000
 		}
 	}
-	
-	prerequisites = { "tech_corrupting_project" }
-
+	prerequisites = {
+		"tech_corrupting_project"
+	}
 	potential = {
 		OR = {
 			is_planet_class = pc_desert
@@ -28,48 +27,77 @@ decision_corrupting_project = {
 		}
 		habitable_structure = no
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-
 	effect = {
 		custom_tooltip = decision_corrupting_project_effects
 		hidden_effect = {
 			clear_planet_modifiers = yes
-			if = { 
-				limit = { owner = { has_country_flag = khorne } } 
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = khorne
+					}
+				}
 				change_pc = pc_daemon
 				set_planet_entity = {
 					entity = "daemon_planet"
 					graphical_culture = owner
 				}
-				add_modifier = { modifier = "daemon_planet" days = -1 }
+				add_modifier = {
+					modifier = "daemon_planet"
+					days = -1
+				}
 			}
-			else_if = { 
-				limit = { owner = { has_country_flag = nurgle } }  
+			else_if = {
+				limit = {
+					owner = {
+						has_country_flag = nurgle
+					}
+				}
 				change_pc = pc_daemonn
 				set_planet_entity = {
 					entity = "daemonn_planet"
 					graphical_culture = owner
 				}
-				add_modifier = { modifier = "daemonn_planet" days = -1 }
+				add_modifier = {
+					modifier = "daemonn_planet"
+					days = -1
+				}
 			}
-			else_if = { 
-				limit = { owner = { has_country_flag = tzeentch } }  
+			else_if = {
+				limit = {
+					owner = {
+						has_country_flag = tzeentch
+					}
+				}
 				change_pc = pc_daemont
 				set_planet_entity = {
 					entity = "daemont_planet"
 					graphical_culture = owner
 				}
-				add_modifier = { modifier = "daemont_planet" days = -1 }
+				add_modifier = {
+					modifier = "daemont_planet"
+					days = -1
+				}
 			}
-			else_if = { 
-				limit = { owner = { has_country_flag = slaanesh } }  
+			else_if = {
+				limit = {
+					owner = {
+						has_country_flag = slaanesh
+					}
+				}
 				change_pc = pc_daemons
 				set_planet_entity = {
 					entity = "daemons_planet"
 					graphical_culture = owner
 				}
-				add_modifier = { modifier = "daemons_planet" days = -1 }
+				add_modifier = {
+					modifier = "daemons_planet"
+					days = -1
+				}
 			}
 			else = {
 				random_list = {
@@ -79,7 +107,10 @@ decision_corrupting_project = {
 							entity = "daemon_planet"
 							graphical_culture = owner
 						}
-						add_modifier = { modifier = "daemon_planet" days = -1 }
+						add_modifier = {
+							modifier = "daemon_planet"
+							days = -1
+						}
 					}
 					30 = {
 						change_pc = pc_daemonn
@@ -87,7 +118,10 @@ decision_corrupting_project = {
 							entity = "daemonn_planet"
 							graphical_culture = owner
 						}
-						add_modifier = { modifier = "daemonn_planet" days = -1 }
+						add_modifier = {
+							modifier = "daemonn_planet"
+							days = -1
+						}
 					}
 					30 = {
 						change_pc = pc_daemont
@@ -95,7 +129,10 @@ decision_corrupting_project = {
 							entity = "daemont_planet"
 							graphical_culture = owner
 						}
-						add_modifier = { modifier = "daemont_planet" days = -1 }
+						add_modifier = {
+							modifier = "daemont_planet"
+							days = -1
+						}
 					}
 					30 = {
 						change_pc = pc_daemons
@@ -103,13 +140,15 @@ decision_corrupting_project = {
 							entity = "daemons_planet"
 							graphical_culture = owner
 						}
-						add_modifier = { modifier = "daemons_planet" days = -1 }
+						add_modifier = {
+							modifier = "daemons_planet"
+							days = -1
+						}
 					}
 				}
 			}
 		}
 	}
-
 	ai_weight = {
 		weight = 50
 	}
@@ -117,7 +156,6 @@ decision_corrupting_project = {
 
 decision_uncorrupting_project = {
 	owned_planets_only = yes
-
 	enactment_time = 900
 	resources = {
 		category = decisions
@@ -126,7 +164,6 @@ decision_uncorrupting_project = {
 			energy = 7500
 		}
 	}
-
 	potential = {
 		OR = {
 			is_planet_class = pc_daemon
@@ -136,21 +173,20 @@ decision_uncorrupting_project = {
 		}
 		habitable_structure = no
 		exists = owner
-		owner = { 
+		owner = {
 			NOR = {
 				has_country_flag = tyranid_empire
 				has_country_flag = chaos_empire
-			} 
+			}
 		}
 	}
-
 	effect = {
 		custom_tooltip = decision_uncorrupting_project_effects
 		hidden_effect = {
-			if = { 
-				limit = { 
+			if = {
+				limit = {
 					is_planet_class = pc_daemon
-				}  
+				}
 				random_list = {
 					30 = {
 						change_pc = pc_savannah
@@ -176,10 +212,10 @@ decision_uncorrupting_project = {
 				}
 				remove_modifier = "daemon_planet"
 			}
-			else_if = { 
-				limit = { 
+			else_if = {
+				limit = {
 					is_planet_class = pc_daemonn
-				}  
+				}
 				random_list = {
 					30 = {
 						change_pc = pc_tropical
@@ -205,10 +241,10 @@ decision_uncorrupting_project = {
 				}
 				remove_modifier = "daemonn_planet"
 			}
-			else_if = { 
-				limit = { 
+			else_if = {
+				limit = {
 					is_planet_class = pc_daemont
-				}  
+				}
 				random_list = {
 					30 = {
 						change_pc = pc_ocean
@@ -227,8 +263,8 @@ decision_uncorrupting_project = {
 				}
 				remove_modifier = "daemont_planet"
 			}
-			else_if = { 
-				limit = { 
+			else_if = {
+				limit = {
 					is_planet_class = pc_daemons
 				}
 				random_list = {
@@ -249,10 +285,11 @@ decision_uncorrupting_project = {
 				}
 				remove_modifier = "daemons_planet"
 			}
-			planet_event = { id = planets.16 }
+			planet_event = {
+				id = planets.16
+			}
 		}
 	}
-
 	ai_weight = {
 		weight = 500
 	}

@@ -1,6 +1,5 @@
 #reloadable with 'reload stats'
 # This file is where you start when you want to configure something new, then go to sections
-
 ####################
 # NOTE FOR MODDERS #
 ####################
@@ -13,11 +12,11 @@
 # for other modifiers, use ship_modifier = { }
 # use_shipnames_from = other_size # allows a ship size to use names from another size
 # icon = ship_size_military_1
-		#ship_size_military_1 is default. The following sprite keys are generated from it:
-			#GFX_text_<key>
-			#GFX_<key>
-			#GFX_<key>_top
-			#GFX_<key>_top_damaged
+#ship_size_military_1 is default. The following sprite keys are generated from it:
+#GFX_text_<key>
+#GFX_<key>
+#GFX_<key>_top
+#GFX_<key>_top_damaged
 # icon_frame: now only used for starbases. Value of 2 or more means it shows up on the galaxy map, 1-5 denote which icon it uses on starbase sprite sheets (e.g. gfx/interface/icons/starbase_ship_sizes.dds)
 # ai_ship_data = {					#For determining how many ships the AI wants. Ships it can't recruit (i.e. missing tech prereqs or fails potential_country or possible_country) are pre-filtered out.
 # 	fraction = { }					#As standard, base, modifier = { factor }, etc. The AI will want this divided by the total fraction it is able to recruit. Note: it is the fraction of the naval cap, so the final value is divided by size_multiplier
@@ -28,14 +27,10 @@
 #}
 # ship_roles = { name1 name2 } # Show up as selectable roles in the ship designer
 # triggered_ship_roles = { { name = test1 trigger = {} } { name = test1 trigger = {} } } # List of triggered ship roles, show up in the ship designer when the trigger is true, executes on country scope
-
 ####################
-
 ############
 # STANDARD #
 ############
-
-
 ##########################
 ### FORMATION PRIORITY ###
 ##########################
@@ -49,7 +44,6 @@
 @titan_formation_priority = 8
 @flagship_formation_priority = 9
 @carrier_formation_priority = 10
-
 ########################
 ### COLLISION RADIUS ###
 ########################
@@ -62,15 +56,12 @@
 @dreadnought_collision_radius = 9
 @titan_collision_radius = 12
 @flagship_collision_radius = 10
-
 ##########################
 ### BUILD BLOCK RADIUS ###
 ##########################
 @block_radius_none = 0
 @block_radius_civilian = 20
 @block_radius_military = 200
-
-
 corvette = {
 	formation_priority = @corvette_formation_priority
 	max_speed = 160
@@ -83,30 +74,38 @@ corvette = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 2
 	is_space_station = no
 	icon = ship_size_military_1
 	base_buildtime = 60
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	role_background = "GFX_role_selection_corvette"
-	ship_roles = { screen gunship artillery brawler }
+	ship_roles = {
+		screen
+		gunship
+		artillery
+		brawler
+	}
 	triggered_ship_roles = {
 		{
 			name = brawler_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = {
+				has_technology = tech_cloaking_1
+			}
 		}
 	}
-
 	default_behavior = swarm
-
-	prerequisites = { "tech_corvettes" }
-	
-	combat_disengage_chance = 1.00
-
+	prerequisites = {
+		"tech_corvettes"
+	}
+	combat_disengage_chance = 1
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -116,7 +115,6 @@ corvette = {
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
-
 	resources = {
 		category = ships
 		upkeep = {
@@ -127,21 +125,20 @@ corvette = {
 			trade = @corvette_logistic_upkeep_trade
 		}
 	}
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-
 	min_upgrade_cost = {
 		alloys = 1
 	}
-
 	ai_ship_data = {
 		fraction = {
 			base = 0
@@ -155,7 +152,9 @@ corvette = {
 			}
 			modifier = {
 				factor = 1.25
-				NOT = { is_preferred_weapons = weapon_type_explosive }
+				NOT = {
+					is_preferred_weapons = weapon_type_explosive
+				}
 			}
 			modifier = {
 				factor = 0.75
@@ -163,14 +162,14 @@ corvette = {
 				has_technology = tech_destroyers
 			}
 			modifier = {
-				factor = 0.10
+				factor = 0.1
 				has_technology = tech_Battlecruiser_1
 			}
 			modifier = {
 				factor = 1.5
 				has_valid_ai_personality = yes
 				OR = {
-					has_ai_personality = ruthless_capitalists #doing it cheap, or something
+					has_ai_personality = ruthless_capitalists					#doing it cheap, or something
 					has_ai_personality = hegemonic_imperialists
 				}
 			}
@@ -192,36 +191,51 @@ frigate = {
 	hull_scale = 1.25
 	size_multiplier = 2
 	fleet_slot_size = 2
-	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"stern" = {
+			locator = "part2"
+		}
+	}
 	num_target_locators = 2
 	is_space_station = no
 	icon = ship_size_military_1_torpedo
 	base_buildtime = 90
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	use_shipnames_from = corvette
-
 	default_behavior = torpedo
-
 	role_background = "GFX_role_selection_frigate"
-	ship_roles = { explosive }
+	ship_roles = {
+		explosive
+	}
 	triggered_ship_roles = {
 		{
 			name = explosive_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = {
+				has_technology = tech_cloaking_1
+			}
 		}
 		{
 			name = energy_torpedoes
-			trigger = { has_technology = tech_energy_torpedoes_1 }
+			trigger = {
+				has_technology = tech_energy_torpedoes_1
+			}
 		}
 		{
 			name = screen
-			trigger = { has_technology = tech_pd_frigate_1 }
+			trigger = {
+				has_technology = tech_pd_frigate_1
+			}
 		}
 		{
 			name = explosive_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = {
+				has_technology = tech_cloaking_1
+			}
 		}
 		{
 			name = energy_torpedoes_stealth
@@ -231,11 +245,10 @@ frigate = {
 			}
 		}
 	}
-	
-	prerequisites = { "tech_torpedoes_1" }
-	
-	combat_disengage_chance = 1.00
-
+	prerequisites = {
+		"tech_torpedoes_1"
+	}
+	combat_disengage_chance = 1
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -245,7 +258,6 @@ frigate = {
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
-
 	resources = {
 		category = ships
 		upkeep = {
@@ -256,21 +268,20 @@ frigate = {
 			trade = @frigate_logistic_upkeep_trade
 		}
 	}
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-
 	min_upgrade_cost = {
 		alloys = 1
 	}
-
 	ai_ship_data = {
 		fraction = {
 			base = 0
@@ -302,33 +313,47 @@ destroyer = {
 	}
 	size_multiplier = 2
 	fleet_slot_size = 2
-	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"stern" = {
+			locator = "part2"
+		}
+	}
 	num_target_locators = 4
 	icon = ship_size_military_2
 	is_space_station = no
 	base_buildtime = 120
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	default_behavior = picket
-
 	role_background = "GFX_role_selection_destroyer"
-	ship_roles = { screen gunship artillery brawler }
+	ship_roles = {
+		screen
+		gunship
+		artillery
+		brawler
+	}
 	triggered_ship_roles = {
 		{
 			name = artillery_stealth
-			trigger = { has_technology = tech_cloaking_2 }
+			trigger = {
+				has_technology = tech_cloaking_2
+			}
 		}
 		{
 			name = carrier
-			trigger = { has_technology = tech_escortcarrier_1 }
+			trigger = {
+				has_technology = tech_escortcarrier_1
+			}
 		}
 	}
-	prerequisites = { "tech_destroyers" }
-	
-	combat_disengage_chance = 1.50
-
+	prerequisites = {
+		"tech_destroyers"
+	}
+	combat_disengage_chance = 1.5
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -339,7 +364,6 @@ destroyer = {
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
 	required_component_set = "nsc_supportship_aura"
-
 	resources = {
 		category = ships
 		upkeep = {
@@ -350,21 +374,20 @@ destroyer = {
 			trade = @destroyer_logistic_upkeep_trade
 		}
 	}
-	
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-
 	min_upgrade_cost = {
 		alloys = 2
 	}
-
 	ai_ship_data = {
 		fraction = {
 			base = 0
@@ -388,7 +411,9 @@ destroyer = {
 			modifier = {
 				factor = 1.5
 				has_valid_civic = civic_hive_devouring_swarm
-				NOT = { has_technology = tech_battleships }
+				NOT = {
+					has_technology = tech_battleships
+				}
 			}
 			modifier = {
 				factor = 0.25
@@ -410,31 +435,48 @@ cruiser = {
 	}
 	size_multiplier = 3
 	fleet_slot_size = 3
-	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid" = {
+			locator = "part2"
+		}
+		"stern" = {
+			locator = "part3"
+		}
+	}
 	num_target_locators = 4
 	is_space_station = no
 	icon = ship_size_military_4
 	base_buildtime = 240
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	default_behavior = line
-
 	role_background = "GFX_role_selection_cruiser"
-	ship_roles = { gunship artillery }
+	ship_roles = {
+		gunship
+		artillery
+	}
 	triggered_ship_roles = {
 		{
 			name = explosive
-			trigger = { has_technology = tech_torpedoes_1 }
+			trigger = {
+				has_technology = tech_torpedoes_1
+			}
 		}
 		{
 			name = explosive_stealth
-			trigger = { has_technology = tech_cloaking_3 }
+			trigger = {
+				has_technology = tech_cloaking_3
+			}
 		}
 		{
 			name = energy_torpedoes
-			trigger = { has_technology = tech_energy_torpedoes_1 }
+			trigger = {
+				has_technology = tech_energy_torpedoes_1
+			}
 		}
 		{
 			name = energy_torpedoes_stealth
@@ -450,10 +492,10 @@ cruiser = {
 			}
 		}
 	}
-	prerequisites = { "tech_cruisers" }
-	
-	combat_disengage_chance = 1.50
-
+	prerequisites = {
+		"tech_cruisers"
+	}
+	combat_disengage_chance = 1.5
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -463,7 +505,6 @@ cruiser = {
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
-
 	resources = {
 		category = ships
 		upkeep = {
@@ -474,21 +515,20 @@ cruiser = {
 			trade = @cruiser_logistic_upkeep_trade
 		}
 	}
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-
 	min_upgrade_cost = {
 		alloys = 4
 	}
-
 	ai_ship_data = {
 		fraction = {
 			base = 0
@@ -497,7 +537,7 @@ cruiser = {
 				uses_standard_ship_sizes = yes
 			}
 			modifier = {
-				factor = 0.50
+				factor = 0.5
 				has_technology = tech_Battlecruiser_1
 			}
 			modifier = {
@@ -523,44 +563,56 @@ StrikeCruiser = {
 	acceleration = 0.45
 	rotation_speed = 0.25
 	collision_radius = @cruiser_collision_radius
-
 	modifier = {
 		ship_evasion_add = 15
 	}
 	max_hitpoints = 2300
 	size_multiplier = 5
 	fleet_slot_size = 5
-	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid" = {
+			locator = "part2"
+		}
+		"stern" = {
+			locator = "part3"
+		}
+	}
 	num_target_locators = 4
 	icon = nsc_ship_size_military_13
 	base_buildtime = 330
 	use_shipnames_from = cruiser
-	combat_disengage_chance = 0.80
-
+	combat_disengage_chance = 0.8
 	is_space_station = no
 	can_have_federation_design = yes
 	enable_default_design = yes
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	default_behavior = swarm
 	role_background = "GFX_role_selection_cruiser"
-	ship_roles = { interdictor }
+	ship_roles = {
+		interdictor
+	}
 	triggered_ship_roles = {
 		{
 			name = explosive
-			trigger = { has_technology = tech_torpedoes_1 }
+			trigger = {
+				has_technology = tech_torpedoes_1
+			}
 		}
 		{
 			name = energy_torpedoes
-			trigger = { has_technology = tech_energy_torpedoes_1 }
+			trigger = {
+				has_technology = tech_energy_torpedoes_1
+			}
 		}
 	}
-	
-	prerequisites = { "tech_StrikeCruiser_1" }
-	
+	prerequisites = {
+		"tech_StrikeCruiser_1"
+	}
 	class = shipclass_military
 	construction_type = starbase_shipyard
-	
 	resources = {
 		category = ships
 		upkeep = {
@@ -568,25 +620,25 @@ StrikeCruiser = {
 			alloys = 0.6
 		}
 	}
-	
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-	
-	min_upgrade_cost = { alloys = 5 }
-
-
+	min_upgrade_cost = {
+		alloys = 5
+	}
 	ai_ship_data = {
 		fraction = {
 			base = 0
 			modifier = {
-				add = 10 #10
+				add = 10				#10
 				has_technology = tech_StrikeCruiser_1
 			}
 			modifier = {
@@ -595,7 +647,6 @@ StrikeCruiser = {
 			}
 		}
 	}
-
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -611,37 +662,54 @@ Battlecruiser = {
 	acceleration = 0.25
 	rotation_speed = 0.16
 	collision_radius = @battlecruiser_collision_radius
-	
 	modifier = {
 		ship_evasion_add = 8
 	}
-	
 	max_hitpoints = 3500
 	size_multiplier = 6
 	fleet_slot_size = 6
-	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid1" = {
+			locator = "part2"
+		}
+		"mid2" = {
+			locator = "part3"
+		}
+		"stern" = {
+			locator = "part4"
+		}
+	}
 	num_target_locators = 4
 	icon = nsc_ship_size_military_15
 	base_buildtime = 360
 	use_shipnames_from = battleship
-	combat_disengage_chance = 1.10
-	
+	combat_disengage_chance = 1.1
 	is_space_station = no
 	can_have_federation_design = yes
 	enable_default_design = yes
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	default_behavior = line
 	role_background = "GFX_role_selection_battleship"
-	ship_roles = { artillery gunship brawler  }
+	ship_roles = {
+		artillery
+		gunship
+		brawler
+	}
 	triggered_ship_roles = {
 		{
 			name = explosive
-			trigger = { has_technology = tech_torpedoes_1 }
+			trigger = {
+				has_technology = tech_torpedoes_1
+			}
 		}
 		{
 			name = energy_torpedoes
-			trigger = { has_technology = tech_energy_torpedoes_1 }
+			trigger = {
+				has_technology = tech_energy_torpedoes_1
+			}
 		}
 		{
 			name = energy_torpedoes_stealth
@@ -652,15 +720,15 @@ Battlecruiser = {
 		}
 		{
 			name = explosive_stealth
-			trigger = { 
+			trigger = {
 				has_technology = tech_cloaking_1
-				has_technology = tech_torpedoes_1 
+				has_technology = tech_torpedoes_1
 			}
 		}
 	}
-
-	prerequisites = { "tech_Battlecruiser_1" }
-	
+	prerequisites = {
+		"tech_Battlecruiser_1"
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -668,10 +736,8 @@ Battlecruiser = {
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
-	
 	class = shipclass_military
 	construction_type = starbase_shipyard
-	
 	resources = {
 		category = ships
 		upkeep = {
@@ -682,35 +748,36 @@ Battlecruiser = {
 			trade = @battlecruiser_logistic_upkeep_trade
 		}
 	}
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-
-	min_upgrade_cost = { alloys = 6 }
-
+	min_upgrade_cost = {
+		alloys = 6
+	}
 	ai_ship_data = {
 		fraction = {
 			base = 0
 			modifier = {
-				add = 20 #20
+				add = 20				#20
 				has_technology = tech_Battlecruiser_1
 			}
 			modifier = {
-				add = 5 #25
+				add = 5				#25
 				has_technology = tech_battleships
 			}
 			modifier = {
 				add = -100
 				uses_standard_ship_sizes = no
 			}
-				}
+		}
 	}
 }
 
@@ -726,30 +793,42 @@ battleship = {
 	}
 	size_multiplier = 8
 	fleet_slot_size = 8
-	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid" = {
+			locator = "part2"
+		}
+		"stern" = {
+			locator = "part3"
+		}
+	}
 	num_target_locators = 4
 	is_space_station = no
 	icon = ship_size_military_8
 	base_buildtime = 480
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	default_behavior = artillery
-
 	role_background = "GFX_role_selection_battleship"
-	ship_roles = { artillery gunship }
+	ship_roles = {
+		artillery
+		gunship
+	}
 	triggered_ship_roles = {
 		{
 			name = spitfire
-			trigger = { has_technology = tech_spitfire_1 }
+			trigger = {
+				has_technology = tech_spitfire_1
+			}
 		}
 	}
-
-	prerequisites = { "tech_battleships" }
-	
+	prerequisites = {
+		"tech_battleships"
+	}
 	combat_disengage_chance = 1.25
-
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -760,7 +839,6 @@ battleship = {
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
 	required_component_set = "special_ship_slot"
-
 	resources = {
 		category = ships
 		upkeep = {
@@ -771,21 +849,20 @@ battleship = {
 			trade = @battleship_logistic_upkeep_trade
 		}
 	}
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-
 	min_upgrade_cost = {
 		alloys = 8
 	}
-
 	ai_ship_data = {
 		fraction = {
 			base = 0
@@ -825,42 +902,57 @@ Carrier = {
 	acceleration = 0.2
 	rotation_speed = 0.15
 	collision_radius = @carrier_collision_radius
-	
 	modifier = {
 		ship_evasion_add = 5
 	}
-	
 	max_hitpoints = 7000
 	size_multiplier = 10
 	fleet_slot_size = 10
-	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid1" = {
+			locator = "part2"
+		}
+		"mid2" = {
+			locator = "part3"
+		}
+		"stern" = {
+			locator = "part4"
+		}
+	}
 	num_target_locators = 4
 	icon = nsc_ship_size_military_16
 	base_buildtime = 540
 	use_shipnames_from = battleship
-	combat_disengage_chance = 0.80
-	
+	combat_disengage_chance = 0.8
 	is_space_station = no
 	can_have_federation_design = yes
 	enable_default_design = yes
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	default_behavior = carrier
 	role_background = "GFX_role_selection_battleship"
-	ship_roles = { carrier }
+	ship_roles = {
+		carrier
+	}
 	triggered_ship_roles = {
 		{
 			name = heavy_carrier
-			trigger = { has_technology = tech_heavycarrier_1 }
+			trigger = {
+				has_technology = tech_heavycarrier_1
+			}
 		}
 		{
 			name = super_carrier
-			trigger = { has_technology = tech_supercarrier_1 }
+			trigger = {
+				has_technology = tech_supercarrier_1
+			}
 		}
 	}
-
-	prerequisites = { "tech_Carrier_1" }
-	
+	prerequisites = {
+		"tech_Carrier_1"
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -869,47 +961,45 @@ Carrier = {
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
 	required_component_set = "special_ship_slot"
-	
 	class = shipclass_military
 	construction_type = starbase_shipyard
-	
 	resources = {
 		category = ships
 		upkeep = {
-			energy = 3.0
-			alloys = 1.0
+			energy = 3
+			alloys = 1
 		}
 		logistics = {
 			trade = @carrier_logistic_upkeep_trade
 		}
 	}
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-
-	min_upgrade_cost = { alloys = 10 }
-
+	min_upgrade_cost = {
+		alloys = 10
+	}
 	ai_ship_data = {
 		fraction = {
 			base = 0
 			modifier = {
-				add = 10 #10
+				add = 10				#10
 				has_technology = tech_Carrier_1
 			}
 			modifier = {
 				add = -100
 				uses_standard_ship_sizes = no
 			}
-				}
+		}
 	}
-
 }
 
 Dreadnought = {
@@ -918,36 +1008,48 @@ Dreadnought = {
 	acceleration = 0.2
 	rotation_speed = 0.15
 	collision_radius = @dreadnought_collision_radius
-	
 	modifier = {
 		ship_evasion_mult = -1
 	}
-	
 	max_hitpoints = 10000
 	size_multiplier = 14
 	fleet_slot_size = 14
-	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" } "stern" = { locator = "part5" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid1" = {
+			locator = "part2"
+		}
+		"mid2" = {
+			locator = "part3"
+		}
+		"mid3" = {
+			locator = "part4"
+		}
+		"stern" = {
+			locator = "part5"
+		}
+	}
 	num_target_locators = 4
 	icon = nsc_ship_size_military_17
 	base_buildtime = 600
 	use_shipnames_from = battleship
-	combat_disengage_chance = 0.70
-	
+	combat_disengage_chance = 0.7
 	is_space_station = no
 	can_have_federation_design = yes
 	enable_default_design = yes
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	default_behavior = artillery
-
 	role_background = "GFX_role_selection_titan"
-	ship_roles = { artillery }
-
-	prerequisites = { "tech_Dreadnought_1" }
-
+	ship_roles = {
+		artillery
+	}
+	prerequisites = {
+		"tech_Dreadnought_1"
+	}
 	class = shipclass_military
 	construction_type = starbase_shipyard
-	
 	resources = {
 		category = ships
 		upkeep = {
@@ -958,23 +1060,22 @@ Dreadnought = {
 			trade = @dreadnought_logistic_upkeep_trade
 		}
 	}
-
-	min_upgrade_cost = { alloys = 12 }
-
+	min_upgrade_cost = {
+		alloys = 12
+	}
 	ai_ship_data = {
 		fraction = {
-					base = 0
-					modifier = {
-						add = 25 #10
-						has_technology = tech_Dreadnought_1
-						}
-						modifier = {
-							add = -100
-							uses_standard_ship_sizes = no
-						}
-				}
+			base = 0
+			modifier = {
+				add = 25				#10
+				has_technology = tech_Dreadnought_1
+			}
+			modifier = {
+				add = -100
+				uses_standard_ship_sizes = no
+			}
+		}
 	}
-
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -997,28 +1098,39 @@ titan = {
 	}
 	size_multiplier = 20
 	fleet_slot_size = 20
-	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid" = {
+			locator = "part2"
+		}
+		"stern" = {
+			locator = "part3"
+		}
+	}
 	num_target_locators = 4
 	is_space_station = no
 	icon = ship_size_military_16
 	base_buildtime = 900
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	selectable = { host_has_dlc = "Apocalypse" }
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
+	selectable = {
+		host_has_dlc = "Apocalypse"
+	}
 	default_behavior = artillery
-
 	role_background = "GFX_role_selection_titan"
-	ship_roles = { artillery gunship }
-
-	prerequisites = { "tech_titans" }
-	
+	ship_roles = {
+		artillery
+		gunship
+	}
+	prerequisites = {
+		"tech_titans"
+	}
 	combat_disengage_chance = 1.25
-
 	class = shipclass_military
 	construction_type = starbase_shipyard
-	
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -1029,7 +1141,6 @@ titan = {
 	required_component_set = "special_ship_slot"
 	required_component_set = "special_ship_slot"
 	required_component_set = "nsc_titan_aura"
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
@@ -1043,7 +1154,6 @@ titan = {
 			}
 		}
 	}
-
 	possible_construction = {
 		custom_tooltip = {
 			fail_text = starbase_citadel_trigger
@@ -1080,8 +1190,6 @@ titan = {
 			}
 		}
 	}
-
-
 	resources = {
 		category = ships
 		upkeep = {
@@ -1092,11 +1200,9 @@ titan = {
 			trade = @titan_logistic_upkeep_trade
 		}
 	}
-
 	min_upgrade_cost = {
 		alloys = 16
 	}
-
 	ai_ship_data = {
 		min = 1
 		max = 25
@@ -1110,29 +1216,48 @@ Flagship = {
 	acceleration = 0.2
 	rotation_speed = 0.15
 	collision_radius = @flagship_collision_radius
-
 	modifier = {
 		ship_evasion_mult = -1
 	}
-
 	max_hitpoints = 60000
 	size_multiplier = 24
 	fleet_slot_size = 24
-	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" } "mid4" = { locator = "part5" } "stern" = { locator = "part6" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid1" = {
+			locator = "part2"
+		}
+		"mid2" = {
+			locator = "part3"
+		}
+		"mid3" = {
+			locator = "part4"
+		}
+		"mid4" = {
+			locator = "part5"
+		}
+		"stern" = {
+			locator = "part6"
+		}
+	}
 	num_target_locators = 4
 	icon = nsc_ship_size_military_18
-	combat_disengage_chance = 0.50
-
+	combat_disengage_chance = 0.5
 	is_space_station = no
 	can_have_federation_design = no
 	enable_default_design = yes
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	default_behavior = artillery
 	role_background = "GFX_role_selection_titan"
-	ship_roles = { artillery Brawler Gunship Carrier }
+	ship_roles = {
+		artillery
+		Brawler
+		Gunship
+		Carrier
+	}
 	components_add_to_cost = no
-
 	possible_construction = {
 		custom_tooltip_fail = {
 			text = nsc_flagship_cannot_be_acquired_by_conventional_means.tooltip.fail
@@ -1140,11 +1265,11 @@ Flagship = {
 			is_megastructure_type = nsc_flagship_shipyard_complete
 		}
 	}
-
-	prerequisites = { "tech_Flagship_1" }
+	prerequisites = {
+		"tech_Flagship_1"
+	}
 	class = shipclass_military
 	construction_type = starbase_shipyard
-
 	base_buildtime = 1500
 	use_shipnames_from = juggernaut
 	resources = {
@@ -1157,7 +1282,7 @@ Flagship = {
 			energy = 10
 			alloys = 5
 		}
-		produces = { 
+		produces = {
 			unity = 25
 			influence = 3
 		}
@@ -1165,13 +1290,13 @@ Flagship = {
 			trade = @flagship_logistic_upkeep_trade
 		}
 	}
-	min_upgrade_cost = { alloys = 25 }
-
+	min_upgrade_cost = {
+		alloys = 25
+	}
 	ai_ship_data = {
 		min = 1
 		max = 1
 	}
-
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -1195,29 +1320,35 @@ constructor = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_constructor
 	base_buildtime = @construction_build_time
-
-	combat_disengage_chance = 1.0
-
+	combat_disengage_chance = 1
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	prerequisites = { "tech_space_construction" }
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
+	prerequisites = {
+		"tech_space_construction"
+	}
 	is_civilian = yes
 	is_designable = no
 	components_add_to_cost = no
 	class = shipclass_constructor
-	construction_type = { starbase_shipyard starbase_beastport }
+	construction_type = {
+		starbase_shipyard
+		starbase_beastport
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
-
 	resources = {
 		category = ships
 		cost = {
@@ -1246,13 +1377,11 @@ constructor = {
 			food = @construction_ship_cost
 			mult = @halved_alloy_to_food_cost_ratio
 		}
-
 		upkeep = {
 			energy = @construction_upkeep_energy
 			alloys = @construction_upkeep_alloys
 		}
 	}
-
 	potential_country = {
 		OR = {
 			has_technology = tech_hyper_drive_1
@@ -1262,9 +1391,7 @@ constructor = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
-
 	available_to_everyone = yes
-
 	ai_ship_data = {
 		min = value:desired_constructors_min
 		system_mult = 0.15
@@ -1282,29 +1409,35 @@ colonizer = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_colonizer
 	base_buildtime = @colony_build_time
-
 	combat_disengage_chance = 0.5
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	prerequisites = { "tech_colonization_1" }
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
+	prerequisites = {
+		"tech_colonization_1"
+	}
 	is_civilian = yes
 	is_designable = no
 	components_add_to_cost = no
 	class = shipclass_colonizer
-	construction_type = { starbase_shipyard starbase_beastport }
+	construction_type = {
+		starbase_shipyard
+		starbase_beastport
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
-
 	resources = {
 		category = colonies
 		# Alloys
@@ -1349,7 +1482,6 @@ colonizer = {
 			alloys = @colony_cost_low
 			mult = 0.5
 		}
-
 		# Consumer goods for non-gestalt empires
 		# 200 normally
 		cost = {
@@ -1397,7 +1529,6 @@ colonizer = {
 			}
 			food = @colony_cost_high
 		}
-
 		# Additional food to replace alloys if you use biological ships
 		cost = {
 			trigger = {
@@ -1419,7 +1550,6 @@ colonizer = {
 			food = @colony_cost_low
 			mult = @halved_alloy_to_food_cost_ratio
 		}
-
 		# Minerals for lithoids
 		# 200 normally
 		cost = {
@@ -1500,15 +1630,12 @@ colonizer = {
 			}
 			energy = @colony_cost_very_high
 		}
-
 		upkeep = {
 			energy = @colony_upkeep_energy
 			alloys = @colony_upkeep_alloys
 		}
 	}
-
 	available_to_everyone = yes
-
 	potential_country = {
 		is_guided_sapience_empire = no
 		is_wilderness_empire = no
@@ -1520,7 +1647,6 @@ colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
-
 	ai_ship_data = {
 		min = value:desired_colonizers
 	}
@@ -1536,21 +1662,28 @@ sponsored_colonizer = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_colonizer
 	base_buildtime = @colony_build_time
-
 	combat_disengage_chance = 0.5
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { "tech_colonization_1" }
+	prerequisites = {
+		"tech_colonization_1"
+	}
 	is_civilian = yes
 	is_designable = no
 	components_add_to_cost = no
 	class = shipclass_colonizer
-	construction_type = { starbase_shipyard starbase_beastport }
+	construction_type = {
+		starbase_shipyard
+		starbase_beastport
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -1558,19 +1691,16 @@ sponsored_colonizer = {
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
 	use_shipnames_from = colonizer
-
 	resources = {
 		category = colonies
 		cost = {
 			energy = @colony_cost_high
 		}
-
 		upkeep = {
 			energy = @colony_upkeep_energy
 			alloys = @colony_upkeep_alloys
 		}
 	}
-
 	potential_country = {
 		is_guided_sapience_empire = no
 		OR = {
@@ -1585,9 +1715,7 @@ sponsored_colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
-
 	available_to_everyone = yes
-
 	ai_ship_data = {
 		min = value:desired_colonizers_base
 	}
@@ -1605,21 +1733,28 @@ lithoid_colonizer = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_colonizer
 	base_buildtime = 150
-
 	combat_disengage_chance = 0.2
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { "tech_colonization_1" }
+	prerequisites = {
+		"tech_colonization_1"
+	}
 	is_civilian = yes
 	is_designable = no
 	components_add_to_cost = no
 	class = shipclass_colonizer
-	construction_type = { starbase_shipyard starbase_beastport }
+	construction_type = {
+		starbase_shipyard
+		starbase_beastport
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -1627,14 +1762,12 @@ lithoid_colonizer = {
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
 	use_shipnames_from = colonizer
-
 	resources = {
 		category = colonies
 		cost = {
 			minerals = @colony_cost_high
 		}
 	}
-
 	potential_country = {
 		has_origin = origin_lithoid
 		is_guided_sapience_empire = no
@@ -1646,9 +1779,7 @@ lithoid_colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
-
 	available_to_everyone = yes
-
 	ai_ship_data = {
 		min = value:desired_colonizers_base
 	}
@@ -1664,22 +1795,29 @@ guided_sapience_colonizer = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_colonizer
 	base_buildtime = @colony_build_time
-
 	combat_disengage_chance = 0.5
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = no #if yes, ship design will have a 3d view in the ship browser
-	prerequisites = { "tech_colonization_1" }
+	enable_3dview_in_ship_browser = no	#if yes, ship design will have a 3d view in the ship browser
+	prerequisites = {
+		"tech_colonization_1"
+	}
 	is_civilian = yes
 	is_designable = no
 	components_add_to_cost = no
 	class = shipclass_colonizer
-	construction_type = { starbase_shipyard starbase_beastport }
+	construction_type = {
+		starbase_shipyard
+		starbase_beastport
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -1687,7 +1825,6 @@ guided_sapience_colonizer = {
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
 	use_shipnames_from = colonizer
-
 	potential_country = {
 		is_guided_sapience_empire = yes
 		OR = {
@@ -1698,13 +1835,10 @@ guided_sapience_colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
-
 	available_to_everyone = yes
-
 	ai_ship_data = {
 		min = value:desired_colonizers_base
 	}
-
 	resources = {
 		category = colonies
 		# Alloys
@@ -1749,7 +1883,6 @@ guided_sapience_colonizer = {
 			alloys = @colony_cost_base
 			mult = 0.5
 		}
-
 		# Consumer goods for non-gestalt empires
 		# 200 normally
 		cost = {
@@ -1797,7 +1930,6 @@ guided_sapience_colonizer = {
 			}
 			food = @colony_cost_high
 		}
-
 		# Additional food to replace alloys if you use biological ships
 		cost = {
 			trigger = {
@@ -1819,7 +1951,6 @@ guided_sapience_colonizer = {
 			food = @colony_cost_base
 			mult = @halved_alloy_to_food_cost_ratio
 		}
-
 		# Minerals for lithoids
 		# 200 normally
 		cost = {
@@ -1900,7 +2031,6 @@ guided_sapience_colonizer = {
 			}
 			energy = @colony_cost_very_high
 		}
-
 		upkeep = {
 			energy = @colony_upkeep_energy
 			alloys = @colony_upkeep_alloys
@@ -1921,22 +2051,29 @@ science = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_science
 	base_buildtime = @science_build_time
-
-	combat_disengage_chance = 2.0
-
+	combat_disengage_chance = 2
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	is_designable = no
 	components_add_to_cost = no
-	prerequisites = { "tech_space_exploration" }
+	prerequisites = {
+		"tech_space_exploration"
+	}
 	is_civilian = yes
 	class = shipclass_science_ship
-	construction_type = { starbase_shipyard starbase_beastport }
+	construction_type = {
+		starbase_shipyard
+		starbase_beastport
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -1944,7 +2081,6 @@ science = {
 	required_component_set = "science_cloaking_components"
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
-
 	resources = {
 		category = ships
 		cost = {
@@ -1978,7 +2114,6 @@ science = {
 			alloys = @science_upkeep_alloys
 		}
 	}
-
 	potential_country = {
 		NOT = {
 			is_country_type = enclave_mercenary
@@ -1991,19 +2126,18 @@ science = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-
 	available_to_everyone = yes
-
 	ai_ship_data = {
 		min = value:desired_science_ships
 		system_mult = value:desired_science_ships_system_mult
@@ -2015,35 +2149,50 @@ explorationship = {
 	max_speed = 120
 	acceleration = 0.3
 	rotation_speed = 0.2
-	
 	modifier = {
 		ship_evasion_add = 10
 		ship_disengage_opportunities_add = 1
 	}
-	
 	max_hitpoints = 2000
 	size_multiplier = 5
 	fleet_slot_size = 5
-	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid1" = {
+			locator = "part2"
+		}
+		"mid2" = {
+			locator = "part3"
+		}
+		"stern" = {
+			locator = "part4"
+		}
+	}
 	num_target_locators = 0
 	icon = nsc_ship_size_military_14
 	base_buildtime = 300
 	use_shipnames_from = science
-	combat_disengage_chance = 2.0
+	combat_disengage_chance = 2
 	components_add_to_cost = no
-	
 	is_space_station = no
 	enable_default_design = yes
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	enable_3dview_in_ship_browser = yes	#if yes, ship design will have a 3d view in the ship browser
 	is_designable = yes
 	is_civilian = yes
-	
-	prerequisites = { "tech_explorationship_1" }
+	prerequisites = {
+		"tech_explorationship_1"
+	}
 	class = shipclass_science_ship
-	construction_type = { starbase_shipyard starbase_beastport }
-	ship_roles = { Brawler }
+	construction_type = {
+		starbase_shipyard
+		starbase_beastport
+	}
+	ship_roles = {
+		Brawler
+	}
 	default_behavior = Line
-
 	resources = {
 		category = ships
 		upkeep = {
@@ -2051,19 +2200,20 @@ explorationship = {
 			alloys = 5
 		}
 	}
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase
 			AND = {
 				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+				NOT = {
+					is_megastructure_type = nsc_flagship_shipyard_complete
+				}
 			}
 		}
 	}
-
-	min_upgrade_cost = { alloys = 5 }
-
+	min_upgrade_cost = {
+		alloys = 5
+	}
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -2074,7 +2224,6 @@ explorationship = {
 	# required_component_set = "exploration_ship_slot"
 	# required_component_set = "exploration_ship_slot"
 	# required_component_set = "exploration_ship_slot"
-	
 	ai_ship_data = {
 		min = value:desired_science_ships
 		system_mult = value:desired_science_ships_system_mult
@@ -2093,15 +2242,16 @@ transport = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_transport
-
 	available_to_everyone = yes
-
 	combat_disengage_chance = 1.5
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	is_designable = no
 	components_add_to_cost = no
@@ -2117,7 +2267,6 @@ transport = {
 ################
 # MILITARY STATIONS #
 ################
-
 military_station_small = {
 	max_speed = 6
 	rotation_speed = 10
@@ -2127,37 +2276,43 @@ military_station_small = {
 		ship_armor_add = 1000
 		ships_upkeep_mult = -0.25
 	}
-	ship_modifier = { ship_weapon_range_mult = 0.30 }
-	
+	ship_modifier = {
+		ship_weapon_range_mult = 0.3
+	}
 	max_hitpoints = 5000
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "west" = { locator = "part1" } "east" = { locator = "part2" } }
+	section_slots = {
+		"west" = {
+			locator = "part1"
+		}
+		"east" = {
+			locator = "part2"
+		}
+	}
 	num_target_locators = 5
-	base_buildtime = 60
-	
 	is_space_station = yes
-	enable_default_design = yes
 	is_designable = yes
 	uses_name_prefix = no
-	num_target_locators = 0
-	is_space_station = yes
 	base_buildtime = @corvette_build_time
-
 	role_background = "GFX_role_selection_defense_platform"
-	ship_roles = { gunship screen artillery carrier energy_torpedoes }
-
+	ship_roles = {
+		gunship
+		screen
+		artillery
+		carrier
+		energy_torpedoes
+	}
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { "tech_space_defense_station_1" }
+	prerequisites = {
+		"tech_space_defense_station_1"
+	}
 	class = shipclass_military_station
 	construction_type = starbase_defenses
-
 	required_component_set = "power_core"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-
 	build_block_radius = @build_block_radius_military
-
 	potential_construction = {
 		is_scope_type = starbase
 		OR = {
@@ -2166,11 +2321,9 @@ military_station_small = {
 			has_starbase_size >= starbase_deep_space_citadel_1
 		}
 	}
-
 	resources = {
 		category = ships
 	}
-
 	available_to_everyone = yes
 }
 
@@ -2185,32 +2338,50 @@ military_station_medium = {
 		ships_upkeep_mult = -0.25
 	}
 	ship_modifier = {
-		ship_weapon_range_mult = 0.20
+		ship_weapon_range_mult = 0.2
 	}
 	max_hitpoints = 10000
 	size_multiplier = 2
 	fleet_slot_size = 2
-	section_slots = { "north" = { locator = "part1" } "west" = { locator = "part1" } "east" = { locator = "part2" } "south" = { locator = "part2" } }
+	section_slots = {
+		"north" = {
+			locator = "part1"
+		}
+		"west" = {
+			locator = "part1"
+		}
+		"east" = {
+			locator = "part2"
+		}
+		"south" = {
+			locator = "part2"
+		}
+	}
 	num_target_locators = 5
 	is_space_station = yes
 	base_buildtime = 90
 	role_background = "GFX_role_selection_defense_platform"
-	ship_roles = { gunship screen artillery carrier energy_torpedoes }
+	ship_roles = {
+		gunship
+		screen
+		artillery
+		carrier
+		energy_torpedoes
+	}
 	is_designable = yes
 	uses_name_prefix = no
 	use_shipnames_from = military_station_small
 	takes_name_from_ship_design = yes
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { "tech_space_defense_station_2" }
+	prerequisites = {
+		"tech_space_defense_station_2"
+	}
 	class = shipclass_military_station
 	construction_type = starbase_defenses
 	required_component_set = "power_core"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-
 	build_block_radius = @build_block_radius_military
-
 	potential_construction = {
 		is_scope_type = starbase
 		OR = {
@@ -2219,11 +2390,9 @@ military_station_medium = {
 			has_starbase_size >= starbase_deep_space_citadel_1
 		}
 	}
-	
 	resources = {
 		category = ships
 	}
-
 	available_to_everyone = yes
 }
 
@@ -2238,32 +2407,50 @@ military_station_large = {
 		ships_upkeep_mult = -0.25
 	}
 	ship_modifier = {
-		ship_weapon_range_mult = 0.20
+		ship_weapon_range_mult = 0.2
 	}
 	max_hitpoints = 20000
 	size_multiplier = 3
 	fleet_slot_size = 3
-	section_slots = { "north" = { locator = "part1" } "west" = { locator = "part1" } "east" = { locator = "part2" } "south" = { locator = "part2" } }
+	section_slots = {
+		"north" = {
+			locator = "part1"
+		}
+		"west" = {
+			locator = "part1"
+		}
+		"east" = {
+			locator = "part2"
+		}
+		"south" = {
+			locator = "part2"
+		}
+	}
 	num_target_locators = 5
 	is_space_station = yes
 	is_designable = yes
 	base_buildtime = 120
 	role_background = "GFX_role_selection_defense_platform"
-	ship_roles = { gunship screen artillery carrier energy_torpedoes }
+	ship_roles = {
+		gunship
+		screen
+		artillery
+		carrier
+		energy_torpedoes
+	}
 	uses_name_prefix = no
 	use_shipnames_from = military_station_small
 	takes_name_from_ship_design = yes
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { "tech_space_defense_station_3" }
+	prerequisites = {
+		"tech_space_defense_station_3"
+	}
 	class = shipclass_military_station
 	construction_type = starbase_defenses
 	required_component_set = "power_core"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-
 	build_block_radius = @build_block_radius_military
-	
 	potential_construction = {
 		is_scope_type = starbase
 		OR = {
@@ -2272,22 +2459,19 @@ military_station_large = {
 			has_starbase_size >= starbase_deep_space_citadel_1
 		}
 	}
-
 	resources = {
 		category = ships
 	}
-
 	available_to_everyone = yes
 }
 
 ################
 # CIVILIAN STATIONS #
 ################
-
 mining_station = {
-	max_speed = 0.0
-	acceleration = 0.0
-	rotation_speed = 0.0
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
 	max_hitpoints = @station_civilian_hp
 	modifier = {
 		ship_armor_add = 1000
@@ -2295,20 +2479,24 @@ mining_station = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 0
 	is_space_station = yes
 	build_block_radius = @build_block_radius_civilian
 	is_civilian = no
 	components_add_to_cost = no
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { "tech_space_construction" }
+	prerequisites = {
+		"tech_space_construction"
+	}
 	class = shipclass_mining_station
 	is_designable = no
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
-
 	resources = {
 		category = station_gatherers
 		cost = {
@@ -2340,14 +2528,13 @@ mining_station = {
 			energy = 1
 		}
 	}
-
 	available_to_everyone = yes
 }
 
 research_station = {
-	max_speed = 0.0
-	acceleration = 0.0
-	rotation_speed = 0.0
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
 	max_hitpoints = @station_civilian_hp
 	modifier = {
 		ship_armor_add = 1000
@@ -2355,20 +2542,24 @@ research_station = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
 	num_target_locators = 1
 	is_space_station = yes
 	build_block_radius = @build_block_radius_civilian
 	is_civilian = no
 	components_add_to_cost = no
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { "tech_space_construction" }
+	prerequisites = {
+		"tech_space_construction"
+	}
 	class = shipclass_research_station
 	is_designable = no
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
-
 	resources = {
 		category = station_researchers
 		cost = {
@@ -2396,19 +2587,17 @@ research_station = {
 			}
 			unity = 10
 		}
-
 		upkeep = {
 			energy = 1
 		}
 	}
-
 	available_to_everyone = yes
 }
 
 observation_station = {
-	max_speed = 0.0
-	acceleration = 0.0
-	rotation_speed = 0.0
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
 	max_hitpoints = @station_civilian_hp
 	modifier = {
 		ship_armor_add = 1000
@@ -2423,12 +2612,10 @@ observation_station = {
 	auto_upgrade = yes
 	components_add_to_cost = no
 	is_designable = no
-
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	class = shipclass_observation_station
 	valid_target_aggressive_stance = no
 	required_component_set = "science_cloaking_components"
-
 	resources = {
 		category = station_observers
 		cost = {
@@ -2452,6 +2639,5 @@ observation_station = {
 			energy = 1
 		}
 	}
-
 	available_to_everyone = yes
 }

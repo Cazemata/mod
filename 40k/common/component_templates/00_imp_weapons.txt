@@ -1,7 +1,5 @@
 # Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
-
 #Updated Range on these
-
 # DEFAULT VALUES:
 # is_missile = no
 # is_beam = no
@@ -9,88 +7,106 @@
 # ####################
 # Macro
 # ####################
-
 # ## MACRO
 weapon_component_template = {
 	type = instant
-	
 	key = "SMALL_TERRANCANNON_1"
 	size = small
 	entity = "small_kinetic_gun_entity"
-	damage = { min = 6.0 max = 9.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 6
+		max = 9
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 10
 	range = 60
 	accuracy = 0.8
-	tracking = 0.60
+	tracking = 0.6
 	shield_damage = 1.3
 	armor_damage = 1.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -8
-	prerequisites = { "tech_macrocannons_1" }
+	prerequisites = {
+		"tech_macrocannons_1"
+	}
 	component_set = "TERRANCANNON_1"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "SMALL_TERRANCANNON_2"
 }
 
-
 weapon_component_template = {
 	type = instant
-	
 	key = "MEDIUM_TERRANCANNON_1"
 	size = medium
 	entity = "medium_kinetic_gun_entity"
-	damage = { min = 44.0 max = 55.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 44
+		max = 55
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 10
 	range = 40
 	accuracy = 0.8
-	tracking = 0.30
+	tracking = 0.3
 	shield_damage = 1.3
 	armor_damage = 1.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -40
-	prerequisites = { "tech_macrocannons_1"}
+	prerequisites = {
+		"tech_macrocannons_1"
+	}
 	component_set = "TERRANCANNON_1"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "MEDIUM_TERRANCANNON_2"
 }
 
-
 weapon_component_template = {
 	type = instant
-	
 	key = "LARGE_TERRANCANNON_1"
 	size = large
 	entity = "large_kinetic_gun_entity"
-	damage = { min = 100 max = 118.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 100
+		max = 118
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 10
 	range = 40
 	accuracy = 0.8
@@ -101,102 +117,126 @@ weapon_component_template = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -80
-	prerequisites = { "tech_macrocannons_1" }
+	prerequisites = {
+		"tech_macrocannons_1"
+	}
 	component_set = "TERRANCANNON_1"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "LARGE_TERRANCANNON_2"
 }
 
 # ## terrancannons 2
 weapon_component_template = {
 	type = instant
-	
 	key = "SMALL_TERRANCANNON_2"
 	size = small
 	entity = "small_kinetic_gun_entity"
-	damage = { min = 30.0 max = 50.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 30
+		max = 50
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 10
 	range = 40
 	accuracy = 0.85
-	tracking = 0.60
+	tracking = 0.6
 	shield_damage = 1.3
 	armor_damage = 1.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -25
-	prerequisites = { "tech_macrocannons_2" }
+	prerequisites = {
+		"tech_macrocannons_2"
+	}
 	component_set = "TERRANCANNON_2"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "SMALL_TERRANCANNON_3"
 }
 
 weapon_component_template = {
 	type = instant
-	
 	key = "MEDIUM_TERRANCANNON_2"
 	size = medium
 	entity = "medium_kinetic_gun_entity"
-	damage = { min = 56.0 max = 100.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 56
+		max = 100
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 20
 	range = 60
 	accuracy = 0.85
-	tracking = 0.30
+	tracking = 0.3
 	shield_damage = 1.3
 	armor_damage = 1.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -50
-	prerequisites = { "tech_macrocannons_2" }
+	prerequisites = {
+		"tech_macrocannons_2"
+	}
 	component_set = "TERRANCANNON_2"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "MEDIUM_TERRANCANNON_3"
 }
 
 weapon_component_template = {
 	type = instant
-	
 	key = "LARGE_TERRANCANNON_2"
 	size = large
 	entity = "large_kinetic_gun_entity"
-	damage = { min = 140.0 max = 200.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 140
+		max = 200
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 20
 	range = 60
 	accuracy = 0.85
@@ -207,367 +247,454 @@ weapon_component_template = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -100
-	prerequisites = { "tech_macrocannons_2" }
+	prerequisites = {
+		"tech_macrocannons_2"
+	}
 	component_set = "TERRANCANNON_2"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "LARGE_TERRANCANNON_3"
 }
 
 # ## terrancannons 3
 weapon_component_template = {
 	type = instant
-	
 	key = "SMALL_TERRANCANNON_3"
 	size = small
 	entity = "small_kinetic_gun_entity"
-	damage = { min = 40.0 max = 60.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 40
+		max = 60
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 10
 	range = 80
 	accuracy = 0.9
-	tracking = 0.80
+	tracking = 0.8
 	shield_damage = 1.3
 	armor_damage = 1.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -30
-	prerequisites = { "tech_macrocannons_3" }
+	prerequisites = {
+		"tech_macrocannons_3"
+	}
 	component_set = "TERRANCANNON_3"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "SMALL_TERRANCANNON_4"
 }
 
 weapon_component_template = {
 	type = instant
-	
 	key = "MEDIUM_TERRANCANNON_3"
 	size = medium
 	entity = "medium_kinetic_gun_entity"
-	damage = { min = 78.0 max = 150.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 78
+		max = 150
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 20
 	range = 80
 	accuracy = 0.9
-	tracking = 0.40
+	tracking = 0.4
 	shield_damage = 1.3
 	armor_damage = 1.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -60
-	prerequisites = { "tech_macrocannons_3" }
+	prerequisites = {
+		"tech_macrocannons_3"
+	}
 	component_set = "TERRANCANNON_3"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "MEDIUM_TERRANCANNON_4"
 }
 
 weapon_component_template = {
 	type = instant
-	
 	key = "LARGE_TERRANCANNON_3"
 	size = large
 	entity = "large_kinetic_gun_entity"
-	damage = { min = 180.0 max = 300.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 180
+		max = 300
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 30
 	range = 80
 	accuracy = 0.9
-	tracking = 0.10
+	tracking = 0.1
 	shield_damage = 1.3
 	armor_damage = 1.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -120
-	prerequisites = { "tech_macrocannons_3" }
+	prerequisites = {
+		"tech_macrocannons_3"
+	}
 	component_set = "TERRANCANNON_3"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "LARGE_TERRANCANNON_4"
 }
+
 # ## terrancannons 4
 weapon_component_template = {
 	type = instant
-	
 	key = "SMALL_TERRANCANNON_4"
 	size = small
 	entity = "small_kinetic_gun_entity"
-	damage = { min = 50.0 max = 80.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 50
+		max = 80
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 10
 	range = 100
 	accuracy = 0.9
-	tracking = 0.80
+	tracking = 0.8
 	shield_damage = 1.4
 	armor_damage = 1.4
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -30
-	prerequisites = { "tech_macrocannons_4" }
+	prerequisites = {
+		"tech_macrocannons_4"
+	}
 	component_set = "TERRANCANNON_4"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "SMALL_TERRANCANNON_5"
 }
 
 weapon_component_template = {
 	type = instant
-	
 	key = "MEDIUM_TERRANCANNON_4"
 	size = medium
 	entity = "medium_kinetic_gun_entity"
-	damage = { min = 98.0 max = 200.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 98
+		max = 200
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 30
 	range = 100
 	accuracy = 0.9
-	tracking = 0.40
+	tracking = 0.4
 	shield_damage = 1.4
 	armor_damage = 1.4
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -60
-	prerequisites = { "tech_macrocannons_4" }
+	prerequisites = {
+		"tech_macrocannons_4"
+	}
 	component_set = "TERRANCANNON_4"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "MEDIUM_TERRANCANNON_5"
 }
 
 weapon_component_template = {
 	type = instant
-	
 	key = "LARGE_TERRANCANNON_4"
 	size = large
 	entity = "large_kinetic_gun_entity"
-	damage = { min = 436.0 max = 568.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 436
+		max = 568
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 30
 	range = 100
 	accuracy = 0.9
-	tracking = 0.10
+	tracking = 0.1
 	shield_damage = 1.4
 	armor_damage = 1.4
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -120
-	prerequisites = { "tech_macrocannons_4" }
+	prerequisites = {
+		"tech_macrocannons_4"
+	}
 	component_set = "TERRANCANNON_4"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 	upgrades_to = "LARGE_TERRANCANNON_5"
 }
+
 # ## terrancannons 5
 weapon_component_template = {
 	type = instant
-	
 	key = "SMALL_TERRANCANNON_5"
 	size = small
 	entity = "small_kinetic_gun_entity"
-	damage = { min = 30.0 max = 50.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 30
+		max = 50
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 10
 	range = 120
 	accuracy = 0.9
-	tracking = 0.80
+	tracking = 0.8
 	shield_damage = 1.5
 	armor_damage = 1.5
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -30
-	prerequisites = { "tech_macrocannons_5" }
+	prerequisites = {
+		"tech_macrocannons_5"
+	}
 	component_set = "TERRANCANNON_5"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 }
 
 weapon_component_template = {
 	type = instant
-	
 	key = "MEDIUM_TERRANCANNON_5"
 	size = medium
 	entity = "medium_kinetic_gun_entity"
-	damage = { min = 130.0 max = 300.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 130
+		max = 300
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 30
 	range = 120
 	accuracy = 0.9
-	tracking = 0.40
+	tracking = 0.4
 	shield_damage = 1.5
 	armor_damage = 1.5
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -60
-	prerequisites = { "tech_macrocannons_5" }
+	prerequisites = {
+		"tech_macrocannons_5"
+	}
 	component_set = "TERRANCANNON_5"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 }
 
 weapon_component_template = {
 	type = instant
-	
 	key = "LARGE_TERRANCANNON_5"
 	size = large
 	entity = "large_kinetic_gun_entity"
-	damage = { min = 636.0 max = 768.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 636
+		max = 768
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 30
 	range = 120
 	accuracy = 0.9
-	tracking = 0.10
+	tracking = 0.1
 	shield_damage = 1.5
 	armor_damage = 1.5
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
 	icon = "GFX_MACROCANNONS"
 	icon_frame = 1
 	power = -120
-	prerequisites = { "tech_macrocannons_5" }
+	prerequisites = {
+		"tech_macrocannons_5"
+	}
 	component_set = "TERRANCANNON_5"
 	projectile_gfx = "adv_kinetic_artillery"
-	tags = { weapon_type_kinetic }
+	tags = {
+		weapon_type_kinetic
+	}
 }
+
 ####### Vanu Lasers #########
 weapon_component_template = {
 	key = "SMALL_VANULASER_1"
 	size = small
 	entity = "small_laser_gun_entity"
-	damage = { min = 13.0 max = 14.0 }
-	windup = { min = 1.5 max = 7.5 }
+	damage = {
+		min = 13
+		max = 14
+	}
+	windup = {
+		min = 1.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 50.0
+	range = 50
 	accuracy = 1
-	tracking = 0.70
+	tracking = 0.7
 	type = instant
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -15
-	prerequisites = { "tech_lance_batteries_1" }
+	prerequisites = {
+		"tech_lance_batteries_1"
+	}
 	component_set = "VANULASER_1"
 	projectile_gfx = "vanulaser_s"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "SMALL_VANULASER_2"
 }
 
@@ -575,33 +702,42 @@ weapon_component_template = {
 	key = "MEDIUM_VANULASER_1"
 	size = medium
 	entity = "medium_laser_gun_entity"
-	damage = { min = 25.0 max = 25.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 25
+		max = 25
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 60.0
+	range = 60
 	accuracy = 1
-	tracking = 0.30
+	tracking = 0.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -20
-	prerequisites = { "tech_lance_batteries_1" }
+	prerequisites = {
+		"tech_lance_batteries_1"
+	}
 	component_set = "VANULASER_1"
 	projectile_gfx = "vanulaser_m"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "MEDIUM_VANULASER_2"
 }
 
@@ -609,33 +745,42 @@ weapon_component_template = {
 	key = "LARGE_VANULASER_1"
 	size = large
 	entity = "large_laser_gun_entity"
-	damage = { min = 65.0 max = 65.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 65
+		max = 65
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 70.0
+	range = 70
 	accuracy = 1
 	tracking = 0.15
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -50
-	prerequisites = { "tech_lance_batteries_1" }
+	prerequisites = {
+		"tech_lance_batteries_1"
+	}
 	component_set = "VANULASER_1"
 	projectile_gfx = "vanulaser_l"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "LARGE_VANULASER_2"
 }
 
@@ -643,33 +788,42 @@ weapon_component_template = {
 	key = "SMALL_VANULASER_2"
 	size = small
 	entity = "small_laser_gun_entity"
-	damage = { min = 14.0 max = .15.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 14
+		max = 15
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 60.0
+	range = 60
 	accuracy = 1
-	tracking = 0.60
+	tracking = 0.6
 	type = instant
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -30
-	prerequisites = { "tech_lance_batteries_2" }
+	prerequisites = {
+		"tech_lance_batteries_2"
+	}
 	component_set = "VANULASER_2"
 	projectile_gfx = "vanulaser_s"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "SMALL_VANULASER_3"
 }
 
@@ -677,33 +831,42 @@ weapon_component_template = {
 	key = "MEDIUM_VANULASER_2"
 	size = medium
 	entity = "medium_laser_gun_entity"
-	damage = { min = 35.0 max = 35.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 35
+		max = 35
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 60.0
+	range = 60
 	accuracy = 1
-	tracking = 0.30
+	tracking = 0.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -50
-	prerequisites = { "tech_lance_batteries_2" }
+	prerequisites = {
+		"tech_lance_batteries_2"
+	}
 	component_set = "VANULASER_2"
 	projectile_gfx = "vanulaser_m"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "MEDIUM_VANULASER_3"
 }
 
@@ -711,33 +874,42 @@ weapon_component_template = {
 	key = "LARGE_VANULASER_2"
 	size = large
 	entity = "large_laser_gun_entity"
-	damage = { min = 75.0 max = 80.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 75
+		max = 80
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 70.0
+	range = 70
 	accuracy = 1
 	tracking = 0.05
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -80
-	prerequisites = { "tech_lance_batteries_2" }
+	prerequisites = {
+		"tech_lance_batteries_2"
+	}
 	component_set = "VANULASER_2"
 	projectile_gfx = "vanulaser_l"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "LARGE_VANULASER_3"
 }
 
@@ -745,33 +917,42 @@ weapon_component_template = {
 	key = "SMALL_VANULASER_3"
 	size = small
 	entity = "small_laser_gun_entity"
-	damage = { min = 16.0 max = 24.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 16
+		max = 24
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 50.0
+	range = 50
 	accuracy = 1
-	tracking = 0.60
+	tracking = 0.6
 	type = instant
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -30
-	prerequisites = { "tech_lance_batteries_3" }
+	prerequisites = {
+		"tech_lance_batteries_3"
+	}
 	component_set = "VANULASER_3"
 	projectile_gfx = "vanulaser_s"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "SMALL_VANULASER_4"
 }
 
@@ -779,33 +960,42 @@ weapon_component_template = {
 	key = "MEDIUM_VANULASER_3"
 	size = medium
 	entity = "medium_laser_gun_entity"
-	damage = { min = 45.0 max = 45.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 45
+		max = 45
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 60.0
+	range = 60
 	accuracy = 1
-	tracking = 0.30
+	tracking = 0.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -50
-	prerequisites = { "tech_lance_batteries_3" }
+	prerequisites = {
+		"tech_lance_batteries_3"
+	}
 	component_set = "VANULASER_3"
 	projectile_gfx = "vanulaser_m"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "MEDIUM_VANULASER_4"
 }
 
@@ -813,33 +1003,42 @@ weapon_component_template = {
 	key = "LARGE_VANULASER_3"
 	size = large
 	entity = "large_laser_gun_entity"
-	damage = { min = 115.0 max = 115.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 115
+		max = 115
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 9
-	range = 70.0
+	range = 70
 	accuracy = 1
 	tracking = 0.05
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -80
-	prerequisites = { "tech_lance_batteries_3" }
+	prerequisites = {
+		"tech_lance_batteries_3"
+	}
 	component_set = "VANULASER_3"
 	projectile_gfx = "vanulaser_l"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "LARGE_VANULASER_4"
 }
 
@@ -847,33 +1046,42 @@ weapon_component_template = {
 	key = "SMALL_VANULASER_4"
 	size = small
 	entity = "small_laser_gun_entity"
-	damage = { min = 120.0 max = 150.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 120
+		max = 150
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 50.0
+	range = 50
 	accuracy = 1
-	tracking = 0.60
+	tracking = 0.6
 	type = instant
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -30
-	prerequisites = { "tech_lance_batteries_4" }
+	prerequisites = {
+		"tech_lance_batteries_4"
+	}
 	component_set = "VANULASER_4"
 	projectile_gfx = "vanulaser_s"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "SMALL_VANULASER_5"
 }
 
@@ -881,33 +1089,42 @@ weapon_component_template = {
 	key = "MEDIUM_VANULASER_4"
 	size = medium
 	entity = "medium_laser_gun_entity"
-	damage = { min = 130.0 max = 180.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 130
+		max = 180
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 60.0
+	range = 60
 	accuracy = 1
-	tracking = 0.30
+	tracking = 0.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -50
-	prerequisites = { "tech_lance_batteries_4" }
+	prerequisites = {
+		"tech_lance_batteries_4"
+	}
 	component_set = "VANULASER_4"
 	projectile_gfx = "vanulaser_m"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "MEDIUM_VANULASER_5"
 }
 
@@ -915,33 +1132,42 @@ weapon_component_template = {
 	key = "LARGE_VANULASER_4"
 	size = large
 	entity = "large_laser_gun_entity"
-	damage = { min = 180.0 max = 200.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 180
+		max = 200
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 70.0
+	range = 70
 	accuracy = 1
 	tracking = 0.05
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -70
-	prerequisites = { "tech_lance_batteries_4" }
+	prerequisites = {
+		"tech_lance_batteries_4"
+	}
 	component_set = "VANULASER_4"
 	projectile_gfx = "vanulaser_l"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 	upgrades_to = "LARGE_VANULASER_5"
 }
 
@@ -949,99 +1175,126 @@ weapon_component_template = {
 	key = "SMALL_VANULASER_5"
 	size = small
 	entity = "small_laser_gun_entity"
-	damage = { min = 100.0 max = 150.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 100
+		max = 150
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 50.0
+	range = 50
 	accuracy = 1
-	tracking = 0.60
+	tracking = 0.6
 	type = instant
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -30
-	prerequisites = { "tech_lance_batteries_5" }
+	prerequisites = {
+		"tech_lance_batteries_5"
+	}
 	component_set = "VANULASER_5"
 	projectile_gfx = "vanulaser_s"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 }
 
 weapon_component_template = {
 	key = "MEDIUM_VANULASER_5"
 	size = medium
 	entity = "medium_laser_gun_entity"
-	damage = { min = 175.0 max = 200.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 175
+		max = 200
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 60.0
+	range = 60
 	accuracy = 1
-	tracking = 0.30
+	tracking = 0.3
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -60
-	prerequisites = { "tech_lance_batteries_5" }
+	prerequisites = {
+		"tech_lance_batteries_5"
+	}
 	component_set = "VANULASER_5"
 	projectile_gfx = "vanulaser_m"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 }
 
 weapon_component_template = {
 	key = "LARGE_VANULASER_5"
 	size = large
 	entity = "large_laser_gun_entity"
-	damage = { min = 280.0 max = 585.0 }
-	windup = { min = 2.5 max = 7.5 }
+	damage = {
+		min = 280
+		max = 585
+	}
+	windup = {
+		min = 2.5
+		max = 7.5
+	}
 	total_fire_time = 12
-	range = 70.0
+	range = 70
 	accuracy = 1
 	tracking = 0.05
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 13
-		}	
+		}
 		upkeep = {
 			energy = 0.13
 			alloys = 0.013
 		}
 	}
-	
-	shield_damage = 1.20
-	armor_damage = 1.20
+	shield_damage = 1.2
+	armor_damage = 1.2
 	type = instant
 	icon = "GFX_LANCE_BATTERIES"
 	icon_frame = 1
 	power = -80
-	prerequisites = { "tech_lance_batteries_5" }
+	prerequisites = {
+		"tech_lance_batteries_5"
+	}
 	component_set = "VANULASER_5"
 	projectile_gfx = "vanulaser_l"
-	tags = { weapon_type_energy }
+	tags = {
+		weapon_type_energy
+	}
 }
 
 ####### NCTITAN 1#########
@@ -1050,39 +1303,47 @@ weapon_component_template = {
 	size = extra_large
 	entity = "large_kinetic_gun_entity"
 	type = instant
-	
 	icon = "GFX_NOVA_CANNON"
 	icon_frame = 1
-	
-	firing_arc = 25.0
-	min_range = 10.0
+	firing_arc = 25
+	min_range = 10
 	static_rotation = yes
 	use_ship_kill_target = no
-	
 	power = -160
-	damage = { min = 880.0 max = 1104.0 }
+	damage = {
+		min = 880
+		max = 1104
+	}
 	range = 150
-	windup = { min = 1 max = 9 }
-	total_fire_time = 35			# Cooldown
-	accuracy = 0.80
+	windup = {
+		min = 1
+		max = 9
+	}
+	total_fire_time = 35	# Cooldown
+	accuracy = 0.8
 	tracking = 0
-	hull_damage = 1.10
+	hull_damage = 1.1
 	armor_damage = 0.65
 	shield_penetration = 0.75
-	
-	prerequisites = { "tech_novacannon_1" }
+	prerequisites = {
+		"tech_novacannon_1"
+	}
 	component_set = "NCTITAN_1"
 	projectile_gfx = "nctitan_1"
-	tags = { weapon_type_kinetic }
-	ai_tags = { weapon_role_artillery }
+	tags = {
+		weapon_type_kinetic
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
 	ai_tag_weight = 0
 	upgrades_to = "EXTRA_LARGE_NCTITAN_2"
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = @xl_t5_cost
-			energy = 20.50
-		}		
+			energy = 20.5
+		}
 		upkeep = {
 			energy = @xl_t5_upkeep_energy
 			alloys = @xl_t5_upkeep_alloys
@@ -1096,39 +1357,47 @@ weapon_component_template = {
 	size = extra_large
 	entity = "large_kinetic_gun_entity"
 	type = instant
-	
 	icon = "GFX_NOVA_CANNON"
 	icon_frame = 1
-	
-	firing_arc = 25.0
-	min_range = 10.0
+	firing_arc = 25
+	min_range = 10
 	static_rotation = yes
 	use_ship_kill_target = no
-	
 	power = -320
-	damage = { min = 1480.0 max = 1804.0 }
+	damage = {
+		min = 1480
+		max = 1804
+	}
 	range = 150
-	windup = { min = 1 max = 9 }
-	total_fire_time = 35			# Cooldown
-	accuracy = 0.80
+	windup = {
+		min = 1
+		max = 9
+	}
+	total_fire_time = 35	# Cooldown
+	accuracy = 0.8
 	tracking = 0
-	hull_damage = 1.20
+	hull_damage = 1.2
 	armor_damage = 0.75
 	shield_penetration = 0.85
-	
-	prerequisites = { "tech_novacannon_2"  }
+	prerequisites = {
+		"tech_novacannon_2"
+	}
 	component_set = "NCTITAN_2"
 	projectile_gfx = "nctitan_1"
-	tags = { weapon_type_kinetic }
-	ai_tags = { weapon_role_artillery }
+	tags = {
+		weapon_type_kinetic
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
 	ai_tag_weight = 0
 	upgrades_to = "EXTRA_LARGE_NCTITAN_3"
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = @xl_t5_cost
-			energy = 20.50
-		}		
+			energy = 20.5
+		}
 		upkeep = {
 			energy = @xl_t5_upkeep_energy
 			alloys = @xl_t5_upkeep_alloys
@@ -1142,38 +1411,46 @@ weapon_component_template = {
 	size = extra_large
 	entity = "large_kinetic_gun_entity"
 	type = instant
-	
 	icon = "GFX_NOVA_CANNON"
 	icon_frame = 1
-	
-	firing_arc = 25.0
-	min_range = 10.0
+	firing_arc = 25
+	min_range = 10
 	static_rotation = yes
 	use_ship_kill_target = no
-	
 	power = -640
-	damage = { min = 2680.0 max = 3804.0 }
+	damage = {
+		min = 2680
+		max = 3804
+	}
 	range = 150
-	windup = { min = 1 max = 9 }
-	total_fire_time = 35			# Cooldown
-	accuracy = 0.80
+	windup = {
+		min = 1
+		max = 9
+	}
+	total_fire_time = 35	# Cooldown
+	accuracy = 0.8
 	tracking = 0
-	hull_damage = 1.30
+	hull_damage = 1.3
 	armor_damage = 0.85
 	shield_penetration = 0.95
-	
-	prerequisites = { "tech_novacannon_3"  }
+	prerequisites = {
+		"tech_novacannon_3"
+	}
 	component_set = "NCTITAN_3"
 	projectile_gfx = "nctitan_1"
-	tags = { weapon_type_kinetic }
-	ai_tags = { weapon_role_artillery }
+	tags = {
+		weapon_type_kinetic
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
 	ai_tag_weight = 0
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = @xl_t5_cost
-			energy = 20.50
-		}		
+			energy = 20.5
+		}
 		upkeep = {
 			energy = @xl_t5_upkeep_energy
 			alloys = @xl_t5_upkeep_alloys

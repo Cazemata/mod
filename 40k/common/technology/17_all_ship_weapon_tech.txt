@@ -7,11 +7,12 @@ tech_macrocannons_1 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight2
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -23,12 +24,15 @@ tech_macrocannons_2 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { materials }
-	prerequisites = { "tech_macrocannons_1" }
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_macrocannons_1"
+	}
 	weight = @tier2weight1
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -40,14 +44,18 @@ tech_macrocannons_3 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { materials }
-	prerequisites = { "tech_macrocannons_2" }
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_macrocannons_2"
+	}
 	weight = @tier2weight1
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
+
 tech_macrocannons_4 = {
 	cost = 10000
 	area = engineering
@@ -56,12 +64,15 @@ tech_macrocannons_4 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { materials }
-	prerequisites = { "tech_macrocannons_3" }
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_macrocannons_3"
+	}
 	weight = @tier2weight1
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -73,12 +84,15 @@ tech_macrocannons_5 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { materials }
-	prerequisites = { "tech_macrocannons_4" }
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_macrocannons_4"
+	}
 	weight = @tier2weight3
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -91,11 +105,12 @@ tech_lance_batteries_1 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { particles }
+	category = {
+		particles
+	}
 	weight = @tier2weight2
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -107,15 +122,17 @@ tech_lance_batteries_2 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { particles }
-	prerequisites = { "tech_lance_batteries_1" }
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_lance_batteries_1"
+	}
 	weight = @tier3weight2
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
-
 
 tech_lance_batteries_3 = {
 	cost = 6000
@@ -125,15 +142,17 @@ tech_lance_batteries_3 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { particles }
-	prerequisites = { "tech_lance_batteries_2" }
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_lance_batteries_2"
+	}
 	weight = @tier3weight2
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
-
 
 tech_lance_batteries_4 = {
 	cost = 12500
@@ -143,12 +162,15 @@ tech_lance_batteries_4 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { particles }
-	prerequisites = { "tech_lance_batteries_3" }
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_lance_batteries_3"
+	}
 	weight = @tier4weight1
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -160,12 +182,15 @@ tech_lance_batteries_5 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { particles }
-	prerequisites = { "tech_lance_batteries_4" }
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_lance_batteries_4"
+	}
 	weight = @tier5weight1
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -178,11 +203,12 @@ tech_novacannon_1 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { materials }
-	weight = @tier3weight1
-
+	category = {
+		materials
+	}
+	weight = @tier4weight1
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -194,12 +220,15 @@ tech_novacannon_2 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { materials }
-	prerequisites = { "tech_novacannon_1" }
-	weight = @tier4weight4
-
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_novacannon_1"
+	}
+	weight = @tier3weight1
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }
 
@@ -211,11 +240,14 @@ tech_novacannon_3 = {
 	is_dangerous = no
 	is_reverse_engineerable = no
 	ai_update_type = military
-	category = { materials }
-	prerequisites = { "tech_novacannon_2" }
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_novacannon_2"
+	}
 	weight = @tier5weight3
-
 	potential = {
-		has_country_flag = imperium 
+		has_country_flag = imperium
 	}
 }

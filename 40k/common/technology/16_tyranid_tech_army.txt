@@ -2,38 +2,38 @@ tech_warrior_vanguard = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_TYRANID_WARRIOR_TITLE"
 			desc = "TECH_UNLOCK_TYRANID_WARRIOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -41,38 +41,38 @@ tech_acid_splatter = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_TYRANID_WARRIOR_TITLE"
 			desc = "TECH_UNLOCK_TYRANID_WARRIOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -80,38 +80,38 @@ tech_adrenal_glands = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HORMAGAUNT_TITLE"
 			desc = "TECH_UNLOCK_HORMAGAUNT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -119,38 +119,38 @@ tech_adrenal_rush = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_GENESTEALER_TITLE"
 			desc = "TECH_UNLOCK_GENESTEALER_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -158,38 +158,38 @@ tech_barbed_strangler = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HIERODULE_TITLE"
 			desc = "TECH_UNLOCK_HIERODULE_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -197,38 +197,38 @@ tech_bioplasma = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HIVE_TYRANT_TITLE"
 			desc = "TECH_UNLOCK_HIVE_TYRANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -236,38 +236,38 @@ tech_bioplasma_armor = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HARRIDAN_TITLE"
 			desc = "TECH_UNLOCK_HARRIDAN_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -275,38 +275,38 @@ tech_blade_fury = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_SWARMLORD_TITLE"
 			desc = "TECH_UNLOCK_SWARMLORD_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -314,38 +314,38 @@ tech_bonded_exoskeleton = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_VICIATOR_TITLE"
 			desc = "TECH_UNLOCK_VICIATOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -353,38 +353,38 @@ tech_burrow_strike = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_RAVENER_BROOD_TITLE"
 			desc = "TECH_UNLOCK_RAVENER_BROOD_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -392,38 +392,38 @@ tech_burrow_trap = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_RAVENER_BROOD_TITLE"
 			desc = "TECH_UNLOCK_RAVENER_BROOD_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -431,38 +431,38 @@ tech_corrosive_claws = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_TYRANID_WARRIOR_TITLE"
 			desc = "TECH_UNLOCK_TYRANID_WARRIOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -470,38 +470,38 @@ tech_crippling_poison = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_TERMAGANT_TITLE"
 			desc = "TECH_UNLOCK_TERMAGANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -509,38 +509,38 @@ tech_crushing_claws = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_VICIATOR_TITLE"
 			desc = "TECH_UNLOCK_VICIATOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -548,38 +548,38 @@ tech_devourer = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_SWARMLORD_TITLE"
 			desc = "TECH_UNLOCK_SWARMLORD_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -587,38 +587,38 @@ tech_dominatrix_crippling_talon = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_DOMINATRIX_TITLE"
 			desc = "TECH_UNLOCK_DOMINATRIX_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -626,38 +626,38 @@ tech_elite_jump = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_LICTOR_TITLE"
 			desc = "TECH_UNLOCK_LICTOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -665,38 +665,38 @@ tech_enhanced_muscle_coil = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ZOANTHROPE_TITLE"
 			desc = "TECH_UNLOCK_ZOANTHROPE_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -704,38 +704,38 @@ tech_extended_carapace = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_DOMINATRIX_TITLE"
 			desc = "TECH_UNLOCK_DOMINATRIX_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -743,38 +743,38 @@ tech_feeder_tendrils = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HIEROPHANT_TITLE"
 			desc = "TECH_UNLOCK_HIEROPHANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -782,38 +782,38 @@ tech_flesh_hook = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_LICTOR_TITLE"
 			desc = "TECH_UNLOCK_LICTOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -821,38 +821,38 @@ tech_genestealer_rending_claws = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_GENESTEALER_TITLE"
 			desc = "TECH_UNLOCK_GENESTEALER_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -860,38 +860,38 @@ tech_hive_venom_cannon = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HIVE_TYRANT_TITLE"
 			desc = "TECH_UNLOCK_HIVE_TYRANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -899,38 +899,38 @@ tech_leech_essence = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_SWARMLORD_TITLE"
 			desc = "TECH_UNLOCK_SWARMLORD_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -938,38 +938,38 @@ tech_lictor = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_LICTOR_TITLE"
 			desc = "TECH_UNLOCK_LICTOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -977,38 +977,38 @@ tech_organic_wings = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HARRIDAN_TITLE"
 			desc = "TECH_UNLOCK_HARRIDAN_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1016,38 +1016,38 @@ tech_psychic_scream = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ZOANTHROPE_TITLE"
 			desc = "TECH_UNLOCK_ZOANTHROPE_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1055,38 +1055,38 @@ tech_revive_carapace = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HIERODULE_TITLE"
 			desc = "TECH_UNLOCK_HIERODULE_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1094,38 +1094,38 @@ tech_scything_talons = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HORMAGAUNT_TITLE"
 			desc = "TECH_UNLOCK_HORMAGAUNT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1133,33 +1133,35 @@ tech_spore_detonation = {
 	cost = @tier2cost1
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_spore_cysts" }
-	
+	prerequisites = {
+		"tech_spore_cysts"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1167,38 +1169,38 @@ tech_strong_exoskeleton = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HIEROPHANT_TITLE"
 			desc = "TECH_UNLOCK_HIEROPHANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1206,38 +1208,38 @@ tech_toxic_miasma = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HIVE_TYRANT_TITLE"
 			desc = "TECH_UNLOCK_HIVE_TYRANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1245,38 +1247,38 @@ tech_toxin_sac = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_TERMAGANT_TITLE"
 			desc = "TECH_UNLOCK_TERMAGANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1284,37 +1286,37 @@ tech_warp_field = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ZOANTHROPE_TITLE"
 			desc = "TECH_UNLOCK_ZOANTHROPE_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }

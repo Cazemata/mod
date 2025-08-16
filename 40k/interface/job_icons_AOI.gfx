@@ -1,100 +1,100 @@
 spriteTypes = {
-    spriteType = {
-        name = "GFX_job_necron_warrior"
-        texturefile = "gfx/interface/icons/jobs/job_miner.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_canoptek"
-        texturefile = "gfx/interface/icons/jobs/job_cryptek.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_techboy"
-        texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_yeller"
-        texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_muzboy"
-        texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_sumboy"
-        texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_mekboy"
-        texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_arch_magos"
-        texturefile = "gfx/interface/icons/jobs/job_arch_magos.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_magos"
-        texturefile = "gfx/interface/icons/jobs/job_magos.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_logis"
-        texturefile = "gfx/interface/icons/jobs/job_logis.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_enginseers"
-        texturefile = "gfx/interface/icons/jobs/job_enginseers.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_servitor"
-        texturefile = "gfx/interface/icons/jobs/job_servitor.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_iom_skitarii"
-        texturefile = "gfx/interface/icons/jobs/job_iom_skitarii.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_breeder_slave"
-        texturefile = "gfx/interface/icons/jobs/job_miner.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_electronics_manufacturer_tau"
-        texturefile = "gfx/interface/icons/jobs/job_electronics_manufacturer_tau.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
-    spriteType = {
-        name = "GFX_job_tyranid_guardian"
-        texturefile = "gfx/interface/icons/jobs/job_miner.dds"
-        noOfFrames = 1
-        effectFile = "gfx/FX/button.fx"
-    }
+	spriteType = {
+		name = "GFX_job_necron_warrior"
+		texturefile = "gfx/interface/icons/jobs/job_miner.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_canoptek"
+		texturefile = "gfx/interface/icons/jobs/job_cryptek.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_techboy"
+		texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_yeller"
+		texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_muzboy"
+		texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_sumboy"
+		texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_mekboy"
+		texturefile = "gfx/interface/icons/jobs/job_ork_boy.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_arch_magos"
+		texturefile = "gfx/interface/icons/jobs/job_arch_magos.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_magos"
+		texturefile = "gfx/interface/icons/jobs/job_magos.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_logis"
+		texturefile = "gfx/interface/icons/jobs/job_logis.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_enginseers"
+		texturefile = "gfx/interface/icons/jobs/job_enginseers.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_servitor"
+		texturefile = "gfx/interface/icons/jobs/job_servitor.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_iom_skitarii"
+		texturefile = "gfx/interface/icons/jobs/job_iom_skitarii.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_breeder_slave"
+		texturefile = "gfx/interface/icons/jobs/job_miner.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_electronics_manufacturer_tau"
+		texturefile = "gfx/interface/icons/jobs/job_electronics_manufacturer_tau.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
+	spriteType = {
+		name = "GFX_job_tyranid_guardian"
+		texturefile = "gfx/interface/icons/jobs/job_miner.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/button.fx"
+	}
 	spriteType = {
 		name = "GFX_promethium_job"
 		texturefile = "gfx/interface/icons/jobs/job_promethium_miner.dds"
@@ -115,11 +115,11 @@ spriteTypes = {
 		name = "GFX_enginseers_job"
 		texturefile = "gfx/interface/icons/jobs/job_enginseers.dds"
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_logis_job"
 		texturefile = "gfx/interface/icons/jobs/job_logis.dds"
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_servitor_job"
 		texturefile = "gfx/interface/icons/jobs/job_servitor.dds"
 	}
@@ -131,5 +131,4 @@ spriteTypes = {
 		name = "GFX_magos_job"
 		texturefile = "gfx/interface/icons/jobs/job_magos.dds"
 	}
-		
 }

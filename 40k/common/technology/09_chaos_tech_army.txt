@@ -2,31 +2,30 @@ tech_chaos_marines = {
 	cost = @tier1cost2
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -34,82 +33,81 @@ tech_war_beasts = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_BLOODCRUSHER_TITLE"
 			desc = "TECH_UNLOCK_BLOODCRUSHER_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
-
 
 tech_autocannon = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HAVOCS_TITLE"
 			desc = "TECH_UNLOCK_HAVOCS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -117,40 +115,39 @@ tech_battle_mutations = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_CHAOS_SPAWN_TITLE"
 			desc = "TECH_UNLOCK_CHAOS_SPAWN_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -158,40 +155,41 @@ tech_blastmaster = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NOISE_MARINES_TITLE"
 			desc = "TECH_UNLOCK_NOISE_MARINES_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -199,33 +197,35 @@ tech_blighted_corrupt_bolter = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -233,40 +233,39 @@ tech_chaos_spawn = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_CHAOS_SPAWN_TITLE"
 			desc = "TECH_UNLOCK_CHAOS_SPAWN_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -274,40 +273,41 @@ tech_combi_flamer = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NOISE_MARINES_TITLE"
 			desc = "TECH_UNLOCK_NOISE_MARINES_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -315,33 +315,35 @@ tech_corrupting_titans = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -349,54 +351,51 @@ tech_daemon_army = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_BLOODCRUSHER_TITLE"
 			desc = "TECH_UNLOCK_BLOODCRUSHER_DESC"
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_BLOODLETTERS_TITLE"
 			desc = "TECH_UNLOCK_BLOODLETTERS_DESC"
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_GREAT_UNCLEAR_ONE_TITLE"
 			desc = "TECH_UNLOCK_GREAT_UNCLEAR_ONE_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -404,40 +403,39 @@ tech_daemon_commander = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_BLOODLETTERS_TITLE"
 			desc = "TECH_UNLOCK_BLOODLETTERS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -445,47 +443,45 @@ tech_swarm_of_flies = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NURGLINGS_TITLE"
 			desc = "TECH_UNLOCK_NURGLINGS_DESC"
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_GREAT_UNCLEAR_ONE_TITLE"
 			desc = "TECH_UNLOCK_GREAT_UNCLEAR_ONE_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -493,40 +489,39 @@ tech_defilers_visage = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_DEFILERS_TITLE"
 			desc = "TECH_UNLOCK_DEFILERS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -534,40 +529,41 @@ tech_dread_missile_launcher = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_CHAOS_DREADNAUGHT_TITLE"
 			desc = "TECH_UNLOCK_CHAOS_DREADNAUGHT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -575,40 +571,41 @@ tech_dreadnought_double_claw = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_CHAOS_DREADNAUGHT_TITLE"
 			desc = "TECH_UNLOCK_CHAOS_DREADNAUGHT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -616,40 +613,39 @@ tech_great_summoning = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_GREAT_UNCLEAR_ONE_TITLE"
 			desc = "TECH_UNLOCK_GREAT_UNCLEAR_ONE_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -657,40 +653,41 @@ tech_grenade_launchers = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HAVOCS_TITLE"
 			desc = "TECH_UNLOCK_HAVOCS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -698,40 +695,41 @@ tech_inferno_armor = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HAVOCS_TITLE"
 			desc = "TECH_UNLOCK_HAVOCS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -739,40 +737,41 @@ tech_lascannon = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_HAVOCS_TITLE"
 			desc = "TECH_UNLOCK_HAVOCS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -780,40 +779,41 @@ tech_lord_iron_halo = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_DEFILERS_TITLE"
 			desc = "TECH_UNLOCK_DEFILERS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -821,47 +821,45 @@ tech_vomit = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NURGLINGS_TITLE"
 			desc = "TECH_UNLOCK_NURGLINGS_DESC"
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_GREAT_UNCLEAR_ONE_TITLE"
 			desc = "TECH_UNLOCK_GREAT_UNCLEAR_ONE_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -869,40 +867,39 @@ tech_nurglings = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NURGLINGS_TITLE"
 			desc = "TECH_UNLOCK_NURGLINGS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -910,40 +907,41 @@ tech_pestilent_spewer = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_PLAGUE_MARINES_TITLE"
 			desc = "TECH_UNLOCK_PLAGUE_MARINES_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -951,33 +949,33 @@ tech_plague_zombies = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -985,40 +983,41 @@ tech_plaguemarine_armor = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_PLAGUE_MARINES_TITLE"
 			desc = "TECH_UNLOCK_PLAGUE_MARINES_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1026,40 +1025,41 @@ tech_plaguemarine_plague_sword = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_PLAGUE_MARINES_TITLE"
 			desc = "TECH_UNLOCK_PLAGUE_MARINES_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1067,40 +1067,41 @@ tech_power_fist_nurgle = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_PLAGUE_MARINES_TITLE"
 			desc = "TECH_UNLOCK_PLAGUE_MARINES_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1108,40 +1109,41 @@ tech_predator_lascannons = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_CHAOS_PREDATOR_TITLE"
 			desc = "TECH_UNLOCK_CHAOS_PREDATOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1149,40 +1151,39 @@ tech_predator_mark_of_khorne = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_CHAOS_PREDATOR_TITLE"
 			desc = "TECH_UNLOCK_CHAOS_PREDATOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1190,40 +1191,39 @@ tech_predator_mark_of_nurgle = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_chaos"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_CHAOS_PREDATOR_TITLE"
 			desc = "TECH_UNLOCK_CHAOS_PREDATOR_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1231,40 +1231,41 @@ tech_robes_of_torment = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NOISE_MARINES_TITLE"
 			desc = "TECH_UNLOCK_NOISE_MARINES_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1272,40 +1273,41 @@ tech_sword_of_flame = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_BLOODLETTERS_TITLE"
 			desc = "TECH_UNLOCK_BLOODLETTERS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1313,40 +1315,41 @@ tech_traitor_sidearm = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_NOISE_MARINES_TITLE"
 			desc = "TECH_UNLOCK_NOISE_MARINES_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1354,46 +1357,46 @@ tech_turret_lascannons = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier2weight3
-
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_DEFILERS_TITLE"
 			desc = "TECH_UNLOCK_DEFILERS_DESC"
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_CHAOS_DREADNAUGHT_TITLE"
 			desc = "TECH_UNLOCK_CHAOS_DREADNAUGHT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }

@@ -1,69 +1,37 @@
-tech_gene_seed_purifications = {
-	cost = @tier1cost1
-	area = society
-	tier = 1
-	category = { biology }
-	weight = @tier1weight3
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
-			}
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
-			}
-		}
-	}
-	
-	potential = {
-		has_country_flag = chaos_empire 
-	}
-}
-
 tech_abbadons_revenge = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		starbase_buildings_cost_mult = -0.1
 		starbase_modules_cost_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -71,35 +39,35 @@ tech_allure_of_slaanesh = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_growth_speed = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -107,35 +75,35 @@ tech_aspiring_champion = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_starting_experience_add = 100
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -143,35 +111,35 @@ tech_aura_of_acquiescence = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_insult_efficiency = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -179,36 +147,36 @@ tech_bedlam_staves = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_anomaly_generation_chance_mult = 0.3
 		ship_anomaly_research_speed_mult = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -216,35 +184,35 @@ tech_bilious_discharge = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { new_worlds }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_colony_development_speed_mult = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -252,36 +220,36 @@ tech_blood_maul = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_morale_mult = 0.05
 		army_defense_morale_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials				# for the *industry* techs
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -289,36 +257,36 @@ tech_butcher_nails = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_morale_mult = 0.2
 		army_disengage_chance_mult = -0.5
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -326,36 +294,36 @@ tech_cacophony = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		biological_pop_happiness = 0.1
 		army_morale_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -363,35 +331,35 @@ tech_chaos_aura = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		leader_skill_levels = 2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -399,37 +367,38 @@ tech_chaos_champion = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_aspiring_champion" }
-	
+	prerequisites = {
+		"tech_aspiring_champion"
+	}
 	modifier = {
 		army_starting_experience_add = 200
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -437,35 +406,35 @@ tech_chaos_pact = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_crime_mult = -0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -473,35 +442,35 @@ tech_chaos_shrines = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_ethic_spiritualist_attraction_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -509,35 +478,35 @@ tech_collars_of_khorne = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -545,35 +514,33 @@ tech_corrupted_bombardment = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		voidcraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_orbital_bombardment_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -581,31 +548,32 @@ tech_corrupting_project = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -613,35 +581,35 @@ tech_cultic_standards = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_orbit_upkeep_mult = -0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -649,36 +617,36 @@ tech_daemon_knowledge = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		all_technology_research_speed = 0.05
 		num_tech_alternatives_add = 1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -686,38 +654,39 @@ tech_daemon_pit = {
 	cost = @tier3cost1
 	area = society
 	tier = 3
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_ritual_terror" }
-	
+	prerequisites = {
+		"tech_ritual_terror"
+	}
 	modifier = {
 		pop_cat_slave_political_power = -0.15
 		pop_cat_slave_happiness = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -725,35 +694,35 @@ tech_deadly_plague = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		tradition_cost_empire_size_mult = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -761,35 +730,35 @@ tech_destructive_strike = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		force_disparity_fire_rate_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -797,35 +766,35 @@ tech_doomblast = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { particles }
+	category = {
+		particles
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_shield_penetration_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_particles				# for scanning / full_auto
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_particles				# for scanning / full_auto
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -833,35 +802,35 @@ tech_ecstatic_duplication = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		leader_upkeep_empire_size_mult = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -869,35 +838,35 @@ tech_empyreal_abyss = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_weapon_range_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -905,36 +874,36 @@ tech_eye_of_tzeentch = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_edict_cap_add = 1
 		edicts_cost_mult = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -942,35 +911,35 @@ tech_face_of_horror = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_morale_damage_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -978,35 +947,35 @@ tech_gaze_of_slaanesh = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		diplomacy_upkeep_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1014,36 +983,36 @@ tech_grenade_barrage = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.01
 		army_defense_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1051,36 +1020,36 @@ tech_hand_of_tzeentch = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.05
 		army_disengage_chance_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1088,35 +1057,35 @@ tech_immolate = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_resettlement_cost_mult = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1124,35 +1093,35 @@ tech_inferning = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_war_exhaustion_mult = -0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1160,35 +1129,35 @@ tech_khorne_rage = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_collateral_damage_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1196,35 +1165,35 @@ tech_kill_the_weak = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_housing_usage_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1232,36 +1201,36 @@ tech_lifetaker = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_health_mult = 0.1
 		army_defense_health_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1269,35 +1238,35 @@ tech_lorgar_book = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
-	weight = @tier1weight3
-	
-	modifier = {
-		planet_priests_produces_mult = 0.30
+	category = {
+		statecraft
 	}
-	
+	weight = @tier1weight3
+	modifier = {
+		planet_priests_produces_mult = 0.3
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1305,35 +1274,35 @@ tech_loyal_agents = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		edict_length_mult = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1341,35 +1310,35 @@ tech_malignant_blindness = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		empire_size_pops_mult = -0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1377,36 +1346,36 @@ tech_mass_slaughter = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_jobs_slave_produces_mult = 0.05
 		pop_citizen_happiness = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1414,35 +1383,35 @@ tech_mass_warp = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
-	weight = @tier1weight3
-	
-	modifier = {
-		station_gatherers_produces_mult = 0.30
+	category = {
+		industry
 	}
-	
+	weight = @tier1weight3
+	modifier = {
+		station_gatherers_produces_mult = 0.3
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1450,35 +1419,35 @@ tech_massive_intellect = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		leader_skill_levels = 1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1486,35 +1455,35 @@ tech_mine_pack = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_defense_damage_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1522,35 +1491,35 @@ tech_missile_barrage = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1558,35 +1527,35 @@ tech_needle_of_desire = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		colony_start_num_pops_add = 3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1594,35 +1563,35 @@ tech_noxious_cloud = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { new_worlds }
+	category = {
+		new_worlds
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		terraforming_cost_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_new_worlds
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_new_worlds
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1630,35 +1599,35 @@ tech_nurgle_rot = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_farmers_food_produces_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1666,35 +1635,35 @@ tech_nurgling_infestation = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_armor_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1702,35 +1671,35 @@ tech_progeroid_cloning = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_army_build_speed_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1738,35 +1707,35 @@ tech_omnivore = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_pops_food_upkeep_mult = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1774,35 +1743,35 @@ tech_one_thousand_and_one_senses = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		biological_pop_happiness = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1810,35 +1779,35 @@ tech_pandemic_staves = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1846,35 +1815,35 @@ tech_pleasure_implants = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_citizen_happiness = 0.5
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1882,35 +1851,35 @@ tech_praise_of_khorne = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1918,35 +1887,35 @@ tech_primitive_surgery = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_growth_speed = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1954,36 +1923,36 @@ tech_purity_of_aggression = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_morale_mult = 0.2
 		army_defense_morale_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -1991,36 +1960,34 @@ tech_repairing = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { voidcraft }
+	category = {
+		voidcraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		starbase_buildings_cost_mult = -0.1
 		starbase_modules_cost_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2028,36 +1995,36 @@ tech_research_apothecary = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		all_technology_research_speed = 0.05
 		num_tech_alternatives_add = 1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2065,35 +2032,35 @@ tech_rites_of_construction = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_building_build_speed_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2101,36 +2068,36 @@ tech_ritual_sacrifices = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_citizen_happiness = 0.15
 		slave_market_cost_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2138,38 +2105,39 @@ tech_ritual_terror = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_ritual_sacrifices" }
-	
+	prerequisites = {
+		"tech_ritual_sacrifices"
+	}
 	modifier = {
 		country_pop_enslaved_mult = 0.2
 		pop_category_slave_upkeep_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2177,35 +2145,35 @@ tech_rod_of_torment = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_jobs_slave_produces_mult = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2213,35 +2181,35 @@ tech_scroll_of_blood = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_shield_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2249,31 +2217,32 @@ tech_shrine_khorne = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2281,31 +2250,32 @@ tech_shrine_nurgle = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2313,31 +2283,32 @@ tech_shrine_slaanesh = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2345,31 +2316,32 @@ tech_shrine_tzeentch = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2377,35 +2349,35 @@ tech_skulls_collection = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_ethic_militarist_attraction_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2413,35 +2385,35 @@ tech_sorceror_rift = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_evasion_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2449,35 +2421,35 @@ tech_speed_boost = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { particles }
+	category = {
+		particles
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_interstellar_speed_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_particles
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_particles
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2485,36 +2457,36 @@ tech_staff_lava_line = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_health_mult = 0.1
 		army_defense_health_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2522,35 +2494,35 @@ tech_subjugate = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_admin_cap_add = 150
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2558,35 +2530,35 @@ tech_talisman_of_burning_blood = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_environment_tolerance = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2594,35 +2566,35 @@ tech_teleporting = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_landing_time_mult = -0.3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2630,35 +2602,35 @@ tech_trail_of_slime = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_defense_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2666,35 +2638,35 @@ tech_tzeentch_destiny = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		all_technology_research_speed = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2702,35 +2674,35 @@ tech_unholy_stench = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_jobs_produces_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2738,35 +2710,35 @@ tech_upg_eternal_war = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_weapon_damage = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2774,35 +2746,35 @@ tech_venom_stings = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2810,36 +2782,36 @@ tech_warp_alloys = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_armor_mult = 0.1
 		country_ship_upgrade_cost_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2847,35 +2819,35 @@ tech_warp_blade = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { engineering }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_defense_damage_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2883,35 +2855,35 @@ tech_warp_energy = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
-	weight = @tier1weight3
-	
-	modifier = {
-		planet_jobs_energy_produces_mult = 0.10
+	category = {
+		industry
 	}
-	
+	weight = @tier1weight3
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.1
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2919,36 +2891,36 @@ tech_warp_laser = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { particles }
+	category = {
+		particles
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		category_particles_research_speed_mult = 0.25
 		planet_army_build_speed_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_particles				# for the *industry* techs
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_particles				# for the *industry* techs
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2956,35 +2928,35 @@ tech_warp_rift = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_shield_penetration_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -2992,35 +2964,35 @@ tech_warp_smith = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { particles }
-	weight = @tier1weight3
-	
-	modifier = {
-		planet_metallurgists_produces_mult = 0.10
+	category = {
+		particles
 	}
-	
+	weight = @tier1weight3
+	modifier = {
+		planet_metallurgists_produces_mult = 0.1
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_particles
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_particles
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -3028,35 +3000,35 @@ tech_warp_travel = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { particles }
+	category = {
+		particles
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_interstellar_speed_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_particles
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_particles
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -3064,35 +3036,35 @@ tech_warpfire = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_morale_damage_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_statecraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -3100,35 +3072,35 @@ tech_mark_of_chaos = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_jobs_produces_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -3136,35 +3108,35 @@ tech_mark_of_khorne = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_army_build_speed_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -3172,35 +3144,35 @@ tech_mark_of_nurgle = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_farmers_food_produces_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }
 
@@ -3208,34 +3180,34 @@ tech_mark_of_tzeentch = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { society }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_researchers_produces_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				# removed deprecated leader trait
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = chaos_empire 
+		has_country_flag = chaos_empire
 	}
 }

@@ -1,16 +1,19 @@
 decision_set_guard_origin = {
-        icon = "decision_martial_law"
-        cooldown = 30
-        sound = "ui_decision"
-        allowed = {
-            is_colony = yes
-            owner = { has_country_flag = imperium }
-        }
-        effect = {
-            planet_event = { id = imp_army_home_selector.1 }
-        }
-        ai_weight = {
-            weight = 0
-        }
-    }
+	icon = "decision_martial_law"
+	cooldown = 30
+	sound = "ui_decision"
+	allowed = {
+		is_colony = yes
+		owner = {
+			has_country_flag = imperium
+		}
+	}
+	effect = {
+		planet_event = {
+			id = imp_army_home_selector.1
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
 }

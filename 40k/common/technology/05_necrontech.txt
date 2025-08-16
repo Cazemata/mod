@@ -2,35 +2,35 @@ tech_advanced_shields = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_shield_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -38,31 +38,32 @@ tech_armageddon_bombardment = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -70,37 +71,38 @@ tech_bloody_harvest = {
 	cost = @tier2cost1
 	area = engineering
 	tier = 2
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_harvest" }
-	
+	prerequisites = {
+		"tech_harvest"
+	}
 	modifier = {
 		planet_metallurgists_produces_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -108,35 +110,35 @@ tech_building_matrix = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_building_build_speed_mult = 0.3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -144,36 +146,36 @@ tech_chronometron = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_evasion_mult = 0.15
 		army_disengage_chance_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -181,35 +183,35 @@ tech_death_explosion = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_weapon_damage = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -217,31 +219,30 @@ tech_defense_platform = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { voidcraft }
+	category = {
+		voidcraft
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_trait = leader_trait_expertise_voidcraft
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -249,35 +250,35 @@ tech_disruption_field = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_hull_damage_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -285,35 +286,35 @@ tech_dividing_field = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -321,36 +322,36 @@ tech_energy_consuming = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_pops_energy_upkeep_mult = -0.3
 		ship_orbit_upkeep_mult = -0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -358,35 +359,35 @@ tech_engine_boost = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { particles }
+	category = {
+		particles
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_base_speed_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_particles
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_particles
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -394,35 +395,35 @@ tech_fiery_look = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_disengage_chance_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -430,35 +431,35 @@ tech_harvest = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_miners_minerals_produces_mult = 0.3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -466,36 +467,36 @@ tech_lightning_field = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_health_mult = 0.1
 		army_defense_health_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -503,36 +504,36 @@ tech_machine_mind = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { computing }
+	category = {
+		computing
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		all_technology_research_speed = 0.05
 		num_tech_alternatives_add = 1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -540,35 +541,35 @@ tech_mass_resurrection = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_army_build_speed_mult = 0.3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -576,36 +577,36 @@ tech_nightbringer = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_edict_cap_add = 2
 		edicts_cost_mult = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -613,35 +614,35 @@ tech_nightmare_shroud = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_collateral_damage_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -649,35 +650,35 @@ tech_node_command = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { computing }
+	category = {
+		computing
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_leader_cap_add = 3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_computing
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -685,35 +686,35 @@ tech_phase_shift = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_weapon_range_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -721,35 +722,35 @@ tech_phylactery = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -757,35 +758,35 @@ tech_sarcophagus = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		leader_skill_levels = 1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -793,35 +794,35 @@ tech_solar_pulse = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_shield_penetration_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -829,35 +830,35 @@ tech_sphere_of_rebirth = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_defense_health_mult = 0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -865,35 +866,35 @@ tech_stellar_pulse_generator = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = { field_manipulation }
+	category = {
+		field_manipulation
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_interstellar_speed_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_field_manipulation"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_physics
+				has_trait = leader_trait_expertise_field_manipulation
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -901,31 +902,32 @@ tech_dormant_monolith = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -933,31 +935,32 @@ tech_engaged_monolith = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -965,31 +968,32 @@ tech_summoning_core = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -997,31 +1001,32 @@ tech_greater_summoning_core = {
 	cost = @tier2cost1
 	area = engineering
 	tier = 2
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -1029,36 +1034,36 @@ tech_tomb_facilities = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_amenities_no_happiness_mult = 0.05
 		planet_crime_no_happiness_mult = -0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = necron_empire 
+		has_country_flag = necron_empire
 	}
 }
 
@@ -1074,7 +1079,7 @@ tech_tomb_facilities = {
 #			factor = 1.25
 #			research_leader = {
 #				area = engineering
-#				has_trait = "leader_trait_expertise_industry"
+#				 any_owned_leader = { leader_class = scientist has_leader_flag = 40k_rf_engineering has_trait = leader_trait_expertise_industry }
 #			}
 #		}
 #	}
@@ -1084,7 +1089,7 @@ tech_tomb_facilities = {
 #			factor = 1.25
 #			research_leader = {
 #				area = engineering
-#				has_trait = "leader_trait_expertise_industry"
+#				any_owned_leader = { leader_class = scientist has_leader_flag = 40k_rf_engineering has_trait = leader_trait_expertise_industry }
 #			}
 #		}
 #	}
@@ -1093,4 +1098,3 @@ tech_tomb_facilities = {
 #		has_country_flag = necron_empire 
 #	}
 #}
-

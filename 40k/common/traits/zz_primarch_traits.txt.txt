@@ -1,62 +1,67 @@
 ### Loyal/Neutral Primarch (immortal, elite commander)
 leader_trait_man_primarch = {
-    is_councilor_trait_for_ruler = yes
-    immortal_leaders = yes
-    
-    inline_script = {
-        script = trait/icon_psionic
-        CLASS = leader
-        ICON = "gfx/interface/icons/traits/primarchs/trait_loyal_primarch.dds"
-        RARITY = common
-        COUNCIL = triggered
-        TIER = none
-    }
-
-    leader_class = { admiral scientist general governor }
-    initial = no
-    randomized = no
-    starting_ruler_trait = yes        # let prescripted rulers use it
-    cost = 0
-
-    modifier = {
-        leader_skill_levels = 2
-        species_leader_exp_gain = 0.25
-        ship_fire_rate_mult = 0.10
-        army_damage_mult = 0.25
-        pop_government_ethic_attraction = 0.05
-    }
-
-    ai_weight = { weight = 0 }        # only assign manually / via script
+	is_councilor_trait_for_ruler = yes
+	immortal_leaders = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "gfx/interface/icons/traits/primarchs/trait_loyal_primarch.dds"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	initial = no
+	randomized = no
+	starting_ruler_trait = yes	# let prescripted rulers use it
+	cost = 0
+	modifier = {
+		leader_skill_levels = 2
+		species_leader_exp_gain = 0.25
+		ship_fire_rate_mult = 0.1
+		army_damage_mult = 0.25
+		pop_government_ethic_attraction = 0.05
+	}
+	ai_weight = {
+		weight = 0
+	}
+	# only assign manually / via script
 }
 
 ### Corrupted / Daemon Primarch (immortal, nastier)
 leader_trait_man_daemon_primarch = {
-    is_councilor_trait_for_ruler = yes
-    immortal_leaders = yes
-
-    inline_script = {
-        script = trait/icon_psionic
-        CLASS = leader
-        ICON = "gfx/interface/icons/traits/primarchs/trait_corrupted_primarch.dds"
-        RARITY = common
-        COUNCIL = triggered
-        TIER = none
-    }
-
-    leader_class = { admiral scientist general governor }
-    initial = no
-    randomized = no
-    starting_ruler_trait = yes
-    cost = 0
-
-    modifier = {
-        leader_skill_levels = 2
-        species_leader_exp_gain = 0.30
-        ship_fire_rate_mult = 0.15
-        army_damage_mult = 0.40
-        army_morale = 0.15
-        pop_government_ethic_attraction = -0.05
-    }
-
-    ai_weight = { weight = 0 }
+	is_councilor_trait_for_ruler = yes
+	immortal_leaders = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "gfx/interface/icons/traits/primarchs/trait_corrupted_primarch.dds"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	initial = no
+	randomized = no
+	starting_ruler_trait = yes
+	cost = 0
+	modifier = {
+		leader_skill_levels = 2
+		species_leader_exp_gain = 0.3
+		ship_fire_rate_mult = 0.15
+		army_damage_mult = 0.4
+		army_morale = 0.15
+		pop_government_ethic_attraction = -0.05
+	}
+	ai_weight = {
+		weight = 0
+	}
 }

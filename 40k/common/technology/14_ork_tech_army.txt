@@ -2,38 +2,38 @@ tech_weirdboy_whistles = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_WEIRD_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_WEIRD_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -41,38 +41,38 @@ tech_angry_bits = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_GARGANT_TITLE"
 			desc = "TECH_UNLOCK_GARGANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -80,38 +80,38 @@ tech_spiky_armor = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_STOMPA_TITLE"
 			desc = "TECH_UNLOCK_STOMPA_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -119,38 +119,38 @@ tech_belly_gun = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_GARGANT_TITLE"
 			desc = "TECH_UNLOCK_GARGANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -158,38 +158,38 @@ tech_big_shoota = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_STOMPA_TITLE"
 			desc = "TECH_UNLOCK_STOMPA_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -197,38 +197,38 @@ tech_boom_timer = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_TANKBUSTAS_TITLE"
 			desc = "TECH_UNLOCK_TANKBUSTAS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -236,31 +236,32 @@ tech_burna = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -268,38 +269,38 @@ tech_choppa = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ORK_SLUGGA_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_ORK_SLUGGA_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -307,38 +308,38 @@ tech_cybork_bits = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_MEK_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_MEK_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -346,31 +347,32 @@ tech_deff_rolla = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -378,38 +380,38 @@ tech_deffgun = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_LOOTAS_TITLE"
 			desc = "TECH_UNLOCK_LOOTAS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -417,38 +419,38 @@ tech_explosive_shells = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ORK_SHOOTA_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_ORK_SHOOTA_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -456,38 +458,38 @@ tech_explosive_shoter = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_STORM_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_STORM_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -495,38 +497,38 @@ tech_gargant_mega_armor = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_GARGANT_TITLE"
 			desc = "TECH_UNLOCK_GARGANT_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -534,38 +536,38 @@ tech_hide_boyz = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_KOMMANDO_SQUAD_TITLE"
 			desc = "TECH_UNLOCK_KOMMANDO_SQUAD_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -573,38 +575,38 @@ tech_huge_choppa = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ORK_NOBZ_TITLE"
 			desc = "TECH_UNLOCK_ORK_NOBZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -612,38 +614,38 @@ tech_jump = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_STORM_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_STORM_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -651,38 +653,38 @@ tech_kommando_ambush = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_KOMMANDO_SQUAD_TITLE"
 			desc = "TECH_UNLOCK_KOMMANDO_SQUAD_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -690,38 +692,38 @@ tech_kommando_grenade = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_KOMMANDOZ_TITLE"
 			desc = "TECH_UNLOCK_KOMMANDOZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -729,38 +731,38 @@ tech_kommando_kaboom = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_KOMMANDOZ_TITLE"
 			desc = "TECH_UNLOCK_KOMMANDOZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -768,38 +770,38 @@ tech_kommando_spechul_shoota = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_KOMMANDOZ_TITLE"
 			desc = "TECH_UNLOCK_KOMMANDOZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -807,38 +809,38 @@ tech_kustom_choppa = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_KOMMANDOZ_TITLE"
 			desc = "TECH_UNLOCK_KOMMANDOZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -846,38 +848,38 @@ tech_kustom_shoota = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_KOMMANDO_SQUAD_TITLE"
 			desc = "TECH_UNLOCK_KOMMANDO_SQUAD_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -885,31 +887,32 @@ tech_looted_tank_armor = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -917,38 +920,38 @@ tech_mek_equipment = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_MEK_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_MEK_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -956,38 +959,38 @@ tech_mekboy_beamy_deffgun = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_MEK_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_MEK_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -995,38 +998,38 @@ tech_mortar_launcher = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_TANKBUSTAS_TITLE"
 			desc = "TECH_UNLOCK_TANKBUSTAS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1034,38 +1037,38 @@ tech_nob_hammers = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ORK_NOBZ_TITLE"
 			desc = "TECH_UNLOCK_ORK_NOBZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1073,38 +1076,38 @@ tech_nob_kit = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ORK_NOBZ_TITLE"
 			desc = "TECH_UNLOCK_ORK_NOBZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1112,45 +1115,44 @@ tech_nob_leader = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_LOOTAS_TITLE"
 			desc = "TECH_UNLOCK_LOOTAS_DESC"
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_STIKKBOMMAZ_TITLE"
 			desc = "TECH_UNLOCK_STIKKBOMMAZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1158,45 +1160,44 @@ tech_nob_leader_kommando = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ORK_SHOOTA_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_ORK_SHOOTA_BOYZ_DESC"
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ORK_SLUGGA_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_ORK_SLUGGA_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1204,38 +1205,38 @@ tech_power_claw = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_STOMPA_TITLE"
 			desc = "TECH_UNLOCK_STOMPA_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1243,38 +1244,38 @@ tech_rokkit_launcha = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_TANKBUSTAS_TITLE"
 			desc = "TECH_UNLOCK_TANKBUSTAS_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1282,38 +1283,38 @@ tech_shoota = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ORK_SHOOTA_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_ORK_SHOOTA_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1321,38 +1322,38 @@ tech_slugga = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_ORK_SLUGGA_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_ORK_SLUGGA_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1360,38 +1361,38 @@ tech_stikkbomb = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_STIKKBOMMAZ_TITLE"
 			desc = "TECH_UNLOCK_STIKKBOMMAZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1399,38 +1400,38 @@ tech_stormboy = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_STORM_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_STORM_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1438,31 +1439,32 @@ tech_wartrukk = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1470,38 +1472,38 @@ tech_weirdboy_bells = {
 	cost = @tier2cost2
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_WEIRD_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_WEIRD_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }
 
@@ -1509,37 +1511,37 @@ tech_weirdboy_copper_rod = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-
 	prereqfor_desc = {
 		custom = {
 			title = "TECH_UNLOCK_WEIRD_BOYZ_TITLE"
 			desc = "TECH_UNLOCK_WEIRD_BOYZ_DESC"
 		}
 	}
-
 	potential = {
-		has_country_flag = ork_empire 
+		has_country_flag = ork_empire
 	}
 }

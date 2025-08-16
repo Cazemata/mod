@@ -1,38 +1,43 @@
 gothic_01 = {
-    ship_kinds = {
-        # Including default_ship forces this culture to be treated as MECHANICAL (not Biological)
-        default_ship
-        # You can list additional neutral kinds if you actually use them (optional):
-        # space_amoeba
-        # tiyanki
-        # voidworm
-        # cutholoid
-        # crystalline_entity
-    }
-
-    # Keep this culture selectable. Factor is arbitrary; anything > 0 works.
-    ship_selection_weight = {
-        base = 0
-        modifier = { factor = 10 }
-    }
-
-    fallback = mammalian_01
-    ship_color = no
-
-    ship_lighting = {
-        cam_light_1_dir = { 0.5 0.0 0.5 }
-        cam_light_2_dir = { -0.5 0.2 0.0 }
-        cam_light_3_dir = { 0.5 -1.0 0.0 }
-
-        intensity_near = 0.3
-        intensity_far = 0.7
-        near_value = 700
-        far_value = 700
-        rim_start_near = 0.5
-        rim_stop_near = 0.99
-        rim_start_far = 0.4
-        rim_stop_far = 0.99
-        ambient_near = 0.1
-        ambient_far = 1.0
-    }
+	ship_kinds = {
+		default_ship		# add more if you actually use them:
+		# space_amoeba
+		# tiyanki
+		# voidworm
+		# cutholoid
+		# crystalline_entity
+	}
+	# keep it selectable; CWTools allows only 'base' here
+	ship_selection_weight = {
+		base = 10
+	}
+	fallback = mammalian_01
+	ship_color = no
+	ship_lighting = {
+		cam_light_1_dir = {
+			0.5
+			0
+			0.5
+		}
+		cam_light_2_dir = {
+			-0.5
+			0.2
+			0
+		}
+		cam_light_3_dir = {
+			0.5
+			-1
+			0
+		}
+		intensity_near = 0.3
+		intensity_far = 0.7
+		near_value = 700
+		far_value = 700
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.4
+		rim_stop_far = 0.99
+		ambient_near = 0.1
+		ambient_far = 1
+	}
 }

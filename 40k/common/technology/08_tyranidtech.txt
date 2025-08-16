@@ -2,35 +2,35 @@ tech_without_number = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		pop_growth_speed = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -38,35 +38,35 @@ tech_aura_damage = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_hull_damage_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -74,35 +74,35 @@ tech_battle_rage = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -110,35 +110,35 @@ tech_bio_damage = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_weapon_damage = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -146,35 +146,35 @@ tech_capture_purpose = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_pops_food_upkeep_mult = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -182,36 +182,36 @@ tech_charge = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_morale_mult = 0.05
 		army_disengage_chance_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -219,35 +219,35 @@ tech_chitinous_armor = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_armor_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -255,35 +255,35 @@ tech_chitinous_fin = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { materials }
+	category = {
+		materials
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_evasion_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_armor"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -291,35 +291,35 @@ tech_control_hive_1 = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_admin_cap_add = 100
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -327,37 +327,38 @@ tech_control_hive_2 = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_control_hive_1" }
-	
+	prerequisites = {
+		"tech_control_hive_1"
+	}
 	modifier = {
 		country_admin_cap_add = 150
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -365,36 +366,36 @@ tech_corrosive_devourer = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.05
 		army_defense_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -402,35 +403,35 @@ tech_devourer_tls = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_fire_rate_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -438,35 +439,35 @@ tech_galaxy_expansion = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		empire_size_pops_mult = -0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -474,35 +475,35 @@ tech_hive_hunger = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_jobs_produces_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -510,36 +511,36 @@ tech_infiltrates = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.05
 		army_disengage_chance_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -547,35 +548,35 @@ tech_invulnerability = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_armor_mult = 0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -583,35 +584,35 @@ tech_loner = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_weapon_range_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -619,35 +620,35 @@ tech_pheromone = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_amenities_no_happiness_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -655,37 +656,38 @@ tech_pheromone_cloud = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_pheromone" }
-	
+	prerequisites = {
+		"tech_pheromone"
+	}
 	modifier = {
 		planet_crime_no_happiness_mult = -0.15
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -693,35 +695,35 @@ tech_poison_clouds = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_defense_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -729,35 +731,35 @@ tech_powerful_jaw = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_attack_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -765,35 +767,35 @@ tech_ravener_burrow_trap = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_defense_damage_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -801,35 +803,35 @@ tech_ravener_regeneration_carapace = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		army_defense_health_mult = 0.2
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -837,35 +839,35 @@ tech_retreat = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_emergency_ftl_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -873,35 +875,35 @@ tech_shieldwall = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_orbital_bombardment_damage = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -909,35 +911,35 @@ tech_spore_bombardment = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_orbital_bombardment_mult = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_weapon"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_materials
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -945,37 +947,38 @@ tech_spore_cloud = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
-	prerequisites = { "tech_spore_cysts" }
-	
+	prerequisites = {
+		"tech_spore_cysts"
+	}
 	modifier = {
 		army_attack_damage_mult = 0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -983,36 +986,36 @@ tech_spore_cysts = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		starbase_buildings_cost_mult = -0.1
 		starbase_modules_cost_mult = -0.1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1020,37 +1023,36 @@ tech_synapse_aura_speed = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
-	
 	modifier = {
 		all_technology_research_speed = 0.05
 		num_tech_alternatives_add = 1
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1058,35 +1060,35 @@ tech_tentacles_growth = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { biology }
+	category = {
+		biology
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		planet_building_build_speed_mult = 0.3
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1094,36 +1096,36 @@ tech_terrify = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { statecraft }
+	category = {
+		statecraft
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		country_edict_cap_add = 1
 		edicts_cost_mult = -0.25
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_biology
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1131,35 +1133,35 @@ tech_toxic_burst = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = { military_theory }
+	category = {
+		military_theory
+	}
 	weight = @tier1weight3
-	
 	modifier = {
 		ship_weapon_damage = 0.05
 	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_society
+				has_trait = leader_trait_expertise_military_theory
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1167,31 +1169,32 @@ tech_hive_noder = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1199,31 +1202,32 @@ tech_tunnel = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1231,31 +1235,32 @@ tech_hive_pool = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1263,31 +1268,32 @@ tech_hive_post = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1295,31 +1301,32 @@ tech_brood_nest = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
 
@@ -1327,31 +1334,31 @@ tech_hive_brain = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = { industry }
+	category = {
+		industry
+	}
 	weight = @tier1weight3
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = 40k_rf_engineering
+				has_trait = leader_trait_expertise_industry
 			}
 		}
 	}
-	
 	potential = {
-		has_country_flag = tyranid_empire 
+		has_country_flag = tyranid_empire
 	}
 }
-

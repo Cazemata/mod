@@ -1,0 +1,194 @@
+﻿l_english:
+  # -------------------------
+  # Daemon / Chaos worlds
+  # -------------------------
+  pc_daemon_adj:0 "Daemonic"
+  mod_pc_daemon_habitability:0 "Habitability: §YDaemon World§!"
+  trait_pc_daemon_preference:0 "Daemon World Preference"
+  trait_pc_daemon_preference_desc:0 "This species is adapted to the warped, hostile ecologies of §YDaemon Worlds§!, gaining habitability there but faring poorly elsewhere."
+
+  pc_daemont_adj:0 "Daemonic"
+  mod_pc_daemont_habitability:0 "Habitability: §YDaemon World§!"
+  trait_pc_daemont_preference:0 "Daemon World Preference"
+  trait_pc_daemont_preference_desc:0 "Native to hell-tainted worlds. Comfortable amid corruption; uneasy off-world."
+
+  pc_daemons_adj:0 "Daemonic"
+  mod_pc_daemons_habitability:0 "Habitability: §YDaemon World§!"
+  trait_pc_daemons_preference:0 "Daemon World Preference"
+  trait_pc_daemons_preference_desc:0 "Evolved or shaped by the Immaterium; thrives where reality runs thin."
+
+  pc_daemonn_adj:0 "Daemonic"
+  mod_pc_daemonn_habitability:0 "Habitability: §YDaemon World§!"
+  trait_pc_daemonn_preference:0 "Daemon World Preference"
+  trait_pc_daemonn_preference_desc:0 "Well-suited to hellscapes; fragile on saner worlds."
+
+  pc_hell_forge_adj:0 "Hell-Forge"
+  mod_pc_hell_forge_habitability:0 "Habitability: §YHell-Forge World§!"
+  trait_pc_hell_forge_preference:0 "Hell-Forge Preference"
+  trait_pc_hell_forge_preference_desc:0 "Adapted to daemon-bound manufactoria and blasted forges."
+
+  pc_darke_adj:0 "Dark"
+  mod_pc_darke_habitability:0 "Habitability: §YDark World§!"
+  trait_pc_darke_preference:0 "Dark World Preference"
+  trait_pc_darke_preference_desc:0 "Comfortable on sunless, oppressive worlds."
+
+  # -------------------------
+  # Craftworlds
+  # -------------------------
+  pc_craftworld:0 "Craftworld"
+  pc_craftworld_desc:0 "A vast Aeldari world-ship: self-sufficient biomes, wraithbone spires, and psychic infrastructure travelling the void."
+  pc_craftworld_adj:0 "Craftworld"
+  mod_pc_craftworld_habitability:0 "Habitability: §YCraftworld§!"
+  trait_pc_craftworld_preference:0 "Craftworld Preference"
+  trait_pc_craftworld_preference_desc:0 "Optimised for sealed habitat arcs and psycho-reactive architecture typical of Craftworlds."
+
+  # -------------------------
+  # Hive variants
+  # -------------------------
+  pc_hive_medium_adj:0 "Hive"
+  mod_pc_hive_medium_habitability:0 "Habitability: §YHive World (Dense)§!"
+  trait_pc_hive_medium_preference:0 "Dense Hive World Preference"
+  trait_pc_hive_medium_preference_desc:0 "Built for packed arcologies and reclaimed atmospheres."
+
+  pc_super_hive_adj:0 "Megahive"
+  mod_pc_super_hive_habitability:0 "Habitability: §YMegahive World§!"
+  trait_pc_super_hive_preference:0 "Megahive Preference"
+  trait_pc_super_hive_preference_desc:0 "Thrive among endless hive-spires and world-scale industry."
+
+  pc_mega_hive_adj:0 "Megahive"
+  mod_pc_mega_hive_habitability:0 "Habitability: §YMegahive World§!"
+  trait_pc_mega_hive_preference:0 "Megahive Preference"
+  trait_pc_mega_hive_preference_desc:0 "Engineered for super-dense urban ecologies."
+
+  pc_hive_arid_adj:0 "Hive-Arid"
+  mod_pc_hive_arid_habitability:0 "Habitability: §YArid Hive World§!"
+  trait_pc_hive_arid_preference:0 "Arid Hive World Preference"
+  trait_pc_hive_arid_preference_desc:0 "Habituated to dust-choked hive basins and scarce water cycles."
+
+  pc_hive_continental_01_adj:0 "Hive-Continental"
+  mod_pc_hive_continental_01_habitability:0 "Habitability: §YContinental Hive World§!"
+  trait_pc_hive_continental_01_preference:0 "Continental Hive World Preference"
+  trait_pc_hive_continental_01_preference_desc:0 "Tuned for mixed climates covered by arcology belts."
+
+  pc_hive_continental_02_adj:0 "Hive-Continental"
+  mod_pc_hive_continental_02_habitability:0 "Habitability: §YContinental Hive World§!"
+  trait_pc_hive_continental_02_preference:0 "Continental Hive World Preference"
+  trait_pc_hive_continental_02_preference_desc:0 "Urban sprawl and temperate regimes pose no hardship."
+
+  pc_hive_ocean_adj:0 "Hive-Oceanic"
+  mod_pc_hive_ocean_habitability:0 "Habitability: §YOceanic Hive World§!"
+  trait_pc_hive_ocean_preference:0 "Oceanic Hive World Preference"
+  trait_pc_hive_ocean_preference_desc:0 "Specialised for sea platforms, arcology archipelagos and humid climates."
+
+  pc_hive_tundra_adj:0 "Hive-Tundra"
+  mod_pc_hive_tundra_habitability:0 "Habitability: §YTundra Hive World§!"
+  trait_pc_hive_tundra_preference:0 "Tundra Hive World Preference"
+  trait_pc_hive_tundra_preference_desc:0 "Efficient thermal management for frigid hive-spires."
+
+  pc_hive_industrial_adj:0 "Hive-Industrial"
+  mod_pc_hive_industrial_habitability:0 "Habitability: §YIndustrial Hive World§!"
+  trait_pc_hive_industrial_preference:0 "Industrial Hive World Preference"
+  trait_pc_hive_industrial_preference_desc:0 "Optimised for heavy smog, toxic runoff and constant production schedules."
+
+  # -------------------------
+  # Imperial specialties
+  # -------------------------
+  pc_industrial_adj:0 "Industrial"
+  mod_pc_industrial_habitability:0 "Habitability: §YIndustrial World§!"
+  trait_pc_industrial_preference:0 "Industrial World Preference"
+  trait_pc_industrial_preference_desc:0 "At home among manufactoria, refineries and polluted skies."
+
+  pc_armoury_adj:0 "Armoury"
+  mod_pc_armoury_habitability:0 "Habitability: §YArmoury World§!"
+  trait_pc_armoury_preference:0 "Armoury World Preference"
+  trait_pc_armoury_preference_desc:0 "Configured for fortress-arsenals and munitions megafabs."
+
+  pc_fortress_adj:0 "Fortress"
+  mod_pc_fortress_habitability:0 "Habitability: §YFortress World§!"
+  trait_pc_fortress_preference:0 "Fortress World Preference"
+  trait_pc_fortress_preference_desc:0 "Resilient citizens used to bunkers, bastions and siege routines."
+
+  pc_penal_adj:0 "Penal"
+  mod_pc_penal_habitability:0 "Habitability: §YPenal World§!"
+  trait_pc_penal_preference:0 "Penal World Preference"
+  trait_pc_penal_preference_desc:0 "Adapted to harsh climates, labor camps and strict rationing."
+
+  pc_mechanicus_forge_adj:0 "Forge"
+  mod_pc_mechanicus_forge_habitability:0 "Habitability: §YForge World§!"
+  trait_pc_mechanicus_forge_preference:0 "Forge World Preference"
+  trait_pc_mechanicus_forge_preference_desc:0 "Suited to titanic foundries, noosphere lattices and sacred manufactoria."
+
+  pc_city_iom_adj:0 "Imperial City"
+  mod_pc_city_iom_habitability:0 "Habitability: §YImperial City-World§!"
+  trait_pc_city_iom_preference:0 "Imperial City-World Preference"
+  trait_pc_city_iom_preference_desc:0 "Urbanised across continents; thrives among Administratum spires."
+
+  pc_relic_iom_adj:0 "Relic"
+  mod_pc_relic_iom_habitability:0 "Habitability: §YRelic World (Imperium)§!"
+  trait_pc_relic_iom_preference:0 "Imperial Relic World Preference"
+  trait_pc_relic_iom_preference_desc:0 "Comfortable among ancient ruins and long-dormant systems."
+
+  # -------------------------
+  # Xenos specialties
+  # -------------------------
+  pc_orkworld_adj:0 "Ork"
+  mod_pc_orkworld_habitability:0 "Habitability: §YOrk World§!"
+  trait_pc_orkworld_preference:0 "Ork World Preference"
+  trait_pc_orkworld_preference_desc:0 "Hardy physiology excels amid ramshackle industry and constant conflict."
+
+  pc_advancexenocity_adj:0 "Advanced Xenocity"
+  mod_pc_advancexenocity_habitability:0 "Habitability: §YAdvanced Xenocity§!"
+  trait_pc_advancexenocity_preference:0 "Advanced Xenocity Preference"
+  trait_pc_advancexenocity_preference_desc:0 "Adapted to high-tech multi-species conurbations."
+
+  pc_advancexenocityy_adj:0 "Advanced Xenocity"
+  mod_pc_advancexenocityy_habitability:0 "Habitability: §YAdvanced Xenocity§!"
+  trait_pc_advancexenocityy_preference:0 "Advanced Xenocity Preference"
+  trait_pc_advancexenocityy_preference_desc:0 "As above; variant classification."
+
+  pc_advancexenocityyy_adj:0 "Advanced Xenocity"
+  mod_pc_advancexenocityyy_habitability:0 "Habitability: §YAdvanced Xenocity§!"
+  trait_pc_advancexenocityyy_preference:0 "Advanced Xenocity Preference"
+  trait_pc_advancexenocityyy_preference_desc:0 "As above; variant classification."
+
+  pc_agri_adj:0 "Agri"
+  mod_pc_agri_habitability:0 "Habitability: §YAgri-World§!"
+  trait_pc_agri_preference:0 "Agri-World Preference"
+  trait_pc_agri_preference_desc:0 "Familiar with plantation belts and mechanised harvesters."
+
+  pc_refinery_adj:0 "Refinery"
+  mod_pc_refinery_habitability:0 "Habitability: §YRefinery World§!"
+  trait_pc_refinery_preference:0 "Refinery World Preference"
+  trait_pc_refinery_preference_desc:0 "Specialised for chemical complexes and volatile atmospheres."
+
+  pc_shrine_adj:0 "Shrine"
+  mod_pc_shrine_habitability:0 "Habitability: §YShrine World§!"
+  trait_pc_shrine_preference:0 "Shrine World Preference"
+  trait_pc_shrine_preference_desc:0 "Built around pilgrimage, reliquaries and ecclesiarchal order."
+
+  # -------------------------
+  # Tau / Auxilia
+  # -------------------------
+  guevesa:0 "Gue'vesa"
+  imperial_guard_medium_defense_desc:0 "§YImperial Guard§! garrisons bolster the planet’s basic defenses."
+  stompa:0 "Stompa"
+  stormboyz_defense:0 "Stormboyz Garrison"
+  stormboyz_defense_desc:0 "Disciplined §YStormboyz§! keep a violent sort of order."
+
+  # -------------------------
+  # Jobs / Effects / Decisions / Deposits / Origins
+  # -------------------------
+  job_culture_worker_effect_desc:0 "£unity£ §YUnity§! and £society£ §YSociety Research§! from cultural endeavors."
+  job_evaluator_drone_effect_desc:0 "Evaluators convert inputs into £unity£ §YUnity§! and administrative efficiency."
+  job_administrator_effect_desc:0 "Administrators produce £unity£ §YUnity§! and reduce £crime£ §YCrime§!."
+
+  d_promethium_mine:0 "Promethium Vein"
+  d_promethium_mine_desc:0 "Deep seams of volatile §YPromethium§! fuel—lucrative but hazardous."
+
+  planet_burn_promethium:0 "Promethium Burns"
+  decision_corrupting_project_effects:0 "Launches a §RCorruption Project§! that twists local institutions."
+  decision_uncorrupting_project:0 "Purge Corruption"
+  decision_uncorrupting_project_desc:0 "A coordinated campaign to root out §Rcorruption§! and restore order."
+  decision_uncorrupting_project_effects:0 "Removes active corruption effects and restores stability."
+
+  origin_primarch_mandate_desc:0 "The empire claims a sacred mandate from a legendary §YPrimarch§!, shaping doctrine, duty and destiny."

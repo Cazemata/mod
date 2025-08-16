@@ -4,7 +4,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/planetview/40k_army_icons.dds"
 		noOfFrames = 163
 	}
-
 	spriteType = {
 		name = "GFX_tac_spacemarines"
 		sprite_sheet_sprite_type = "GFX_40k_army_icons"
@@ -139,10 +138,5 @@ spriteTypes = {
 		name = "GFX_imperial_guard_small"
 		sprite_sheet_sprite_type = "GFX_40k_army_icons"
 		default_frame = 127
-	}
-	spriteType = {
-		name = ""
-		texturefile = ""
-		alwaystransparent = yes
 	}
 }
