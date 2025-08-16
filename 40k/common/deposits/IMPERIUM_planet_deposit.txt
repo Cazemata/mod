@@ -1,11 +1,9 @@
 ###Special Homeworld Deposit###
-
 #Imperial Palace
 d_iom_imperial_palace = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_iom_imperial_palace
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -22,15 +20,14 @@ d_iom_imperial_palace = {
 			food = 50
 		}
 	}
-	
 	planet_modifier = {
-		all_technology_research_speed = 0.10
+		all_technology_research_speed = 0.1
 		planet_orbital_bombardment_damage = -0.4
 		planet_max_buildings_add = 5
 		planet_max_districts_add = 40
 		planet_stability_add = 10
 		planet_immigration_pull_mult = 0.05
-		planet_amenities_mult = 0.20
+		planet_amenities_mult = 0.2
 		planet_jobs_specialist_produces_mult = 0.05
 		planet_jobs_worker_produces_mult = 0.05
 		planet_jobs_produces_mult = 0.05
@@ -43,27 +40,23 @@ d_iom_imperial_palace = {
 		pop_citizen_happiness = 0.05
 		num_tech_alternatives_add = 1
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
 }
 
 ####Ruins####
-
 d_iom_city_ruined = {
 	time = 365
 	icon = d_iom_city_ruins
-
 	is_for_colonizeable = yes
 	category = deposit_cat_blockers
-
-	potential = { always = no }
-
+	potential = {
+		always = no
+	}
 	planet_modifier = {
 		planet_max_districts_add = -1
 	}
-
 	resources = {
 		category = deposit_blockers
 		cost = {
@@ -71,7 +64,6 @@ d_iom_city_ruined = {
 			minerals = 200
 		}
 	}
-
 	on_cleared = {
 		if = {
 			limit = {
@@ -80,27 +72,42 @@ d_iom_city_ruined = {
 					has_ancrel = yes
 				}
 			}
--
+			-
 			custom_tooltip = minor_artifacts_found
 			random_list = {
-###EDIT - 3-5 minor artifacts instead of 1, 3, or 5 ###
+				###EDIT - 3-5 minor artifacts instead of 1, 3, or 5 ###
 				33 = {
-					owner = { add_resource = { minor_artifacts = 3 } }
+					owner = {
+						add_resource = {
+							minor_artifacts = 3
+						}
+					}
 				}
 				33 = {
-					owner = { add_resource = { minor_artifacts = 4 } }
+					owner = {
+						add_resource = {
+							minor_artifacts = 4
+						}
+					}
 				}
 				33 = {
-					owner = { add_resource = { minor_artifacts = 5 } }
+					owner = {
+						add_resource = {
+							minor_artifacts = 5
+						}
+					}
 				}
 			}
-
 			if = {
 				limit = {
 					owner = {
-						NOT = { has_country_flag = league_world_found }
+						NOT = {
+							has_country_flag = league_world_found
+						}
 					}
-					planet = { has_modifier = first_league_homeworld }
+					planet = {
+						has_modifier = first_league_homeworld
+					}
 				}
 				hidden_effect = {
 					owner = {
@@ -111,19 +118,16 @@ d_iom_city_ruined = {
 			}
 		}
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
 }
 
 ####Gate####
-
 d_iom_eternity_gate = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_iom_eternity_gate
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -133,31 +137,27 @@ d_iom_eternity_gate = {
 			unity = 10
 		}
 	}
-	
 	planet_modifier = {
-		army_morale = 0.10
-		army_health = 0.10
-		army_defense_damage_mult = 0.10
-		army_defense_health_mult = 0.10
+		army_morale = 0.1
+		army_health = 0.1
+		army_defense_damage_mult = 0.1
+		army_defense_health_mult = 0.1
 		planet_orbital_bombardment_damage = -0.2
 		planet_housing_add = 500
 		planet_max_districts_add = 5
 		planet_amenities_mult = 0.05
 		job_soldier_add = 100
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
 }
 
 ####Forbidden fortress####
-
 d_iom_forbidden_fortress = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_iom_forbidden_fortress
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -167,14 +167,13 @@ d_iom_forbidden_fortress = {
 			unity = 10
 		}
 	}
-	
 	planet_modifier = {
-		army_morale = 0.20
-		army_health = 0.20
-		army_defense_damage_mult = 0.20
-		army_defense_health_mult = 0.20
-		armies_upkeep_mult = -0.10
-		armies_cost_mult = -0.10
+		army_morale = 0.2
+		army_health = 0.2
+		army_defense_damage_mult = 0.2
+		army_defense_health_mult = 0.2
+		armies_upkeep_mult = -0.1
+		armies_cost_mult = -0.1
 		planet_army_build_speed_mult = 0.1
 		planet_orbital_bombardment_damage = -0.2
 		planet_housing_add = 5
@@ -182,19 +181,16 @@ d_iom_forbidden_fortress = {
 		planet_amenities_mult = 0.05
 		job_soldier_add = 100
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
 }
 
 ####Hive Cities####
-
 d_terra_hive_karelia_sprawl = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_terra_hive_karelia_sprawl
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -208,26 +204,24 @@ d_terra_hive_karelia_sprawl = {
 			engineering_research = 150
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		planet_max_districts_add = 10
 		planet_crime_add = 15
 		planet_housing_add = 10
-		all_technology_research_speed = 0.20
+		all_technology_research_speed = 0.2
 		num_tech_alternatives_add = 2
 		planet_jobs_engineering_research_produces_mult = 0.05
 		planet_jobs_physics_research_produces_mult = 0.05
 		planet_jobs_society_research_produces_mult = 0.05
 		planet_amenities_mult = 0.05
 		job_clerk_add = 100
-		pop_growth_speed = 0.1
+		BIOLOGICAL_pop_growth_speed = 0.1
 		#job_researcher_add = 400
 		job_engineer_add = 130
 		job_physicist_add = 130
 		job_biologist_add = 130
 		job_head_researcher_add = 100
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -237,7 +231,6 @@ d_terra_hive_tashkent_sprawl = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_terra_hive_karelia_sprawl
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -248,16 +241,14 @@ d_terra_hive_tashkent_sprawl = {
 			unity = 5
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		planet_max_districts_add = 20
 		planet_crime_add = 20
 		planet_housing_add = 400
 		job_clerk_add = 200
-		pop_growth_speed = 0.1
+		BIOLOGICAL_pop_growth_speed = 0.1
 		planet_amenities_mult = 0.05
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -267,7 +258,6 @@ d_terra_hive_salvator_sprawl = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_terra_hive_salvator_sprawl
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -278,16 +268,14 @@ d_terra_hive_salvator_sprawl = {
 			unity = 5
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		planet_max_districts_add = 20
 		planet_crime_add = 20
 		planet_housing_add = 400
 		job_clerk_add = 200
-		pop_growth_speed = 0.1
+		BIOLOGICAL_pop_growth_speed = 0.1
 		planet_amenities_mult = 0.05
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -297,7 +285,6 @@ d_terra_hive_malliax_sprawl = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_terra_hive_malliax_sprawl
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -308,16 +295,14 @@ d_terra_hive_malliax_sprawl = {
 			unity = 5
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		planet_max_districts_add = 20
 		planet_crime_add = 20
 		planet_housing_add = 400
 		job_clerk_add = 200
-		pop_growth_speed = 0.1
+		BIOLOGICAL_pop_growth_speed = 0.1
 		planet_amenities_mult = 0.05
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -327,7 +312,6 @@ d_terra_hive_novion_primus_sprawl = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_terra_hive_novion_primus_sprawl
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -338,16 +322,14 @@ d_terra_hive_novion_primus_sprawl = {
 			unity = 5
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		planet_max_districts_add = 20
 		planet_crime_add = 20
 		planet_housing_add = 400
 		job_clerk_add = 200
-		pop_growth_speed = 0.1
+		BIOLOGICAL_pop_growth_speed = 0.1
 		planet_amenities_mult = 0.05
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -357,7 +339,6 @@ d_terra_hive_xericho_sprawl = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_terra_hive_xericho_sprawl
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -368,16 +349,14 @@ d_terra_hive_xericho_sprawl = {
 			unity = 5
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		planet_max_districts_add = 20
 		planet_crime_add = 20
 		planet_housing_add = 400
 		job_clerk_add = 200
-		pop_growth_speed = 0.1
+		BIOLOGICAL_pop_growth_speed = 0.1
 		planet_amenities_mult = 0.05
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -387,7 +366,6 @@ d_terra_hive_ababa_sprawl = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_terra_hive_ababa_sprawl
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -398,16 +376,14 @@ d_terra_hive_ababa_sprawl = {
 			unity = 5
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		planet_max_districts_add = 20
 		planet_crime_add = 20
 		planet_housing_add = 400
 		job_clerk_add = 200
-		pop_growth_speed = 0.1
+		BIOLOGICAL_pop_growth_speed = 0.1
 		planet_amenities_mult = 0.05
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -417,7 +393,6 @@ d_terra_hive_skhallax_sprawl = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_terra_hive_skhallax_sprawl
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -433,37 +408,33 @@ d_terra_hive_skhallax_sprawl = {
 			engineering_research = 20
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		planet_max_districts_add = 10
 		planet_crime_add = 15
 		planet_housing_add = 20
-		planet_structures_cost_mult = -0.10
+		planet_structures_cost_mult = -0.1
 		planet_building_build_speed_mult = 0.25
-		planet_buildings_upkeep_mult = -0.10
-		planet_buildings_cost_mult = -0.10
-		planet_districts_cost_mult = -0.10
-		planet_districts_upkeep_mult = -0.10
+		planet_buildings_upkeep_mult = -0.1
+		planet_buildings_cost_mult = -0.1
+		planet_districts_cost_mult = -0.1
+		planet_districts_upkeep_mult = -0.1
 		planet_amenities_mult = 0.05
 		planet_jobs_engineering_research_produces_mult = 0.1
-		pop_growth_speed = 0.05
+		BIOLOGICAL_pop_growth_speed = 0.05
 		pop_assembly_speed = 0.15
 		job_technician_add = 100
 		job_miner_add = 100
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
 }
 
 ####Space Ports####
-
 d_iom_wyverns_gate_spaceport = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_iom_wyverns_gate_spaceport
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -474,13 +445,11 @@ d_iom_wyverns_gate_spaceport = {
 			alloys = 20
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		country_naval_cap_add = 100
-		trade_value_mult = 0.1
+		planet_jobs_trade_value_mult = 0.1
 		local_trade_protection_add = 5
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -490,7 +459,6 @@ d_iom_lion_gate_spaceport = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_iom_lion_gate_spaceport
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -501,13 +469,11 @@ d_iom_lion_gate_spaceport = {
 			alloys = 20
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		country_naval_cap_add = 10
-		trade_value_mult = 0.1
+		planet_jobs_trade_value_mult = 0.1
 		local_trade_protection_add = 5
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -517,7 +483,6 @@ d_iom_damocles_spaceport = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_iom_damocles_spaceport
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -528,25 +493,21 @@ d_iom_damocles_spaceport = {
 			alloys = 20
 		}
 	}
-	
-	planet_modifier = { 
+	planet_modifier = {
 		country_naval_cap_add = 10
-		trade_value_mult = 0.1
+		planet_jobs_trade_value_mult = 0.1
 		local_trade_protection_add = 5
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
 }
 
 ####Khangba Marwu Prison####
-
 d_iom_khangba_marwu_prison = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	icon = d_iom_khangba_marwu_prison
-	
 	resources = {
 		category = planet_deposits
 		upkeep = {
@@ -556,15 +517,13 @@ d_iom_khangba_marwu_prison = {
 			unity = 5
 		}
 	}
-	
 	planet_modifier = {
 		planet_max_districts_add = -1
 		planet_housing_add = 500
 		planet_crime_mult = -0.25
-		planet_amenities_mult = 0.10
+		planet_amenities_mult = 0.1
 		job_enforcer_add = 500
 	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -573,27 +532,24 @@ d_iom_khangba_marwu_prison = {
 ###################
 ##### SPECIAL #####
 ###################
-
 d_promethium_mine = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
-
 	planet_modifier = {
 		planet_jobs_minerals_produces_mult = 0.15
 	}
-	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_country_flag = human_empire }
+			owner = {
+				has_country_flag = human_empire
+			}
 		}
-		modifier = {	
+		modifier = {
 			job_promethium_miner_add = 200
 		}
 	}
-
 	drop_weight = {
 		weight = 0
 	}
 }
-

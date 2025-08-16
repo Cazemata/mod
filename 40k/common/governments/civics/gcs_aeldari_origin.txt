@@ -23,7 +23,7 @@ origin_craftworld_aeldari = {
 		}
 	}
 	modifier = {
-		pop_growth_speed = -0.5
+		BIOLOGICAL_pop_growth_speed = -0.5
 		planet_colony_development_speed_mult = -0.65
 		planet_jobs_specialist_produces_mult = 0.05
 		leader_skill_levels = 1

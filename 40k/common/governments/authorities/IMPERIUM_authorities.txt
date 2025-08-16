@@ -15,18 +15,18 @@ auth_stagnated_imperium = {
 				value = ethic_fanatic_xenophile
 			}
 		}
-		origin = {	value = origin_gcs_imperium	}
-
-	}	
+		origin = {
+			value = origin_gcs_imperium
+		}
+	}
 	icon = "gfx/interface/icons/governments/authorities/auth_stagnated_imperium.dds"
 	random_weight = {
 		modifier = {
 			factor = 0
 		}
 	}
-
 	country_modifier = {
-	    country_base_influence_produces_add = 5
+		country_base_influence_produces_add = 5
 		country_power_projection_influence_produces_add = 3
 		envoys_add = 5
 		intel_decryption_add = 2
@@ -34,7 +34,7 @@ auth_stagnated_imperium = {
 		pop_factions_produces_mult = 0.05
 		pop_ethic_spiritualist_attraction_mult = -1
 		pop_ethic_materialist_attraction_mult = 1
-		pop_growth_speed = 0.1
+		BIOLOGICAL_pop_growth_speed = 0.1
 		planet_crime_mult = -0.25
 		planet_amenities_mult = 0.25
 	}
@@ -51,20 +51,19 @@ auth_chaos = {
 				value = ethic_gestalt_consciousness
 			}
 		}
-	}	
+	}
 	icon = "gfx/interface/icons/governments/authorities/auth_chaos.dds"
 	random_weight = {
 		modifier = {
 			factor = 0
 		}
 	}
-
 	country_modifier = {
-	    country_base_influence_produces_add = 5
+		country_base_influence_produces_add = 5
 		country_power_projection_influence_produces_add = 2
 		envoys_add = 2
 		country_edict_cap_add = 3
-		pop_growth_speed_reduction = 0.35
+		BIOLOGICAL_pop_growth_reduction = 0.35
 	}
 }
 
@@ -79,23 +78,21 @@ auth_eldar = {
 				value = ethic_gestalt_consciousness
 			}
 		}
-	}	
+	}
 	icon = "gfx/interface/icons/governments/authorities/auth_eldar.dds"
 	random_weight = {
 		modifier = {
 			factor = 0
 		}
 	}
-
 	country_modifier = {
-	    country_base_influence_produces_add = 5
+		country_base_influence_produces_add = 5
 		country_power_projection_influence_produces_add = 3
 		envoys_add = 6
 		country_megastructure_build_cap_add = 2
 		country_edict_cap_add = 3
 		pop_growth_speed_reduction = 0.75
-		empire_size_penalty_mult = -5.0
-
+		empire_size_penalty_mult = -5
 	}
 }
 
@@ -110,16 +107,15 @@ auth_darkeldar = {
 				value = ethic_gestalt_consciousness
 			}
 		}
-	}	
+	}
 	icon = "gfx/interface/icons/governments/authorities/auth_darkeldar.dds"
 	random_weight = {
 		modifier = {
 			factor = 0
 		}
 	}
-
 	country_modifier = {
-	    country_base_influence_produces_add = 5
+		country_base_influence_produces_add = 5
 		country_power_projection_influence_produces_add = 3
 		country_megastructure_build_cap_add = 2
 		pop_growth_speed_reduction = 0.75
@@ -138,23 +134,20 @@ auth_ork = {
 				value = ethic_gestalt_consciousness
 			}
 		}
-	}	
+	}
 	icon = "gfx/interface/icons/governments/authorities/auth_ork.dds"
 	random_weight = {
 		modifier = {
 			factor = 0
 		}
 	}
-
 	country_modifier = {
-	    country_base_influence_produces_add = 5
+		country_base_influence_produces_add = 5
 		country_power_projection_influence_produces_add = 1
 		envoys_add = 1
-		pop_growth_speed = 0.5
-		empire_size_penalty_mult = 2.0
-                army_morale = 2.0
-
-		
+		BIOLOGICAL_pop_growth_speed = 0.5
+		empire_size_penalty_mult = 2
+		army_morale = 2
 	}
 }
 
@@ -169,30 +162,31 @@ auth_tau = {
 				value = ethic_gestalt_consciousness
 			}
 		}
-                origin = { value = origin_tau  }
-	}	
+		origin = {
+			value = origin_tau
+		}
+	}
 	icon = "gfx/interface/icons/governments/authorities/auth_tau.dds"
 	random_weight = {
 		modifier = {
 			factor = 0
 		}
 	}
-
 	country_modifier = {
-	    country_base_influence_produces_add = 5
+		country_base_influence_produces_add = 5
 		country_power_projection_influence_produces_add = 1
 		envoys_add = 5
 		intel_encryption_add = 3
 		pop_ethic_materialist_attraction_mult = 1
-		pop_growth_speed = 0.4
+		BIOLOGICAL_pop_growth_speed = 0.4
 		planet_crime_mult = -0.25
 		planet_amenities_mult = 0.25
-                empire_size_penalty_mult = 1.0
+		empire_size_penalty_mult = 1
 	}
 }
 
 auth_necron_dynasty = {
-        valid_for_released_vassal = no
+	valid_for_released_vassal = no
 	localization_postfix = auth_necron_dynasty
 	has_agendas = yes
 	ruler_council_position = councilor_ruler_imperial
@@ -202,17 +196,18 @@ auth_necron_dynasty = {
 				value = ethic_gestalt_consciousness
 			}
 		}
-                origin = { value = origin_necron_rising }
-	}	
+		origin = {
+			value = origin_necron_rising
+		}
+	}
 	icon = "gfx/interface/icons/governments/authorities/auth_necron_dynasty.dds"
 	random_weight = {
 		modifier = {
 			factor = 0
 		}
 	}
-
 	country_modifier = {
-	    country_base_influence_produces_add = 5
+		country_base_influence_produces_add = 5
 		country_power_projection_influence_produces_add = 5
 		intel_decryption_add = 5
 		intel_encryption_add = 5

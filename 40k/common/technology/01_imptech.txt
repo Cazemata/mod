@@ -11,7 +11,6 @@ tech_promethium = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -37,7 +36,6 @@ tech_power_gen = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
@@ -47,7 +45,6 @@ tech_power_gen = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
@@ -73,7 +70,6 @@ tech_power_gen2 = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
@@ -83,7 +79,6 @@ tech_power_gen2 = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
@@ -109,7 +104,6 @@ tech_promethium_mining = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -132,7 +126,6 @@ tech_imperium_statues = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -142,7 +135,6 @@ tech_imperium_statues = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -175,7 +167,6 @@ tech_warp_jump_drive = {
 			NOR = {
 				any_owned_leader = {
 					leader_class = scientist
-					has_leader_flag = 40k_rf_physics
 					has_trait = leader_trait_expertise_field_manipulation
 				}
 				any_owned_leader = {
@@ -241,7 +232,6 @@ tech_basic_construction = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -251,7 +241,6 @@ tech_basic_construction = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -280,7 +269,6 @@ tech_advanced_construction = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -290,7 +278,6 @@ tech_advanced_construction = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -316,7 +303,6 @@ tech_advanced_cutters = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -326,7 +312,6 @@ tech_advanced_cutters = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -352,7 +337,6 @@ tech_advanced_drills = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -362,7 +346,6 @@ tech_advanced_drills = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -389,7 +372,6 @@ tech_advanced_manipulators = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -399,7 +381,6 @@ tech_advanced_manipulators = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -428,7 +409,6 @@ tech_advanced_processing = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -438,7 +418,6 @@ tech_advanced_processing = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -464,7 +443,6 @@ tech_advanced_smelters = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -474,7 +452,6 @@ tech_advanced_smelters = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -500,7 +477,6 @@ tech_advanced_tools = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -510,7 +486,6 @@ tech_advanced_tools = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_industry				# for the *industry* techs
 			}
 		}
@@ -536,7 +511,6 @@ tech_advanced_seeds = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_biology
 			}
 		}
@@ -546,7 +520,6 @@ tech_advanced_seeds = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_biology
 			}
 		}
@@ -573,7 +546,6 @@ tech_advanced_scanning = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
@@ -583,7 +555,6 @@ tech_advanced_scanning = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
@@ -609,7 +580,6 @@ tech_darkage_knowledge = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -619,7 +589,6 @@ tech_darkage_knowledge = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -661,7 +630,6 @@ tech_education_reform = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -671,7 +639,6 @@ tech_education_reform = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -697,7 +664,6 @@ tech_mining_guilds = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -707,7 +673,6 @@ tech_mining_guilds = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -733,7 +698,6 @@ tech_merchant_guilds = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -743,7 +707,6 @@ tech_merchant_guilds = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -769,7 +732,6 @@ tech_mechanicus_guilds = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -779,7 +741,6 @@ tech_mechanicus_guilds = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -805,7 +766,6 @@ tech_mind_cleaning = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_biology
 			}
 		}
@@ -815,7 +775,6 @@ tech_mind_cleaning = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_biology
 			}
 		}
@@ -943,7 +902,6 @@ tech_improved_bionics = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_biology
 			}
 		}
@@ -953,7 +911,6 @@ tech_improved_bionics = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_biology
 			}
 		}
@@ -979,7 +936,6 @@ tech_gellar_field = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
@@ -989,7 +945,6 @@ tech_gellar_field = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_field_manipulation				# for power_gen / power_gen2
 			}
 		}
@@ -1049,7 +1004,6 @@ tech_ship_armor = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_materials
 			}
 		}
@@ -1059,7 +1013,6 @@ tech_ship_armor = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_engineering
 				has_trait = leader_trait_expertise_materials
 			}
 		}
@@ -1085,7 +1038,6 @@ tech_full_auto = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
@@ -1095,7 +1047,6 @@ tech_full_auto = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
@@ -1121,7 +1072,6 @@ tech_auto_missile_barrage = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
@@ -1131,7 +1081,6 @@ tech_auto_missile_barrage = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_physics
 				has_trait = leader_trait_expertise_computing				# for scanning / full_auto
 			}
 		}
@@ -1159,7 +1108,6 @@ tech_analyze_stc = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -1169,7 +1117,6 @@ tech_analyze_stc = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -1195,7 +1142,6 @@ tech_servo_skull = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -1205,7 +1151,6 @@ tech_servo_skull = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -1231,7 +1176,6 @@ tech_increased_ration = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}
@@ -1241,7 +1185,6 @@ tech_increased_ration = {
 			factor = 1.25
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = 40k_rf_society
 				has_trait = leader_trait_expertise_statecraft
 			}
 		}

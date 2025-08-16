@@ -3,17 +3,16 @@ hunter = {
 	condition_string = WORKER_JOB_TRIGGER
 	clothes_texture_index = 2
 	icon = hunter_gatherer
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	resources = {
 		category = planet_farmers
 		produces = {
@@ -38,11 +37,9 @@ hunter = {
 			energy = 0.5
 		}
 	}
-	
 	planet_modifier = {
 		planet_amenities_add = 5
 	}
-
 	weight = {
 		weight = @worker_job_weight
 		modifier = {
@@ -64,7 +61,9 @@ hunter = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -73,7 +72,11 @@ hunter = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -118,11 +121,9 @@ hunter = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
 		# low income modifier
 		modifier = {
 			factor = 1.2
-
 			OR = {
 				is_unemployed = yes
 				has_job = hunter
@@ -138,11 +139,9 @@ hunter = {
 				}
 			}
 		}
-
 		modifier = {
 			factor = 0.5
 			has_trait = trait_lithoid
-
 			owner = {
 				is_lithoid_empire = yes
 				has_monthly_income = {
@@ -158,17 +157,16 @@ scraploota = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
 	clothes_texture_index = 2
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	resources = {
 		category = planet_miners
 		produces = {
@@ -184,7 +182,6 @@ scraploota = {
 			energy = 0.5
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -199,7 +196,9 @@ scraploota = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -208,7 +207,11 @@ scraploota = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -259,31 +262,30 @@ ork_boy = {
 	condition_string = WORKER_JOB_TRIGGER
 	#building_icon = building_watch_tower
 	clothes_texture_index = 4
-
 	country_modifier = {
 		country_naval_cap_add = 2
 	}
-
 	pop_modifier = {
 		pop_defense_armies_add = 2
 	}
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	weight = {
 		weight = @soldier_job_weight
 		modifier = {
 			factor = 10
 			exists = planet
-			planet = { has_modifier = martial_law }
+			planet = {
+				has_modifier = martial_law
+			}
 		}
 		modifier = {
 			factor = 2
@@ -304,12 +306,18 @@ ork_boy = {
 		modifier = {
 			factor = 0.1
 			is_enslaved = yes
-			NOT = { has_slavery_type = { type = slavery_military } }
+			NOT = {
+				has_slavery_type = {
+					type = slavery_military
+				}
+			}
 		}
 		modifier = {
 			factor = 10
 			is_enslaved = yes
-			has_slavery_type = { type = slavery_military }
+			has_slavery_type = {
+				type = slavery_military
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -377,32 +385,31 @@ ork_nob = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	#building_icon = building_irontoff_bastion
 	clothes_texture_index = 3
-
 	country_modifier = {
 		country_naval_cap_add = 4
 	}
-
 	pop_modifier = {
 		pop_defense_armies_add = 3
 	}
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	weight = {
 		weight = @soldier_job_weight
 		modifier = {
 			factor = 10
 			exists = planet
-			planet = { has_modifier = martial_law }
+			planet = {
+				has_modifier = martial_law
+			}
 		}
 		modifier = {
 			factor = 2
@@ -487,17 +494,16 @@ mekboy = {
 	#building_icon = building_kustom_workshop
 	icon = maintenance_drone
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	resources = {
 		category = planet_artisans
 		produces = {
@@ -516,13 +522,14 @@ mekboy = {
 			energy = 1
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -543,7 +550,9 @@ mekboy = {
 		modifier = {
 			factor = 1.2
 			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
+			has_slavery_type = {
+				type = slavery_indentured
+			}
 		}
 		modifier = {
 			factor = 1.5
@@ -558,17 +567,16 @@ techboy = {
 	#building_icon = building_dakka_bunker
 	icon = technician
 	clothes_texture_index = 2
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	resources = {
 		category = planet_technician
 		produces = {
@@ -592,7 +600,6 @@ techboy = {
 			energy = 0.5
 		}
 	}
-
 	weight = {
 		weight = @worker_job_weight
 		modifier = {
@@ -675,11 +682,9 @@ techboy = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
 		# low income modifier
 		modifier = {
 			factor = 1.2
-
 			OR = {
 				is_unemployed = yes
 				has_job = "technician"
@@ -704,18 +709,17 @@ yeller = {
 	#building_icon = building_skull_trophy_rack
 	icon = priest
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	resources = {
 		category = planet_priests
 		produces = {
@@ -726,22 +730,24 @@ yeller = {
 			consumer_goods = 1
 		}
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 5
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 2
 			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
+			owner = {
+				has_civic = civic_exalted_priesthood
+			}
 		}
 		modifier = {
 			factor = 2
@@ -780,7 +786,9 @@ yeller = {
 		modifier = {
 			factor = 0.1
 			has_ethic = ethic_materialist
-			NOT = { has_job = priest }
+			NOT = {
+				has_job = priest
+			}
 		}
 		modifier = {
 			factor = 1.5
@@ -840,17 +848,16 @@ muzboy = {
 	#building_icon = building_eavy_metal_stage
 	icon = entertainer
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	resources = {
 		category = planet_entertainers
 		produces = {
@@ -860,17 +867,17 @@ muzboy = {
 			consumer_goods = 1
 		}
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 100
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 3
@@ -933,17 +940,16 @@ smithboy = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	#building_icon = building_minelayer_craft
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	resources = {
 		category = planet_metallurgists
 		produces = {
@@ -962,13 +968,14 @@ smithboy = {
 			energy = 1
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -995,7 +1002,9 @@ smithboy = {
 		modifier = {
 			factor = 1.2
 			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
+			has_slavery_type = {
+				type = slavery_indentured
+			}
 		}
 		modifier = {
 			factor = 1.5
@@ -1010,28 +1019,25 @@ sumboy = {
 	#building_icon = building_dakka_platform
 	icon = fe_xeno_ward
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	resources = {
 		category = planet_bureaucrats
 		upkeep = {
 			consumer_goods = 1
 		}
 	}
-
 	country_modifier = {
 		country_admin_cap_add = 10
 	}
-
 	triggered_country_modifier = {
 		potential = {
 			exists = planet
@@ -1039,7 +1045,9 @@ sumboy = {
 				exists = sector
 				sector = {
 					exists = leader
-					leader = { has_trait = leader_trait_bureaucrat }
+					leader = {
+						has_trait = leader_trait_bureaucrat
+					}
 				}
 			}
 		}
@@ -1047,13 +1055,14 @@ sumboy = {
 			country_admin_cap_add = 1
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 2
@@ -1106,30 +1115,27 @@ brewboy = {
 	condition_string = WORKER_JOB_TRIGGER
 	#building_icon = building_smack_bar
 	clothes_texture_index = 2
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible = {
-		owner = { is_gestalt = no }
+		owner = {
+			is_gestalt = no
+		}
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 5
-		bio_pop_growth_speed = 0.1
+		BIOLOGICAL_bonus_pop_growth = 0.1
 		biological_pop_happiness = 0.1
 	}
-	
 	resources = {
 		category = planet_bureaucrats
 		upkeep = {
 			food = 1
 		}
 	}
-
 	weight = {
 		weight = @clerk_job_weight
 		modifier = {

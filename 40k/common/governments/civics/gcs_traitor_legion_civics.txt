@@ -1,122 +1,176 @@
-civic_iii = { # III – Emperor's Children
-    possible = { authority = { value = auth_chaos } }
-    modifier = {
-        army_collateral_damage_mult = 0.5          # existing
-        ship_fire_rate_mult = 0.10
-        army_morale_damage_mult = 0.15
-        planet_jobs_unity_produces_mult = -0.05
-        planet_stability_add = -5
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_iii = {
+	# III – Emperor's Children
+	possible = {
+		authority = {
+			value = auth_chaos
+		}
+	}
+	modifier = {
+		army_collateral_damage_mult = 0.5		# existing
+		ship_fire_rate_mult = 0.1
+		army_morale_damage_mult = 0.15
+		planet_jobs_unity_produces_mult = -0.05
+		planet_stability_add = -5
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_iv = { # IV – Iron Warriors
-    possible = { authority = { value = auth_chaos } }
-    modifier = {
-        country_occupation_armies_add = 2          # existing
-        ship_orbital_bombardment_mult = 0.25
-        army_attack_damage_mult = 0.10
-        defense_platform_build_speed_mult = 0.15
-        planet_jobs_research_produces_mult = -0.05
-        planet_stability_add = -5
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_iv = {
+	# IV – Iron Warriors
+	possible = {
+		authority = {
+			value = auth_chaos
+		}
+	}
+	modifier = {
+		country_occupation_armies_add = 2		# existing
+		ship_orbital_bombardment_mult = 0.25
+		army_attack_damage_mult = 0.1
+		defense_platform_build_speed_mult = 0.15
+		planet_jobs_research_produces_mult = -0.05
+		planet_stability_add = -5
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_viii = { # VIII – Night Lords
-    possible = { authority = { value = auth_chaos } }
-    modifier = {
-        planet_stability_add = 0.3                 # existing (mod file oddity; leaving but outweighed below)
-        army_morale_damage_mult = 0.20
-        ship_disengage_chance_mult = 0.10
-        piracy_growth_mult = 0.50
-        trade_value_produces_mult = -0.10
-        planet_stability_add = -10                 # net terror-driven instability
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_viii = {
+	# VIII – Night Lords
+	possible = {
+		authority = {
+			value = auth_chaos
+		}
+	}
+	modifier = {
+		planet_stability_add = 0.3		# existing (mod file oddity; leaving but outweighed below)
+		army_morale_damage_mult = 0.2
+		ship_disengage_chance_mult = 0.1
+		piracy_growth_mult = 0.5
+		trade_value_produces_mult = -0.1
+		planet_stability_add = -10		# net terror-driven instability
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_xii = { # XII – World Eaters
-    possible = { authority = { value = auth_chaos } }
-    modifier = {
-        army_attack_damage_mult = 0.5              # existing
-        army_attack_morale_mult = 0.5              # existing
-        ship_fire_rate_mult = 0.05
-        all_technology_research_speed = -0.05
-        planet_jobs_unity_produces_mult = -0.05
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_xii = {
+	# XII – World Eaters
+	possible = {
+		authority = {
+			value = auth_chaos
+		}
+	}
+	modifier = {
+		army_attack_damage_mult = 0.5		# existing
+		army_attack_morale_mult = 0.5		# existing
+		ship_fire_rate_mult = 0.05
+		all_technology_research_speed = -0.05
+		planet_jobs_unity_produces_mult = -0.05
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_xiv = { # XIV – Death Guard
-    possible = { authority = { value = auth_chaos } }
-    modifier = {
-        armies_upkeep_mult = -0.5                  # existing (cheap hordes)
-        army_defense_health_mult = 0.30
-        army_damage_mult = 0.10
-        army_morale_damage_mult = 0.10
-        ship_base_speed_mult = -0.05
-        pop_growth_speed = -0.05                   # plagues drag on growth
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_xiv = {
+	# XIV – Death Guard
+	possible = {
+		authority = {
+			value = auth_chaos
+		}
+	}
+	modifier = {
+		armies_upkeep_mult = -0.5		# existing (cheap hordes)
+		army_defense_health_mult = 0.3
+		army_damage_mult = 0.1
+		army_morale_damage_mult = 0.1
+		ship_base_speed_mult = -0.05
+		BIOLOGICAL_pop_growth_speed = -0.05		# plagues drag on growth
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_xv = { # XV – Thousand Sons
-    possible = { authority = { value = auth_chaos } }
-    modifier = {
-        country_base_sr_zro_produces_add = 3       # existing (warp focus)
-        country_physics_tech_research_speed = 0.10
-        country_society_tech_research_speed = 0.10
-        ship_fire_rate_mult = 0.05
-        planet_stability_add = -5
-        planet_jobs_alloys_produces_mult = -0.05
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_xv = {
+	# XV – Thousand Sons
+	possible = {
+		authority = {
+			value = auth_chaos
+		}
+	}
+	modifier = {
+		country_base_sr_zro_produces_add = 3		# existing (warp focus)
+		country_physics_tech_research_speed = 0.1
+		country_society_tech_research_speed = 0.1
+		ship_fire_rate_mult = 0.05
+		planet_stability_add = -5
+		planet_jobs_alloys_produces_mult = -0.05
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_xvi = { # XVI – Sons of Horus
-    possible = { authority = { value = auth_chaos } }
-    modifier = {
-        country_naval_cap_mult = 0.30              # existing (+0.30), retains military superiority
-        ship_fire_rate_mult = 0.10
-        admiral_skill_levels = 1
-        council_agenda_speed = -0.10               # ruthless, disruptive politicking
-        edict_fund_add = -10
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_xvi = {
+	# XVI – Sons of Horus
+	possible = {
+		authority = {
+			value = auth_chaos
+		}
+	}
+	modifier = {
+		country_naval_cap_mult = 0.3		# existing (+0.30), retains military superiority
+		ship_fire_rate_mult = 0.1
+		admiral_skill_levels = 1
+		council_agenda_speed = -0.1		# ruthless, disruptive politicking
+		edict_fund_add = -10
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_xvii = { # XVII – Word Bearers
-    possible = { authority = { value = auth_chaos } }
-    modifier = {
-        army_attack_morale_mult = 0.6              # existing
-        army_defense_morale_mult = 0.6             # existing
-        army_damage_mult = 0.10
-        planet_jobs_unity_produces_mult = -0.05    # zeal displaces civic cohesion
-        all_technology_research_speed = -0.05
-        planet_stability_add = -5
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_xvii = {
+	# XVII – Word Bearers
+	possible = {
+		authority = {
+			value = auth_chaos
+		}
+	}
+	modifier = {
+		army_attack_morale_mult = 0.6		# existing
+		army_defense_morale_mult = 0.6		# existing
+		army_damage_mult = 0.1
+		planet_jobs_unity_produces_mult = -0.05		# zeal displaces civic cohesion
+		all_technology_research_speed = -0.05
+		planet_stability_add = -5
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_xx = { # XX – Alpha Legion
-    possible = { authority = { value = auth_chaos } }
-    modifier = {
-        ship_tracking_add = 0.1                    # existing
-        intel_encryption_add = 3
-        intel_decryption_add = 3
-        ship_disengage_chance_mult = 0.15
-        planet_jobs_unity_produces_mult = -0.10
-        pop_government_ethic_attraction = -0.10
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_xx = {
+	# XX – Alpha Legion
+	possible = {
+		authority = {
+			value = auth_chaos
+		}
+	}
+	modifier = {
+		ship_tracking_add = 0.1		# existing
+		intel_encryption_add = 3
+		intel_decryption_add = 3
+		ship_disengage_chance_mult = 0.15
+		planet_jobs_unity_produces_mult = -0.1
+		pop_government_ethic_attraction = -0.1
+	}
+	ai_weight = {
+		factor = 0
+	}
 }

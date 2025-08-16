@@ -1,162 +1,324 @@
 ### Loyal Legion civics – merged gating + tuned modifiers
 ### Only valid with Resurgent Imperium or Loyal Legion Command
-
-civic_i = { # I Dark Angels
-    possible = {
-        OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion }
-        NOR = {
-            has_authority = auth_democratic
-            has_authority = auth_oligarchic
-            has_authority = auth_dictatorial
-            has_authority = auth_imperial
-            has_authority = auth_corporate
-            has_authority = auth_machine_intelligence
-            has_authority = auth_hive_mind
-        }
-    }
-    modifier = {
-        pop_ethic_militarist_attraction_mult = 4
-        ship_fire_rate_mult = 0.03
-        army_damage_mult = 0.05
-        intel_encryption_add = 2
-        intel_decryption_add = 1
-        pop_government_ethic_attraction = -0.05
-        planet_stability_add = -2
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_i = {
+	# I Dark Angels
+	possible = {
+		OR = {
+			has_authority = auth_stagnated_imperium
+			has_authority = auth_loyal_legion
+		}
+		NOR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind
+		}
+	}
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 4
+		ship_fire_rate_mult = 0.03
+		army_damage_mult = 0.05
+		intel_encryption_add = 2
+		intel_decryption_add = 1
+		pop_government_ethic_attraction = -0.05
+		planet_stability_add = -2
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_v = { # V White Scars
-    possible = {
-        OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion }
-        NOR = { has_authority = auth_democratic has_authority = auth_oligarchic has_authority = auth_dictatorial has_authority = auth_imperial has_authority = auth_corporate has_authority = auth_machine_intelligence has_authority = auth_hive_mind }
-    }
-    modifier = {
-        pop_ethic_militarist_attraction_mult = 4
-        ship_base_speed_mult = 0.15
-        ship_disengage_chance_mult = 0.10
-        ship_hyperlane_range_add = 1
-        starbase_upgrade_cost_mult = 0.10
-        defense_platform_build_speed_mult = -0.10
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_v = {
+	# V White Scars
+	possible = {
+		OR = {
+			has_authority = auth_stagnated_imperium
+			has_authority = auth_loyal_legion
+		}
+		NOR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind
+		}
+	}
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 4
+		ship_base_speed_mult = 0.15
+		ship_disengage_chance_mult = 0.1
+		ship_hyperlane_range_add = 1
+		starbase_upgrade_cost_mult = 0.1
+		defense_platform_build_speed_mult = -0.1
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_vi = { # VI Space Wolves
-    possible = {
-        OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion }
-        NOR = { has_authority = auth_democratic has_authority = auth_oligarchic has_authority = auth_dictatorial has_authority = auth_imperial has_authority = auth_corporate has_authority = auth_machine_intelligence has_authority = auth_hive_mind }
-    }
-    modifier = {
-        pop_ethic_militarist_attraction_mult = 4
-        army_damage_mult = 0.15
-        army_morale = 0.20
-        planet_crime_add = -10
-        all_technology_research_speed = -0.05
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_vi = {
+	# VI Space Wolves
+	possible = {
+		OR = {
+			has_authority = auth_stagnated_imperium
+			has_authority = auth_loyal_legion
+		}
+		NOR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind
+		}
+	}
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 4
+		army_damage_mult = 0.15
+		army_morale = 0.2
+		planet_crime_add = -10
+		all_technology_research_speed = -0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_vii = { # VII Imperial Fists
-    possible = {
-        OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion }
-        NOR = { has_authority = auth_democratic has_authority = auth_oligarchic has_authority = auth_dictatorial has_authority = auth_imperial has_authority = auth_corporate has_authority = auth_machine_intelligence has_authority = auth_hive_mind }
-    }
-    modifier = {
-        pop_ethic_militarist_attraction_mult = 4
-        starbase_upgrade_cost_mult = -0.15
-        starbase_build_speed_mult = 0.15
-        starbase_defense_platform_capacity_add = 2
-        defense_platform_build_speed_mult = 0.20
-        ship_base_speed_mult = -0.05
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_vii = {
+	# VII Imperial Fists
+	possible = {
+		OR = {
+			has_authority = auth_stagnated_imperium
+			has_authority = auth_loyal_legion
+		}
+		NOR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind
+		}
+	}
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 4
+		starbase_upgrade_cost_mult = -0.15
+		starbase_build_speed_mult = 0.15
+		starbase_defense_platform_capacity_add = 2
+		defense_platform_build_speed_mult = 0.2
+		ship_base_speed_mult = -0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_ix = { # IX Blood Angels
-    possible = {
-        OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion }
-        NOR = { has_authority = auth_democratic has_authority = auth_oligarchic has_authority = auth_dictatorial has_authority = auth_imperial has_authority = auth_corporate has_authority = auth_machine_intelligence has_authority = auth_hive_mind }
-    }
-    modifier = {
-        pop_ethic_militarist_attraction_mult = 4
-        army_damage_mult = 0.10
-        army_morale_damage_mult = 0.15
-        planet_stability_add = 3
-        planet_jobs_unity_produces_mult = 0.05
-        armies_upkeep_mult = 0.10
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_ix = {
+	# IX Blood Angels
+	possible = {
+		OR = {
+			has_authority = auth_stagnated_imperium
+			has_authority = auth_loyal_legion
+		}
+		NOR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind
+		}
+	}
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 4
+		army_damage_mult = 0.1
+		army_morale_damage_mult = 0.15
+		planet_stability_add = 3
+		planet_jobs_unity_produces_mult = 0.05
+		armies_upkeep_mult = 0.1
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_x = { # X Iron Hands
-    possible = {
-        OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion }
-        NOR = { has_authority = auth_democratic has_authority = auth_oligarchic has_authority = auth_dictatorial has_authority = auth_imperial has_authority = auth_corporate has_authority = auth_machine_intelligence has_authority = auth_hive_mind }
-    }
-    modifier = {
-        pop_ethic_militarist_attraction_mult = 4
-        ship_hitpoints_mult = 0.10
-        country_engineering_tech_research_speed = 0.10
-        leader_lifespan_add = 10
-        pop_amenities_usage_mult = 0.05
-        pop_growth_speed = -0.05
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_x = {
+	# X Iron Hands
+	possible = {
+		OR = {
+			has_authority = auth_stagnated_imperium
+			has_authority = auth_loyal_legion
+		}
+		NOR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind
+		}
+	}
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 4
+		ship_hitpoints_mult = 0.1
+		country_engineering_tech_research_speed = 0.1
+		leader_lifespan_add = 10
+		pop_amenities_usage_mult = 0.05
+		BIOLOGICAL_pop_growth_speed = -0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_xiii = { # XIII Ultramarines
-    possible = {
-        OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion }
-        NOR = { has_authority = auth_democratic has_authority = auth_oligarchic has_authority = auth_dictatorial has_authority = auth_imperial has_authority = auth_corporate has_authority = auth_machine_intelligence has_authority = auth_hive_mind }
-    }
-    modifier = {
-        pop_ethic_militarist_attraction_mult = 4
-        country_admin_cap_mult = 0.20
-        planet_stability_add = 5
-        planet_jobs_unity_produces_mult = 0.10
-        council_agenda_speed = 0.10
-        ship_fire_rate_mult = -0.02
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_xiii = {
+	# XIII Ultramarines
+	possible = {
+		OR = {
+			has_authority = auth_stagnated_imperium
+			has_authority = auth_loyal_legion
+		}
+		NOR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind
+		}
+	}
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 4
+		country_admin_cap_mult = 0.2
+		planet_stability_add = 5
+		planet_jobs_unity_produces_mult = 0.1
+		council_agenda_speed = 0.1
+		ship_fire_rate_mult = -0.02
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_xviii = { # XVIII Salamanders
-    possible = {
-        OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion }
-        NOR = { has_authority = auth_democratic has_authority = auth_oligarchic has_authority = auth_dictatorial has_authority = auth_imperial has_authority = auth_corporate has_authority = auth_machine_intelligence has_authority = auth_hive_mind }
-    }
-    modifier = {
-        pop_ethic_militarist_attraction_mult = 4
-        planet_amenities_mult = 0.10
-        pop_amenities_usage_mult = -0.05
-        planet_jobs_alloys_produces_mult = 0.05
-        army_damage_mult = 0.05
-        ship_base_speed_mult = -0.05
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_xviii = {
+	# XVIII Salamanders
+	possible = {
+		OR = {
+			has_authority = auth_stagnated_imperium
+			has_authority = auth_loyal_legion
+		}
+		NOR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind
+		}
+	}
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 4
+		planet_amenities_mult = 0.1
+		pop_amenities_usage_mult = -0.05
+		planet_jobs_alloys_produces_mult = 0.05
+		army_damage_mult = 0.05
+		ship_base_speed_mult = -0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
-civic_xix = { # XIX Raven Guard
-    possible = {
-        OR = { has_authority = auth_stagnated_imperium has_authority = auth_loyal_legion }
-        NOR = { has_authority = auth_democratic has_authority = auth_oligarchic has_authority = auth_dictatorial has_authority = auth_imperial has_authority = auth_corporate has_authority = auth_machine_intelligence has_authority = auth_hive_mind }
-    }
-    modifier = {
-        pop_ethic_militarist_attraction_mult = 4
-        ship_evasion_mult = 0.10
-        ship_disengage_chance_mult = 0.10
-        army_damage_mult = 0.05
-        country_naval_cap_mult = -0.05
-    }
-    weight_modifier = { modifier = { factor = 0 is_ai = yes } }
-    ai_weight = { factor = 0 }
+civic_xix = {
+	# XIX Raven Guard
+	possible = {
+		OR = {
+			has_authority = auth_stagnated_imperium
+			has_authority = auth_loyal_legion
+		}
+		NOR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+			has_authority = auth_corporate
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind
+		}
+	}
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 4
+		ship_evasion_mult = 0.1
+		ship_disengage_chance_mult = 0.1
+		army_damage_mult = 0.05
+		country_naval_cap_mult = -0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			is_ai = yes
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
 }

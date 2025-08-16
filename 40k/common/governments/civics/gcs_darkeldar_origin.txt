@@ -2,7 +2,9 @@ origin_commorragh_eldar = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_darkeldar.dds"
 	picture = GFX_origin_commorragh_eldar
-        initializers = { deldar_system_start_01 }
+	initializers = {
+		deldar_system_start_01
+	}
 	starting_colony = pc_darke
 	habitability_preference = pc_continental
 	preferred_planet_class_neighbor = no
@@ -13,14 +15,25 @@ origin_commorragh_eldar = {
 	}
 	possible = {
 		ethics = {
-			OR = { value = ethic_fanatic_authoritarian value = ethic_authoritarian }
-			OR = { value = ethic_fanatic_xenophobe value = ethic_xenophobe }
-			NOR = { value = ethic_fanatic_pacifist value = ethic_pacifist }
+			OR = {
+				value = ethic_fanatic_authoritarian
+				value = ethic_authoritarian
+			}
+			OR = {
+				value = ethic_fanatic_xenophobe
+				value = ethic_xenophobe
+			}
+			NOR = {
+				value = ethic_fanatic_pacifist
+				value = ethic_pacifist
+			}
 		}
-		civics = { value = civic_slaver_guilds }
+		civics = {
+			value = civic_slaver_guilds
+		}
 	}
 	modifier = {
-		pop_growth_speed = 0.5	
+		BIOLOGICAL_pop_growth_speed = 0.5
 		leader_lifespan_add = 100
 		planet_colony_development_speed_mult = -0.5
 		country_starbase_influence_cost_mult = 1
@@ -37,5 +50,7 @@ origin_commorragh_eldar = {
 		"darkeldar_empire"
 	}
 	advanced_start = yes
-	random_weight = { base = 0 }
+	random_weight = {
+		base = 0
+	}
 }

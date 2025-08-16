@@ -5,19 +5,29 @@ origin_great_devourer = {
 	starting_colony = pc_hive
 	habitability_preference = pc_hive
 	preferred_planet_class_neighbor = no
-	playable = { has_utopia = yes }
+	playable = {
+		has_utopia = yes
+	}
 	possible = {
-		authority = { value = auth_hive_mind }
+		authority = {
+			value = auth_hive_mind
+		}
 		civics = {
-			value = civic_hive_devouring_swarm value = civic_hive_fleet
-			NOR = { value = civic_hive_memorialist value = civic_hive_empath }
+			value = civic_hive_devouring_swarm
+			value = civic_hive_fleet
+			NOR = {
+				value = civic_hive_memorialist
+				value = civic_hive_empath
+			}
 		}
 		species_archetype = {
-			NOT = { value = LITHOID }
+			NOT = {
+				value = LITHOID
+			}
 		}
 	}
 	modifier = {
-		pop_growth_speed = 0.5		
+		BIOLOGICAL_pop_growth_speed = 0.5
 		pop_housing_usage_mult = -0.5
 		planet_pops_organics_food_upkeep_mult = -0.5
 		pop_environment_tolerance = 0.6
@@ -26,7 +36,12 @@ origin_great_devourer = {
 		army_damage_mult = 0.75
 	}
 	description = "origin_tooltip_tyranid_effects"
-	flags = { "tyranid_empire" "custom_start_screen" }
+	flags = {
+		"tyranid_empire"
+		"custom_start_screen"
+	}
 	advanced_start = yes
-	random_weight = { base = 0.5 }
+	random_weight = {
+		base = 0.5
+	}
 }
