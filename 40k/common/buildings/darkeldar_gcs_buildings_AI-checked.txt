@@ -110,7 +110,7 @@ building_slave_chamber = {
 		modifier = {
 			factor = 0
 			NOT = {
-				any_owned_pop = {
+				any_owned_pop_group = {
 					is_enslaved = yes
 				}
 			}
@@ -482,7 +482,7 @@ building_kabal_fortress = {
 				AND = {
 					free_housing < 0
 					NOT = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							is_unemployed = yes
 						}
 					}

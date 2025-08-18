@@ -91,7 +91,7 @@ auth_eldar = {
 		envoys_add = 6
 		country_megastructure_build_cap_add = 2
 		country_edict_cap_add = 3
-		pop_growth_speed_reduction = 0.75
+		BIOLOGICAL_pop_growth_reduction = 0.75
 		empire_size_penalty_mult = -5
 	}
 }
@@ -118,7 +118,7 @@ auth_darkeldar = {
 		country_base_influence_produces_add = 5
 		country_power_projection_influence_produces_add = 3
 		country_megastructure_build_cap_add = 2
-		pop_growth_speed_reduction = 0.75
+		BIOLOGICAL_pop_growth_reduction = 0.75
 		empire_size_penalty_mult = -2.5
 	}
 }

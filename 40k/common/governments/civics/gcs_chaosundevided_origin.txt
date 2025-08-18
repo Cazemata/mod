@@ -4,10 +4,14 @@ origin_chaos_undivided = {
 	picture = origin_chaos_undivided
 	starting_colony = pc_relic
 	max_once_global = yes
-	playable = { has_ancrel = yes }
+	playable = {
+		has_ancrel = yes
+	}
 	possible = {
 		civics = {
-			NOT = { value = civic_agrarian_idyll }
+			NOT = {
+				value = civic_agrarian_idyll
+			}
 		}
 	}
 	modifier = {
@@ -21,5 +25,7 @@ origin_chaos_undivided = {
 		"humanoid"
 		"chaos_empire"
 	}
-	random_weight = { base = 0 }
+	random_weight = {
+		base = 0
+	}
 }

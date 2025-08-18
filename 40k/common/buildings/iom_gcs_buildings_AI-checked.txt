@@ -102,7 +102,7 @@ building_residence = {
 				AND = {
 					free_housing < 0					# Prevents the AI from running out of residences when nearly out of tiles
 					NOT = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							is_unemployed = yes
 						}
 					}
@@ -646,7 +646,7 @@ building_cellarion = {
 		}
 	}
 	planet_modifier = {
-		trade_value_mult = 0.2
+		planet_traders_trade_produces_mult = 0.2
 		job_bureaucrat_add = 150
 		job_merchant_add = 250
 	}
@@ -786,7 +786,7 @@ building_navy_recruitment = {
 				AND = {
 					free_housing < 0					# Prevents the AI from running out of residences when nearly out of tiles
 					NOT = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							is_unemployed = yes
 						}
 					}

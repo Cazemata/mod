@@ -203,7 +203,7 @@ civic_chosen_by_the_emperor = {
 		defense_platform_build_speed_mult = 0.15
 		planet_jobs_unity_produces_mult = 0.05
 		pop_government_ethic_attraction = 0.1
-		edict_fund_add = 10
+		country_edict_fund_add = 10
 	}
 	ai_weight = {
 		factor = 0

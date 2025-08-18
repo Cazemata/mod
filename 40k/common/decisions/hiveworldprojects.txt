@@ -569,13 +569,11 @@ decision_agri_world_project = {
 				}
 				num_districts = {
 					type = district_underdeveloped_power
-					>
-					1
+					value > 1
 				}
 				num_districts = {
 					type = district_basic_infrastructure
-					>
-					1
+					value > 1
 				}
 			}
 			#Possible requirements for Agri World, still balancing

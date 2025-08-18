@@ -26,12 +26,6 @@ civic_i = {
 		pop_government_ethic_attraction = -0.05
 		planet_stability_add = -2
 	}
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ai = yes
-		}
-	}
 	ai_weight = {
 		factor = 0
 	}
@@ -62,12 +56,6 @@ civic_v = {
 		starbase_upgrade_cost_mult = 0.1
 		defense_platform_build_speed_mult = -0.1
 	}
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ai = yes
-		}
-	}
 	ai_weight = {
 		factor = 0
 	}
@@ -96,12 +84,6 @@ civic_vi = {
 		army_morale = 0.2
 		planet_crime_add = -10
 		all_technology_research_speed = -0.05
-	}
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ai = yes
-		}
 	}
 	ai_weight = {
 		factor = 0
@@ -133,12 +115,6 @@ civic_vii = {
 		defense_platform_build_speed_mult = 0.2
 		ship_base_speed_mult = -0.05
 	}
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ai = yes
-		}
-	}
 	ai_weight = {
 		factor = 0
 	}
@@ -168,12 +144,6 @@ civic_ix = {
 		planet_stability_add = 3
 		planet_jobs_unity_produces_mult = 0.05
 		armies_upkeep_mult = 0.1
-	}
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ai = yes
-		}
 	}
 	ai_weight = {
 		factor = 0
@@ -205,12 +175,6 @@ civic_x = {
 		pop_amenities_usage_mult = 0.05
 		BIOLOGICAL_pop_growth_speed = -0.05
 	}
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ai = yes
-		}
-	}
 	ai_weight = {
 		factor = 0
 	}
@@ -238,14 +202,8 @@ civic_xiii = {
 		country_admin_cap_mult = 0.2
 		planet_stability_add = 5
 		planet_jobs_unity_produces_mult = 0.1
-		council_agenda_speed = 0.1
+		council_agenda_progress_speed = 0.1
 		ship_fire_rate_mult = -0.02
-	}
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ai = yes
-		}
 	}
 	ai_weight = {
 		factor = 0
@@ -277,12 +235,6 @@ civic_xviii = {
 		army_damage_mult = 0.05
 		ship_base_speed_mult = -0.05
 	}
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ai = yes
-		}
-	}
 	ai_weight = {
 		factor = 0
 	}
@@ -311,12 +263,6 @@ civic_xix = {
 		ship_disengage_chance_mult = 0.1
 		army_damage_mult = 0.05
 		country_naval_cap_mult = -0.05
-	}
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ai = yes
-		}
 	}
 	ai_weight = {
 		factor = 0

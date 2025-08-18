@@ -1,21 +1,21 @@
 #morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
-
 # collateral_damage was not part of old file so set to vanilla values
 # war_exhaustion was not part of old file so set to 0.0, this is WARHAMMER 40K and losing a few milion souls don't matter ;)
-
 scouts_space_marines_defense = {
 	defensive = yes
 	is_pop_spawned = yes
 	damage = 2
 	health = 8
-	morale = 5	
-	collateral_damage = 1.00
-	war_exhaustion = 0.0
-
-
+	morale = 5
+	collateral_damage = 1
+	war_exhaustion = 0
 	potential = {
-		planet = { is_planet_class = spacemarine_homeworld }
-		owner = { has_country_flag = imperium }
+		planet = {
+			is_planet_class = pc_city_iom
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -25,13 +25,15 @@ collegia_titanica_defense = {
 	damage = 10
 	health = 10
 	morale = 10
-	collateral_damage = 1.00
-	war_exhaustion = 0.0
-	
-		
+	collateral_damage = 1
+	war_exhaustion = 0
 	potential = {
-		planet = { is_planet_class = pc_mechanicus_forge }
-		owner = { has_country_flag = imperium }
+		planet = {
+			is_planet_class = pc_mechanicus_forge
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -40,14 +42,16 @@ legio_custodes_defense = {
 	is_pop_spawned = yes
 	damage = 5
 	health = 10
-	morale = 5	
-	collateral_damage = 1.00
-	war_exhaustion = 0.0
-
-
+	morale = 5
+	collateral_damage = 1
+	war_exhaustion = 0
 	potential = {
-		planet = { is_planet_class = pc_city_iom }
-		owner = { has_country_flag = imperium }
+		planet = {
+			is_planet_class = pc_city_iom
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -56,14 +60,16 @@ catachan_fighters_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-	
-	
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = catachan_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = catachan_planet
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -72,14 +78,16 @@ cadian_shock_troops_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-
-		
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = cadia_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = cadia_planet
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -88,14 +96,16 @@ armageddon_steel_legion_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-	
-	
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = armageddon_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = armageddon_planet
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -104,14 +114,16 @@ death_korps_of_krieg_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-	
-	
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = krieg_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = kriegplanett
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -120,14 +132,16 @@ mordian_iron_guard_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-	
-	
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = mordian_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = mordian_planet
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -136,14 +150,16 @@ scintillan_fusiliers_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-	
-	
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = scintilla_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = scintilla_planet
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -152,14 +168,16 @@ praetorian_guard_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-	
-	
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = praetoria_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = praetoria_planet
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -168,14 +186,16 @@ valhallan_ice_warriors_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-	
-	
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = valhalla_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = valhalla_planet
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -184,14 +204,16 @@ tallarn_desert_raiders_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-	
-	
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = tallarn_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = tallarn_planet
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }
 
@@ -200,13 +222,15 @@ vostroyan_firstborn_defense = {
 	is_pop_spawned = yes
 	damage = 3
 	health = 9
-	morale = 3	
-	collateral_damage = 0.00	
-	war_exhaustion = 0.0
-	
-	
+	morale = 3
+	collateral_damage = 0
+	war_exhaustion = 0
 	potential = {
-		planet = { has_planet_flag = vostroya_planet }
-		owner = { has_country_flag = imperium }
+		planet = {
+			has_planet_flag = vostroya_planet
+		}
+		owner = {
+			has_country_flag = imperium
+		}
 	}
 }

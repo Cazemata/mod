@@ -447,7 +447,7 @@ d_iom_wyverns_gate_spaceport = {
 	}
 	planet_modifier = {
 		country_naval_cap_add = 100
-		planet_jobs_trade_value_mult = 0.1
+		planet_traders_trade_produces_mult = 0.1
 		local_trade_protection_add = 5
 	}
 	drop_weight = {
@@ -471,7 +471,7 @@ d_iom_lion_gate_spaceport = {
 	}
 	planet_modifier = {
 		country_naval_cap_add = 10
-		planet_jobs_trade_value_mult = 0.1
+		planet_traders_trade_produces_mult = 0.1
 		local_trade_protection_add = 5
 	}
 	drop_weight = {
@@ -495,7 +495,7 @@ d_iom_damocles_spaceport = {
 	}
 	planet_modifier = {
 		country_naval_cap_add = 10
-		planet_jobs_trade_value_mult = 0.1
+		planet_traders_trade_produces_mult = 0.1
 		local_trade_protection_add = 5
 	}
 	drop_weight = {

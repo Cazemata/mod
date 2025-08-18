@@ -4,44 +4,41 @@ building_ancient_monolith = {
 	can_demolish = no
 	can_be_ruined = no
 	can_be_disabled = no
-
 	category = government
-
 	building_sets = {
 		government
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
-	}	
-	
+		owner = {
+			has_country_flag = necron_empire
+		}
+	}
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-	
 	upgrades = {
 		building_engaged_monolith
 	}
-	
 	planet_modifier = {
 		planet_housing_add = 1000
 		planet_amenities_add = 1000
 		job_necron_warrior_add = 250
 	}
-
 	resources = {
 		category = planet_buildings
 		upkeep = {
 			energy = 10
 		}
 	}
-	
 	triggered_desc = {
 		text = job_necron_warrior_effect_desc
 	}
-		
 	ai_weight = {
 		weight = 10
 	}
@@ -54,35 +51,37 @@ building_engaged_monolith = {
 	can_be_ruined = no
 	can_be_disabled = no
 	planetary_ftl_inhibitor = yes
-	
 	icon = building_ancient_monolith
-
 	category = government
-
 	building_sets = {
 		government
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
-	}	
-	
+		owner = {
+			has_country_flag = necron_empire
+		}
+	}
 	destroy_trigger = {
 		exists = owner
 		OR = {
-			owner = { NOT = { has_country_flag = necron_empire } }
-			NOT = { is_planet_class = pc_nuked }
+			owner = {
+				NOT = {
+					has_country_flag = necron_empire
+				}
+			}
+			NOT = {
+				is_planet_class = pc_nuked
+			}
 		}
 	}
-	
 	allow = {
 		num_pops >= 50
 		is_planet_class = pc_nuked
 	}
-	
-	prerequisites = { "tech_engaged_monolith" }
-	
+	prerequisites = {
+		"tech_engaged_monolith"
+	}
 	convert_to = {
 		building_tyranid_hive
 		building_hall_of_blood
@@ -92,25 +91,21 @@ building_engaged_monolith = {
 		building_cadre_headquarters
 		building_chaos_tower
 	}
-
 	planet_modifier = {
 		planet_housing_add = 20
 		planet_amenities_add = 20
 		job_necron_warrior_add = 10
 		planet_orbital_bombardment_damage = -0.3
 	}
-
 	resources = {
 		category = planet_buildings
 		upkeep = {
 			energy = 25
 		}
 	}
-	
 	triggered_desc = {
 		text = job_necron_warrior_effect_desc
 	}
-		
 	ai_weight = {
 		weight = 20
 	}
@@ -119,44 +114,48 @@ building_engaged_monolith = {
 building_obelisk = {
 	base_buildtime = 240
 	base_cap_amount = 1
-	
 	category = pop_assembly
-
 	building_sets = {
 		government
 		urban
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
+		owner = {
+			has_country_flag = necron_empire
+		}
 	}
-
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { NAND = { has_deficit = living_metal has_modifier = planet_no_awakening } }
+			owner = {
+				NAND = {
+					has_deficit = sr_living_metal
+					has_modifier = planet_no_awakening
+				}
+			}
 		}
 		modifier = {
 			planet_pop_assembly_add = 3
 		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
 		}
 		upkeep = {
-			living_metal = 6
+			sr_living_metal = 6
 		}
 	}
-	
 	ai_weight = {
 		weight = 20
 		modifier = {
@@ -168,37 +167,37 @@ building_obelisk = {
 
 building_dormant_monolith = {
 	base_buildtime = 240
-
 	category = government
-
 	building_sets = {
 		government
 		urban
 	}
-
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
+		owner = {
+			has_country_flag = necron_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-	
 	allow = {
 		is_planet_class = pc_nuked
 	}
-
-	prerequisites = { "tech_dormant_monolith" }
-	
+	prerequisites = {
+		"tech_dormant_monolith"
+	}
 	planet_modifier = {
 		planet_housing_add = 2000
 		planet_amenities_add = 1000
-                job_necron_warrior_add = 400
+		job_necron_warrior_add = 400
 		job_triarch_add = 100
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -208,24 +207,26 @@ building_dormant_monolith = {
 			energy = 20
 		}
 	}
-
 	triggered_desc = {
 		text = job_triarch_effect_desc
 	}
-
 	ai_weight = {
 		weight = 10
 		modifier = {
-			weight = 100 #High weight to gurantee that if the below is true then the AI should build it
-			free_housing < 3 #Prevents the AI from running out of residences when nearly out of tiles
+			weight = 100			#High weight to gurantee that if the below is true then the AI should build it
+			free_housing < 3			#Prevents the AI from running out of residences when nearly out of tiles
 			OR = {
-				free_jobs > 0 #prevents spamming of residence buildings when no jobs are open
+				free_jobs > 0				#prevents spamming of residence buildings when no jobs are open
 				AND = {
-					free_housing < 0 #Prevents the AI from running out of residences when nearly out of tiles
-					NOT = { any_owned_pop = { is_unemployed = yes } }
+					free_housing < 0					#Prevents the AI from running out of residences when nearly out of tiles
+					NOT = {
+						any_owned_pop_group = {
+							is_unemployed = yes
+						}
+					}
 				}
 			}
-			free_district_slots = 0 #Do not build when city districts can still be built
+			free_district_slots = 0			#Do not build when city districts can still be built
 		}
 		modifier = {
 			factor = 0
@@ -236,30 +237,30 @@ building_dormant_monolith = {
 
 building_energy_core = {
 	base_buildtime = 240
-
 	category = research
-
 	building_sets = {
 		research
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
+		owner = {
+			has_country_flag = necron_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-	
 	planet_modifier = {
 		planet_engineers_produces_mult = 0.15
 		planet_physicists_produces_mult = 0.15
 		planet_biologists_produces_mult = 0.15
 		planet_buildings_energy_upkeep_mult = -0.3
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -269,7 +270,6 @@ building_energy_core = {
 			energy = 10
 		}
 	}
-
 	ai_weight = {
 		weight = 30
 		modifier = {
@@ -285,23 +285,24 @@ building_energy_core = {
 
 building_plasma_monolith = {
 	base_buildtime = 240
-
 	category = resource
-
 	building_sets = {
 		generator
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
+		owner = {
+			has_country_flag = necron_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -311,7 +312,6 @@ building_plasma_monolith = {
 			energy = 75
 		}
 	}
-	
 	ai_weight = {
 		weight = 50
 		modifier = {
@@ -324,7 +324,6 @@ building_plasma_monolith = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -335,30 +334,36 @@ building_plasma_monolith = {
 
 building_thermo_plasma_monolith = {
 	base_buildtime = 240
-	
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		foundry
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
+		owner = {
+			has_country_flag = necron_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-
 	resources = {
 		category = planet_buildings
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { NAND = { has_deficit = minerals has_deficit = energy } }
+				owner = {
+					NAND = {
+						has_deficit = minerals
+						has_deficit = energy
+					}
+				}
 			}
 			alloys = 25
 		}
@@ -370,7 +375,6 @@ building_thermo_plasma_monolith = {
 			energy = 10
 		}
 	}
-	
 	ai_weight = {
 		weight = 5
 		modifier = {
@@ -383,7 +387,6 @@ building_thermo_plasma_monolith = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		alloys = 1
 		trigger = {
@@ -396,33 +399,38 @@ building_forbidden_archive = {
 	base_buildtime = 240
 	base_limit = 1
 	category = research
-
 	building_sets = {
 		research
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
+		owner = {
+			has_country_flag = necron_empire
+		}
 	}
-
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-
 	planet_modifier = {
 		job_engineer_add = 150
 		job_physicist_add = 150
 		job_biologist_add = 150
 	}
-
 	resources = {
 		category = planet_buildings
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { NOT = { has_deficit = energy } }
+				owner = {
+					NOT = {
+						has_deficit = energy
+					}
+				}
 			}
 			physics_research = 50
 			society_research = 50
@@ -435,7 +443,6 @@ building_forbidden_archive = {
 			energy = 20
 		}
 	}
-
 	ai_weight = {
 		weight = 10
 		modifier = {
@@ -443,7 +450,6 @@ building_forbidden_archive = {
 			has_building = building_forbidden_archive
 		}
 	}
-	
 	ai_resource_production = {
 		physics_research = 1
 		society_research = 1
@@ -456,43 +462,42 @@ building_forbidden_archive = {
 
 building_summoning_core = {
 	base_buildtime = 240
-
 	category = army
-
 	building_sets = {
 		fortress
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
-	}	
-	
+		owner = {
+			has_country_flag = necron_empire
+		}
+	}
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_summoning_core" }
-
+	prerequisites = {
+		"tech_summoning_core"
+	}
 	planet_modifier = {
 		job_nemesor_add = 80
 	}
-
 	upgrades = {
 		building_greater_summoning_core
 	}
-	
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
-		}	
+		}
 		upkeep = {
 			energy = 10
 		}
 	}
-	
 	ai_weight = {
 		weight = 10
 		modifier = {
@@ -505,43 +510,42 @@ building_summoning_core = {
 building_greater_summoning_core = {
 	base_buildtime = 240
 	can_build = no
-	
 	category = army
-
 	building_sets = {
 		fortress
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
-	}	
-	
+		owner = {
+			has_country_flag = necron_empire
+		}
+	}
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_greater_summoning_core" }
-
+	prerequisites = {
+		"tech_greater_summoning_core"
+	}
 	planet_modifier = {
 		job_nemesor_add = 150
 	}
-	
 	army_modifier = {
 		army_starting_experience_add = 100
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
-		}	
+		}
 		upkeep = {
 			energy = 10
 		}
 	}
-	
 	ai_weight = {
 		weight = 10
 	}
@@ -549,32 +553,31 @@ building_greater_summoning_core = {
 
 building_gauss_turret = {
 	base_buildtime = 240
-
 	category = army
-
 	building_sets = {
 		fortress
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = necron_empire }
+		owner = {
+			has_country_flag = necron_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = necron_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = necron_empire
+			}
+		}
 	}
-
 	planet_modifier = {
 		job_necron_warrior_add = 100
 	}
-	
 	army_modifier = {
 		army_attack_damage_mult = 0.1
 		army_defense_damage_mult = 0.1
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -584,28 +587,32 @@ building_gauss_turret = {
 			energy = 20
 		}
 	}
-	
 	triggered_desc = {
 		text = job_necron_warrior_effect_desc
 	}
-	
 	ai_weight = {
 		weight = 10
 		modifier = {
 			weight = 1
 			free_jobs < 1
 			free_building_slots > 1
-			owner = { used_naval_capacity_percent > 0.9	}
+			owner = {
+				used_naval_capacity_percent > 0.9
+			}
 		}
 		modifier = {
 			weight = 100
-			is_planet_class = pc_tomb
-			owner = { used_naval_capacity_percent > 0.8	}
+			is_planet_class = pc_toxic
+			owner = {
+				used_naval_capacity_percent > 0.8
+			}
 		}
 		modifier = {
 			weight = 25
 			num_pops > 39
-			NOT = {	has_building = building_gauss_turret }
+			NOT = {
+				has_building = building_gauss_turret
+			}
 		}
 	}
 }

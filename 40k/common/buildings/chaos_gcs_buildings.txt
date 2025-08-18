@@ -1,45 +1,42 @@
-
 building_chaos_temple = {
 	base_buildtime = 360
-
 	category = army
-
 	building_sets = {
 		fortress
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
-	}	
-	
-        country_modifier = {
+		owner = {
+			has_country_flag = chaos_empire
+		}
+	}
+	country_modifier = {
 		country_commander_cap_add = 2
 		country_naval_cap_mult = 0.05
-
-        }
-
+	}
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	planet_modifier = {
 		job_gene_tech_add = 100
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
-		}	
+		}
 		upkeep = {
 			energy = 10
 		}
 	}
-	
 	ai_weight = {
 		weight = 10
 		modifier = {
@@ -52,35 +49,36 @@ building_chaos_temple = {
 building_chaos_relay = {
 	base_buildtime = 240
 	planetary_ftl_inhibitor = yes
-
 	category = army
-
 	building_sets = {
 		fortress
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
-	}	
-	
+		owner = {
+			has_country_flag = chaos_empire
+		}
+	}
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 300
-		}	
+		}
 		upkeep = {
 			energy = 5
 		}
 	}
-	
 	ai_weight = {
 		weight = 10
 		modifier = {
@@ -92,28 +90,28 @@ building_chaos_relay = {
 
 building_chaos_workshop = {
 	base_buildtime = 240
-
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		foundry
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-
 	planet_modifier = {
 		job_artisan_add = 300
 	}
-	
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -123,11 +121,9 @@ building_chaos_workshop = {
 			energy = 10
 		}
 	}
-	
 	triggered_desc = {
 		text = job_artisan_effect_desc
 	}
-
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -140,7 +136,6 @@ building_chaos_workshop = {
 			}
 		}
 	}
-	
 	ai_resource_production = {
 		consumer_goods = 1
 		trigger = {
@@ -151,27 +146,27 @@ building_chaos_workshop = {
 
 building_daemon_quarry = {
 	base_buildtime = 240
-
 	category = resource
-
 	building_sets = {
 		mining
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-
 	planet_modifier = {
 		job_miner_add = 10
 	}
-	
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -181,11 +176,9 @@ building_daemon_quarry = {
 			energy = 5
 		}
 	}
-
 	triggered_desc = {
 		text = job_miner_effect_desc
 	}
-	
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -198,7 +191,6 @@ building_daemon_quarry = {
 			}
 		}
 	}
-	
 	ai_resource_production = {
 		minerals = 1
 		trigger = {
@@ -209,39 +201,39 @@ building_daemon_quarry = {
 
 building_machine_pit = {
 	base_buildtime = 360
-
 	category = army
-
 	building_sets = {
 		fortress
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
-	}	
-	
+		owner = {
+			has_country_flag = chaos_empire
+		}
+	}
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_chaos_marines" }
-	
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	planet_modifier = {
 		job_electronics_manufacturer_chaos_add = 400
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
-		}	
+		}
 		upkeep = {
 			energy = 10
 		}
 	}
-	
 	ai_weight = {
 		weight = 10
 		modifier = {
@@ -253,35 +245,35 @@ building_machine_pit = {
 
 building_dark_armoury = {
 	base_buildtime = 360
-
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		foundry
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
-	}	
-	
+		owner = {
+			has_country_flag = chaos_empire
+		}
+	}
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_chaos_marines" }
-
+	prerequisites = {
+		"tech_chaos_marines"
+	}
 	country_modifier = {
 		country_resource_max_add = 2000
 	}
-	
 	planet_modifier = {
 		planet_army_build_speed_mult = 0.1
 		job_military_artisan_add = 500
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -291,11 +283,9 @@ building_dark_armoury = {
 			energy = 5
 		}
 	}
-	
 	triggered_desc = {
 		text = job_military_artisan_effect_desc
 	}
-
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -308,7 +298,6 @@ building_dark_armoury = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		military_goods = 1
 		trigger = {
@@ -319,31 +308,36 @@ building_dark_armoury = {
 
 building_slaanesh_palace = {
 	base_buildtime = 240
-        base_cap_amount = 1
-	
+	base_cap_amount = 1
 	category = government
-
 	building_sets = {
 		government
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
 	resources = {
 		category = planet_buildings
 		produces = {
 			trigger = {
 				exists = owner
-
-				owner = { NAND = { has_deficit = minerals has_deficit = gods_favor } }
+				owner = {
+					NAND = {
+						has_deficit = minerals
+						has_deficit = gods_favor
+					}
+				}
 			}
 			alloys = 25
 		}
@@ -355,26 +349,27 @@ building_slaanesh_palace = {
 			gods_favor = 1
 		}
 	}
-	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_country_flag = slaanesh }
+			owner = {
+				has_country_flag = slaanesh
+			}
 		}
 		modifier = {
 			planet_amenities_add = 5000
 			job_daemonette_add = 500
 		}
 	}
-	
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_country_flag = slaanesh }
+			owner = {
+				has_country_flag = slaanesh
+			}
 		}
 		text = job_daemonette_effect_desc
 	}
-	
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -387,7 +382,6 @@ building_slaanesh_palace = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		alloys = 1
 		trigger = {
@@ -398,35 +392,38 @@ building_slaanesh_palace = {
 
 building_tzeentch_complex = {
 	base_buildtime = 240
-        base_cap_amount = 1
-
+	base_cap_amount = 1
 	category = government
-
 	building_sets = {
 		government
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
 	planet_modifier = {
 		job_sorcerer_add = 200
 	}
-	
 	resources = {
 		category = planet_buildings
 		produces = {
 			trigger = {
 				exists = owner
-
-				owner = { NOT = { has_deficit = gods_favor } }
+				owner = {
+					NOT = {
+						has_deficit = gods_favor
+					}
+				}
 			}
 			energy = 250
 		}
@@ -437,21 +434,20 @@ building_tzeentch_complex = {
 			gods_favor = 1
 		}
 	}
-	
 	triggered_desc = {
 		text = job_sorcerer_effect_desc
 	}
-	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_country_flag = tzeentch }
+			owner = {
+				has_country_flag = tzeentch
+			}
 		}
 		modifier = {
 			planet_jobs_gods_favor_produces_mult = 0.25
 		}
 	}
-	
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -464,7 +460,6 @@ building_tzeentch_complex = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -475,49 +470,49 @@ building_tzeentch_complex = {
 
 building_nurgle_castle = {
 	base_buildtime = 240
-        base_cap_amount = 1
-
+	base_cap_amount = 1
 	category = government
-
 	building_sets = {
 		government
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
-	}	
-	
+		owner = {
+			has_country_flag = chaos_empire
+		}
+	}
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
-		}	
+		}
 		upkeep = {
 			food = 50
 		}
 	}
-	
-        planet_modifier = {
-                job_rot_gatherer_add = 100
-        }
-
+	planet_modifier = {
+		job_rot_gatherer_add = 100
+	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_country_flag = nurgle }
+			owner = {
+				has_country_flag = nurgle
+			}
 		}
 		modifier = {
 			planet_buildings_cost_mult = -0.15
 			planet_districts_cost_mult = -0.1
 		}
 	}
-	
 	ai_weight = {
 		weight = 10
 		modifier = {
@@ -529,28 +524,28 @@ building_nurgle_castle = {
 
 building_khorne_fortress = {
 	base_buildtime = 240
-        base_cap_amount = 1
-
+	base_cap_amount = 1
 	category = government
-
 	building_sets = {
 		government
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
 	planet_modifier = {
 		job_berserk_add = 200
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -560,89 +555,106 @@ building_khorne_fortress = {
 			energy = 10
 		}
 	}
-	
 	triggered_desc = {
 		text = job_berserk_effect_desc
 	}
-	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_country_flag = khorne }
+			owner = {
+				has_country_flag = khorne
+			}
 		}
 		modifier = {
 			planet_jobs_gods_favor_produces_mult = 0.1
 		}
 	}
-	
 	ai_weight = {
 		weight = 0
+		# modest desire: few jobs left, room to place it, empire is over cap
 		modifier = {
-			weight = 1
+			factor = 1
 			free_jobs < 1
 			free_building_slots > 1
-			owner = { used_naval_capacity_percent > 0.9	}
+			owner = {
+				used_naval_capacity_percent > 0.9
+			}
+			# if this errors in your schema, try > 90 or naval_capacity_usage > 0.9
 		}
+		# very strong desire on daemon worlds while near cap
 		modifier = {
-			weight = 100
+			factor = 100
 			is_planet_class = pc_daemon
-			owner = { used_naval_capacity_percent > 0.8	}
+			owner = {
+				used_naval_capacity_percent > 0.8
+			}
 		}
+		# "big/ripe planet" proxy without pops/amenities:
+		# A) fully built out (no district slots), OR
+		# B) housing is tight and there aren't free jobs
 		modifier = {
-			weight = 25
-			num_pops > 39
-			NOT = {	has_building = building_khorne_fortress }
+			factor = 25
+			OR = {
+				free_district_slots = 0
+				AND = {
+					free_housing < 1
+					free_jobs < 1
+				}
+			}
+			NOT = {
+				has_building = building_khorne_fortress
+			}
 		}
 	}
 }
 
 building_chaos_hut = {
 	base_buildtime = 240
-
 	category = amenity
-
 	building_sets = {
 		government
 		urban
 		entertainment
 		resort
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
 	planet_modifier = {
 		planet_housing_add = 700
 	}
-	
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 400
 		}
 	}
-	
 	ai_weight = {
 		weight = 0
+		# Build when housing is low, and prefer doing so when there ARE open jobs
 		modifier = {
-			weight = 100 #High weight to gurantee that if the below is true then the AI should build it
-			free_housing < 3 #Prevents the AI from running out of residences when nearly out of tiles
+			factor = 100
 			OR = {
-				free_jobs > 0 #prevents spamming of residence buildings when no jobs are open
+				free_housing < 3
 				AND = {
-					free_housing < 0 #Prevents the AI from running out of residences when nearly out of tiles
-					NOT = { any_owned_pop = { is_unemployed = yes } }
+					free_housing < 0
+					free_jobs > 0					# proxy for "we're not job-starved"
 				}
 			}
-			free_district_slots = 0 #Do not build when city districts can still be built
+			free_district_slots = 0
 		}
+		# Never build a second one
 		modifier = {
 			factor = 0
 			has_building = building_chaos_hut
@@ -653,36 +665,40 @@ building_chaos_hut = {
 building_daemon_pit = {
 	base_buildtime = 360
 	base_cap_amount = 1
-	
 	category = research
-
 	building_sets = {
 		research
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_daemon_pit" }
-	
+	prerequisites = {
+		"tech_daemon_pit"
+	}
 	planet_modifier = {
 		job_chaos_priest_add = 500
 	}
-
 	resources = {
 		category = planet_buildings
 		produces = {
 			trigger = {
 				exists = owner
-
-				owner = { NOT = { has_deficit = energy } }
+				owner = {
+					NOT = {
+						has_deficit = energy
+					}
+				}
 			}
 			society_research = 250
 		}
@@ -693,15 +709,12 @@ building_daemon_pit = {
 			energy = 25
 		}
 	}
-	
 	triggered_desc = {
 		text = job_chaos_priest_effect_desc
 	}
-
 	ai_weight = {
 		weight = 750
 	}
-	
 	ai_resource_production = {
 		gods_favor = 1
 		society_research = 1
@@ -714,31 +727,32 @@ building_daemon_pit = {
 building_khorne_shrine = {
 	base_buildtime = 360
 	base_cap_amount = 1
-	
 	category = army
-
 	building_sets = {
 		fortress
 	}
-
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_shrine_khorne" }
-	
+	prerequisites = {
+		"tech_shrine_khorne"
+	}
 	army_modifier = {
 		army_attack_health_mult = -0.1
 		army_attack_damage_mult = 0.25
-		army_attack_morale_mult = 1.0
+		army_attack_morale_mult = 1
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -748,7 +762,6 @@ building_khorne_shrine = {
 			energy = 10
 		}
 	}
-	
 	ai_weight = {
 		weight = 20
 	}
@@ -757,30 +770,31 @@ building_khorne_shrine = {
 building_tzeentch_shrine = {
 	base_buildtime = 360
 	base_cap_amount = 1
-	
 	category = government
-
 	building_sets = {
 		government
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_shrine_tzeentch" }
-	
+	prerequisites = {
+		"tech_shrine_tzeentch"
+	}
 	country_modifier = {
 		country_naval_cap_add = 200
 		diplo_weight_economy_mult = 0.25
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -790,24 +804,31 @@ building_tzeentch_shrine = {
 			energy = 10
 		}
 	}
-	
 	ai_weight = {
 		weight = 0
 		modifier = {
 			weight = 20
-			owner = { empire_sprawl_over_cap > 0 }
+			owner = {
+				empire_sprawl_over_cap > 0
+			}
 		}
 		modifier = {
 			weight = 50
-			owner = { empire_sprawl_over_cap > 10 }
+			owner = {
+				empire_sprawl_over_cap > 10
+			}
 		}
 		modifier = {
 			weight = 100
-			owner = { empire_sprawl_over_cap > 20 }
+			owner = {
+				empire_sprawl_over_cap > 20
+			}
 		}
 		modifier = {
 			weight = 500
-			owner = { empire_sprawl_over_cap > 40 }
+			owner = {
+				empire_sprawl_over_cap > 40
+			}
 		}
 	}
 }
@@ -815,30 +836,31 @@ building_tzeentch_shrine = {
 building_slaanesh_shrine = {
 	base_buildtime = 360
 	base_cap_amount = 1
-	
 	category = government
-
 	building_sets = {
 		government
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_shrine_slaanesh" }
-	
+	prerequisites = {
+		"tech_shrine_slaanesh"
+	}
 	planet_modifier = {
 		planet_jobs_slave_produces_mult = 0.15
 		pop_cat_slave_political_power = -0.5
 	}
-	
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -848,12 +870,15 @@ building_slaanesh_shrine = {
 			energy = 10
 		}
 	}
-	
 	ai_weight = {
 		weight = 5
 		modifier = {
 			factor = 0
-			NOT = { any_owned_pop = { is_enslaved = yes } }
+			NOT = {
+				any_owned_pop_group = {
+					is_enslaved = yes
+				}
+			}
 		}
 	}
 }
@@ -861,29 +886,30 @@ building_slaanesh_shrine = {
 building_nurgle_shrine = {
 	base_buildtime = 360
 	base_cap_amount = 1
-	
 	category = pop_assembly
-
 	building_sets = {
 		government
 	}
-	
 	potential = {
 		exists = owner
-		owner = { has_country_flag = chaos_empire }
+		owner = {
+			has_country_flag = chaos_empire
+		}
 	}
-	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOT = { has_country_flag = chaos_empire } }
+		owner = {
+			NOT = {
+				has_country_flag = chaos_empire
+			}
+		}
 	}
-	
-	prerequisites = { "tech_shrine_nurgle" }
-	
+	prerequisites = {
+		"tech_shrine_nurgle"
+	}
 	planet_modifier = {
-		biological_pop_happiness = 0.30
+		biological_pop_happiness = 0.3
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -893,7 +919,6 @@ building_nurgle_shrine = {
 			energy = 10
 		}
 	}
-	
 	ai_weight = {
 		weight = 10
 	}

@@ -423,7 +423,7 @@ building_coalition_center = {
 				AND = {
 					free_housing < 0					#Prevents the AI from running out of residences when nearly out of tiles
 					NOT = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							is_unemployed = yes
 						}
 					}

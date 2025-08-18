@@ -335,9 +335,7 @@ civic_chivalric_traditions = {
 civic_khorne_cult = {
 	possible = {
 		authority = {
-			OR = {
-				value = auth_chaos
-			}
+			value = auth_chaos
 		}
 		civics = {
 			NOT = {

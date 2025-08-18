@@ -1288,11 +1288,6 @@ skitarii = {
 		planet = {
 			OR = {
 				is_planet_class = pc_mechanicus_forge
-				is_planet_class = pc_forgee
-				is_planet_class = pc_forgeee
-				is_planet_class = pc_forge_ring
-				is_planet_class = pc_forge_ring2
-				is_planet_class = pc_forge_ring3
 			}
 		}
 		owner = {
